@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Tue, Oct 27, 2020 12:42:08 PM
+//Last modified: Tue, Oct 27, 2020 12:43:42 PM
 //Codeset: 1252
 file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "Simple_Bot_for_Maya_1_0" -rfn "Simple_Bot_for_Maya_1_0RN" 
@@ -27,13 +27,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.3924003830002001 5.2660892019244834 -2.3330149442302854 ;
-	setAttr ".r" -type "double3" 1063.4616469315304 -27669.400000033798 1.2527185210984608e-15 ;
+	setAttr ".t" -type "double3" 3.4956161999689588 7.9441101502320111 -3.5066484550497803 ;
+	setAttr ".r" -type "double3" 1050.861646931527 -27661.000000033593 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 11.905108789488828;
+	setAttr ".coi" 13.839201486182667;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3292,6 +3292,22 @@ createNode mesh -n "pCubeShape6" -p "pCube6";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 4 ".pt[2:5]" -type "float3"  0 0.20645529 0 0 0.20645529 
 		0 0 0.20645529 0 0 0.20645529 0;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "pCube7" -p "boiler_grp";
+	rename -uid "BD6F2E8C-4FD3-02D8-D888-889B0A9AF374";
+	setAttr ".t" -type "double3" -520.00723942784555 6.7921471519237571 -779.31614917077286 ;
+	setAttr ".s" -type "double3" 279.3706325057293 137.30666025903332 114.8946215974056 ;
+createNode mesh -n "pCubeShape7" -p "pCube7";
+	rename -uid "33154D98-4E45-303C-0B94-0E877C479FBE";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "structure_grp" -p "airship_grp";
 	rename -uid "CA0DF101-49A6-C174-F581-B7BE900D4AAF";
@@ -10874,22 +10890,6 @@ createNode mesh -n "door_geoShape" -p "door_geo";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "pCube7";
-	rename -uid "BD6F2E8C-4FD3-02D8-D888-889B0A9AF374";
-	setAttr ".t" -type "double3" -6.6269531710514418 0.92881409230332856 -9.9315763982078806 ;
-	setAttr ".s" -type "double3" 3.5602890856279714 1.7498310381433442 1.4642128401316767 ;
-createNode mesh -n "pCubeShape7" -p "pCube7";
-	rename -uid "33154D98-4E45-303C-0B94-0E877C479FBE";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "35708343-4FAB-182F-D212-1692F8345467";
 	setAttr -s 44 ".lnk";
@@ -13259,6 +13259,7 @@ connectAttr "transformGeometry2.og" "pCubeShape5.i";
 connectAttr "polyCylinder4.out" "pCylinderShape.i";
 connectAttr "polyCylinder5.out" "pCylinderShape6.i";
 connectAttr "polyCube10.out" "pCubeShape6.i";
+connectAttr "polyExtrudeFace4.out" "pCubeShape7.i";
 connectAttr "groupId54.id" "stairs_geoShape.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "stairs_geoShape.iog.og[0].gco";
 connectAttr "groupId60.id" "rightWall_geoShape.iog.og[0].gid";
@@ -13274,7 +13275,6 @@ connectAttr "groupId59.id" "lowerDeckFloor_geoShape.iog.og[0].gid";
 connectAttr "set1.mwc" "lowerDeckFloor_geoShape.iog.og[0].gco";
 connectAttr "transformGeometry3.og" "pCylinderShape4.i";
 connectAttr "polyCube9.out" "door_geoShape.i";
-connectAttr "polyExtrudeFace4.out" "pCubeShape7.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":ikSystem.message" ":defaultLightSet.message";
