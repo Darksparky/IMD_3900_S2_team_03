@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: steeringWheel_wip.ma
-//Last modified: Wed, Nov 04, 2020 04:14:55 PM
+//Last modified: Wed, Nov 04, 2020 05:36:11 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -18,15 +18,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "05B5F2A9-41A3-BC0B-AA2A-0CA10BC05F3D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.2993902846089553 3.3162882769059037 -2.0051593499769282 ;
-	setAttr ".r" -type "double3" 1408.461646953953 -8874.2000000011958 0 ;
+	setAttr ".t" -type "double3" -5.8345248502097622 0.88796416305407178 5.2275065458444292 ;
+	setAttr ".r" -type "double3" 1439.0616469538647 -9050.200000001294 1.5527390676692307e-16 ;
 	setAttr ".rp" -type "double3" 1.3877787807814457e-17 0 0 ;
 	setAttr ".rpt" -type "double3" 1.3497110647532604e-16 1.8229777292284501e-16 -4.2580594254391515e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "25DFD5D3-4951-FF8F-F4CA-148AC820BF4C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 4.8773115124256972;
+	setAttr ".coi" 7.50138313853651;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
