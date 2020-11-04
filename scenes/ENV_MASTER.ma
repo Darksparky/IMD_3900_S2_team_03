@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Wed, Nov 04, 2020 05:50:38 PM
+//Last modified: Wed, Nov 04, 2020 05:51:40 PM
 //Codeset: 1252
 file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "Simple_Bot_for_Maya_1_0" -rfn "Simple_Bot_for_Maya_1_0RN" 
@@ -36,13 +36,13 @@ fileInfo "UUID" "A14FCED6-BB4E-A604-1019-60816E308F97";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.38400140452262566 5.8273038400507184 -9.5983670242639398 ;
-	setAttr ".r" -type "double3" 693.86164686961411 -30419.7999999926 0 ;
+	setAttr ".t" -type "double3" -1.8248649437225026 30.116404645002099 -32.411804156344807 ;
+	setAttr ".r" -type "double3" 675.261646869743 -30777.799999998824 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 9.4680730160600035;
+	setAttr ".coi" 42.719344947096637;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
