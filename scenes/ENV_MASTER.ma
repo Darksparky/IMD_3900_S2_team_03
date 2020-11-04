@@ -1,40 +1,48 @@
-//Maya ASCII 2020 scene
+//Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Oct 30, 2020 10:48:53 AM
-//Codeset: UTF-8
-file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
+//Last modified: Wed, Nov 04, 2020 05:50:38 PM
+//Codeset: 1252
+file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "Simple_Bot_for_Maya_1_0" -rfn "Simple_Bot_for_Maya_1_0RN" 
 		-op "VERS|2009|UVER|undef|MADE|undef|CHNG|Sun, Aug 09, 2009 08:47:41 PM|ICON|undef|INFO|undef|OBJN|8868|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
-		 -typ "mayaBinary" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Bot Rig/Simple Bot for Maya 1.0.mb";
-file -r -ns "Sheik_RIG1" -dr 1 -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
+		 -typ "mayaBinary" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Bot Rig/Simple Bot for Maya 1.0.mb";
+file -rdi 1 -ns "steeringWheel" -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/steeringWheel/steeringWheel.ma";
+file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/boiler/steam_boiler.ma";
+file -r -ns "Sheik_RIG1" -dr 1 -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -r -ns "Simple_Bot_for_Maya_1_0" -dr 1 -rfn "Simple_Bot_for_Maya_1_0RN" -op
 		 "VERS|2009|UVER|undef|MADE|undef|CHNG|Sun, Aug 09, 2009 08:47:41 PM|ICON|undef|INFO|undef|OBJN|8868|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
-		 -typ "mayaBinary" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Bot Rig/Simple Bot for Maya 1.0.mb";
-requires maya "2020";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "4.0.0";
+		 -typ "mayaBinary" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Bot Rig/Simple Bot for Maya 1.0.mb";
+file -r -ns "steeringWheel" -dr 1 -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/steeringWheel/steeringWheel.ma";
+file -r -ns "steam_boiler" -dr 1 -rfn "steam_boilerRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/boiler/steam_boiler.ma";
+requires maya "2019";
 requires -nodeType "StingrayPBS" "shaderFXPlugin" "1.0";
 requires -nodeType "renderSetup" "renderSetup.py" "1.0";
 requires "stereoCamera" "10.0";
-requires "stereoCamera" "10.0";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
 requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2020";
-fileInfo "version" "2020";
-fileInfo "cutIdentifier" "201911140446-42a737a01c";
-fileInfo "osv" "Mac OS X 10.15.7";
+fileInfo "product" "Maya 2019";
+fileInfo "version" "2019";
+fileInfo "cutIdentifier" "201812112215-434d8d9c04";
+fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 fileInfo "license" "student";
 fileInfo "UUID" "A14FCED6-BB4E-A604-1019-60816E308F97";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.41032838047556552 15.617591401958348 -25.888367112518523 ;
-	setAttr ".r" -type "double3" 690.26164692909583 -28265.799999998835 0 ;
+	setAttr ".t" -type "double3" 0.38400140452262566 5.8273038400507184 -9.5983670242639398 ;
+	setAttr ".r" -type "double3" 693.86164686961411 -30419.7999999926 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 28.164768927221211;
+	setAttr ".coi" 9.4680730160600035;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2719,65 +2727,6 @@ createNode mesh -n "astrolab_geoShape" -p "astrolab_geo";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "steeringWheelPost_geo" -p "props_grp";
-	rename -uid "243A1345-4F8A-A2F0-250C-07A0AD868EB1";
-	setAttr ".t" -type "double3" 0 14.671677501188961 188.27334433463116 ;
-	setAttr ".s" -type "double3" 38.211536503713837 137.33444772506735 36.228989016409614 ;
-createNode mesh -n "steeringWheelPost_geoShape" -p "steeringWheelPost_geo";
-	rename -uid "D34FEB18-400A-CC2B-B04D-0EBDEDC38434";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.125 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "steeringWheelWheel_geo" -p "steeringWheelPost_geo";
-	rename -uid "B07C8A50-4E48-F262-554A-7CBCEEB53D8B";
-	setAttr ".t" -type "double3" 0 0.41941089436232154 -0.69142530980975625 ;
-	setAttr ".r" -type "double3" -90 0 0 ;
-	setAttr ".s" -type "double3" 1.6743423252572973 0.23105063714017371 0.46586412907389224 ;
-createNode mesh -n "steeringWheelWheel_geoShape" -p "steeringWheelWheel_geo";
-	rename -uid "B39151D6-48B3-42BA-D849-CA8EEF4FD3C1";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.50000005960464478 0.625 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 80 ".pt[0:79]" -type "float3"  0.094650254 0 -3.3849524e-08 
-		0.090017766 0 -0.029248487 0.076573476 0 -0.055633992 0.05563394 0 -0.076573521 0.029248573 
-		0 -0.090017647 1.9745606e-08 0 -0.094650224 -0.029248523 0 -0.090017647 -0.055633888 
-		0 -0.076573655 -0.076573595 0 -0.055634059 -0.090017527 0 -0.029248543 -0.094650194 
-		0 -3.3849524e-08 -0.090017527 0 0.02924848 -0.076573536 0 0.055633888 -0.055633895 
-		0 0.076573595 -0.029248498 0 0.090017512 2.2566365e-08 0 0.094650239 0.029248483 
-		0 0.090017572 0.055634059 0 0.076573476 0.0765737 0 0.055633895 0.090017483 0 0.029248523 
-		0.094650254 0 -3.3849524e-08 0.090017766 0 -0.029248487 0.076573476 0 -0.055633992 
-		0.05563394 0 -0.076573521 0.029248573 0 -0.090017647 1.9745606e-08 0 -0.094650224 
-		-0.029248523 0 -0.090017647 -0.055633888 0 -0.076573655 -0.076573595 0 -0.055634059 
-		-0.090017527 0 -0.029248543 -0.094650194 0 -3.3849524e-08 -0.090017527 0 0.02924848 
-		-0.076573536 0 0.055633888 -0.055633895 0 0.076573595 -0.029248498 0 0.090017512 
-		2.2566365e-08 0 0.094650239 0.029248483 0 0.090017572 0.055634059 0 0.076573476 0.0765737 
-		0 0.055633895 0.090017483 0 0.029248523 -0.18000907 0 3.2188098e-08 -0.1711985 0 
-		0.055626001 -0.14563064 0 0.10580662 -0.10580665 0 0.14563026 -0.055625927 0 0.17119852 
-		-1.6094049e-08 0 0.1800091 0.0556258 0 0.17119847 0.10580666 0 0.14563029 0.14563058 
-		0 0.10580665 0.1711985 0 0.055626031 0.18000907 0 3.2188098e-08 0.1711985 0 -0.05562574 
-		0.14563064 0 -0.10580666 0.10580665 0 -0.14563078 0.055625867 0 -0.17119844 -2.1458742e-08 
-		0 -0.1800091 -0.055625897 0 -0.1711985 -0.10580675 0 -0.14563029 -0.14563023 0 -0.10580658 
-		-0.17119879 0 -0.055625837 -0.18000907 0 3.2188098e-08 -0.1711985 0 0.055626001 -0.14563064 
-		0 0.10580662 -0.10580665 0 0.14563026 -0.055625927 0 0.17119852 -1.6094049e-08 0 
-		0.1800091 0.0556258 0 0.17119847 0.10580666 0 0.14563029 0.14563058 0 0.10580665 
-		0.1711985 0 0.055626031 0.18000907 0 3.2188098e-08 0.1711985 0 -0.05562574 0.14563064 
-		0 -0.10580666 0.10580665 0 -0.14563078 0.055625867 0 -0.17119844 -2.1458742e-08 0 
-		-0.1800091 -0.055625897 0 -0.1711985 -0.10580675 0 -0.14563029 -0.14563023 0 -0.10580658 
-		-0.17119879 0 -0.055625837;
-	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube5" -p "props_grp";
 	rename -uid "8E16DF8F-4487-FBA8-9DF2-3D92FD4B9147";
 	setAttr ".t" -type "double3" 103.38394810226164 -64.410261268509672 -442.87525296630872 ;
@@ -3002,6 +2951,7 @@ createNode mesh -n "commandDeck_geoShape" -p "commandDeck_geo";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.41804549098014832 0.81201565265655518 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 84 ".uvst[0].uvsp[0:83]" -type "float2" 0.64860266 0.10796607
 		 0.62640899 0.064408496 0.59184152 0.029841021 0.54828393 0.0076473355 0.5 -7.4505806e-08
@@ -3222,94 +3172,6 @@ createNode mesh -n "controlPanel_GeoShape" -p "controlPanel_Geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "boiler_grp" -p "props_grp";
 	rename -uid "876A0AB9-4DE4-42EC-8C09-1EAB76BB86B5";
-createNode transform -n "pCylinder" -p "boiler_grp";
-	rename -uid "0E513F94-4C0C-9320-5AD1-E588B3D1EB73";
-	setAttr ".t" -type "double3" -521.20712289504206 -15.070157875278637 -493.67699946579808 ;
-	setAttr ".r" -type "double3" 0 0 90 ;
-	setAttr ".s" -type "double3" 226.4310993833129 124.40147647447121 226.43109938331344 ;
-createNode mesh -n "pCylinderShape" -p "pCylinder";
-	rename -uid "FCF915FA-402F-B6C8-00CE-BAA0CC862DC9";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.49999996274709702 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 42 ".pt[0:41]" -type "float3"  0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 
-		0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0 0.10105007 0 0;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "pCylinder6" -p "boiler_grp";
-	rename -uid "E907F98E-488D-5E4C-F173-BF84C3BC0E1D";
-	setAttr ".t" -type "double3" -536.07828387942595 254.70979853680927 -538.28367220012592 ;
-	setAttr ".s" -type "double3" 58.691119581930522 95.497270958820806 58.69111958193082 ;
-createNode mesh -n "pCylinderShape6" -p "pCylinder6";
-	rename -uid "5EAC3CCE-4B9B-8953-17FC-6CA270F6140E";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.49999996274709702 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 42 ".pt[0:41]" -type "float3"  0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 
-		0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 0 0.24456002 0.45227879 
-		0 0.24456002 0.45227879 0 0.24456002 0.45227879 0;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "pCube6" -p "boiler_grp";
-	rename -uid "04C29BD6-40C9-1BDE-4A60-078ED2B41AA4";
-	setAttr ".t" -type "double3" -521.56109856475393 -14.883354776473773 -493.49978484178143 ;
-	setAttr ".s" -type "double3" 284.85261645771021 103.86651030388961 551.56570257184399 ;
-createNode mesh -n "pCubeShape6" -p "pCube6";
-	rename -uid "0095A8BE-4BC0-BD7D-8B88-27BC872317DB";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  0 0.20645529 0 0 0.20645529 
-		0 0 0.20645529 0 0 0.20645529 0;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "pCube7" -p "boiler_grp";
-	rename -uid "BD6F2E8C-4FD3-02D8-D888-889B0A9AF374";
-	setAttr ".t" -type "double3" -520.00723942784555 6.7921471519237571 -779.31614917077286 ;
-	setAttr ".s" -type "double3" 279.3706325057293 137.30666025903332 114.8946215974056 ;
-createNode mesh -n "pCubeShape7" -p "pCube7";
-	rename -uid "33154D98-4E45-303C-0B94-0E877C479FBE";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "structure_grp" -p "airship_grp";
 	rename -uid "CA0DF101-49A6-C174-F581-B7BE900D4AAF";
 createNode transform -n "rearWall_geo" -p "structure_grp";
@@ -5407,8 +5269,8 @@ createNode mesh -n "polySurfaceShape2" -p "rightWall_geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "leftWall_geo" -p "structure_grp";
 	rename -uid "061ED296-4B88-428F-70F5-CBAFA115CE03";
-	setAttr ".rp" -type "double3" 395.17970275878901 186.88393783569336 -408.98306274414062 ;
-	setAttr ".sp" -type "double3" 395.17970275878901 186.88393783569336 -408.98306274414062 ;
+	setAttr ".rp" -type "double3" 395.17970275878901 186.88393783569336 -408.98306274414063 ;
+	setAttr ".sp" -type "double3" 395.17970275878901 186.88393783569336 -408.98306274414063 ;
 createNode mesh -n "leftWall_geoShape" -p "leftWall_geo";
 	rename -uid "BA5D53E9-4865-0E4B-FC9D-9E9B2814CA6A";
 	setAttr -k off ".v";
@@ -10891,27 +10753,31 @@ createNode mesh -n "door_geoShape" -p "door_geo";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "steeringWheel_grp";
+	rename -uid "6E6B0E0B-44B5-943E-C16C-DDB832E796BB";
+	setAttr ".t" -type "double3" 0 0.73261356630984298 2.0198327384635961 ;
+	setAttr ".r" -type "double3" 0 180 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "37FC35F0-8249-D2B3-9CF9-9F88CDDCC782";
-	setAttr -s 44 ".lnk";
-	setAttr -s 43 ".slnk";
+	rename -uid "79C85D3A-49B5-7D2A-C552-A9B8FD465DA4";
+	setAttr -s 49 ".lnk";
+	setAttr -s 48 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B613F7F9-564A-9CB3-1F58-4491559A5B9E";
+	rename -uid "FB85300C-483D-D2DE-788D-41A912FE5240";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 10 0 1 2 3 4
 		 5 6 7 8 9 ;
 	setAttr -s 10 ".bspr";
 	setAttr -s 10 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4D98C05D-6247-6F88-7B46-A8AB9F3297E3";
+	rename -uid "C8918E75-4D75-1625-EBFC-18AA6CADF7EF";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "8E9D71EC-B849-5E07-FBB0-20A211FA3520";
+	rename -uid "8E79C62D-4098-AFA4-ED1C-51926580861A";
 	setAttr ".cdl" 3;
 	setAttr -s 8 ".dli[1:7]"  1 3 2 5 4 6 7;
 	setAttr -s 8 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "088E2D7E-4EA4-E5D3-539F-25A867468057";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A674A7FB-634B-1CE1-53A4-0EBBD43D950A";
+	rename -uid "2A3C7112-40C1-5D1C-F6AE-D380C7787B22";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E25A5300-4113-4140-6A15-4E99A596F975";
 	setAttr ".g" yes;
@@ -10922,47 +10788,47 @@ createNode script -n "Sheik_RIG:uiConfigurationScriptNode";
 	rename -uid "1CF732DB-48CF-0E97-D531-D5B232A81621";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
-		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
-		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
-		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1959\n            -height 1010\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
-		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
-		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
-		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
-		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n"
-		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
-		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n"
-		+ "                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n"
-		+ "                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n"
-		+ "                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n"
-		+ "                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n"
-		+ "                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n"
-		+ "                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
-		+ "\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n"
-		+ "                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n"
-		+ "                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n"
-		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
-		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
-		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n"
-		+ "\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1959\\n    -height 1010\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1959\\n    -height 1010\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1115\n            -height 774\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
+		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
+		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
+		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n"
+		+ "            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
+		+ "            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n"
+		+ "            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
+		+ "            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1115\n            -height 704\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
+		+ "            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 0\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n"
+		+ "            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n"
+		+ "            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
+		+ "                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n"
+		+ "                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n"
+		+ "                -stackedCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 1\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n"
+		+ "                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n"
+		+ "                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n"
+		+ "                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n"
+		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n"
+		+ "                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n"
+		+ "                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n"
+		+ "                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n"
+		+ "                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n"
+		+ "                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n"
+		+ "                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n"
+		+ "                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1115\\n    -height 774\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1115\\n    -height 774\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "Sheik_RIG:sceneConfigurationScriptNode";
@@ -11971,9 +11837,6 @@ createNode nodeGraphEditorInfo -n "Sheik_RIG:hyperShadePrimaryNodeEditorSavedTab
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -834.90886568823908 -898.19994670465678 ;
 	setAttr ".tgi[0].vh" -type "double2" 806.23181375144918 474.39043973580971 ;
-createNode polyCube -n "polyCube2";
-	rename -uid "25C94FAC-45A3-39EA-49C1-389277FE4210";
-	setAttr ".cuv" 4;
 createNode polyCube -n "polyCube4";
 	rename -uid "03981C88-490F-9A5E-100A-A49F4478CB76";
 	setAttr ".cuv" 4;
@@ -12014,7 +11877,7 @@ createNode reference -n "Sheik_RIGRN";
 		2 "|rigs_grp|Sheik_RIG1:Sheik" "translate" " -type \"double3\" 0 0 0"
 		2 "|rigs_grp|Sheik_RIG1:Sheik" "translateY" " -k 0"
 		2 "|rigs_grp|Sheik_RIG1:Sheik|Sheik_RIG1:SHEIK_Comp|Sheik_RIG1:SheikMainOffset0|Sheik_RIG1:SheikMainCtrl" 
-		"translate" " -type \"double3\" -5.93199464204942117 0.00066944690265402507 4.0487067750491752"
+		"translate" " -type \"double3\" 1.02211355482174859 0.73243833467014907 0.007730784481678854"
 		
 		2 "Sheik_RIG1:groupParts396" "inputComponents" " -type \"componentList\" 3 \"f[1108:1109]\" \"f[1287:1288]\" \"f[1864:1865]\""
 		
@@ -12243,7 +12106,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		"translate" " -type \"double3\" -0.48970442406309633 -0.0091846177120226968 1.50934220653916862"
 		
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt" 
-		"rotate" " -type \"double3\" 0.14876813263048155 3.01858712790692651 -18.45396335355336959"
+		"rotate" " -type \"double3\" 0.14876813263071009 3.01858712790713923 -18.45396335355340156"
 		
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt" 
 		"rotateX" " -av"
@@ -12258,7 +12121,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt" 
 		"translateZ" " 0"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt" 
-		"rotate" " -type \"double3\" 0 0 64.22294942587245714"
+		"rotate" " -type \"double3\" 0 0 64.22294942587254241"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt" 
 		"rotateX" " -av"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt" 
@@ -12272,7 +12135,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_ankle_jnt" 
 		"translateZ" " 1.2810818850184091e-08"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_ankle_jnt" 
-		"rotate" " -type \"double3\" 1.33262186552275885 -2.71282620112501593 -45.79662193195194675"
+		"rotate" " -type \"double3\" 1.33262186552263673 -2.71282620112529571 -45.79662193195197517"
 		
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_ankle_jnt" 
 		"rotateX" " -av"
@@ -12331,7 +12194,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_lf_upLeg_ikFkCons" 
 		"scaleZ" " -k 0"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt" 
-		"rotate" " -type \"double3\" 0.2209020668731308 -2.74572077494001165 -18.4537958397649291"
+		"rotate" " -type \"double3\" 0.22090206687315997 -2.74572077494003874 -18.45379583976496463"
 		
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt" 
 		"rotateX" " -av"
@@ -12342,7 +12205,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt" 
-		"rotate" " -type \"double3\" 0 0 64.22296050853535121"
+		"rotate" " -type \"double3\" 0 0 64.22296050853540805"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt" 
 		"rotateX" " -av"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt" 
@@ -12356,7 +12219,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt" 
 		"translateZ" " 0"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt" 
-		"rotate" " -type \"double3\" -1.52386392455762598 2.29495727364056545 -45.80498372206557889"
+		"rotate" " -type \"double3\" -1.52386392455770658 2.29495727364057478 -45.80498372206560731"
 		
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt" 
 		"rotateX" " -av"
@@ -12367,7 +12230,7 @@ createNode reference -n "Simple_Bot_for_Maya_1_0RN";
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ball_jnt" 
-		"rotate" " -type \"double3\" 0 0 2.9469288502527825e-07"
+		"rotate" " -type \"double3\" 0 0 2.9469288184472359e-07"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ball_jnt" 
 		"rotateX" " -av"
 		2 "|rigs_grp|BotRig_grp|Simple_Bot_for_Maya_1_0:MASTER|Simple_Bot_for_Maya_1_0:COG|Simple_Bot_for_Maya_1_0:simplebot_hip_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_upLeg_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_knee_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ankle_jnt|Simple_Bot_for_Maya_1_0:simplebot_rt_ball_jnt" 
@@ -12929,7 +12792,7 @@ createNode lambert -n "Checker";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "66B07013-4412-26D0-AF0F-E28CBFAF8F44";
 	setAttr ".ihi" 0;
-	setAttr -s 17 ".dsm";
+	setAttr -s 16 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 2 ".gn";
 createNode materialInfo -n "materialInfo2";
@@ -12940,10 +12803,6 @@ createNode checker -n "checker2";
 createNode place2dTexture -n "place2dTexture2";
 	rename -uid "DBB94A2F-43B5-3A8E-73F3-37B30FED7199";
 	setAttr ".re" -type "float2" 4 4 ;
-createNode polyPipe -n "polyPipe1";
-	rename -uid "2A9405B4-46C7-4D89-2D45-CB9428A94370";
-	setAttr ".h" 3;
-	setAttr ".sc" 0;
 createNode polyUnite -n "polyUnite2";
 	rename -uid "CAE98FFA-4391-E67E-1647-8DBEC1AFEC5E";
 createNode polyUnite -n "polyUnite3";
@@ -12963,7 +12822,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[1].x" -245.71427917480469;
 	setAttr ".tgi[0].ni[1].y" 141.42857360839844;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 368.57144165039062;
+	setAttr ".tgi[0].ni[2].x" 368.57144165039063;
 	setAttr ".tgi[0].ni[2].y" 118.57142639160156;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
 	setAttr ".tgi[0].ni[3].x" -552.85711669921875;
@@ -13111,87 +12970,1263 @@ createNode transformGeometry -n "transformGeometry3";
 createNode groupId -n "groupId61";
 	rename -uid "F085119C-4E9E-CB3A-5877-18B68ADE38A4";
 	setAttr ".ihi" 0;
-createNode polyCylinder -n "polyCylinder4";
-	rename -uid "843D3C9E-449F-D300-21C5-4C80DC7332B2";
-	setAttr ".sc" 1;
-	setAttr ".cuv" 3;
-createNode polyCylinder -n "polyCylinder5";
-	rename -uid "C15074C0-472A-F1B3-854E-E19E7148D052";
-	setAttr ".sc" 1;
-	setAttr ".cuv" 3;
-createNode polyCube -n "polyCube10";
-	rename -uid "24BC5DCD-4B89-7EF0-278F-3D9924073F41";
-	setAttr ".cuv" 4;
-createNode polyCube -n "polyCube11";
-	rename -uid "5C14D78C-41AB-E77C-7400-9BADE6C6B1FA";
-	setAttr ".cuv" 4;
-createNode polyExtrudeFace -n "polyExtrudeFace1";
-	rename -uid "56F0C1F1-4911-EF38-AE89-D0BA1EB75377";
-	setAttr ".ics" -type "componentList" 1 "f[1]";
-	setAttr ".ix" -type "matrix" 3.5602890856279714 0 0 0 0 1.7498310381433442 0 0 0 0 1.4642128401316767 0
-		 -6.6269531710514418 0.92881409230332856 -9.9315763982078806 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -6.6269531 2.5606329 -9.9315767 ;
-	setAttr ".rs" 45000;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.4070977138654275 2.5606329214276786 -10.663682818273719 ;
-	setAttr ".cbx" -type "double3" -4.8468086282374561 2.5606329214276786 -9.1994699781420426 ;
-createNode polyTweak -n "polyTweak13";
-	rename -uid "D9AA8C0C-4145-EF9C-7A3B-D5926A2393A1";
-	setAttr ".uopa" yes;
-	setAttr -s 4 ".tk[2:5]" -type "float3"  0 0.43255797 1.2212453e-15
-		 0 0.43255797 1.2212453e-15 0 0.43255797 1.2212453e-15 0 0.43255797 1.2212453e-15;
-createNode polyExtrudeFace -n "polyExtrudeFace2";
-	rename -uid "409FB215-4BAE-BE42-A277-60B2C0C9AE79";
-	setAttr ".ics" -type "componentList" 1 "f[8]";
-	setAttr ".ix" -type "matrix" 3.5602890856279714 0 0 0 0 1.7498310381433442 0 0 0 0 1.4642128401316767 0
-		 -6.6269531710514418 0.92881409230332856 -9.9315763982078806 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -6.6269536 2.9900551 -10.663683 ;
-	setAttr ".rs" 48012;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.4070981382849599 2.5606329214276786 -10.663682818273719 ;
-	setAttr ".cbx" -type "double3" -4.8468086282374561 3.4194773614236906 -10.663682818273719 ;
-createNode polyTweak -n "polyTweak14";
-	rename -uid "3FFAA9AB-4C93-698F-94DC-06AB17465045";
-	setAttr ".uopa" yes;
-	setAttr -s 4 ".tk[8:11]" -type "float3"  0 0.49081564 0 0 0.49081564
-		 0 0 0.49081564 0 0 0.49081564 0;
-createNode polyExtrudeFace -n "polyExtrudeFace3";
-	rename -uid "2663201C-4C31-2E45-1F6B-59A2BFBB3355";
-	setAttr ".ics" -type "componentList" 4 "f[7]" "f[9]" "f[11]" "f[13]";
-	setAttr ".ix" -type "matrix" 3.5602890856279714 0 0 0 0 1.7498310381433442 0 0 0 0 1.4642128401316767 0
-		 -6.6269531710514418 0.92881409230332856 -9.9315763982078806 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -6.6269536 2.9900551 -10.1841 ;
-	setAttr ".rs" 38443;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.4070981382849599 2.5606329214276786 -11.168729641321661 ;
-	setAttr ".cbx" -type "double3" -4.8468086282374561 3.4194773614236906 -9.1994706763331315 ;
-createNode polyTweak -n "polyTweak15";
-	rename -uid "A207E920-4396-CC2C-3BC5-6DB1EECFD8D1";
-	setAttr ".uopa" yes;
-	setAttr -s 4 ".tk[12:15]" -type "float3"  0 0 -0.34492719 0 0 -0.34492719
-		 0 0 -0.34492719 0 0 -0.34492719;
-createNode polyExtrudeFace -n "polyExtrudeFace4";
-	rename -uid "06F86038-4194-77AE-F895-D4B6AC0B6EF5";
-	setAttr ".ics" -type "componentList" 3 "f[6]" "f[16]" "f[21]";
-	setAttr ".ix" -type "matrix" 3.5602890856279714 0 0 0 0 1.7498310381433442 0 0 0 0 1.4642128401316767 0
-		 -6.6269531710514418 0.92881409230332856 -9.9315763982078806 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -6.6269536 2.9900551 -9.1994705 ;
-	setAttr ".rs" 64271;
-	setAttr ".lt" -type "double3" 1.7763568394002505e-15 4.4408920985006262e-16 0.25108399244430757 ;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.5706193446029708 2.5606329214276786 -9.1994706763331315 ;
-	setAttr ".cbx" -type "double3" -4.6832874219194451 3.4194773614236906 -9.1994706763331315 ;
-createNode polyTweak -n "polyTweak16";
-	rename -uid "BCF57C53-4746-E0DB-D9CC-55BDC6B2E260";
-	setAttr ".uopa" yes;
-	setAttr -s 12 ".tk[16:27]" -type "float3"  0.045929193 0 0 0.045929193
-		 0 0 0.045929193 0 0 0.045929193 0 0 0.045929193 0 0 0.045929193 0 0 -0.045929193
-		 0 0 -0.045929193 0 0 -0.045929193 0 0 -0.045929193 0 0 -0.045929193 0 0 -0.045929193
-		 0 0;
+createNode reference -n "steeringWheelRN";
+	rename -uid "FA75E6A4-44BF-E88C-43B9-778A0FF68261";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"steeringWheelRN"
+		"steeringWheelRN" 0
+		"steeringWheelRN" 615
+		0 "|steeringWheel:steeringWheel_geo" "|steeringWheel_grp" "-s -r "
+		0 "|steeringWheel:steeringWheelPost_geo" "|steeringWheel_grp" "-s -r "
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo" "translate" " -type \"double3\" 0 0 0"
+		
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"uvPivot" " -type \"double2\" 0.49720638256985694 0.41183537058532238"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts" " -s 610"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[0]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[6]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[7]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[14]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[15]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[16]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[17]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[21]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[22]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[23]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[24]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[29]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[30]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[31]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[32]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[37]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[38]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[39]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[40]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[42]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[43]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[44]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[45]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[46]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[47]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[56]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[58]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[59]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[60]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[61]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[62]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[63]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[64]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[72]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[73]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[74]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[75]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[76]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[77]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[86]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[88]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[89]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[90]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[91]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[92]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[93]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[94]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[102]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[103]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[104]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[105]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[106]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[107]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[116]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[117]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[118]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[119]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[120]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[121]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[122]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[123]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[124]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[136]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[224]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[226]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[228]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[230]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[232]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[249]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[250]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[251]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[258]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[259]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[260]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[357]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[358]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[359]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[360]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[361]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[362]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[363]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[364]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[365]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[372]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[373]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[374]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[375]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[376]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[377]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[378]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[379]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[380]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[408]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[409]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[410]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[411]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[412]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[413]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[414]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[415]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[416]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[455]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[456]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[457]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[458]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[459]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[460]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[461]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[462]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[463]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[557]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[558]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[559]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[560]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[561]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[562]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[563]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[564]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[565]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[572]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[573]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[574]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[575]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[576]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[577]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[578]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[579]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[580]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[670]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[671]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[672]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[673]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[674]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[675]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[676]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[677]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[678]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[679]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[680]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[681]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[712]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[713]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[714]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[715]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[716]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[717]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[718]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[719]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[720]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[721]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[722]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[723]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[730]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[731]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[732]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[733]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[734]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[735]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[736]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[737]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[738]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[739]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[740]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[741]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[742]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[743]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[744]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[745]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[787]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[788]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[789]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[790]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[791]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[792]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[793]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[794]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[795]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[796]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[797]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[798]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[799]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[800]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[801]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[802]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[803]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[843]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1190]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1191]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1192]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1193]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1194]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1195]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1196]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1197]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1198]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1199]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1200]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1201]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1202]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1203]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1222]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1223]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1224]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1225]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1226]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1227]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1228]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1229]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1230]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1231]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1232]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1233]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1234]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1235]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1258]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1259]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1260]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1261]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1262]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1263]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1264]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1265]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1266]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1267]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1268]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1269]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1270]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1271]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1272]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1273]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1274]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1275]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1276]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1277]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1278]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1279]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1280]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1281]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1282]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1283]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1284]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1285]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1286]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1287]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1288]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1289]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1290]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1291]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1292]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1293]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1294]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1295]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1296]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1297]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1298]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1299]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1300]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1301]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1302]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1303]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1304]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1305]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1306]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1307]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1308]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1309]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1310]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1311]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1312]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1313]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1314]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1315]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1316]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1317]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1318]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1319]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1320]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1321]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1322]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1323]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1324]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1325]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1326]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1327]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1328]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1329]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1330]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1331]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1332]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1333]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1334]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1335]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1336]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1337]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1338]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1339]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1340]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1341]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1342]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1343]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1344]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1345]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1346]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1347]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1348]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1349]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1350]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1351]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1352]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1353]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1354]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1355]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1356]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1357]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1358]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1359]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1360]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1361]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1362]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1363]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1364]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1365]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1366]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1367]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1368]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1369]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1370]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1371]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1372]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1373]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1374]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1375]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1376]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1377]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1378]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1379]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1380]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1381]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1382]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1383]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1384]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1385]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1386]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1387]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1388]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1389]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1390]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1391]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1392]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1393]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1394]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1395]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1396]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1397]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1398]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1399]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1400]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1401]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1402]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1403]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1404]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1405]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1406]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1407]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1408]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1409]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1410]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1411]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1412]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1413]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1414]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1415]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1416]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1417]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1418]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1419]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1534]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1535]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1536]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1537]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1538]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1539]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1540]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1541]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1542]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1543]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1544]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1545]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1546]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1547]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1548]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1549]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1550]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1551]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1552]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1553]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1601]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1602]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1603]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1604]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1605]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1606]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1607]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1608]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1609]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1610]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1611]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1612]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1613]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1614]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1615]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1616]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1617]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1618]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1619]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1620]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1633]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1634]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1635]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1636]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1637]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1638]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1639]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1640]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1641]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1642]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1643]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1644]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1645]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1646]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1647]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1648]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1649]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1650]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1651]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1699]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1700]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1701]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1702]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1703]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1704]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1705]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1706]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1707]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1708]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1709]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1710]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1711]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1712]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1713]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1714]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1715]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1716]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1717]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1943]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1944]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1945]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1946]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1947]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1948]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1949]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1950]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1951]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1952]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1953]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1954]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1955]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1956]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1957]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1958]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1959]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1960]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1961]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1962]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1963]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1964]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1965]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1966]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1967]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1968]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1969]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1970]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1971]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1972]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1973]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1974]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[1975]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2001]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2003]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2004]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2005]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2006]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2007]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2008]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2009]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2010]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2011]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2012]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2013]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2014]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2015]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2016]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2017]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2018]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2019]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2020]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2021]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2022]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2023]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2024]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2025]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2026]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2027]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2028]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2029]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2030]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2031]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2032]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2033]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2034]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2035]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2036]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2037]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2038]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2039]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2040]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2041]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2042]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2043]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2044]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2045]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2046]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2047]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2048]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2049]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2050]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2051]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2052]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2053]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2054]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2055]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2056]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2057]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2058]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2059]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2060]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2061]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2062]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2063]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2064]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2289]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2290]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2291]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2292]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2293]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2294]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2358]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2359]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2360]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2361]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2362]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2363]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2364]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2365]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2366]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2367]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2368]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2369]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2370]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2371]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2372]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2373]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2374]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2375]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2376]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2377]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2378]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2379]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2380]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2506]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2507]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2508]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2509]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2510]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2511]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2512]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2513]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2514]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2515]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2516]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2517]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2518]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2519]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2520]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2521]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2522]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2523]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2524]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2525]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2526]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2527]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2528]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2529]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2530]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2568]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2569]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2570]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2571]" " -type \"float3\" 0 2.2351741999999998e-08 0"
+		2 "|steeringWheel_grp|steeringWheel:steeringWheelPost_geo|steeringWheel:steeringWheelPost_geoShape" 
+		"pnts[2619]" " -type \"float3\" 0 -1.8626450999999999e-09 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "steam_boilerRN";
+	rename -uid "AA5BCAA3-4E1D-2393-9005-E78C6F9D0287";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"steam_boilerRN"
+		"steam_boilerRN" 0
+		"steam_boilerRN" 6
+		0 "|steam_boiler:boiler_geo" "|airship_grp|props_grp|boiler_grp" "-s -r "
+		
+		2 "|airship_grp|props_grp|boiler_grp|steam_boiler:boiler_geo" "translate" 
+		" -type \"double3\" -518.84901773214266996 -66.09052450934338196 -537.85690615326006991"
+		
+		2 "|airship_grp|props_grp|boiler_grp|steam_boiler:boiler_geo" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947"
+		
+		2 "|airship_grp|props_grp|boiler_grp|steam_boiler:boiler_geo" "rotatePivot" 
+		" -type \"double3\" 1.98522297396391001 0 0.80689131636009181"
+		2 "|airship_grp|props_grp|boiler_grp|steam_boiler:boiler_geo" "scalePivot" 
+		" -type \"double3\" 0.025299608707427979 0 0.010282993316650391"
+		2 "|airship_grp|props_grp|boiler_grp|steam_boiler:boiler_geo" "scalePivotTranslate" 
+		" -type \"double3\" 1.95992336525648203 0 0.79660832304344142";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -13202,21 +14237,21 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 43 ".st";
+	setAttr -s 48 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 30 ".s";
+	setAttr -s 32 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 19 ".u";
+	setAttr -s 36 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 5 ".r";
 select -ne :lightList1;
 select -ne :defaultTextureList1;
-	setAttr -s 60 ".tx";
+	setAttr -s 74 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 15 ".dsm";
+	setAttr -s 10 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 28 ".gn";
 select -ne :initialParticleSE;
@@ -13232,6 +14267,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
+	setAttr -s 3 ".sol";
 select -ne :hyperGraphInfo;
 connectAttr "polyCube7.out" "electricalBox_geoShape.i";
 connectAttr "groupId52.id" "glass_cylinder_geoShape.iog.og[0].gid";
@@ -13241,13 +14277,7 @@ connectAttr ":initialShadingGroup.mwc" "commandDeckRails_geoShape.iog.og[0].gco"
 		;
 connectAttr "groupId48.id" "pipe_upper_portside_geoShape.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "pipe_upper_portside_geoShape.iog.og[0].gco";
-connectAttr "polyCube2.out" "steeringWheelPost_geoShape.i";
-connectAttr "polyPipe1.out" "steeringWheelWheel_geoShape.i";
 connectAttr "transformGeometry2.og" "pCubeShape5.i";
-connectAttr "polyCylinder4.out" "pCylinderShape.i";
-connectAttr "polyCylinder5.out" "pCylinderShape6.i";
-connectAttr "polyCube10.out" "pCubeShape6.i";
-connectAttr "polyExtrudeFace4.out" "pCubeShape7.i";
 connectAttr "groupId54.id" "stairs_geoShape.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "stairs_geoShape.iog.og[0].gco";
 connectAttr "groupId60.id" "rightWall_geoShape.iog.og[0].gid";
@@ -13585,7 +14615,6 @@ connectAttr "checker2.oc" "Checker.c";
 connectAttr "Checker.oc" "lambert2SG.ss";
 connectAttr "pipe_lower_portside_geoShape.iog" "lambert2SG.dsm" -na;
 connectAttr "pCubeShape5.iog" "lambert2SG.dsm" -na;
-connectAttr "steeringWheelPost_geoShape.iog" "lambert2SG.dsm" -na;
 connectAttr "commandDeck_geoShape.iog" "lambert2SG.dsm" -na;
 connectAttr "astrolab_geoShape.iog" "lambert2SG.dsm" -na;
 connectAttr "lowerDeckCeiling_geoShape.iog" "lambert2SG.dsm" -na;
@@ -13643,18 +14672,6 @@ connectAttr "lowerDeckFloor_geoShape.iog.og[0]" "set1.dsm" -na;
 connectAttr "rightWall_geoShape.iog.og[0]" "set1.dsm" -na;
 connectAttr "leftWall_geoShape.iog.og[0]" "set1.dsm" -na;
 connectAttr "polyCylinder3.out" "transformGeometry3.ig";
-connectAttr "polyTweak13.out" "polyExtrudeFace1.ip";
-connectAttr "pCubeShape7.wm" "polyExtrudeFace1.mp";
-connectAttr "polyCube11.out" "polyTweak13.ip";
-connectAttr "polyTweak14.out" "polyExtrudeFace2.ip";
-connectAttr "pCubeShape7.wm" "polyExtrudeFace2.mp";
-connectAttr "polyExtrudeFace1.out" "polyTweak14.ip";
-connectAttr "polyTweak15.out" "polyExtrudeFace3.ip";
-connectAttr "pCubeShape7.wm" "polyExtrudeFace3.mp";
-connectAttr "polyExtrudeFace2.out" "polyTweak15.ip";
-connectAttr "polyTweak16.out" "polyExtrudeFace4.ip";
-connectAttr "pCubeShape7.wm" "polyExtrudeFace4.mp";
-connectAttr "polyExtrudeFace3.out" "polyTweak16.ip";
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS1SG1.pa" ":renderPartition.st"
 		 -na;
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS2SG1.pa" ":renderPartition.st"
@@ -13738,7 +14755,6 @@ connectAttr "groupId52.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId53.msg" ":initialShadingGroup.gn" -na;
 connectAttr "pCylinderShape4.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape5.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "steeringWheelWheel_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "electricalBox_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "centralControls_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "door_geoShape.iog" ":initialShadingGroup.dsm" -na;
@@ -13748,9 +14764,5 @@ connectAttr "comandDeckStep_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "glass_cylinder_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "commandDeckRails_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na
 		;
-connectAttr "pCylinderShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape6.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape6.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape7.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Sheik_RIG:hyperView3.msg" ":hyperGraphInfo.b[1]";
 // End of ENV_MASTER.ma
