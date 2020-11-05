@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Thu, Nov 05, 2020 01:02:27 PM
+//Last modified: Thu, Nov 05, 2020 01:25:23 PM
 //Codeset: 1252
 file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "Simple_Bot_for_Maya_1_0" -rfn "Simple_Bot_for_Maya_1_0RN" 
@@ -24,7 +24,8 @@ requires maya "2019";
 requires -nodeType "StingrayPBS" "shaderFXPlugin" "1.0";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
+		 "mtoa" "3.1.2";
 requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
@@ -38,13 +39,13 @@ fileInfo "UUID" "A14FCED6-BB4E-A604-1019-60816E308F97";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.99052182503722497 5.5123025007277153 -14.325397195738285 ;
-	setAttr ".r" -type "double3" 700.46164685065617 -32221.800000008079 0 ;
+	setAttr ".t" -type "double3" 3.3870379794426562 4.2645014565834449 -12.881556859545437 ;
+	setAttr ".r" -type "double3" 708.86164684987216 -32239.800000006991 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 7.6399732998508565;
+	setAttr ".coi" 13.340132040993339;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -10563,6 +10564,19 @@ createNode transform -n "steeringWheel_grp";
 	rename -uid "6E6B0E0B-44B5-943E-C16C-DDB832E796BB";
 	setAttr ".t" -type "double3" 0.062932372023193017 0.73261356630984298 1.4299760584165155 ;
 	setAttr ".r" -type "double3" 0 180 0 ;
+createNode transform -n "aiAreaLight1";
+	rename -uid "5C8224F5-480F-2175-CEF2-0AB32C040A77";
+	setAttr ".t" -type "double3" 0 1.5848643638715343 -4.3896474987938046 ;
+	setAttr ".r" -type "double3" -107.99121188627159 0 0 ;
+createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
+	rename -uid "CA07A4B6-4914-7008-EE67-D2BE3D64F373";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure","normalize","aiNormalize"
+		} ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "CCA124E8-464A-37E9-6F65-BD98B4A0329A";
 	setAttr -s 58 ".lnk";
@@ -14137,6 +14151,8 @@ createNode lightItem -n "Simple_Bot_for_Maya_1_0:pointLightShape1__LEItem";
 	rename -uid "E08E8A73-4479-EA86-BF8C-0A91083B2F42";
 createNode lightItem -n "interior:aiSkyDomeLightShape1__LEItem";
 	rename -uid "A3CFB754-4857-999E-B28A-2BBA5E213021";
+createNode lightItem -n "aiAreaLightShape1__LEItem";
+	rename -uid "664EE860-4B6A-E4C6-61E0-1DB0CAD95B47";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -14158,7 +14174,7 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 6 ".r";
 select -ne :lightList1;
-	setAttr -s 2 ".l";
+	setAttr -s 3 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 114 ".tx";
 select -ne :initialShadingGroup;
@@ -14179,7 +14195,7 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
+	setAttr -s 3 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -14591,7 +14607,7 @@ connectAttr "leftWall_geoShape.iog.og[0]" "set1.dsm" -na;
 connectAttr "polyCylinder3.out" "transformGeometry3.ig";
 connectAttr "Simple_Bot_for_Maya_1_0:pointLightShape1__LEItem.msg" "lightEditor.fi"
 		;
-connectAttr "interior:aiSkyDomeLightShape1__LEItem.msg" "lightEditor.li";
+connectAttr "aiAreaLightShape1__LEItem.msg" "lightEditor.li";
 connectAttr "lightEditor.lit" "Simple_Bot_for_Maya_1_0:pointLightShape1__LEItem.pls"
 		;
 connectAttr "lightEditor.en" "Simple_Bot_for_Maya_1_0:pointLightShape1__LEItem.pen"
@@ -14603,6 +14619,12 @@ connectAttr "Simple_Bot_for_Maya_1_0:pointLightShape1__LEItem.nxt" "interior:aiS
 connectAttr "lightEditor.lit" "interior:aiSkyDomeLightShape1__LEItem.pls";
 connectAttr "lightEditor.en" "interior:aiSkyDomeLightShape1__LEItem.pen";
 connectAttr "lightEditor.nic" "interior:aiSkyDomeLightShape1__LEItem.pic";
+connectAttr "aiAreaLightShape1.msg" "aiAreaLightShape1__LEItem.lgt";
+connectAttr "interior:aiSkyDomeLightShape1__LEItem.nxt" "aiAreaLightShape1__LEItem.prv"
+		;
+connectAttr "lightEditor.lit" "aiAreaLightShape1__LEItem.pls";
+connectAttr "lightEditor.en" "aiAreaLightShape1__LEItem.pen";
+connectAttr "lightEditor.nic" "aiAreaLightShape1__LEItem.pic";
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS1SG1.pa" ":renderPartition.st"
 		 -na;
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS2SG1.pa" ":renderPartition.st"
@@ -14641,6 +14663,7 @@ connectAttr "Sheik_RIG:Sheik_MainScene_place2dTexture21.msg" ":defaultRenderUtil
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "Sheik_RIG:T_Sheik_Body_BC.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Sheik_RIG:T_Sheik_Body_N.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Sheik_RIG:T_Sheik_Body_RMA.msg" ":defaultTextureList1.tx" -na;
@@ -14694,5 +14717,6 @@ connectAttr "comandDeckStep_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "glass_cylinder_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "commandDeckRails_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na
 		;
+connectAttr "aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "Sheik_RIG:hyperView3.msg" ":hyperGraphInfo.b[1]";
 // End of ENV_MASTER.ma
