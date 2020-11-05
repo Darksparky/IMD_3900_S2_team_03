@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Thu, Nov 05, 2020 01:38:59 PM
+//Last modified: Thu, Nov 05, 2020 01:50:53 PM
 //Codeset: 1252
 file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "Simple_Bot_for_Maya_1_0" -rfn "Simple_Bot_for_Maya_1_0RN" 
@@ -11,6 +11,7 @@ file -rdi 1 -ns "steeringWheel" -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAsci
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/boiler/steam_boiler.ma";
 file -rdi 1 -ns "interior" -rfn "interiorRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/interior/interior.ma";
+file -rdi 1 -ns "pipes" -rfn "pipesRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/pipes & vents/pipes.ma";
 file -r -ns "Sheik_RIG1" -dr 1 -rfn "Sheik_RIGRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -r -ns "Simple_Bot_for_Maya_1_0" -dr 1 -rfn "Simple_Bot_for_Maya_1_0RN" -op
 		 "VERS|2009|UVER|undef|MADE|undef|CHNG|Sun, Aug 09, 2009 08:47:41 PM|ICON|undef|INFO|undef|OBJN|8868|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
@@ -20,6 +21,7 @@ file -r -ns "steeringWheel" -dr 1 -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAs
 file -r -ns "steam_boiler" -dr 1 -rfn "steam_boilerRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/boiler/steam_boiler.ma";
 file -r -ns "interior" -dr 1 -rfn "interiorRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/interior/interior.ma";
+file -r -ns "pipes" -dr 1 -rfn "pipesRN" -op "v=0;" -typ "mayaAscii" "E:/School/IMD_3900_S2_team_03/scenes/Prop_Database/pipes & vents/pipes.ma";
 requires maya "2019";
 requires -nodeType "StingrayPBS" "shaderFXPlugin" "1.0";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
@@ -39,13 +41,13 @@ fileInfo "UUID" "A14FCED6-BB4E-A604-1019-60816E308F97";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.0276893714189108 5.3882719190375896 -17.110554969244752 ;
-	setAttr ".r" -type "double3" 705.26164680849001 -33309.799999994713 0 ;
+	setAttr ".t" -type "double3" 12.078775450111916 1.0522116295704418 -3.0941876718048138 ;
+	setAttr ".r" -type "double3" 700.46164680843094 -33291.40000000249 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 10.756715979607574;
+	setAttr ".coi" 1.2537425010113703;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -10579,14 +10581,14 @@ createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
 		} ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "CCA124E8-464A-37E9-6F65-BD98B4A0329A";
-	setAttr -s 58 ".lnk";
-	setAttr -s 57 ".slnk";
+	setAttr -s 61 ".lnk";
+	setAttr -s 60 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "ED39B11F-4BCA-8124-4B50-F0A4466AE7BE";
-	setAttr ".bsdt[0].bscd" -type "Int32Array" 11 0 1 2 3 4
-		 5 6 7 8 9 10 ;
-	setAttr -s 11 ".bspr";
-	setAttr -s 11 ".obsv";
+	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 0 1 2 3 4
+		 5 6 7 8 9 10 11 ;
+	setAttr -s 12 ".bspr";
+	setAttr -s 12 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "2FC978CF-4434-9CC4-588F-70BA4A78D322";
 createNode displayLayerManager -n "layerManager";
@@ -14178,6 +14180,39 @@ createNode lightItem -n "interior:aiSkyDomeLightShape1__LEItem";
 	rename -uid "A3CFB754-4857-999E-B28A-2BBA5E213021";
 createNode lightItem -n "aiAreaLightShape1__LEItem";
 	rename -uid "664EE860-4B6A-E4C6-61E0-1DB0CAD95B47";
+createNode reference -n "pipesRN";
+	rename -uid "F54B345E-463A-C6B1-9192-73999BF8900E";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"pipesRN"
+		"pipesRN" 0
+		"pipesRN" 13
+		2 "|pipes:pipes_grp" "translate" " -type \"double3\" 12.87153850935976607 0 0"
+		
+		2 "|pipes:pipes_grp|pipes:V1_grp" "visibility" " 1"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp" "translate" " -type \"double3\" 0 0 0"
+		
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp|pipes:pipe_V1_straight_L1_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp|pipes:pipe_V1_straight_L1_geo" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp|pipes:pipe_V1_straight_L2_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp|pipes:pipe_V1_straight_L3_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:straight_grp|pipes:pipe_V1_straight_L4_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:junctions_grp|pipes:pipe_V1_junction_corner_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:junctions_grp|pipes:pipe_V1_junction_T_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:junctions_grp|pipes:pipe_V1_junction_wall_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:junctions_grp|pipes:pipe_V1_junction_container_geo" 
+		"visibility" " 0"
+		2 "|pipes:pipes_grp|pipes:V1_grp|pipes:junctions_grp|pipes:pipe_V1_junction_through_geo" 
+		"visibility" " 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -14188,20 +14223,20 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 57 ".st";
+	setAttr -s 60 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 48 ".s";
+	setAttr -s 50 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 87 ".u";
+	setAttr -s 93 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 6 ".r";
+	setAttr -s 7 ".r";
 select -ne :lightList1;
 	setAttr -s 3 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 114 ".tx";
+	setAttr -s 119 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -s 9 ".dsm";
 	setAttr ".ro" yes;
