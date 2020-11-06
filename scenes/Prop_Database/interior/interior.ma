@@ -1,10 +1,10 @@
 //Maya ASCII 2020 scene
 //Name: interior.ma
-//Last modified: Fri, Nov 06, 2020 01:02:14 PM
+//Last modified: Fri, Nov 06, 2020 01:04:09 PM
 //Codeset: UTF-8
 requires maya "2020";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
-		 -nodeType "aiStandardSurface" "mtoa" "4.0.0";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
+		 "mtoa" "4.0.0";
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
@@ -15,7 +15,7 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.7";
 fileInfo "license" "student";
-fileInfo "UUID" "2165B8D3-454C-97DF-719F-DD8E0935C38E";
+fileInfo "UUID" "6686458A-BD40-06CD-5EA4-0FBAE6444738";
 createNode transform -s -n "persp";
 	rename -uid "8F18715E-4432-4305-CFBB-AAACE2C4218B";
 	setAttr ".v" no;
@@ -84,15 +84,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "aiSkyDomeLight1";
-	rename -uid "8C7A9270-4084-1DDD-D038-81AFF718D200";
-createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
-	rename -uid "A22755EA-458A-399D-EDB3-538A5754EF34";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure"} ;
 createNode transform -n "ship_grp";
 	rename -uid "16F87A7B-4449-AED1-8560-E09747AD8AA9";
 createNode transform -n "walls_grp" -p "ship_grp";
@@ -32821,7 +32812,6 @@ select -ne :postProcessList1;
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 51 ".u";
 select -ne :defaultRenderingList1;
-select -ne :lightList1;
 select -ne :defaultTextureList1;
 	setAttr -s 40 ".tx";
 select -ne :initialShadingGroup;
@@ -32839,11 +32829,9 @@ select -ne :defaultResolution;
 	setAttr ".h" 1080;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
-select -ne :defaultLightSet;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "skydome_col.oc" "aiSkyDomeLightShape1.sc";
 connectAttr "groupId95.id" "ceiling_geoShape.iog.og[9].gid";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -33957,7 +33945,6 @@ connectAttr "place2dTexture52.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture53.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture54.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "aiSkyDomeLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "floor_col.msg" ":defaultTextureList1.tx" -na;
 connectAttr "floor_metal.msg" ":defaultTextureList1.tx" -na;
 connectAttr "floor_rough.msg" ":defaultTextureList1.tx" -na;
@@ -33998,7 +33985,6 @@ connectAttr "windowFrame_metal.msg" ":defaultTextureList1.tx" -na;
 connectAttr "windowFrame_rough.msg" ":defaultTextureList1.tx" -na;
 connectAttr "windowFrame_norm.msg" ":defaultTextureList1.tx" -na;
 connectAttr "windowFrame_height.msg" ":defaultTextureList1.tx" -na;
-connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "groupId95.msg" ":defaultLastHiddenSet.gn" -na;
 connectAttr "ceiling_geoShape.iog.og[9]" ":defaultLastHiddenSet.dsm" -na;
 // End of interior.ma
