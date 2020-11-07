@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 06:00:07 PM
+//Last modified: Fri, Nov 06, 2020 07:58:14 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -33,13 +33,13 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.5100522133182599 4.1673707047108586 -0.30682377618188594 ;
-	setAttr ".r" -type "double3" 669.86164690816349 -35900.600000000777 0 ;
+	setAttr ".t" -type "double3" 3.8001840930957016 5.5034340755948961 -6.0480296505401974 ;
+	setAttr ".r" -type "double3" 693.8616469080514 -35849.80000000244 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 3.9695314485374373;
+	setAttr ".coi" 8.6181706443504851;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2819,23 +2819,6 @@ createNode transform -n "rigs_grp";
 	rename -uid "8F975B29-40F4-5587-AF36-009762B2DC91";
 createNode transform -n "BotRig_grp" -p "rigs_grp";
 	rename -uid "5C629CAF-428E-1A2F-1506-79A6E2E209B4";
-createNode transform -n "left";
-	rename -uid "5347E915-4665-15A5-AA01-48A76ED4AC7B";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1000.1 3.0725094876538064 -5.1427361081122287 ;
-	setAttr ".r" -type "double3" 0 -90 0 ;
-createNode camera -n "leftShape" -p "left";
-	rename -uid "1ED9349F-4345-10AC-8C91-0DA349949EC2";
-	setAttr -k off ".v";
-	setAttr ".rnd" no;
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 32.692231378961459;
-	setAttr ".imn" -type "string" "left1";
-	setAttr ".den" -type "string" "left1_depth";
-	setAttr ".man" -type "string" "left1_mask";
-	setAttr ".hc" -type "string" "viewSet -ls %camera";
-	setAttr ".o" yes;
-	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "superWide_renderCam";
 	rename -uid "7431D658-2E4F-BF9A-675F-469436832F18";
 	setAttr ".t" -type "double3" 7.2975002508317592 3.2640846824041589 5.5733073578518084 ;
@@ -24604,8 +24587,8 @@ createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	setAttr ".in" 6;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "64542C3A-4677-9D71-08F6-1E9BCEE0C687";
-	setAttr -s 42 ".lnk";
-	setAttr -s 41 ".slnk";
+	setAttr -s 59 ".lnk";
+	setAttr -s 58 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "DDDA01B6-4C8D-8F6B-1800-F99413CC5876";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 1 2 3 4 5
@@ -24745,6 +24728,7 @@ createNode groupParts -n "Sheik_RIG:groupParts1";
 	setAttr ".gi" 57;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "C6D70751-48AC-D4A4-4C56-41B57267AEB0";
+	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".AA_samples" 1;
 	setAttr ".GI_diffuse_samples" 1;
 	setAttr ".GI_specular_samples" 1;
@@ -28124,27 +28108,6 @@ createNode reference -n "bucketRN";
 		2 "|bucket:bucket_geo|bucket:handle_geo|bucket:cork_geo" "rotate" " -type \"double3\" 52.11308647429412133 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "D84D9A37-4C49-B726-DFB7-65834A545173";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -683.01279337233075 -925.37771048154082 ;
-	setAttr ".tgi[0].vh" -type "double2" 691.98715199008063 921.80628205202822 ;
-	setAttr -s 5 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 61.428569793701172;
-	setAttr ".tgi[0].ni[0].y" 141.42857360839844;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -552.85711669921875;
-	setAttr ".tgi[0].ni[1].y" 118.57142639160156;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -245.71427917480469;
-	setAttr ".tgi[0].ni[2].y" 141.42857360839844;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -91.428573608398438;
-	setAttr ".tgi[0].ni[3].y" 248.57142639160156;
-	setAttr ".tgi[0].ni[3].nvs" 1922;
-	setAttr ".tgi[0].ni[4].x" 368.57144165039063;
-	setAttr ".tgi[0].ni[4].y" 118.57142639160156;
-	setAttr ".tgi[0].ni[4].nvs" 1923;
 createNode reference -n "interiorRN1";
 	rename -uid "89849380-B44B-FE5C-3683-C48CE981049D";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -28201,7 +28164,7 @@ createNode reference -n "steam_boilerRN1";
 lockNode -l 1 ;
 createNode reference -n "wallLightRN";
 	rename -uid "84EDF29D-474D-B394-9BA4-C19D4A8FE4E6";
-	setAttr -s 18 ".phl";
+	setAttr -s 23 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -28220,48 +28183,63 @@ createNode reference -n "wallLightRN";
 	setAttr ".phl[16]" 0;
 	setAttr ".phl[17]" 0;
 	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"wallLightRN"
 		"wallLightRN" 0
-		"wallLightRN" 20
+		"wallLightRN" 25
 		0 "|wallLight:lamp_geo" "|lights_grp|wallLight_1" "-s -r "
 		2 "|lights_grp|wallLight_1|wallLight:lamp_geo" "translate" " -type \"double3\" -1.98995045488659272 3.41024052219667784 -17.45515315621535635"
 		
-		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.memberWireframeColor" 
-		"wallLightRN.placeHolderList[1]" ""
+		5 3 "wallLightRN" "wallLight:metal_material.message" "wallLightRN.placeHolderList[1]" 
+		""
 		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.memberWireframeColor" 
 		"wallLightRN.placeHolderList[2]" ""
 		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.memberWireframeColor" 
 		"wallLightRN.placeHolderList[3]" ""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.groupNodes" "wallLightRN.placeHolderList[4]" 
-		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.groupNodes" "wallLightRN.placeHolderList[5]" 
+		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.memberWireframeColor" 
+		"wallLightRN.placeHolderList[4]" ""
+		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.message" "wallLightRN.placeHolderList[5]" 
 		""
 		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.groupNodes" "wallLightRN.placeHolderList[6]" 
 		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.dagSetMembers" "wallLightRN.placeHolderList[7]" 
+		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.groupNodes" "wallLightRN.placeHolderList[7]" 
 		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.dagSetMembers" "wallLightRN.placeHolderList[8]" 
+		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.groupNodes" "wallLightRN.placeHolderList[8]" 
 		""
 		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.dagSetMembers" "wallLightRN.placeHolderList[9]" 
 		""
-		5 3 "wallLightRN" "wallLight:aiStandardSurface3SG.memberWireframeColor" 
-		"wallLightRN.placeHolderList[10]" ""
-		5 3 "wallLightRN" "wallLight:aiStandardSurface3SG.memberWireframeColor" 
-		"wallLightRN.placeHolderList[11]" ""
+		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.dagSetMembers" "wallLightRN.placeHolderList[10]" 
+		""
+		5 4 "wallLightRN" "wallLight:aiStandardSurface2SG.dagSetMembers" "wallLightRN.placeHolderList[11]" 
+		""
 		5 3 "wallLightRN" "wallLight:aiStandardSurface3SG.memberWireframeColor" 
 		"wallLightRN.placeHolderList[12]" ""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.dagSetMembers" "wallLightRN.placeHolderList[13]" 
-		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.dagSetMembers" "wallLightRN.placeHolderList[14]" 
-		""
+		5 3 "wallLightRN" "wallLight:aiStandardSurface3SG.memberWireframeColor" 
+		"wallLightRN.placeHolderList[13]" ""
+		5 3 "wallLightRN" "wallLight:aiStandardSurface3SG.memberWireframeColor" 
+		"wallLightRN.placeHolderList[14]" ""
 		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.dagSetMembers" "wallLightRN.placeHolderList[15]" 
 		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.groupNodes" "wallLightRN.placeHolderList[16]" 
+		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.dagSetMembers" "wallLightRN.placeHolderList[16]" 
 		""
-		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.groupNodes" "wallLightRN.placeHolderList[17]" 
+		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.dagSetMembers" "wallLightRN.placeHolderList[17]" 
 		""
 		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.groupNodes" "wallLightRN.placeHolderList[18]" 
+		""
+		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.groupNodes" "wallLightRN.placeHolderList[19]" 
+		""
+		5 4 "wallLightRN" "wallLight:aiStandardSurface3SG.groupNodes" "wallLightRN.placeHolderList[20]" 
+		""
+		5 3 "wallLightRN" "wallLight:bump2d1.message" "wallLightRN.placeHolderList[21]" 
+		""
+		5 3 "wallLightRN" "wallLight:file5.message" "wallLightRN.placeHolderList[22]" 
+		""
+		5 3 "wallLightRN" "wallLight:place2dTexture5.message" "wallLightRN.placeHolderList[23]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -28335,17 +28313,71 @@ createNode groupId -n "groupId67";
 	rename -uid "E38268BA-734E-AF4E-1839-AEA6BBDF34C4";
 	setAttr ".ihi" 0;
 createNode reference -n "steeringWheelRN1";
-	rename -uid "9F70EB04-4DEF-B1AE-F82B-149574304339";
+	rename -uid "9BB56288-4575-1ED6-513D-AF9161ADCE68";
+	setAttr -s 5 ".phl";
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"steeringWheelRN1"
-		"steeringWheelRN1" 0
-		"steeringWheelRN1" 3
-		0 "|steeringWheel:steeringWheel_geo" "|airship_grp|props_grp" "-s -r "
-		2 "|airship_grp|props_grp|steeringWheel:steeringWheel_geo" "translate" " -type \"double3\" 0 -66.09052450934338196 0"
+		"steeringWheelRN1" 1
+		5 3 "steeringWheelRN1" "steeringWheel:aiStandardSurface3SG.message" 
+		"steeringWheelRN1.placeHolderList[6]" ""
+		"steeringWheelRN1" 15
+		2 "|steeringWheel:MOVE" "translate" " -type \"double3\" 0 0.73799857460172902 1.4241777592529572"
 		
-		2 "|airship_grp|props_grp|steeringWheel:steeringWheel_geo" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947";
+		2 "|steeringWheel:MOVE" "rotate" " -type \"double3\" 0 180 0"
+		2 "steeringWheel:file6" "fileTextureName" " -type \"string\" \"F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//sourceimages/Texture_Database/steeringWheel/SteeringWheelPost_Base_Color.png\""
+		
+		2 "steeringWheel:file6" "colorSpace" " -type \"string\" \"sRGB\""
+		2 "steeringWheel:file7" "fileTextureName" " -type \"string\" \"F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//sourceimages/Texture_Database/steeringWheel/SteeringWheelPost_Base_Color.png\""
+		
+		2 "steeringWheel:file7" "colorSpace" " -type \"string\" \"sRGB\""
+		2 "steeringWheel:file8" "fileTextureName" " -type \"string\" \"F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//sourceimages/Texture_Database/steeringWheel/SteeringWheelPost_Metallic.png\""
+		
+		2 "steeringWheel:file8" "colorSpace" " -type \"string\" \"sRGB\""
+		2 "steeringWheel:file9" "fileTextureName" " -type \"string\" \"F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//sourceimages/Texture_Database/steeringWheel/SteeringWheelPost_Roughness.png\""
+		
+		2 "steeringWheel:file10" "fileTextureName" " -type \"string\" \"F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//sourceimages/Texture_Database/steeringWheel/SteeringWheelPost_Normal.png\""
+		
+		2 "steeringWheel:file10" "colorSpace" " -type \"string\" \"sRGB\""
+		3 "steeringWheel:file8.outAlpha" "steeringWheel:steeringWheelPost_mat.metalness" 
+		""
+		3 "steeringWheel:file9.outAlpha" "steeringWheel:steeringWheelPost_mat.specularRoughness" 
+		""
+		5 0 "steeringWheelRN1" "steeringWheel:file8.outColorR" "steeringWheel:steeringWheelPost_mat.metalness" 
+		"steeringWheelRN1.placeHolderList[7]" "steeringWheelRN1.placeHolderList[8]" ""
+		5 0 "steeringWheelRN1" "steeringWheel:file9.outColorR" "steeringWheel:steeringWheelPost_mat.specularRoughness" 
+		"steeringWheelRN1.placeHolderList[9]" "steeringWheelRN1.placeHolderList[10]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "sharedReferenceNode1";
+	rename -uid "A94E7178-4D15-374D-EF12-55BEDECFBF4E";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode1";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "DA2A6189-41BA-91BA-2D85-98A6813A08D0";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -1615.4340176149644 44.110174026744744 ;
+	setAttr ".tgi[0].vh" -type "double2" 176.16248703268835 954.79146871068849 ;
+	setAttr -s 5 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -1162.857177734375;
+	setAttr ".tgi[0].ni[0].y" 325.71429443359375;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" -100;
+	setAttr ".tgi[0].ni[1].y" 865.71429443359375;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -448.57144165039063;
+	setAttr ".tgi[0].ni[2].y" 838.5714111328125;
+	setAttr ".tgi[0].ni[2].nvs" 2387;
+	setAttr ".tgi[0].ni[3].x" -1470;
+	setAttr ".tgi[0].ni[3].y" 302.85714721679688;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" -755.71429443359375;
+	setAttr ".tgi[0].ni[4].y" 298.57144165039063;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -28356,7 +28388,7 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 35 ".st";
+	setAttr -s 34 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
 	setAttr -s 36 ".s";
@@ -28393,36 +28425,48 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :hyperGraphInfo;
-connectAttr "wallLightRN.phl[1]" "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[0].gco"
+connectAttr "wallLightRN.phl[1]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "wallLightRN.phl[2]" "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[0].gco"
+connectAttr "wallLightRN.phl[2]" "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[0].gco"
 		;
-connectAttr "wallLightRN.phl[3]" "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[0].gco"
+connectAttr "wallLightRN.phl[3]" "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[0].gco"
 		;
-connectAttr "groupId62.msg" "wallLightRN.phl[4]";
-connectAttr "groupId64.msg" "wallLightRN.phl[5]";
-connectAttr "groupId66.msg" "wallLightRN.phl[6]";
-connectAttr "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[7]"
+connectAttr "wallLightRN.phl[4]" "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[0].gco"
 		;
-connectAttr "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[8]"
+connectAttr "wallLightRN.phl[5]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[9]"
+connectAttr "groupId62.msg" "wallLightRN.phl[6]";
+connectAttr "groupId64.msg" "wallLightRN.phl[7]";
+connectAttr "groupId66.msg" "wallLightRN.phl[8]";
+connectAttr "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[9]"
 		;
-connectAttr "wallLightRN.phl[10]" "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[2].gco"
+connectAttr "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[10]"
 		;
-connectAttr "wallLightRN.phl[11]" "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[2].gco"
+connectAttr "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[0]" "wallLightRN.phl[11]"
 		;
-connectAttr "wallLightRN.phl[12]" "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[2].gco"
+connectAttr "wallLightRN.phl[12]" "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[2].gco"
 		;
-connectAttr "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[13]"
+connectAttr "wallLightRN.phl[13]" "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[2].gco"
 		;
-connectAttr "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[14]"
+connectAttr "wallLightRN.phl[14]" "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[2].gco"
 		;
-connectAttr "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[15]"
+connectAttr "|lights_grp|wallLight_2|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[15]"
 		;
-connectAttr "groupId63.msg" "wallLightRN.phl[16]";
-connectAttr "groupId65.msg" "wallLightRN.phl[17]";
-connectAttr "groupId67.msg" "wallLightRN.phl[18]";
+connectAttr "|lights_grp|wallLight_3|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[16]"
+		;
+connectAttr "|lights_grp|wallLight_4|lamp_geo|lamp_geoShape.iog.og[2]" "wallLightRN.phl[17]"
+		;
+connectAttr "groupId63.msg" "wallLightRN.phl[18]";
+connectAttr "groupId65.msg" "wallLightRN.phl[19]";
+connectAttr "groupId67.msg" "wallLightRN.phl[20]";
+connectAttr "wallLightRN.phl[21]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "wallLightRN.phl[22]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "wallLightRN.phl[23]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "steeringWheelRN1.phl[7]" "steeringWheelRN1.phl[8]";
+connectAttr "steeringWheelRN1.phl[9]" "steeringWheelRN1.phl[10]";
 connectAttr "polyCube7.out" "electricalBox_geoShape.i";
 connectAttr "groupId52.id" "glass_cylinder_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "glass_cylinder_geoShape.iog.og[0].gco";
@@ -28811,16 +28855,6 @@ connectAttr "interior:aiSkyDomeLightShape1__LEItem.nxt" "aiAreaLightShape1__LEIt
 connectAttr "lightEditor.lit" "aiAreaLightShape1__LEItem.pls";
 connectAttr "lightEditor.en" "aiAreaLightShape1__LEItem.pen";
 connectAttr "lightEditor.nic" "aiAreaLightShape1__LEItem.pic";
-connectAttr "Checker.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "checker2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "leftShape.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
-		;
 connectAttr ":defaultColorMgtGlobals.cme" "skydome_col.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "skydome_col.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "skydome_col.cmcp";
@@ -28843,6 +28877,7 @@ connectAttr "place2dTexture42.vt3" "skydome_col.vt3";
 connectAttr "place2dTexture42.vc1" "skydome_col.vc1";
 connectAttr "place2dTexture42.o" "skydome_col.uv";
 connectAttr "place2dTexture42.ofs" "skydome_col.fs";
+connectAttr "sharedReferenceNode1.sr" "steeringWheelRN1.sr";
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS1SG1.pa" ":renderPartition.st"
 		 -na;
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS2SG1.pa" ":renderPartition.st"
