@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Sat, Nov 07, 2020 12:26:29 PM
+//Last modified: Sat, Nov 07, 2020 12:41:27 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -80,13 +80,13 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.8672417086122644 2.5538164924289561 -0.08911997369263519 ;
-	setAttr ".r" -type "double3" 646.46164677460831 -34022.599999998602 0 ;
+	setAttr ".t" -type "double3" -3.4944525868003198 4.0719057858172016 8.5801107497025662 ;
+	setAttr ".r" -type "double3" 710.06164677457582 -33854.599999999205 -2.0541777804145568e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 38.902042723753034;
-	setAttr ".coi" 0.83897499073147275;
+	setAttr ".coi" 10.303344196495479;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -28892,25 +28892,25 @@ createNode mesh -n "polySurfaceShape1" -p "|lights_grp|wallLight_7|lamp_geo";
 	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A624B3BC-42F4-CCFD-4AD4-8C9F208CF39D";
-	setAttr -s 52 ".lnk";
-	setAttr -s 51 ".slnk";
+	rename -uid "6D2AA1F4-4E21-9CED-AEBF-50BCA4CA814E";
+	setAttr -s 46 ".lnk";
+	setAttr -s 45 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A3260AE2-4621-1A61-DCE6-25BB7FA57940";
+	rename -uid "525829A7-49B6-1869-43A3-4880F966A891";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 2 3 4 5 6
 		 7 8 9 10 11 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8ACBDDAF-43CE-A8FA-16C8-6BB1E4D1C344";
+	rename -uid "76C6FFA9-45F3-0968-9E06-A689AF52577C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "61B86BF3-4341-613D-A4D2-06A614F04CFD";
+	rename -uid "90E8CF7E-479A-460A-5082-4D838E611F7F";
 	setAttr ".cdl" 3;
 	setAttr -s 8 ".dli[1:7]"  1 3 2 5 4 6 7;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "088E2D7E-4EA4-E5D3-539F-25A867468057";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9F2EC978-46B4-2595-7639-BB9E81BE4DE6";
+	rename -uid "FEB55B01-4ABD-1C43-803A-2F86AFBEE2E4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E25A5300-4113-4140-6A15-4E99A596F975";
 	setAttr ".g" yes;
@@ -30090,8 +30090,8 @@ createNode reference -n "interiorRN1";
 	rename -uid "89849380-B44B-FE5C-3683-C48CE981049D";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"interiorRN1"
-		"interior1:bucketRN" 0
 		"interior1:wallLight1RN" 0
+		"interior1:bucketRN" 0
 		"interior1:wallLight2RN" 0
 		"interior1:wallLightRN" 0
 		"interior1:furnaceRN" 0
