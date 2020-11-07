@@ -1,5 +1,5 @@
 #ignore WIP-files
 /scenes/WIP_PROP/*
 /sourceimages/WIP_Textures/*
-/sourceimages/Texture_Database/**/*.tx
+/sourceimages/**/*.tx
 *.fbx
