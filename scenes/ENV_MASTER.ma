@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 11:12:35 PM
+//Last modified: Fri, Nov 06, 2020 11:15:56 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -80,13 +80,13 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.6403649952858168 4.589331893728974 2.8367869723789094 ;
-	setAttr ".r" -type "double3" 703.46164677468153 -33880.999999998538 -1.053569069725506e-15 ;
+	setAttr ".t" -type "double3" -3.5520506064704791 4.3614432752553167 8.2833930857818849 ;
+	setAttr ".r" -type "double3" 702.86164677467866 -33862.599999998674 4.3063792818754322e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 14.314694941994226;
+	setAttr ".coi" 19.059925658250862;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -28893,8 +28893,8 @@ createNode mesh -n "polySurfaceShape1" -p "|lights_grp|wallLight_7|lamp_geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "64542C3A-4677-9D71-08F6-1E9BCEE0C687";
-	setAttr -s 219 ".lnk";
-	setAttr -s 218 ".slnk";
+	setAttr -s 225 ".lnk";
+	setAttr -s 224 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "DDDA01B6-4C8D-8F6B-1800-F99413CC5876";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 2 3 4 5 6
@@ -30933,7 +30933,7 @@ select -ne :initialShadingGroup;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 8 ".t";
+	setAttr -s 10 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
@@ -31170,6 +31170,7 @@ connectAttr "|lights_grp|wallLight_6|aiAreaLight1|aiAreaLightShape1.msg" "hyperS
 		;
 connectAttr "|lights_grp|wallLight_7|aiAreaLight1|aiAreaLightShape1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
+connectAttr "sharedReferenceNode1.sr" "astrolabeRN.sr";
 connectAttr "place2dTexture42.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "directionalLightShape1.ltd" ":lightList1.l" -na;
