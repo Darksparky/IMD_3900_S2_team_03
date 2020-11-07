@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 10:31:26 PM
+//Last modified: Fri, Nov 06, 2020 11:12:35 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -31,6 +31,7 @@ file -rdi 1 -ns "vent_corner" -rfn "vent_cornerRN" -op "v=0;" -typ "mayaAscii"
 file -rdi 1 -ns "vent_corner1" -rfn "vent_cornerRN1" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/pipes & vents/vent_corner.ma";
 file -rdi 1 -ns "vent_corner2" -rfn "vent_corner1RN" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/pipes & vents/vent_corner.ma";
 file -rdi 1 -ns "filter" -rfn "filterRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/filter/filter.ma";
+file -rdi 1 -ns "astrolabe" -rfn "astrolabeRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/astrolabe/astrolabe.ma";
 file -r -ns "interior1" -dr 1 -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -r -ns "steam_boiler" -dr 1 -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
 		 "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/boiler/steam_boiler.ma";
@@ -60,6 +61,7 @@ file -r -ns "vent_corner" -dr 1 -rfn "vent_cornerRN" -op "v=0;" -typ "mayaAscii"
 file -r -ns "vent_corner1" -dr 1 -rfn "vent_cornerRN1" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/pipes & vents/vent_corner.ma";
 file -r -ns "vent_corner2" -dr 1 -rfn "vent_corner1RN" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/pipes & vents/vent_corner.ma";
 file -r -ns "filter" -dr 1 -rfn "filterRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/filter/filter.ma";
+file -r -ns "astrolabe" -dr 1 -rfn "astrolabeRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/astrolabe/astrolabe.ma";
 requires maya "2019";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
 requires "stereoCamera" "10.0";
@@ -78,17 +80,17 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.997780968958184 3.8249730213389741 -0.34409430907761512 ;
-	setAttr ".r" -type "double3" 710.6616467804547 -33823.400000001988 -8.2971923185827974e-16 ;
+	setAttr ".t" -type "double3" -2.6403649952858168 4.589331893728974 2.8367869723789094 ;
+	setAttr ".r" -type "double3" 703.46164677468153 -33880.999999998538 -1.053569069725506e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 4.0819459280738268;
+	setAttr ".coi" 14.314694941994226;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -6.224706457738816 4.5573505601258182 -1.7389882319131635 ;
+	setAttr ".tp" -type "double3" 7.1291870019044126 1.4987262577760219 -7.240370161318566 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -28891,8 +28893,8 @@ createNode mesh -n "polySurfaceShape1" -p "|lights_grp|wallLight_7|lamp_geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "64542C3A-4677-9D71-08F6-1E9BCEE0C687";
-	setAttr -s 213 ".lnk";
-	setAttr -s 212 ".slnk";
+	setAttr -s 219 ".lnk";
+	setAttr -s 218 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "DDDA01B6-4C8D-8F6B-1800-F99413CC5876";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 2 3 4 5 6
@@ -30519,9 +30521,11 @@ createNode reference -n "furnaceRN";
 		"furnaceRN" 1
 		5 4 "furnaceRN" "furnace:aiStandardSurface2SG.dagSetMembers" "furnaceRN.placeHolderList[1]" 
 		""
-		"furnaceRN" 7
+		"furnaceRN" 8
 		0 "|furnace:furnace_geo" "|airship_grp|props_grp" "-s -r "
-		2 "|airship_grp|props_grp|furnace:furnace_geo" "translate" " -type \"double3\" 95.83308820587934918 -147.39033391672137441 447.88222917568293724"
+		2 "|airship_grp|props_grp|furnace:furnace_geo" "translate" " -type \"double3\" 151.55916730882259458 -147.39033391672120388 235.78160028197191878"
+		
+		2 "|airship_grp|props_grp|furnace:furnace_geo" "rotate" " -type \"double3\" 0 34.65844854433693456 0"
 		
 		2 "|airship_grp|props_grp|furnace:furnace_geo" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947"
 		
@@ -30873,7 +30877,7 @@ createNode groupId -n "groupId73";
 	rename -uid "4A22E4AE-49E3-5C27-4332-F695A8FCE019";
 	setAttr ".ihi" 0;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "628B56FB-4520-2537-4420-3FBDA17319CD";
+	rename -uid "F042E40F-4201-F051-C8E4-D88CE000C25B";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1615.0793009018798 438.65242109242365 ;
 	setAttr ".tgi[0].vh" -type "double2" -202.66088890839507 1156.5947840814783 ;
@@ -30887,6 +30891,18 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[2].x" -598.5714111328125;
 	setAttr ".tgi[0].ni[2].y" 890;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
+createNode reference -n "astrolabeRN";
+	rename -uid "B50F5F31-4D19-8DE8-1A9C-78B3AC04F1F6";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"astrolabeRN"
+		"astrolabeRN" 0
+		"astrolabeRN" 3
+		0 "|astrolabe:astrolabe_grp" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|astrolabe:astrolabe_grp" "translate" " -type \"double3\" 0 -147.54694057232140381 306.55527546618344559"
+		
+		2 "|airship_grp|props_grp|astrolabe:astrolabe_grp" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -30897,27 +30913,27 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 42 ".st";
+	setAttr -s 45 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 61 ".s";
+	setAttr -s 65 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 198 ".u";
+	setAttr -s 215 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 17 ".r";
+	setAttr -s 18 ".r";
 select -ne :lightList1;
 	setAttr -s 6 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 164 ".tx";
+	setAttr -s 178 ".tx";
 select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 	setAttr -s 12 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 6 ".t";
+	setAttr -s 8 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
@@ -30934,6 +30950,8 @@ select -ne :defaultLightSet;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :defaultHideFaceDataSet;
+	setAttr -s 6 ".dnsm";
 select -ne :hyperGraphInfo;
 connectAttr "wallLightRN.phl[22]" "|lights_grp|wallLight_5|lamp_geo|lamp_geoShape.iog.og[0].gco"
 		;
