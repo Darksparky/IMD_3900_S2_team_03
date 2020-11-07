@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: railWithEndpostX2.ma
-//Last modified: Fri, Nov 06, 2020 08:19:55 PM
+//Last modified: Fri, Nov 06, 2020 09:13:20 PM
 //Codeset: UTF-8
 requires maya "2020";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.7";
-fileInfo "UUID" "B5A873D6-9C43-DF2D-EA18-5C846BA81A3D";
+fileInfo "UUID" "C879BB0D-DA4E-456C-DC09-539B15415C50";
 createNode transform -n "handrail_grp";
 	rename -uid "5BD86AF1-4624-FE96-59B1-50947235EB60";
 createNode transform -n "post0_geo" -p "handrail_grp";
@@ -1695,19 +1695,19 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E29D05F3-7544-0D4C-9668-39A44E5F6105";
+	rename -uid "6B56AE08-5B43-7F4A-638E-70B6E7C491E1";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "447F74A9-4B4F-C6EA-EAF0-F4A6385FB0E3";
+	rename -uid "6C420995-3C42-630D-A79C-6F99672244F5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8F0CF296-484F-88EE-29B0-C7A2219DC696";
+	rename -uid "3B2EBB97-CF41-C4C0-644D-CC92C34E2245";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "034B9DDB-3247-D249-FCA0-79968DE16939";
+	rename -uid "33EDEE3E-3343-FA26-5884-81AB15D4204F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "864B4277-4D18-FB30-B1BC-0D99012CB3A4";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "0947CEBE-AD4C-695D-FD7E-249226E06466";
+	rename -uid "456C175C-7047-A0F8-1A7E-7DA750E088E5";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "0FDCFB99-4BCA-F639-C95A-E2BA5856CCFF";
 	setAttr ".g" yes;
@@ -1819,7 +1819,7 @@ createNode place2dTexture -n "place2dTexture5";
 	rename -uid "CD654983-4063-3F23-4BF8-0298EBF6C9D0";
 createNode bump2d -n "bump2d1";
 	rename -uid "F6924354-49BD-AE83-30C2-CDAB7FC130C9";
-	setAttr ".vc1" -type "float3" 0 2.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 9.9999997e-06 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode displacementShader -n "displacementShader1";
 	rename -uid "26E5564F-412C-9D62-1BE5-CA8042C9C114";

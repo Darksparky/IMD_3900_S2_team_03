@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: furnace.ma
-//Last modified: Fri, Nov 06, 2020 08:08:10 PM
+//Last modified: Fri, Nov 06, 2020 09:09:46 PM
 //Codeset: UTF-8
 requires maya "2020";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.7";
-fileInfo "UUID" "CDAC8DE1-B448-2231-CE95-08A66BF97569";
+fileInfo "UUID" "1282D6ED-A44F-1DBF-8D83-9F80C27538C3";
 createNode transform -n "furnace_geo";
 	rename -uid "AC0EC823-4ED6-23F1-05E2-D3A29E354ED4";
 createNode mesh -n "furnace_geoShape" -p "furnace_geo";
@@ -5485,19 +5485,19 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "C24AB540-234F-3A60-89EE-35A51CAE40ED";
-	setAttr -s 4 ".lnk";
-	setAttr -s 4 ".slnk";
+	rename -uid "95ADF03B-774F-2950-4DF7-23A33FC9A76E";
+	setAttr -s 3 ".lnk";
+	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "49002AC9-5846-7C44-BAC0-D386A527C682";
+	rename -uid "092F9551-A34B-FA50-A3E8-A2BF2F94D110";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "07A07287-9F41-D87C-28CF-C9BDA103319A";
+	rename -uid "6A16A095-E44C-F691-2CF3-BB8F051663FE";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "75A44249-CB46-470A-C27F-BFB35794F92C";
+	rename -uid "DCA9CF07-F44B-DA1E-9FBC-59837D6B77AD";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D222A231-4642-97FD-2E7F-DCA314B863A1";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "83CE3469-8842-6E3A-6384-38A798178D15";
+	rename -uid "A399B9B1-3941-F24A-41A9-CABF35BD6911";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1052FB3E-4C32-2D6E-48BE-C1A37752C7EA";
 	setAttr ".g" yes;
@@ -5584,8 +5584,8 @@ createNode place2dTexture -n "place2dTexture1";
 createNode file -n "file4";
 	rename -uid "5C7D20C9-49BF-03EE-1A49-DB8CF4D76570";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//sourceimages/Texture_Database/furnace/furnace_mesh_furnace_texture_Metallic.png";
-	setAttr ".cs" -type "string" "Raw";
+	setAttr ".ftn" -type "string" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//sourceimages/Texture_Database/furnace/furnace_alt2_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture2";
 	rename -uid "BAECAF53-4B09-59B8-E7A3-B88912DD472E";
 createNode file -n "file5";
