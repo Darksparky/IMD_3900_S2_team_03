@@ -1,12 +1,11 @@
 //Maya ASCII 2019 scene
 //Name: astrolabe.ma
-//Last modified: Fri, Nov 06, 2020 11:07:45 PM
+//Last modified: Fri, Nov 06, 2020 11:15:16 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
 		 "mtoa" "4.0.2.1";
-requires "mtoa" "4.0.2.1";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -6930,19 +6929,19 @@ createNode mesh -n "polySurfaceShape1" -p "astrolabe_geo";
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "7B3B06A4-401A-742A-5C92-0DADFCAF25E8";
-	setAttr -s 6 ".lnk";
-	setAttr -s 6 ".slnk";
+	rename -uid "98C48E6B-4A42-16E5-D1CE-379B08A47393";
+	setAttr -s 5 ".lnk";
+	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "70C17556-40EF-393C-8764-34B27B086C4E";
+	rename -uid "9F8B58A3-40FF-CBAB-5B0B-3C8BA9ABFB98";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "A8E607A8-4867-70D1-EB02-6E9BE6BF0921";
+	rename -uid "4EBF9F29-4BE5-72D3-6897-92B3CE4BBC05";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E464CBE0-43CB-A2B3-0647-C894ACC7EFAC";
+	rename -uid "8A1AC84C-4F41-3206-6757-BFB88D634951";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "7FE8B011-4AE8-0B52-1A8C-86B0EE58DB32";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "65A27FF0-4E7E-285A-853A-EAAC1194EF57";
+	rename -uid "CDBE3F63-45BB-50BF-15A4-618727969E7E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "30035951-418C-654E-5E1F-81ADEA5AB7D0";
 	setAttr ".g" yes;
@@ -12047,7 +12046,7 @@ createNode place2dTexture -n "place2dTexture4";
 createNode bump2d -n "bump2d1";
 	rename -uid "E36D9A0F-4E70-7AD7-67BE-42AAE7A4D4C2";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 0.0001 0 ;
+	setAttr ".vc1" -type "float3" 0 1.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode displacementShader -n "astrolabe_displacement";
 	rename -uid "6A893516-4E38-75BD-F53B-DA915281E7A9";
@@ -12098,10 +12097,11 @@ createNode place2dTexture -n "place2dTexture9";
 createNode bump2d -n "bump2d2";
 	rename -uid "35F44E4A-4F15-DD59-20DE-C385ABA84E7D";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 7.9999998e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 2.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode displacementShader -n "astrolabe_globe_displacement";
 	rename -uid "25A9700A-437D-A558-CE49-26AF68FBEFEB";
+	setAttr ".scl" 0.05000000074505806;
 createNode file -n "file1";
 	rename -uid "5F447619-46D6-6B04-6E7A-C1B4A9D358E5";
 	setAttr ".ail" yes;
@@ -12110,53 +12110,23 @@ createNode file -n "file1";
 createNode place2dTexture -n "place2dTexture10";
 	rename -uid "19FD5739-41B8-1348-D9CD-FE94E7684F6A";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "73EEF2A8-40A8-35E2-0529-F4AF2DB1D0D7";
+	rename -uid "02AD7EEE-4455-50A4-F280-059D71235FBF";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -1449.0465290752691 -1246.564175368153 ;
-	setAttr ".tgi[0].vh" -type "double2" 515.79905767548041 -115.98568654020174 ;
-	setAttr -s 14 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -241.42857360839844;
-	setAttr ".tgi[0].ni[0].y" -800;
+	setAttr ".tgi[0].vl" -type "double2" -1161.6012369305217 -992.20349538106359 ;
+	setAttr ".tgi[0].vh" -type "double2" 227.75440144539419 -192.76377926717984 ;
+	setAttr -s 4 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -717.14288330078125;
+	setAttr ".tgi[0].ni[0].y" -551.4285888671875;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -548.5714111328125;
-	setAttr ".tgi[0].ni[1].y" -811.4285888671875;
+	setAttr ".tgi[0].ni[1].x" -410;
+	setAttr ".tgi[0].ni[1].y" -551.4285888671875;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -855.71429443359375;
-	setAttr ".tgi[0].ni[2].y" -840;
+	setAttr ".tgi[0].ni[2].x" -1024.2857666015625;
+	setAttr ".tgi[0].ni[2].y" -574.28570556640625;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 107.14286041259766;
-	setAttr ".tgi[0].ni[3].y" -424.28570556640625;
+	setAttr ".tgi[0].ni[3].x" -102.85713958740234;
+	setAttr ".tgi[0].ni[3].y" -507.14285278320313;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" -548.5714111328125;
-	setAttr ".tgi[0].ni[4].y" -11.428571701049805;
-	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" -241.42857360839844;
-	setAttr ".tgi[0].ni[5].y" -97.142860412597656;
-	setAttr ".tgi[0].ni[5].nvs" 2387;
-	setAttr ".tgi[0].ni[6].x" -855.71429443359375;
-	setAttr ".tgi[0].ni[6].y" -32.857143402099609;
-	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" -855.71429443359375;
-	setAttr ".tgi[0].ni[7].y" -208.57142639160156;
-	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" -548.5714111328125;
-	setAttr ".tgi[0].ni[8].y" -362.85714721679688;
-	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" -855.71429443359375;
-	setAttr ".tgi[0].ni[9].y" -384.28570556640625;
-	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" -855.71429443359375;
-	setAttr ".tgi[0].ni[10].y" -664.28570556640625;
-	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" -548.5714111328125;
-	setAttr ".tgi[0].ni[11].y" -648.5714111328125;
-	setAttr ".tgi[0].ni[11].nvs" 1923;
-	setAttr ".tgi[0].ni[12].x" -548.5714111328125;
-	setAttr ".tgi[0].ni[12].y" -187.14285278320313;
-	setAttr ".tgi[0].ni[12].nvs" 1923;
-	setAttr ".tgi[0].ni[13].x" -1162.857177734375;
-	setAttr ".tgi[0].ni[13].y" -687.14288330078125;
-	setAttr ".tgi[0].ni[13].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -12652,33 +12622,13 @@ connectAttr "place2dTexture10.vt3" "file1.vt3";
 connectAttr "place2dTexture10.vc1" "file1.vc1";
 connectAttr "place2dTexture10.o" "file1.uv";
 connectAttr "place2dTexture10.ofs" "file1.fs";
-connectAttr "astrolabe_globe_displacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "astrolabe_height.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "astrolabe_displacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "place2dTexture5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "astrolabe_globe_SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "astrolabe_globe_col.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
-		;
-connectAttr "astrolabe_glove_mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
-		;
-connectAttr "place2dTexture6.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
-		;
-connectAttr "place2dTexture7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
-		;
-connectAttr "astrolabe_globe_rough.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
-		;
-connectAttr "place2dTexture8.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
-		;
-connectAttr "astrolabe_globe_norm.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
-		;
-connectAttr "bump2d2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
-		;
-connectAttr "astrolabe_globe_metal.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
-		;
-connectAttr "place2dTexture9.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
+connectAttr "astrolabe_SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
 connectAttr "astrolabe_geoSG.pa" ":renderPartition.st" -na;
 connectAttr "astrolabe_SG.pa" ":renderPartition.st" -na;
@@ -12710,6 +12660,9 @@ connectAttr "astrolabe_globe_metal.msg" ":defaultTextureList1.tx" -na;
 connectAttr "astrolabe_globe_rough.msg" ":defaultTextureList1.tx" -na;
 connectAttr "astrolabe_globe_norm.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "astrolabe_displacement.d" ":internal_standInShader.ir";
+connectAttr "astrolabe_displacement.d" ":internal_standInShader.ig";
+connectAttr "astrolabe_displacement.d" ":internal_standInShader.ib";
 connectAttr "astrolabe_geoShapeHiddenFacesSet.msg" ":defaultHideFaceDataSet.dnsm"
 		 -na;
 connectAttr "astrolabe_geoShapeHiddenFacesSet1.msg" ":defaultHideFaceDataSet.dnsm"
