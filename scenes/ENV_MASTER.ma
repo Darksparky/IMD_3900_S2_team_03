@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 09:58:07 PM
+//Last modified: Fri, Nov 06, 2020 09:59:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -78,17 +78,17 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.3365648365365779 2.88450579485486 -4.0328108555819462 ;
-	setAttr ".r" -type "double3" 707.06164677978518 -34325.399999992725 0 ;
+	setAttr ".t" -type "double3" -4.8821506056713417 4.4159049679243498 -3.3745615148104493 ;
+	setAttr ".r" -type "double3" 731.66164678029509 -34067.000000007174 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 4.4240674688836732;
+	setAttr ".coi" 3.1274219611305725;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 7.8511898148951138 1.8939457571506275 -1.5350968922881105 ;
+	setAttr ".tp" -type "double3" -7.1221895518710756 5.0480562983726553 -1.2856914044679546 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -11098,7 +11098,8 @@ createNode mesh -n "lamp_geoShape" -p "|lights_grp|wallLight_2|lamp_geo";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "aiAreaLight1" -p "wallLight_2";
 	rename -uid "A6717023-1745-F3F8-7878-29A98B8DEFD0";
@@ -14734,7 +14735,8 @@ createNode mesh -n "lamp_geoShape" -p "|lights_grp|wallLight_3|lamp_geo";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "aiAreaLight1" -p "wallLight_3";
 	rename -uid "39BC4E3A-634D-8AC8-BFAC-FF9A6E18D37C";
@@ -18370,7 +18372,8 @@ createNode mesh -n "lamp_geoShape" -p "|lights_grp|wallLight_4|lamp_geo";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "aiAreaLight1" -p "wallLight_4";
 	rename -uid "923C79C5-9546-9807-AF09-0EA8FD145CB8";
@@ -19809,10 +19812,14 @@ createNode reference -n "wallLightRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"wallLightRN"
 		"wallLightRN" 0
-		"wallLightRN" 25
+		"wallLightRN" 27
 		0 "|wallLight:lamp_geo" "|lights_grp|wallLight_1" "-s -r "
 		2 "|lights_grp|wallLight_1|wallLight:lamp_geo" "translate" " -type \"double3\" -1.98995045488659272 3.41024052219667784 -17.45515315621535635"
 		
+		2 "|lights_grp|wallLight_1|wallLight:lamp_geo|wallLight:lamp_geoShape" "dispResolution" 
+		" 3"
+		2 "|lights_grp|wallLight_1|wallLight:lamp_geo|wallLight:lamp_geoShape" "displaySmoothMesh" 
+		" 2"
 		5 3 "wallLightRN" "wallLight:metal_material.message" "wallLightRN.placeHolderList[1]" 
 		""
 		5 3 "wallLightRN" "wallLight:aiStandardSurface2SG.memberWireframeColor" 
