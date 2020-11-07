@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 09:59:00 PM
+//Last modified: Fri, Nov 06, 2020 10:13:21 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -78,17 +78,17 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.8821506056713417 4.4159049679243498 -3.3745615148104493 ;
-	setAttr ".r" -type "double3" 731.66164678029509 -34067.000000007174 0 ;
+	setAttr ".t" -type "double3" 4.0041624268000007 2.9669215205703212 -5.1054355715453417 ;
+	setAttr ".r" -type "double3" 715.46164678112495 -33796.200000009558 2.754164884970264e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 3.1274219611305725;
+	setAttr ".coi" 10.06747390126402;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -7.1221895518710756 5.0480562983726553 -1.2856914044679546 ;
+	setAttr ".tp" -type "double3" 4.9638686635971112 1.2598149563475607 -14.314973639354315 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -18438,8 +18438,8 @@ createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	setAttr ".in" 6;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "64542C3A-4677-9D71-08F6-1E9BCEE0C687";
-	setAttr -s 171 ".lnk";
-	setAttr -s 170 ".slnk";
+	setAttr -s 176 ".lnk";
+	setAttr -s 175 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "DDDA01B6-4C8D-8F6B-1800-F99413CC5876";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 2 3 4 5 6
@@ -20437,7 +20437,7 @@ select -ne :initialShadingGroup;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 5 ".t";
+	setAttr -s 9 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
@@ -20680,6 +20680,9 @@ connectAttr "sharedReferenceNode1.sr" "steeringWheelRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "cylindricalStructureRN.sr";
 connectAttr "sharedReferenceNode1.sr" "bucketRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "coupledBoilersRN.sr";
+connectAttr "sharedReferenceNode1.sr" "railNoEndpostRN.sr";
+connectAttr "sharedReferenceNode1.sr" "railWithEndpostRN.sr";
+connectAttr "sharedReferenceNode1.sr" "railNoEndpostRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "UpperControlsRN.sr";
 connectAttr "sharedReferenceNode1.sr" "teslaCoilRN.sr";
 connectAttr "sharedReferenceNode1.sr" "teslaCoilRN1.sr";
