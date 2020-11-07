@@ -1,13 +1,13 @@
 //Maya ASCII 2019 scene
 //Name: filter.ma
-//Last modified: Fri, Nov 06, 2020 10:16:49 PM
+//Last modified: Fri, Nov 06, 2020 10:21:41 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
 		 "mtoa" "4.0.2.1";
-requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
 requires "stereoCamera" "10.0";
+requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
@@ -42842,20 +42842,20 @@ createNode mesh -n "lever_geoShape" -p "lever_geo";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "FB0C3EA5-40DD-27DF-31D5-3CBA638ED1D9";
-	setAttr -s 20 ".lnk";
-	setAttr -s 19 ".slnk";
+	rename -uid "52BD529C-4075-B663-A4BC-42B86C089F29";
+	setAttr -s 6 ".lnk";
+	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2743CBBB-41A7-40E5-3307-4A8DF9E5060C";
+	rename -uid "F899A76D-4D1C-986C-9B9B-419E238A2B92";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "03286DBB-4AFC-5BE9-D31C-498759B7647A";
+	rename -uid "091AA1F6-4680-1887-FE9D-3C96A717CA26";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D072682D-4CAE-6854-AE84-20B21090E916";
+	rename -uid "865148A0-4E15-E322-1DD6-07BD226C9A1F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0AF9DF56-40DA-9DED-17BB-B381D86D7403";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "56501434-46FD-63FF-5FBA-CA82245FCA05";
+	rename -uid "F08C3262-4F13-7B4F-EF81-8B881601B0EE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B20B1FC9-4E38-99CE-C3F7-ACB8347AA563";
 	setAttr ".g" yes;
@@ -42922,10 +42922,10 @@ createNode polyCylinder -n "pipes:polyCylinder6";
 	setAttr ".cuv" 3;
 createNode polyUnite -n "pipes:polyUnite1";
 	rename -uid "B5E6F5CC-4F27-6E58-25C8-9B8C973E43BD";
-createNode aiStandardSurface -n "pipes:aiStandardSurface3";
+createNode aiStandardSurface -n "pipes_mat";
 	rename -uid "92AECB06-47D2-C96F-9DBB-B98505851D3E";
 	setAttr ".base" 1;
-createNode shadingEngine -n "pipes:aiStandardSurface3SG";
+createNode shadingEngine -n "pipes_SG";
 	rename -uid "E823BE78-4030-BF2B-47F4-8BA809929A61";
 	setAttr ".ihi" 0;
 	setAttr -s 21 ".dsm";
@@ -42965,7 +42965,7 @@ createNode place2dTexture -n "pipes:place2dTexture5";
 createNode bump2d -n "pipes:bump2d1";
 	rename -uid "C1D33120-4096-8EA3-4908-4B9BFFA2C0E5";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 4.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 1.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode nodeGraphEditorInfo -n "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "4581E541-4457-3778-9F82-509FF380B0D5";
@@ -43009,7 +43009,7 @@ createNode nodeGraphEditorInfo -n "pipes:hyperShadePrimaryNodeEditorSavedTabsInf
 	setAttr ".tgi[0].ni[10].nvs" 1923;
 createNode aiStandardSurface -n "filter_mat";
 	rename -uid "8DC41FB5-489F-FCBD-88A8-23B3ADBADC55";
-createNode shadingEngine -n "aiStandardSurface1SG";
+createNode shadingEngine -n "filter_SG";
 	rename -uid "35769068-4176-DB26-6CD5-21A7586720F7";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
@@ -43303,11 +43303,11 @@ createNode unknown -s -n "ProductionRapidHair";
 	setAttr ".shmap" 3;
 	setAttr ".mbsm" 0;
 	setAttr ".bism" 0.019999999552965164;
-createNode lambert -n "standardSurface1";
+createNode lambert -n "lever_mat";
 	rename -uid "93F8720E-4272-12EE-5F8B-CE9F3798E541";
 	setAttr ".dc" 1;
 	setAttr ".ambc" -type "float3" 0.5 0.5 0.5 ;
-createNode shadingEngine -n "lever_geoSG";
+createNode shadingEngine -n "lever_SG";
 	rename -uid "A6857742-4B80-CB27-9672-6189CCCEDCD5";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
@@ -43329,46 +43329,46 @@ createNode place2dTexture -n "place2dTexture6";
 	rename -uid "69B5E150-440A-A03A-9644-DCB0DA22427B";
 createNode bump2d -n "bump2d1";
 	rename -uid "FC0422A4-4647-1908-EF56-518D32D3D73E";
-	setAttr ".vc1" -type "float3" 0 3.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 1.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "B97140EB-479A-ADB2-B736-B6826D763076";
+	rename -uid "4BC2E04D-48ED-C70B-F73F-F28AB5467E67";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -1042.5485263045346 -542.06165467233006 ;
-	setAttr ".tgi[0].vh" -type "double2" 659.98229484328806 437.58007185103406 ;
+	setAttr ".tgi[0].vl" -type "double2" -1044.2647025842612 -476.36359947146025 ;
+	setAttr ".tgi[0].vh" -type "double2" 657.6959544262354 502.9500527680475 ;
 	setAttr -s 11 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -964.28570556640625;
-	setAttr ".tgi[0].ni[0].y" 304.28570556640625;
+	setAttr ".tgi[0].ni[0].x" -622.85711669921875;
+	setAttr ".tgi[0].ni[0].y" -180;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -340;
-	setAttr ".tgi[0].ni[1].y" 342.85714721679688;
+	setAttr ".tgi[0].ni[1].x" -622.85711669921875;
+	setAttr ".tgi[0].ni[1].y" -2.8571429252624512;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -340;
-	setAttr ".tgi[0].ni[2].y" 548.5714111328125;
+	setAttr ".tgi[0].ni[2].x" -315.71429443359375;
+	setAttr ".tgi[0].ni[2].y" -158.57142639160156;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -657.14288330078125;
-	setAttr ".tgi[0].ni[3].y" 325.71429443359375;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" 315.71429443359375;
-	setAttr ".tgi[0].ni[4].y" 458.57144165039063;
+	setAttr ".tgi[0].ni[3].x" 1.4285714626312256;
+	setAttr ".tgi[0].ni[3].y" 312.85714721679688;
+	setAttr ".tgi[0].ni[3].nvs" 2387;
+	setAttr ".tgi[0].ni[4].x" -315.71429443359375;
+	setAttr ".tgi[0].ni[4].y" 362.85714721679688;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" -657.14288330078125;
-	setAttr ".tgi[0].ni[5].y" -58.571430206298828;
+	setAttr ".tgi[0].ni[5].x" -622.85711669921875;
+	setAttr ".tgi[0].ni[5].y" 341.42855834960938;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" -340;
-	setAttr ".tgi[0].ni[6].y" 168.57142639160156;
+	setAttr ".tgi[0].ni[6].x" -622.85711669921875;
+	setAttr ".tgi[0].ni[6].y" 172.85714721679688;
 	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" -32.857143402099609;
-	setAttr ".tgi[0].ni[7].y" 458.57144165039063;
-	setAttr ".tgi[0].ni[7].nvs" 2387;
-	setAttr ".tgi[0].ni[8].x" -340;
-	setAttr ".tgi[0].ni[8].y" -37.142856597900391;
+	setAttr ".tgi[0].ni[7].x" -315.71429443359375;
+	setAttr ".tgi[0].ni[7].y" 25.714284896850586;
+	setAttr ".tgi[0].ni[7].nvs" 1923;
+	setAttr ".tgi[0].ni[8].x" -315.71429443359375;
+	setAttr ".tgi[0].ni[8].y" 187.14285278320313;
 	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" -657.14288330078125;
-	setAttr ".tgi[0].ni[9].y" 141.42857360839844;
+	setAttr ".tgi[0].ni[9].x" -930;
+	setAttr ".tgi[0].ni[9].y" 150;
 	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" -657.14288330078125;
-	setAttr ".tgi[0].ni[10].y" 527.14288330078125;
+	setAttr ".tgi[0].ni[10].x" 350;
+	setAttr ".tgi[0].ni[10].y" 312.85714721679688;
 	setAttr ".tgi[0].ni[10].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 1;
@@ -43412,70 +43412,49 @@ select -ne :hardwareRenderGlobals;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":ikSystem.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" "pipes:aiStandardSurface3SG.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" "lever_geoSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "pipes_SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "filter_SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lever_SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" "pipes:aiStandardSurface3SG.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" "lever_geoSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "pipes_SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "filter_SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lever_SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-connectAttr "pipes:file1.oc" "pipes:aiStandardSurface3.base_color";
-connectAttr "pipes:file2.ocr" "pipes:aiStandardSurface3.metalness";
-connectAttr "pipes:file3.oa" "pipes:aiStandardSurface3.specular_roughness";
-connectAttr "pipes:bump2d1.o" "pipes:aiStandardSurface3.n";
-connectAttr "pipes:aiStandardSurface3.out" "pipes:aiStandardSurface3SG.ss";
-connectAttr "pipes:pipe_V1_junction_T_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipes:pipe_V1_straight_L1_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipes:pipe_V1_junction_container_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipes:pipe_V1_straight_L2_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_corner_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_wall_geoShape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geoShape.iog" "pipes:aiStandardSurface3SG.dsm" 
-		-na;
-connectAttr "pipe_V1_junction_wall_geo1Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_wall_geo2Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo1Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_wall_geo3Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_wall_geo4Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_corner_geo1Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo2Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_wall_geo5Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_corner_geo2Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo3Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo4Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_junction_corner_geo3Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo5Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipe_V1_straight_L1_geo6Shape.iog" "pipes:aiStandardSurface3SG.dsm"
-		 -na;
-connectAttr "pipes:aiStandardSurface3SG.msg" "pipes:materialInfo3.sg";
-connectAttr "pipes:aiStandardSurface3.msg" "pipes:materialInfo3.m";
-connectAttr "pipes:aiStandardSurface3.msg" "pipes:materialInfo3.t" -na;
+connectAttr "pipes:file1.oc" "pipes_mat.base_color";
+connectAttr "pipes:file2.ocr" "pipes_mat.metalness";
+connectAttr "pipes:file3.oa" "pipes_mat.specular_roughness";
+connectAttr "pipes:bump2d1.o" "pipes_mat.n";
+connectAttr "pipes_mat.out" "pipes_SG.ss";
+connectAttr "pipes:pipe_V1_junction_T_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipes:pipe_V1_straight_L1_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipes:pipe_V1_junction_container_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipes:pipe_V1_straight_L2_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_corner_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geoShape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geo1Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geo2Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo1Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geo3Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geo4Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_corner_geo1Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo2Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_wall_geo5Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_corner_geo2Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo3Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo4Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_junction_corner_geo3Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo5Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipe_V1_straight_L1_geo6Shape.iog" "pipes_SG.dsm" -na;
+connectAttr "pipes_SG.msg" "pipes:materialInfo3.sg";
+connectAttr "pipes_mat.msg" "pipes:materialInfo3.m";
+connectAttr "pipes_mat.msg" "pipes:materialInfo3.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "pipes:file1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "pipes:file1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "pipes:file1.cmcp";
@@ -43575,7 +43554,7 @@ connectAttr "pipes:place2dTexture4.msg" "pipes:hyperShadePrimaryNodeEditorSavedT
 		;
 connectAttr "pipes:file1.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "pipes:aiStandardSurface3.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "pipes_mat.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
 connectAttr "pipes:file3.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
@@ -43585,15 +43564,15 @@ connectAttr "pipes:file4.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tg
 		;
 connectAttr "pipes:file2.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
 		;
-connectAttr "pipes:aiStandardSurface3SG.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "pipes_SG.msg" "pipes:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
 		;
 connectAttr "file1.oc" "filter_mat.base_color";
 connectAttr "file2.oa" "filter_mat.specular_roughness";
 connectAttr "file3.oa" "filter_mat.metalness";
 connectAttr "bump2d1.o" "filter_mat.n";
-connectAttr "filter_mat.out" "aiStandardSurface1SG.ss";
-connectAttr "airFilter_geoShape.iog" "aiStandardSurface1SG.dsm" -na;
-connectAttr "aiStandardSurface1SG.msg" "materialInfo4.sg";
+connectAttr "filter_mat.out" "filter_SG.ss";
+connectAttr "airFilter_geoShape.iog" "filter_SG.dsm" -na;
+connectAttr "filter_SG.msg" "materialInfo4.sg";
 connectAttr "filter_mat.msg" "materialInfo4.m";
 connectAttr "filter_mat.msg" "materialInfo4.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "file1.cme";
@@ -43640,10 +43619,10 @@ connectAttr "place2dTexture4.vt3" "file2.vt3";
 connectAttr "place2dTexture4.vc1" "file2.vc1";
 connectAttr "place2dTexture4.o" "file2.uv";
 connectAttr "place2dTexture4.ofs" "file2.fs";
-connectAttr "standardSurface1.oc" "lever_geoSG.ss";
-connectAttr "lever_geoShape.iog" "lever_geoSG.dsm" -na;
-connectAttr "lever_geoSG.msg" "materialInfo5.sg";
-connectAttr "standardSurface1.msg" "materialInfo5.m";
+connectAttr "lever_mat.oc" "lever_SG.ss";
+connectAttr "lever_geoShape.iog" "lever_SG.dsm" -na;
+connectAttr "lever_SG.msg" "materialInfo5.sg";
+connectAttr "lever_mat.msg" "materialInfo5.m";
 connectAttr ":defaultColorMgtGlobals.cme" "file3.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "file3.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "file3.cmcp";
@@ -43689,34 +43668,34 @@ connectAttr "place2dTexture6.vc1" "file4.vc1";
 connectAttr "place2dTexture6.o" "file4.uv";
 connectAttr "place2dTexture6.ofs" "file4.fs";
 connectAttr "file4.oa" "bump2d1.bv";
-connectAttr "pipes:place2dTexture5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "pipes:bump2d1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "place2dTexture5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "pipes:file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "file2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "pipes:file4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "filter_mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
-connectAttr "pipes:aiStandardSurface3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "pipes:place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "pipes:file3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "file4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
-connectAttr "pipes:aiStandardSurface3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "file3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
-connectAttr "pipes:file2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr "bump2d1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
 		;
-connectAttr "pipes:place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "place2dTexture6.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
 		;
-connectAttr "pipes:place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "filter_SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
 		;
-connectAttr "pipes:aiStandardSurface3SG.pa" ":renderPartition.st" -na;
-connectAttr "aiStandardSurface1SG.pa" ":renderPartition.st" -na;
-connectAttr "lever_geoSG.pa" ":renderPartition.st" -na;
-connectAttr "pipes:aiStandardSurface3.msg" ":defaultShaderList1.s" -na;
+connectAttr "pipes_SG.pa" ":renderPartition.st" -na;
+connectAttr "filter_SG.pa" ":renderPartition.st" -na;
+connectAttr "lever_SG.pa" ":renderPartition.st" -na;
+connectAttr "pipes_mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "filter_mat.msg" ":defaultShaderList1.s" -na;
-connectAttr "standardSurface1.msg" ":defaultShaderList1.s" -na;
+connectAttr "lever_mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "pipes:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "pipes:place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "pipes:place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na;
