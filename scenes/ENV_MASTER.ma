@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Fri, Nov 06, 2020 08:14:26 PM
+//Last modified: Fri, Nov 06, 2020 09:24:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -10,6 +10,22 @@ file -rdi 1 -ns "steeringWheel" -rfn "steeringWheelRN1" -op "v=0;" -typ "mayaAsc
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/steeringWheel/steeringWheel.ma";
 file -rdi 1 -ns "cylindricalStructure" -rfn "cylindricalStructureRN" -op "v=0;"
 		 -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/cylindricalStructure/cylindricalStructure.ma";
+file -rdi 1 -ns "bucket" -rfn "bucketRN1" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/bucket/bucket.ma";
+file -rdi 1 -ns "coupledBoilers" -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
+file -rdi 1 -ns "furnace" -rfn "furnaceRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/furnace/furnace.ma";
+file -rdi 1 -ns "railNoEndpost" -rfn "railNoEndpostRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
+file -rdi 1 -ns "railWithEndpost" -rfn "railWithEndpostRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railWithEndpost.ma";
+file -rdi 1 -ns "railWithEndpost1" -rfn "railWithEndpostRN1" -op "v=0;" -typ
+		 "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railWithEndpost.ma";
+file -rdi 1 -ns "railNoEndpost1" -rfn "railNoEndpostRN1" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
+file -rdi 1 -ns "UpperControls" -rfn "UpperControlsRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/upperControls/UpperControls.ma";
+file -rdi 1 -ns "teslaCoil" -rfn "teslaCoilRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/teslaCoil/teslaCoil.ma";
+file -rdi 1 -ns "teslaCoil1" -rfn "teslaCoilRN1" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/teslaCoil/teslaCoil.ma";
 file -r -ns "interior1" -dr 1 -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -r -ns "steam_boiler" -dr 1 -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
 		 "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/boiler/steam_boiler.ma";
@@ -18,6 +34,22 @@ file -r -ns "steeringWheel" -dr 1 -rfn "steeringWheelRN1" -op "v=0;" -typ "mayaA
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/steeringWheel/steeringWheel.ma";
 file -r -ns "cylindricalStructure" -dr 1 -rfn "cylindricalStructureRN" -op "v=0;"
 		 -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/cylindricalStructure/cylindricalStructure.ma";
+file -r -ns "bucket" -dr 1 -rfn "bucketRN1" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/bucket/bucket.ma";
+file -r -ns "coupledBoilers" -dr 1 -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
+file -r -ns "furnace" -dr 1 -rfn "furnaceRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/furnace/furnace.ma";
+file -r -ns "railNoEndpost" -dr 1 -rfn "railNoEndpostRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
+file -r -ns "railWithEndpost" -dr 1 -rfn "railWithEndpostRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railWithEndpost.ma";
+file -r -ns "railWithEndpost1" -dr 1 -rfn "railWithEndpostRN1" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railWithEndpost.ma";
+file -r -ns "railNoEndpost1" -dr 1 -rfn "railNoEndpostRN1" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
+file -r -ns "UpperControls" -dr 1 -rfn "UpperControlsRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/upperControls/UpperControls.ma";
+file -r -ns "teslaCoil" -dr 1 -rfn "teslaCoilRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/teslaCoil/teslaCoil.ma";
+file -r -ns "teslaCoil1" -dr 1 -rfn "teslaCoilRN1" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/teslaCoil/teslaCoil.ma";
 requires maya "2019";
 requires -nodeType "StingrayPBS" "shaderFXPlugin" "1.0";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
@@ -37,30 +69,30 @@ fileInfo "UUID" "D18388D5-8444-1BB6-1D55-6E8A6455C367";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.1625434943713291 5.7230017186189439 -3.1130909164341589 ;
-	setAttr ".r" -type "double3" 705.86164680218235 -34427.000000002226 0 ;
+	setAttr ".t" -type "double3" -3.0979715007988053 4.8664343379782879 -6.1048406763145682 ;
+	setAttr ".r" -type "double3" 701.06164677771767 -34310.999999991815 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 22.003439727031818;
-	setAttr ".coi" 2.7631780556670726;
+	setAttr ".coi" 12.370015262739985;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -7.1221895518710756 5.0480562983726553 -1.2856914044679546 ;
+	setAttr ".tp" -type "double3" 7.6946023891041984 1.5438093183301207 1.7015026670952338e-07 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
 	rename -uid "EDD681C5-4C58-FCD4-5458-CF859A67D73A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.1423265538414853 1000.1 -7.1738904873169655 ;
+	setAttr ".t" -type "double3" 0.73089879407585479 1000.1 -0.91396663258652855 ;
 	setAttr ".r" -type "double3" -90 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "49E1F429-45C7-E566-F383-73B1B7C154FD";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 56.493937993279232;
+	setAttr ".ow" 12.325333426936277;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -133,7 +165,7 @@ createNode transform -n "props_grp" -p "airship_grp";
 	setAttr ".s" -type "double3" 0.65979361550020044 0.88459893709563331 1 ;
 createNode transform -n "electricalBox_geo" -p "props_grp";
 	rename -uid "CE164AC9-42AC-9306-8516-D190BA63A5B7";
-	setAttr ".t" -type "double3" -556.2796335330047 13.836262945733424 -1105.7545219824735 ;
+	setAttr ".t" -type "double3" -563.55978733336349 13.836262945733422 -940.50777487586311 ;
 	setAttr ".s" -type "double3" 154.89932618420249 202.63945258735367 202.63945258735419 ;
 createNode mesh -n "electricalBox_geoShape" -p "electricalBox_geo";
 	rename -uid "3873D073-4333-7432-03CA-B3BBF4E0B1AC";
@@ -146,55 +178,13 @@ createNode mesh -n "electricalBox_geoShape" -p "electricalBox_geo";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "centralControls_geo" -p "props_grp";
-	rename -uid "F1D2FCEC-49A3-2BF1-A2A5-BF80BB9E5FB4";
-	setAttr ".t" -type "double3" 366.47803424650243 -64.882706662069964 -5.8161562360693306 ;
-	setAttr ".r" -type "double3" 0 6.8601558150866628 0 ;
-	setAttr ".s" -type "double3" 256.50970037461047 213.69839435211526 148.76618146194113 ;
-createNode mesh -n "centralControls_geoShape" -p "centralControls_geo";
-	rename -uid "1447CE09-46C9-FED2-7767-2EBA7C999D0D";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.25 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
-		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
-		 0.875 0.25 0.125 0 0.125 0.25;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 2 ".pt[2:3]" -type "float3"  0 0.2158573 0 0 0.2158573 
-		0;
-	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
-		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
-	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
-		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
-	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
-		f 4 0 5 -2 -5
-		mu 0 4 0 1 3 2
-		f 4 1 7 -3 -7
-		mu 0 4 2 3 5 4
-		f 4 2 9 -4 -9
-		mu 0 4 4 5 7 6
-		f 4 3 11 -1 -11
-		mu 0 4 6 7 9 8
-		f 4 -12 -10 -8 -6
-		mu 0 4 1 10 11 3
-		f 4 10 4 6 8
-		mu 0 4 12 0 2 13;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "railing_grp" -p "props_grp";
 	rename -uid "AF5F026E-4CFA-065C-9F92-D5898DD9070C";
 	setAttr ".t" -type "double3" 0 100.6787186846381 63.271536954767065 ;
 	setAttr ".s" -type "double3" 138.7310347274535 138.73103472745387 138.73103472745422 ;
 createNode transform -n "upperDeckRailingRight_geo" -p "railing_grp";
 	rename -uid "0D3E1E4F-4B79-AC4B-AE55-D3875F51D7B7";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" -4.0088803543053677 -0.85594683189280918 0.63674235506256283 ;
 	setAttr ".s" -type "double3" 1.605484136423853 0.72264312486876436 0.09213726418209045 ;
 createNode mesh -n "upperDeckRailingRight_geoShape" -p "upperDeckRailingRight_geo";
@@ -234,6 +224,7 @@ createNode mesh -n "upperDeckRailingRight_geoShape" -p "upperDeckRailingRight_ge
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "commandDeckRails_geo" -p "railing_grp";
 	rename -uid "33BA60E0-4234-D482-36A3-2AA8B679058A";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 -0.28724363815711468 0 ;
 createNode mesh -n "commandDeckRails_geoShape" -p "commandDeckRails_geo";
 	rename -uid "2F46F20E-4E77-4FCA-DD3D-53945DF80870";
@@ -476,6 +467,7 @@ createNode mesh -n "commandDeckRails_geoShape" -p "commandDeckRails_geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "upperDeckRailingLeft_geo" -p "railing_grp";
 	rename -uid "444B85BB-4AC6-FCF7-87CF-569A1BCD2253";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.0752284796600735 -0.85594683189280918 0.63674235506256283 ;
 	setAttr ".s" -type "double3" 4.1267718950694681 0.72264312486876436 0.09213726418209045 ;
 createNode mesh -n "upperDeckRailingLeft_geoShape" -p "upperDeckRailingLeft_geo";
@@ -1134,6 +1126,6984 @@ createNode mesh -n "controlPanel_GeoShape" -p "controlPanel_Geo";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "railings_grp" -p "props_grp";
+	rename -uid "B005D12F-4A24-8FA4-98DD-88A2FC2583AA";
+	setAttr ".t" -type "double3" 0 -66.090524509343382 0 ;
+	setAttr ".s" -type "double3" 78.468524826672422 78.468524826672621 78.468524826672819 ;
+createNode transform -n "handrail_grp" -p "railings_grp";
+	rename -uid "FF5C3A43-4FCE-E734-9FD5-668DCE5A16B3";
+	setAttr ".t" -type "double3" -1.8327784205065949 0.74300034078352972 -0.0671715954931901 ;
+	setAttr ".r" -type "double3" 0 -98.60519005033936 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp";
+	rename -uid "7594A293-42A0-EDDC-F186-11AEBBD041BA";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp|post0_geo";
+	rename -uid "7C3D9CC7-4F4A-982E-9AE6-79BDD15C8C4F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp";
+	rename -uid "3423BAF2-4497-190D-42C5-BF8F60292BB1";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp|rung0_geo";
+	rename -uid "F5C3366D-4885-F79B-1718-12926BD8C7A8";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp";
+	rename -uid "3E0BF539-4D54-908E-0B3F-D49EAEA52F2B";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp|rung1_geo";
+	rename -uid "AAAF48A0-405C-667F-38A2-8EB8D93BB6C3";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp";
+	rename -uid "C008093C-4ADC-1577-E542-07AF47537794";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp|rung2_geo";
+	rename -uid "6A451A3D-46C7-04FB-33BD-A6B86B1CCE6A";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp1" -p "railings_grp";
+	rename -uid "37F951DC-492A-BC2E-BA71-7B9D09A9183A";
+	setAttr ".t" -type "double3" -1.976430325249442 0.74300034078352972 0.89734833635163924 ;
+	setAttr ".r" -type "double3" 0 -73.190308872151803 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp1";
+	rename -uid "441ADC61-4E28-E756-EDB9-2B83114A0234";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp1|post0_geo";
+	rename -uid "696DAFBF-4FCE-5E85-12BA-7289B90A1F6F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp1";
+	rename -uid "53D5971C-4F2D-7FAB-3BF3-1295C669AFD5";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp1|rung0_geo";
+	rename -uid "A46E5D89-4DC0-ABC5-7F01-5C88B9577468";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp1";
+	rename -uid "82341424-4EE8-2F4F-3656-068098CE3BE1";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp1|rung1_geo";
+	rename -uid "89EA673F-499B-5DA6-6DD7-DAB6F03D420B";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp1";
+	rename -uid "3AACFA63-4EFF-60E9-4B65-FE98F9918FD7";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp1|rung2_geo";
+	rename -uid "E9E45009-4B9C-4826-CB37-9686F4CD54E0";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp2" -p "railings_grp";
+	rename -uid "9BE8A7BC-4977-ADD7-4632-089E8468C752";
+	setAttr ".t" -type "double3" -1.668604815086199 0.74300034078352972 1.8290335471123895 ;
+	setAttr ".r" -type "double3" 0 -44.353393958893918 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp2";
+	rename -uid "F969F2E5-46E5-DD9E-D97F-CDA0C67E0899";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp2|post0_geo";
+	rename -uid "D9D2B531-4312-BBA7-43C2-84B2B8AD8F2E";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp2";
+	rename -uid "F82BBD91-4735-EC5F-43B9-8A80F84E1EEE";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp2|rung0_geo";
+	rename -uid "22B516E9-45EB-D709-A5B7-6885F8E452B0";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp2";
+	rename -uid "919E4F2D-4D92-5EC7-DCF4-CFBFF0552ECF";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp2|rung1_geo";
+	rename -uid "2E34FEE4-46F2-95D8-AAB6-A18C14D77F4F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp2";
+	rename -uid "82E09707-4EB1-0DA9-9DBA-E793146FC6D5";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp2|rung2_geo";
+	rename -uid "4A5765E7-439B-B05D-0DB1-6BABB03156D3";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp3" -p "railings_grp";
+	rename -uid "C1E15E7F-455C-5D70-6BA0-F29A37F5B530";
+	setAttr ".t" -type "double3" -0.95444963150747364 0.74300034078352972 2.4898323089294863 ;
+	setAttr ".r" -type "double3" 0 -14.571069556129464 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp3";
+	rename -uid "0F24B34A-445C-2643-9AC7-EAA61565E5E0";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp3|post0_geo";
+	rename -uid "0FA8CFCA-4EF9-7576-64CA-FBAFDE0B78C0";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp3";
+	rename -uid "AE786ADE-4359-BEC9-82D8-BC906CD43D79";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp3|rung0_geo";
+	rename -uid "8CFAACC5-4F92-8042-D546-3DB872CC4FE9";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp3";
+	rename -uid "D8FD89F9-45FE-AAFB-D88A-27A2AA1C154B";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp3|rung1_geo";
+	rename -uid "FB6F4DC3-4F50-6604-7974-609BCD8200B2";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp3";
+	rename -uid "EE40CBF0-4E34-EA44-E459-4FB75789C4F7";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp3|rung2_geo";
+	rename -uid "FC715923-4708-966F-31EA-E8AC3CB26E96";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp4" -p "railings_grp";
+	rename -uid "024ACC48-497C-2082-A4DA-E4B1396C88D7";
+	setAttr ".t" -type "double3" -0.0063470602046828625 0.74300034078352972 2.7401970571955911 ;
+	setAttr ".r" -type "double3" 0 15.812784477212539 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp4";
+	rename -uid "2FE0B4A1-40D2-BC95-30E4-6298796EB5D8";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp4|post0_geo";
+	rename -uid "C9076EEA-48C9-42B9-61BB-EA9D484D4E19";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp4";
+	rename -uid "9BFE8788-4AB1-C23D-41D5-E1AFB79BD8D5";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp4|rung0_geo";
+	rename -uid "10EC2FEA-4CDD-B21E-FDB8-7E9E574C0DAC";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp4";
+	rename -uid "48B66D25-4843-05DD-3958-708BEE3F29ED";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp4|rung1_geo";
+	rename -uid "90D584BB-45CE-FB76-1556-E8B8A14FCC4B";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp4";
+	rename -uid "D0AF6A68-481A-4E2D-A455-7CBF9B494992";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp4|rung2_geo";
+	rename -uid "25854EF6-4C80-64F7-5E37-33A5EA7EF4E9";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp5" -p "railings_grp";
+	rename -uid "AD6B4971-4872-5BD4-CAFD-B5AC236C7C95";
+	setAttr ".t" -type "double3" 0.93354683082708745 0.74300034078352972 2.4775192885229562 ;
+	setAttr ".r" -type "double3" 0 40.659727067775805 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp5";
+	rename -uid "58C9B2CE-42A7-808B-6AEC-A2868B42F182";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp5|post0_geo";
+	rename -uid "324F0478-444B-A295-C273-27B700CD2C04";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp5";
+	rename -uid "4C804320-4EE2-02ED-A4ED-0DBD485AD797";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp5|rung0_geo";
+	rename -uid "F930C113-46FA-38BA-F61C-A2B8E85DB95F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp5";
+	rename -uid "404F4F21-428D-8F78-91C9-2FB6D4439507";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp5|rung1_geo";
+	rename -uid "5B490469-4979-7965-D82E-7E88FFAB3EE3";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp5";
+	rename -uid "6D54524A-4C0E-8238-25F0-F2AEF600A080";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp5|rung2_geo";
+	rename -uid "120DD248-4123-CB2A-E7E9-9A92957CAEFC";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp6" -p "railings_grp";
+	rename -uid "1A958E36-4C29-81D7-C7AA-96A455AB8F71";
+	setAttr ".t" -type "double3" 1.6518063545413222 0.74300034078352972 1.8618682681964689 ;
+	setAttr ".r" -type "double3" 0 72.286677416974769 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp6";
+	rename -uid "D4119C81-4122-2D5D-111D-388EAE12041A";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp6|post0_geo";
+	rename -uid "E5ED2C84-4A00-8EB6-338F-35809A8B6A0F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp6";
+	rename -uid "DDFC7DA5-40DD-F8DA-FB6D-B19392775034";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp6|rung0_geo";
+	rename -uid "553D0D73-4CEC-1B4A-7E0A-4C84AC028D43";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp6";
+	rename -uid "FFE35E16-4267-4A21-007D-CDBA6CA428E4";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp6|rung1_geo";
+	rename -uid "DF3DAA61-468B-FC94-56DA-F59345E704A8";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp6";
+	rename -uid "53F2D329-4FE4-11AC-2338-659AD80B47EB";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp6|rung2_geo";
+	rename -uid "BDAD50A2-4525-5FA3-AD2A-EC91D31C2EDD";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp7" -p "railings_grp";
+	rename -uid "E3B1F728-4EA7-FB37-5022-DE9BEFAC074B";
+	setAttr ".t" -type "double3" 1.9350058238915064 0.74300034078352972 0.94249607784224787 ;
+	setAttr ".r" -type "double3" 0 95.102089101295562 0 ;
+createNode transform -n "post0_geo" -p "handrail_grp7";
+	rename -uid "82E7F0B7-4EB8-F877-1E21-C0B76B4128D3";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp7|post0_geo";
+	rename -uid "578840B8-493A-1F04-B24B-52BC3658423C";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp7";
+	rename -uid "52D7BE19-4BB6-8A26-5785-8F8B79CC8B0C";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp7|rung0_geo";
+	rename -uid "6E248E8D-4075-3716-4226-9F895D35E9F8";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp7";
+	rename -uid "F8BDE5A6-4DA8-457E-DD18-5E9C4ACF1773";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp7|rung1_geo";
+	rename -uid "49D0FF6E-4A09-4765-892B-FF9C23E9FFF4";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp7";
+	rename -uid "5930003E-4280-98F5-774A-0C9FC91810C3";
+	setAttr ".t" -type "double3" -0.65640084301576418 -1.1102230246251565e-16 -2.9143354396410359e-16 ;
+	setAttr ".s" -type "double3" 0.36217514085222374 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp7|rung2_geo";
+	rename -uid "E96F14BB-445E-9D40-1B77-98804EC28EC5";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp8" -p "railings_grp";
+	rename -uid "FC0DF5D4-416F-7A7B-6946-CAB90BEF4717";
+	setAttr ".t" -type "double3" 9.7660902208724192 0.01270389908884817 1.8086278021756697 ;
+	setAttr ".r" -type "double3" 0 180 0 ;
+createNode transform -n "rung0_geo" -p "handrail_grp8";
+	rename -uid "4426A578-4D50-32A9-60B0-2FBCF04354BC";
+	setAttr ".t" -type "double3" 0.49377246013541587 0 1.6157491864383619e-16 ;
+	setAttr ".s" -type "double3" 0.62451646125369786 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp8|rung0_geo";
+	rename -uid "CEA7F4C2-494D-1315-8C91-3CB7087751B2";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp8";
+	rename -uid "5346FE66-4C0A-0D25-3270-5C895EBF4362";
+	setAttr ".t" -type "double3" 0.49377246013541587 0 1.6157491864383619e-16 ;
+	setAttr ".s" -type "double3" 0.62451646125369786 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp8|rung1_geo";
+	rename -uid "4DA29CD6-4DC6-A51B-0441-A48156B7014E";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp8";
+	rename -uid "BBD2B2C9-4447-04C4-453E-A69E1F4EC2A4";
+	setAttr ".t" -type "double3" 0.49377246013541587 0 1.6157491864383619e-16 ;
+	setAttr ".s" -type "double3" 0.62451646125369786 1 1 ;
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp8|rung2_geo";
+	rename -uid "43DF20EA-46AA-0D51-AFB9-1192C6481DD6";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "handrail_grp9" -p "railings_grp";
+	rename -uid "9E4B917D-4423-D79E-B242-699C8ECC0E05";
+	setAttr ".t" -type "double3" 1.8690313168439125 0.016184568885135309 1.8012332544874341 ;
+createNode transform -n "post0_geo" -p "handrail_grp9";
+	rename -uid "FC98F274-4867-AC77-001F-54827ADB806C";
+	setAttr ".rp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" -0.0041053783445790387 -0.0041814281973810985 0 ;
+createNode mesh -n "post0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp9|post0_geo";
+	rename -uid "DAE35F2C-4581-DFB0-3B41-B1BBECBF60D2";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "post1_geo" -p "handrail_grp9";
+	rename -uid "8796277C-4761-3173-4862-BD95D7202BB7";
+	setAttr ".rp" -type "double3" 2.6658946216554207 -0.0041814281973810985 0 ;
+	setAttr ".sp" -type "double3" 2.6658946216554207 -0.0041814281973810985 0 ;
+createNode mesh -n "post1_geoShape" -p "post1_geo";
+	rename -uid "C76D5A19-4649-DAD2-35BD-BABD1CE09D6A";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12759056687355042 0.42209419701248407 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 76 ".uvst[0].uvsp[0:75]" -type "float2" 0.13279334 0.57196403
+		 0.13279334 0.57124031 0.19480631 0.57124031 0.19480631 0.57196403 0.13194023 0.57124043
+		 0.1319395 0.5719642 0.13279341 0.069029085 0.19480637 0.06902916 0.19546892 0.57123041
+		 0.19546892 0.57195407 0.13194023 0.06902916 0.19480637 0.068411671 0.13279341 0.068411671
+		 0.19546892 0.069039039 0.13194025 0.068411589 0.19546892 0.06842161 0.0055454895
+		 0.57196432 0.0055454611 0.57124043 0.067558475 0.57124072 0.067558475 0.57196432
+		 0.25899252 0.57121992 0.0048828884 0.57196468 0.0055454136 0.069028705 0.067558438
+		 0.069028862 0.068411589 0.57124043 0.068412319 0.57196373 0.0048828125 0.069028333
+		 0.0055454136 0.068411291 0.067558438 0.068411291 0.068411559 0.069029018 0.0048828125
+		 0.068410903 0.068411551 0.068411589 0.13193789 0.63482785 0.13105576 0.63482785 0.13105664
+		 0.5728178 0.13193877 0.57281762 0.13105574 0.63549024 0.13193788 0.63549024 0.069054551
+		 0.6348269 0.069055423 0.57281661 0.13105735 0.5719642 0.069054544 0.63548928 0.068413027
+		 0.57281661 0.068412155 0.6348269 0.069054715 0.57196373 0.06841214 0.63548928 0.13194026
+		 0.067558452 0.13105808 0.067558452 0.13105798 0.0055454802 0.13194016 0.0055454043
+		 0.13105808 0.068411589 0.069053985 0.067558601 0.069053859 0.0055455556 0.13105798
+		 0.0048828125 0.13194016 0.0048828125 0.06905397 0.068411671 0.068411425 0.0055455556
+		 0.068411537 0.067558601 0.069053859 0.0048829643 0.068411425 0.0048829643 0.13105804
+		 0.57124031 0.069053985 0.57124043 0.13105804 0.069029085 0.069053985 0.069029085
+		 0.19635102 0.57122058 0.19635102 0.57194418 0.19635102 0.069048978 0.25835013 0.57122034
+		 0.25835013 0.57194418 0.19635102 0.068431556 0.25835013 0.069048978 0.25835013 0.068431556
+		 0.25899255 0.069049202 0.25899255 0.068431787 0.0048828884 0.57124084 0.25899252
+		 0.5719437;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 56 ".pt[0:55]" -type "float3"  2.6700001 0 0 2.6700001 0 
+		0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 0 0 2.6700001 
+		0 0;
+	setAttr -s 56 ".vt[0:55]"  -0.084974565 -0.004181385 0.080869183 0.076763801 -0.004181385 0.080869183
+		 -0.084974565 1.27781856 0.080869183 0.076763801 1.27781856 0.080869183 -0.084974565 1.27781856 -0.080869183
+		 0.076763801 1.27781856 -0.080869183 -0.084974565 -0.004181385 -0.080869183 0.076763801 -0.004181385 -0.080869183
+		 0.074517906 -0.004181385 0.080869183 0.074517906 -0.004181385 -0.080869183 0.074517906 1.27781856 -0.080869183
+		 0.074517906 1.27781856 0.080869183 -0.084974565 1.27781856 0.078697227 0.074517906 1.27781856 0.078697197
+		 0.076763801 1.27781856 0.078697227 0.076763801 -0.004181385 0.078697197 0.074517906 -0.004181385 0.078697227
+		 -0.084974565 -0.004181385 0.078697197 -0.084974565 1.2759763 0.080869183 0.074517906 1.27597594 0.080869183
+		 0.076763801 1.2759763 0.080869183 0.076763801 1.27597594 0.078697227 0.076763801 1.27597594 -0.080869183
+		 0.074517906 1.2759763 -0.080869183 -0.084974565 1.27597594 -0.080869183 -0.084974565 1.2759763 0.078697227
+		 -0.083339021 -0.004181385 0.080869183 -0.083338968 -0.004181385 0.078697197 -0.083339021 -0.004181385 -0.080869183
+		 -0.083338968 1.27597606 -0.080869183 -0.083339021 1.27781856 -0.080869183 -0.083339021 1.27781856 0.078697234
+		 -0.083339021 1.27781856 0.080869183 -0.083339021 1.2759763 0.080869183 -0.084974565 -0.004181385 -0.079182312
+		 -0.083339021 -0.004181385 -0.079182245 0.074517906 -0.004181385 -0.079182245 0.076763801 -0.004181385 -0.079182312
+		 0.076763801 1.27597594 -0.079182245 0.076763801 1.27781856 -0.079182245 0.074517906 1.27781856 -0.079182312
+		 -0.083339021 1.27781856 -0.079182312 -0.084974565 1.27781856 -0.079182245 -0.084974565 1.27597594 -0.079182312
+		 -0.084974565 -0.0026091337 0.080869183 -0.083339021 -0.0026093721 0.080869183 0.074517906 -0.0026093721 0.080869183
+		 0.076763801 -0.0026091337 0.080869183 0.076763801 -0.0026093721 0.078697197 0.076763801 -0.0026091337 -0.079182312
+		 0.076763801 -0.0026093721 -0.080869183 0.074517906 -0.0026091337 -0.080869183 -0.083339021 -0.0026091337 -0.080869183
+		 -0.084974565 -0.0026093721 -0.080869183 -0.084974565 -0.0026093721 -0.079182312 -0.084974565 -0.0026091337 0.078697197;
+	setAttr -s 108 ".ed[0:107]"  0 26 0 2 32 0 4 30 0 6 28 0 0 44 0 1 47 0
+		 2 12 0 3 14 0 4 24 0 5 22 0 6 34 0 7 37 0 8 1 0 9 7 0 10 5 0 11 3 0 8 16 1 9 51 1
+		 10 40 1 11 19 1 12 42 0 13 11 1 14 39 0 15 1 0 16 36 1 17 0 0 12 31 1 13 14 1 14 21 1
+		 15 16 1 16 27 1 17 55 1 18 2 0 19 46 1 20 3 0 21 48 1 22 50 0 23 10 1 24 53 0 25 12 1
+		 18 33 1 19 20 1 20 21 1 21 38 1 22 23 1 23 29 1 24 43 1 25 18 1 26 8 0 27 17 1 28 9 0
+		 29 24 1 30 10 0 31 13 1 32 11 0 33 19 1 26 27 1 27 35 1 28 52 1 29 30 1 30 41 1 31 32 1
+		 32 33 1 33 45 1 34 17 0 35 28 1 36 9 1 37 15 0 38 22 1 39 5 0 40 13 1 41 31 1 42 4 0
+		 43 25 1 34 35 1 35 36 1 36 37 1 37 49 1 38 39 1 39 40 1 40 41 1 41 42 1 42 43 1 43 54 1
+		 44 18 0 45 26 1 46 8 1 47 20 0 48 15 1 49 38 1 50 7 0 51 23 1 52 29 1 53 6 0 54 34 1
+		 55 25 1 44 45 1 45 46 1 46 47 1 47 48 1 48 49 1 49 50 1 50 51 1 51 52 1 52 53 1 53 54 1
+		 54 55 1 55 44 1;
+	setAttr -s 54 -ch 216 ".fc[0:53]" -type "polyFaces" 
+		f 4 19 41 34 -16
+		mu 0 4 40 60 4 5
+		f 4 79 70 27 22
+		mu 0 4 32 33 34 35
+		f 4 44 37 14 9
+		mu 0 4 8 64 65 9
+		f 4 29 24 76 67
+		mu 0 4 46 47 48 49
+		f 4 28 43 78 -23
+		mu 0 4 0 1 2 3
+		f 4 82 73 39 20
+		mu 0 4 16 17 18 19
+		f 4 57 75 -25 30
+		mu 0 4 51 52 48 47
+		f 4 59 52 -38 45
+		mu 0 4 67 68 65 64
+		f 4 80 71 53 -71
+		mu 0 4 33 38 39 34
+		f 4 62 55 -20 -55
+		mu 0 4 44 61 60 40
+		f 4 61 54 -22 -54
+		mu 0 4 39 44 40 34
+		f 4 -28 21 15 7
+		mu 0 4 35 34 40 5
+		f 4 42 -29 -8 -35
+		mu 0 4 4 1 0 5
+		f 4 16 -30 23 -13
+		mu 0 4 50 47 46 14
+		f 4 56 -31 -17 -49
+		mu 0 4 55 51 47 50
+		f 4 -40 47 32 6
+		mu 0 4 19 18 24 25
+		f 4 63 97 -34 -56
+		mu 0 4 61 63 62 60
+		f 4 -42 33 98 87
+		mu 0 4 4 60 62 10
+		f 4 99 -36 -43 -88
+		mu 0 4 10 6 1 4
+		f 4 100 89 -44 35
+		mu 0 4 6 7 2 1
+		f 4 102 91 -45 36
+		mu 0 4 13 66 64 8
+		f 4 103 92 -46 -92
+		mu 0 4 66 70 67 64
+		f 4 83 106 95 -74
+		mu 0 4 17 22 23 18
+		f 4 -48 -96 107 84
+		mu 0 4 24 18 23 29
+		f 4 -50 -57 -1 -26
+		mu 0 4 57 51 55 31
+		f 4 74 -58 49 -65
+		mu 0 4 56 52 51 57
+		f 4 -52 -93 104 -39
+		mu 0 4 20 67 70 72
+		f 4 2 -60 51 -9
+		mu 0 4 75 68 67 20
+		f 4 26 -72 81 -21
+		mu 0 4 42 39 38 43
+		f 4 1 -62 -27 -7
+		mu 0 4 25 44 39 42
+		f 4 40 -63 -2 -33
+		mu 0 4 24 61 44 25
+		f 4 96 -64 -41 -85
+		mu 0 4 29 63 61 24
+		f 4 3 -66 -75 -11
+		mu 0 4 59 58 52 56
+		f 4 -76 65 50 -67
+		mu 0 4 48 52 58 53
+		f 4 -77 66 13 11
+		mu 0 4 49 48 53 54
+		f 4 -69 -90 101 -37
+		mu 0 4 8 2 7 13
+		f 4 -79 68 -10 -70
+		mu 0 4 3 2 8 9
+		f 4 18 -80 69 -15
+		mu 0 4 36 33 32 37
+		f 4 60 -81 -19 -53
+		mu 0 4 41 38 33 36
+		f 4 -82 -61 -3 -73
+		mu 0 4 43 38 41 45
+		f 4 46 -83 72 8
+		mu 0 4 74 17 16 21
+		f 4 105 -84 -47 38
+		mu 0 4 26 22 17 74
+		f 4 0 -86 -97 -5
+		mu 0 4 31 55 63 29
+		f 4 -98 85 48 -87
+		mu 0 4 62 63 55 50
+		f 4 -99 86 12 5
+		mu 0 4 10 62 50 14
+		f 4 -24 -89 -100 -6
+		mu 0 4 14 12 6 10
+		f 4 77 -101 88 -68
+		mu 0 4 11 7 6 12
+		f 4 -102 -78 -12 -91
+		mu 0 4 13 7 11 15
+		f 4 17 -103 90 -14
+		mu 0 4 69 66 13 15
+		f 4 58 -104 -18 -51
+		mu 0 4 71 70 66 69
+		f 4 -105 -59 -4 -94
+		mu 0 4 72 70 71 73
+		f 4 10 -95 -106 93
+		mu 0 4 30 27 22 26
+		f 4 -107 94 64 31
+		mu 0 4 23 22 27 28
+		f 4 -108 -32 25 4
+		mu 0 4 29 23 28 31;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 20 
+		4 0 
+		5 0 
+		8 0 
+		9 0 
+		10 0 
+		13 0 
+		14 0 
+		15 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		26 0 
+		29 0 
+		30 0 
+		31 0 
+		40 0 
+		44 0 
+		50 0 
+		55 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung0_geo" -p "handrail_grp9";
+	rename -uid "1D3BE773-48A5-6A69-CBDE-169AD4866973";
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.60755214336384578 0 ;
+createNode mesh -n "rung0_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp9|rung0_geo";
+	rename -uid "3F6F7C36-418D-65DC-EC15-76A4922D3E66";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung1_geo" -p "handrail_grp9";
+	rename -uid "366FF14A-484A-7AE0-C514-10A7FE2F14A6";
+	setAttr ".rp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 1.0575521433638457 0 ;
+createNode mesh -n "rung1_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp9|rung1_geo";
+	rename -uid "9E2EE264-4549-03DE-8F91-BCB33A927AAF";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 0 0 0.44999999 
+		0 0 0.44999999 0 0 0.44999999 0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "rung2_geo" -p "handrail_grp9";
+	rename -uid "CDF6FEF8-490C-C2DE-7D50-73BBC01D968C";
+	setAttr ".rp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+	setAttr ".sp" -type "double3" 1.0749321182776155 0.15755214336384576 0 ;
+createNode mesh -n "rung2_geoShape" -p "|airship_grp|props_grp|railings_grp|handrail_grp9|rung2_geo";
+	rename -uid "18416998-4896-CA54-3764-00A526FC016F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.20131714784910229 0.024129005149006844 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 54 ".uvst[0].uvsp[0:53]" -type "float2" 0.26160893 0.024129007
+		 0.25597191 0.037738156 0.24236277 0.024129007 0.3419086 0.0076969643 0.35696718 0.0075676679
+		 0.24236277 0.043375202 0.25597191 0.010519861 0.3268511 0.0077227005 0.37202409 0.007091892
+		 0.2287536 0.037738156 0.24236277 0.0048828125 0.3117944 0.0076956674 0.26676461 0.0053698262
+		 0.22311664 0.024129007 0.2287536 0.010519861 0.29673979 0.0075659873 0.28169739 0.0070890365
+		 0.18770806 0.037738152 0.18207096 0.024129005 0.20131715 0.024129005 0.34191263 0.99230444
+		 0.35696727 0.99243414 0.18770806 0.010519861 0.20131715 0.043375198 0.32685593 0.99227744
+		 0.37200966 0.99291098 0.20131715 0.0048828125 0.21492627 0.037738152 0.31179842 0.99230319
+		 0.38694245 0.99463004 0.21492627 0.010519861 0.22056334 0.024129005 0.29673985 0.99243242
+		 0.28168291 0.99290806 0.38700897 0.0053707752 0.26669803 0.9946292 0.32685861 0.99278635
+		 0.31180626 0.99281204 0.29676244 0.99294102 0.28175718 0.99341267 0.26696321 0.99511492
+		 0.386675 0.99511719 0.37193847 0.99341732 0.35694948 0.99294329 0.34191009 0.99281335
+		 0.31179693 0.0071867718 0.32684842 0.0072138831 0.29675758 0.0070569208 0.28176856
+		 0.0065827826 0.38674375 0.004884975 0.26703206 0.0048828162 0.37194982 0.0065874048
+		 0.35694459 0.0070591285 0.34190077 0.0071881982;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
+	setAttr -s 34 ".pt[0:33]" -type "float3"  0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 
+		0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 
+		-0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 0 0 -0.44999999 
+		0;
+	setAttr -s 34 ".vt[0:33]"  2.58587551 0.60755217 0 0.074932098 0.60755217 0
+		 2.58495188 0.6429075 -0.035355337 2.58587551 0.64220047 -0.034648299 2.58495188 0.60755217 -0.049999993
+		 2.58587551 0.60755217 -0.049000092 2.58495188 0.57219684 -0.035355337 2.58587551 0.57290387 -0.034648299
+		 2.58495188 0.55755216 0 2.58587551 0.55855209 0 2.58495188 0.57219684 0.035355337
+		 2.58587551 0.57290387 0.034648299 2.58495188 0.60755217 0.049999997 2.58587551 0.60755217 0.049000096
+		 2.58495188 0.6429075 0.035355341 2.58587551 0.64220047 0.034648303 2.58495188 0.65755218 0
+		 2.58587551 0.65655226 6.3588315e-11 0.075855911 0.6429075 -0.035355337 0.074932098 0.64220047 -0.034648299
+		 0.075855911 0.60755217 -0.049999993 0.074932098 0.60755217 -0.049000092 0.075855911 0.57219684 -0.035355337
+		 0.074932098 0.57290387 -0.034648299 0.075855911 0.55755216 0 0.074932098 0.55855209 0
+		 0.075855911 0.57219684 0.035355337 0.074932098 0.57290387 0.034648299 0.075855911 0.60755217 0.049999997
+		 0.074932098 0.60755217 0.049000096 0.075855911 0.6429075 0.035355341 0.074932098 0.64220047 0.034648303
+		 0.075855911 0.65755218 0 0.074932098 0.65655226 6.3588315e-11;
+	setAttr -s 72 ".ed[0:71]"  2 3 0 3 5 0 5 4 0 4 2 0 2 16 0 16 17 0 17 3 0
+		 5 7 0 7 6 0 6 4 0 7 9 0 9 8 0 8 6 0 9 11 0 11 10 0 10 8 0 11 13 0 13 12 0 12 10 0
+		 13 15 0 15 14 0 14 12 0 15 17 0 16 14 0 18 19 0 19 33 0 33 32 0 32 18 0 18 20 0 20 21 0
+		 21 19 0 20 22 0 22 23 0 23 21 0 22 24 0 24 25 0 25 23 0 24 26 0 26 27 0 27 25 0 26 28 0
+		 28 29 0 29 27 0 28 30 0 30 31 0 31 29 0 30 32 0 33 31 0 4 20 0 18 2 0 6 22 0 8 24 0
+		 10 26 0 12 28 0 14 30 0 16 32 0 3 0 1 0 5 1 0 7 1 0 9 1 0 11 1 0 13 1 0 15 1 0 17 1
+		 21 1 1 1 19 1 23 1 1 25 1 1 27 1 1 29 1 1 31 1 1 33 1 1;
+	setAttr -s 40 -ch 144 ".fc[0:39]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 3 53 52 4
+		f 4 -1 4 5 6
+		mu 0 4 53 3 7 46
+		f 4 -3 7 8 9
+		mu 0 4 4 52 51 8
+		f 4 -9 10 11 12
+		mu 0 4 8 51 49 34
+		f 4 -12 13 14 15
+		mu 0 4 12 50 48 16
+		f 4 -15 16 17 18
+		mu 0 4 16 48 47 15
+		f 4 -18 19 20 21
+		mu 0 4 15 47 45 11
+		f 4 -21 22 -6 23
+		mu 0 4 11 45 46 7
+		f 4 24 25 26 27
+		mu 0 4 20 44 36 24
+		f 4 -25 28 29 30
+		mu 0 4 44 20 21 43
+		f 4 -30 31 32 33
+		mu 0 4 43 21 25 42
+		f 4 -33 34 35 36
+		mu 0 4 42 25 29 41
+		f 4 -36 37 38 39
+		mu 0 4 40 35 33 39
+		f 4 -39 40 41 42
+		mu 0 4 39 33 32 38
+		f 4 -42 43 44 45
+		mu 0 4 38 32 28 37
+		f 4 -45 46 -27 47
+		mu 0 4 37 28 24 36
+		f 4 -4 48 -29 49
+		mu 0 4 3 4 21 20
+		f 4 -10 50 -32 -49
+		mu 0 4 4 8 25 21
+		f 4 -13 51 -35 -51
+		mu 0 4 8 34 29 25
+		f 4 -16 52 -38 -52
+		mu 0 4 12 16 33 35
+		f 4 -19 53 -41 -53
+		mu 0 4 16 15 32 33
+		f 4 -22 54 -44 -54
+		mu 0 4 15 11 28 32
+		f 4 -24 55 -47 -55
+		mu 0 4 11 7 24 28
+		f 4 -5 -50 -28 -56
+		mu 0 4 7 3 20 24
+		f 3 -2 56 57
+		mu 0 3 0 1 2
+		f 3 -8 -58 58
+		mu 0 3 6 0 2
+		f 3 -11 -59 59
+		mu 0 3 10 6 2
+		f 3 -14 -60 60
+		mu 0 3 14 10 2
+		f 3 -17 -61 61
+		mu 0 3 13 14 2
+		f 3 -20 -62 62
+		mu 0 3 9 13 2
+		f 3 -23 -63 63
+		mu 0 3 5 9 2
+		f 3 -7 -64 -57
+		mu 0 3 1 5 2
+		f 3 -31 64 65
+		mu 0 3 17 18 19
+		f 3 -34 66 -65
+		mu 0 3 18 22 19
+		f 3 -37 67 -67
+		mu 0 3 22 26 19
+		f 3 -40 68 -68
+		mu 0 3 26 30 19
+		f 3 -43 69 -69
+		mu 0 3 30 31 19
+		f 3 -46 70 -70
+		mu 0 3 31 27 19
+		f 3 -48 71 -71
+		mu 0 3 27 23 19
+		f 3 -26 -66 -72
+		mu 0 3 23 17 19;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 18 
+		3 0 
+		4 0 
+		7 0 
+		8 0 
+		11 0 
+		12 0 
+		15 0 
+		16 0 
+		20 0 
+		21 0 
+		24 0 
+		25 0 
+		28 0 
+		29 0 
+		32 0 
+		33 0 
+		34 0 
+		35 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "rigs_grp";
 	rename -uid "8F975B29-40F4-5587-AF36-009762B2DC91";
@@ -22890,8 +29860,8 @@ createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	setAttr ".in" 6;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "64542C3A-4677-9D71-08F6-1E9BCEE0C687";
-	setAttr -s 65 ".lnk";
-	setAttr -s 64 ".slnk";
+	setAttr -s 129 ".lnk";
+	setAttr -s 128 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "DDDA01B6-4C8D-8F6B-1800-F99413CC5876";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 1 2 3 4 5
@@ -26419,22 +33389,33 @@ createNode reference -n "interiorRN1";
 		"interior1:furnaceRN" 0
 		"interior1:steam_boilerRN" 0
 		"interior1:steeringWheelRN" 0
-		"interiorRN1" 2
+		"interiorRN1" 4
 		2 "|interior1:ship_grp|interior1:walls_grp|interior1:move_leftWall" "translate" 
 		" -type \"double3\" 0 0 0"
 		2 "|interior1:ship_grp|interior1:walls_grp|interior1:move_rightWall" "translate" 
 		" -type \"double3\" 0 0 0"
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rearWall|interior1:rear_wall_grp|interior1:rotate_rearDoor|interior1:door_grp|interior1:door_geo" 
+		"rotate" " -type \"double3\" -0.074337351440707966 0.009517320267173765 0.023725112111947579"
+		
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:celing_floor_grp|interior1:move_ceiling|interior1:ceiling_geo" 
+		"translate" " -type \"double3\" 0 0 0"
 		"interior1:wallLightRN1" 0
-		"interiorRN1" 5
+		"interiorRN1" 8
 		0 "|interior1:ship_grp" "|airship_grp|structure_grp" "-s -r "
 		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_leftWall" 
 		"translateX" " 0"
 		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rightWall" 
 		"translateX" " 0"
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rearWall" 
+		"translateX" " 0"
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rearWall" 
+		"translateZ" " 0"
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rearWall|interior1:rear_wall_grp|interior1:rotate_rearDoor" 
+		"rotateY" " 0"
+		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:walls_grp|interior1:move_rearWall|interior1:rear_wall_grp|interior1:rotate_rearDoor|interior1:door_grp|interior1:rotate_rearDoor_wheel" 
+		"rotateZ" " 35.90601745373118803"
 		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:celing_floor_grp|interior1:move_ceiling" 
-		"translateY" " 0"
-		2 "|airship_grp|structure_grp|interior1:ship_grp|interior1:celing_floor_grp|interior1:move_ceiling|interior1:ceiling_geo" 
-		"translate" " -type \"double3\" 0 0 0";
+		"translateY" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode file -n "skydome_col";
@@ -26448,7 +33429,7 @@ createNode reference -n "steam_boilerRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"steam_boilerRN1"
 		"steam_boilerRN1" 0
-		"steam_boilerRN1" 1429
+		"steam_boilerRN1" 16
 		0 "|steam_boiler:boiler_geo" "|airship_grp|props_grp" "-s -r "
 		2 "|airship_grp|props_grp|steam_boiler:boiler_geo" "translate" " -type \"double3\" 0 0 0"
 		
@@ -26463,2849 +33444,74 @@ createNode reference -n "steam_boilerRN1";
 		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
 		"pnts" " -s 1422"
 		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[0]" " -type \"float3\" -384.43649 122.13793 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1]" " -type \"float3\" -384.43649 104.35009 -503.20267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[2]" " -type \"float3\" -384.43649 76.644722 -530.90808"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[3]" " -type \"float3\" -384.43649 41.73386 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[4]" " -type \"float3\" -384.43649 3.0349119 -554.82544"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[5]" " -type \"float3\" -384.43649 -35.66407 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[6]" " -type \"float3\" -384.43649 -70.574883 -530.90796"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[7]" " -type \"float3\" -384.43649 -98.280212 -503.20264"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[8]" " -type \"float3\" -384.43649 -116.06808 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[9]" " -type \"float3\" -384.43649 -122.19765 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[10]" " -type \"float3\" -384.43649 -116.06808 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[11]" " -type \"float3\" -384.43649 -98.280205 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[12]" " -type \"float3\" -384.43649 -70.574883 -328.27768"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[13]" " -type \"float3\" -384.43649 -35.66407 -310.48987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[14]" " -type \"float3\" -384.43649 3.0349119 -304.36029"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[15]" " -type \"float3\" -384.43649 41.73386 -310.4899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[16]" " -type \"float3\" -384.43649 76.644669 -328.27777"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[17]" " -type \"float3\" -384.43649 104.35 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[18]" " -type \"float3\" -384.43649 122.13786 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[19]" " -type \"float3\" -384.43649 128.26746 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[20]" " -type \"float3\" -628.46234 216.6982 -499.01624"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[21]" " -type \"float3\" -628.46234 184.78777 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[22]" " -type \"float3\" -628.46234 135.08609 -611.3457"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[23]" " -type \"float3\" -628.46234 72.458328 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[24]" " -type \"float3\" -628.46234 3.0349301999999998 -654.25171"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[25]" " -type \"float3\" -628.46234 -66.388466 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[26]" " -type \"float3\" -628.46234 -129.0162 -611.34564"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[27]" " -type \"float3\" -628.46234 -178.71786 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[28]" " -type \"float3\" -628.46234 -210.62828 -499.0162"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[29]" " -type \"float3\" -628.46234 -221.62386 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[30]" " -type \"float3\" -628.46234 -210.62828 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[31]" " -type \"float3\" -628.46234 -178.71785 -297.54172"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[32]" " -type \"float3\" -628.46234 -129.01617 -247.84007"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[33]" " -type \"float3\" -628.46234 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[34]" " -type \"float3\" -628.46234 3.03492570000000006 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[35]" " -type \"float3\" -628.46234 72.45829 -215.92967"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[36]" " -type \"float3\" -628.46234 135.08601 -247.8401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[37]" " -type \"float3\" -628.46234 184.78766 -297.54175"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[38]" " -type \"float3\" -628.46234 216.69809 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[39]" " -type \"float3\" -628.46234 227.69365 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[40]" " -type \"float3\" -628.46234 3.0349301999999998 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[41]" " -type \"float3\" -644.35461 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[42]" " -type \"float3\" -368.54422 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[43]" " -type \"float3\" -644.35461 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[44]" " -type \"float3\" -368.54422 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[45]" " -type \"float3\" -644.35461 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[46]" " -type \"float3\" -368.54422 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[47]" " -type \"float3\" -644.35461 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[48]" " -type \"float3\" -368.54422 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[49]" " -type \"float3\" -644.35461 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[50]" " -type \"float3\" -368.54422 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[51]" " -type \"float3\" -368.54422 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[52]" " -type \"float3\" -644.35461 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[53]" " -type \"float3\" -644.35461 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[54]" " -type \"float3\" -368.54422 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[55]" " -type \"float3\" -644.35461 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[56]" " -type \"float3\" -368.54422 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[57]" " -type \"float3\" -355.8765 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[58]" " -type \"float3\" -355.8765 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[59]" " -type \"float3\" -355.8765 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[60]" " -type \"float3\" -355.8765 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[61]" " -type \"float3\" -355.8765 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[62]" " -type \"float3\" -355.8765 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[63]" " -type \"float3\" -657.02234 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[64]" " -type \"float3\" -657.02234 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[65]" " -type \"float3\" -657.02234 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[66]" " -type \"float3\" -657.02234 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[67]" " -type \"float3\" -657.02234 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[68]" " -type \"float3\" -657.02234 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[69]" " -type \"float3\" -644.35461 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[70]" " -type \"float3\" -368.54422 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[71]" " -type \"float3\" -368.54422 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[72]" " -type \"float3\" -644.35461 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[73]" " -type \"float3\" -355.8765 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[74]" " -type \"float3\" -355.8765 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[75]" " -type \"float3\" -657.02234 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[76]" " -type \"float3\" -657.02234 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[77]" " -type \"float3\" -433.24167 216.6982 -499.01624"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[78]" " -type \"float3\" -433.24167 184.78778 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[79]" " -type \"float3\" -433.24167 135.08612 -611.3457"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[80]" " -type \"float3\" -433.24167 72.458328 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[81]" " -type \"float3\" -433.24167 3.0349301999999998 -654.25171"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[82]" " -type \"float3\" -433.24167 -66.388466 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[83]" " -type \"float3\" -433.24167 -129.0162 -611.34564"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[84]" " -type \"float3\" -433.24167 -178.71786 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[85]" " -type \"float3\" -433.24167 -210.62828 -499.0162"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[86]" " -type \"float3\" -433.24167 -221.62387 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[87]" " -type \"float3\" -433.24167 -210.62828 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[88]" " -type \"float3\" -433.24167 -178.71785 -297.54172"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[89]" " -type \"float3\" -433.24167 -129.01617 -247.84004"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[90]" " -type \"float3\" -433.24167 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[91]" " -type \"float3\" -433.24167 3.0349301999999998 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[92]" " -type \"float3\" -433.24167 72.45829 -215.92967"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[93]" " -type \"float3\" -433.24167 135.08601 -247.8401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[94]" " -type \"float3\" -433.24167 184.78766 -297.54175"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[95]" " -type \"float3\" -433.24167 216.6981 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[96]" " -type \"float3\" -433.24167 227.69365 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[97]" " -type \"float3\" -408.83908 175.84171 -485.74121"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[98]" " -type \"float3\" -408.83908 150.03319 -536.39331"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[99]" " -type \"float3\" -408.83908 109.8354 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[100]" " -type \"float3\" -408.83908 59.183266 -602.3996"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[101]" " -type \"float3\" -408.83908 3.03492089999999992 -611.29279"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[102]" " -type \"float3\" -408.83908 -53.113445 -602.3996"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[103]" " -type \"float3\" -408.83908 -103.76556 -576.59106"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[104]" " -type \"float3\" -408.83908 -143.96333 -536.39331"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[105]" " -type \"float3\" -408.83908 -169.77184 -485.74118"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[106]" " -type \"float3\" -408.83908 -178.66501 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[107]" " -type \"float3\" -408.83908 -169.77184 -373.44449"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[108]" " -type \"float3\" -408.83908 -143.96332 -322.79239"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[109]" " -type \"float3\" -408.83908 -103.76553 -282.59464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[110]" " -type \"float3\" -408.83908 -53.113426 -256.7861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[111]" " -type \"float3\" -408.83908 3.03492089999999992 -247.89296"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[112]" " -type \"float3\" -408.83908 59.183266 -256.78613"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[113]" " -type \"float3\" -408.83908 109.83537 -282.59464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[114]" " -type \"float3\" -408.83908 150.03311 -322.79239"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[115]" " -type \"float3\" -408.83908 175.84163 -373.44449"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[116]" " -type \"float3\" -408.83908 184.7348 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[117]" " -type \"float3\" -430.66956 175.84177 -485.74121"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[118]" " -type \"float3\" -430.66956 184.73474 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[119]" " -type \"float3\" -430.66956 175.84167 -373.44452"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[120]" " -type \"float3\" -430.66956 150.03313 -322.79236"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[121]" " -type \"float3\" -430.66956 109.8354 -282.59464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[122]" " -type \"float3\" -430.66956 59.183258 -256.7861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[123]" " -type \"float3\" -430.66956 3.03492089999999992 -247.89302"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[124]" " -type \"float3\" -430.66956 -53.113422 -256.78604"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[125]" " -type \"float3\" -430.66956 -103.76556 -282.5946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[126]" " -type \"float3\" -430.66956 -143.96332 -322.79236"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[127]" " -type \"float3\" -430.66956 -169.77187 -373.44452"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[128]" " -type \"float3\" -430.66956 -178.66495 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[129]" " -type \"float3\" -430.66956 -169.77187 -485.74118"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[130]" " -type \"float3\" -430.66956 -143.96335 -536.39331"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[131]" " -type \"float3\" -430.66956 -103.76559 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[132]" " -type \"float3\" -430.66956 -53.113438 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[133]" " -type \"float3\" -430.66956 3.03492089999999992 -611.29272"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[134]" " -type \"float3\" -430.66956 59.183258 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[135]" " -type \"float3\" -430.66956 109.83544 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[136]" " -type \"float3\" -430.66956 150.03322 -536.39337"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[137]" " -type \"float3\" -406.44254 122.13793 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[138]" " -type \"float3\" -406.44254 104.35009 -503.20267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[139]" " -type \"float3\" -406.44254 76.644722 -530.90808"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[140]" " -type \"float3\" -406.44254 41.73386 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[141]" " -type \"float3\" -406.44254 3.0349119 -554.82544"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[142]" " -type \"float3\" -406.44254 -35.66407 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[143]" " -type \"float3\" -406.44254 -70.574883 -530.90796"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[144]" " -type \"float3\" -406.44254 -98.280212 -503.20264"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[145]" " -type \"float3\" -406.44254 -116.06807 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[146]" " -type \"float3\" -406.44254 -122.19767 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[147]" " -type \"float3\" -406.44254 -116.06807 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[148]" " -type \"float3\" -406.44254 -98.280205 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[149]" " -type \"float3\" -406.44254 -70.574883 -328.27768"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[150]" " -type \"float3\" -406.44254 -35.66407 -310.48987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[151]" " -type \"float3\" -406.44254 3.0349119 -304.36029"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[152]" " -type \"float3\" -406.44254 41.73386 -310.4899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[153]" " -type \"float3\" -406.44254 76.644669 -328.27777"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[154]" " -type \"float3\" -406.44254 104.35 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[155]" " -type \"float3\" -406.44254 122.13786 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[156]" " -type \"float3\" -406.44254 128.26746 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[157]" " -type \"float3\" -432.98447 212.61256 -497.68872"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[158]" " -type \"float3\" -432.98447 223.39777 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[159]" " -type \"float3\" -432.98447 212.61247 -361.49698"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[160]" " -type \"float3\" -432.98447 181.31219 -300.0668"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[161]" " -type \"float3\" -432.98447 132.56096 -251.31555"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[162]" " -type \"float3\" -432.98447 71.130783 -220.01534"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[163]" " -type \"float3\" -432.98447 3.0349301999999998 -209.22998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[164]" " -type \"float3\" -432.98447 -65.060944 -220.01527"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[165]" " -type \"float3\" -432.98447 -126.49111 -251.31551"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[166]" " -type \"float3\" -432.98447 -175.24239 -300.06677"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[167]" " -type \"float3\" -432.98447 -206.54265 -361.49695"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[168]" " -type \"float3\" -432.98447 -217.32797 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[169]" " -type \"float3\" -432.98447 -206.54265 -497.68872"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[170]" " -type \"float3\" -432.98447 -175.24242 -559.1189"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[171]" " -type \"float3\" -432.98447 -126.49115 -607.87018"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[172]" " -type \"float3\" -432.98447 -65.060966 -639.17047"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[173]" " -type \"float3\" -432.98447 3.0349301999999998 -649.95575"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[174]" " -type \"float3\" -432.98447 71.130821 -639.17047"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[175]" " -type \"float3\" -432.98447 132.56105 -607.87024"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[176]" " -type \"float3\" -432.98447 181.31233 -559.11896"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[177]" " -type \"float3\" -430.90106 179.51883 -486.93597"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[178]" " -type \"float3\" -430.90106 153.16112 -538.66589"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[179]" " -type \"float3\" -430.90106 112.108 -579.71906"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[180]" " -type \"float3\" -430.90106 60.378014 -606.07672"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[181]" " -type \"float3\" -430.90106 3.03491640000000018 -615.159"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[182]" " -type \"float3\" -430.90106 -54.308193 -606.07672"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[183]" " -type \"float3\" -430.90106 -106.03815 -579.71899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[184]" " -type \"float3\" -430.90106 -147.09126 -538.66589"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[185]" " -type \"float3\" -430.90106 -173.44894 -486.93591"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[186]" " -type \"float3\" -430.90106 -182.53125 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[187]" " -type \"float3\" -430.90106 -173.44894 -372.24976"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[188]" " -type \"float3\" -430.90106 -147.09122 -320.51981"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[189]" " -type \"float3\" -430.90106 -106.03811 -279.46671"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[190]" " -type \"float3\" -430.90106 -54.308174 -253.10898"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[191]" " -type \"float3\" -430.90106 3.03491640000000018 -244.0267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[192]" " -type \"float3\" -430.90106 60.378002 -253.10901"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[193]" " -type \"float3\" -430.90106 112.10794 -279.46674"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[194]" " -type \"float3\" -430.90106 153.16103 -320.51981"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[195]" " -type \"float3\" -430.90106 179.51874 -372.24976"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[196]" " -type \"float3\" -430.90106 188.60103 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[197]" " -type \"float3\" -426.30347 175.84177 -485.74121"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[198]" " -type \"float3\" -426.30347 150.03322 -536.39337"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[199]" " -type \"float3\" -426.30347 109.83544 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[200]" " -type \"float3\" -426.30347 59.183266 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[201]" " -type \"float3\" -426.30347 3.03492089999999992 -611.29272"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[202]" " -type \"float3\" -426.30347 -53.113441 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[203]" " -type \"float3\" -426.30347 -103.76559 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[204]" " -type \"float3\" -426.30347 -143.96335 -536.39331"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[205]" " -type \"float3\" -426.30347 -169.77187 -485.74118"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[206]" " -type \"float3\" -426.30347 -178.66498 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[207]" " -type \"float3\" -426.30347 -169.77187 -373.44452"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[208]" " -type \"float3\" -426.30347 -143.96332 -322.79236"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[209]" " -type \"float3\" -426.30347 -103.76555 -282.5946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[210]" " -type \"float3\" -426.30347 -53.113422 -256.78607"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[211]" " -type \"float3\" -426.30347 3.03492089999999992 -247.89301"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[212]" " -type \"float3\" -426.30347 59.183266 -256.7861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[213]" " -type \"float3\" -426.30347 109.8354 -282.59464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[214]" " -type \"float3\" -426.30347 150.03313 -322.79236"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[215]" " -type \"float3\" -426.30347 175.84167 -373.44452"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[216]" " -type \"float3\" -426.30347 184.73476 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[217]" " -type \"float3\" -414.0784 175.84172 -485.74121"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[218]" " -type \"float3\" -414.0784 150.03319 -536.39337"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[219]" " -type \"float3\" -414.0784 109.8354 -576.59113"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[220]" " -type \"float3\" -414.0784 59.183266 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[221]" " -type \"float3\" -414.0784 3.03492089999999992 -611.29279"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[222]" " -type \"float3\" -414.0784 -53.113441 -602.39966"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[223]" " -type \"float3\" -414.0784 -103.76557 -576.59106"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[224]" " -type \"float3\" -414.0784 -143.96333 -536.39331"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[225]" " -type \"float3\" -414.0784 -169.77184 -485.74118"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[226]" " -type \"float3\" -414.0784 -178.66499 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[227]" " -type \"float3\" -414.0784 -169.77184 -373.44449"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[228]" " -type \"float3\" -414.0784 -143.96332 -322.79236"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[229]" " -type \"float3\" -414.0784 -103.76554 -282.5946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[230]" " -type \"float3\" -414.0784 -53.113426 -256.7861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[231]" " -type \"float3\" -414.0784 3.03492089999999992 -247.89296"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[232]" " -type \"float3\" -414.0784 59.183266 -256.7861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[233]" " -type \"float3\" -414.0784 109.83538 -282.59464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[234]" " -type \"float3\" -414.0784 150.03311 -322.79239"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[235]" " -type \"float3\" -414.0784 175.84163 -373.44449"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[236]" " -type \"float3\" -414.0784 184.7348 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[237]" " -type \"float3\" -408.59943 170.47133 -483.99628"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[238]" " -type \"float3\" -408.59943 179.08806 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[239]" " -type \"float3\" -408.59943 170.47125 -375.18945"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[240]" " -type \"float3\" -408.59943 145.4648 -326.11145"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[241]" " -type \"float3\" -408.59943 106.5163 -287.16296"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[242]" " -type \"float3\" -408.59943 57.438328 -262.15649"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[243]" " -type \"float3\" -408.59943 3.03491640000000018 -253.5397"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[244]" " -type \"float3\" -408.59943 -51.368488 -262.15646"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[245]" " -type \"float3\" -408.59943 -100.44646 -287.16293"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[246]" " -type \"float3\" -408.59943 -139.395 -326.11145"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[247]" " -type \"float3\" -408.59943 -164.40144 -375.18945"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[248]" " -type \"float3\" -408.59943 -173.01826 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[249]" " -type \"float3\" -408.59943 -164.40144 -483.99625"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[250]" " -type \"float3\" -408.59943 -139.39502 -533.07422"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[251]" " -type \"float3\" -408.59943 -100.4465 -572.02277"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[252]" " -type \"float3\" -408.59943 -51.368507 -597.02924"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[253]" " -type \"float3\" -408.59943 3.03491640000000018 -605.64606"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[254]" " -type \"float3\" -408.59943 57.438328 -597.02924"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[255]" " -type \"float3\" -408.59943 106.51632 -572.02283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[256]" " -type \"float3\" -408.59943 145.46487 -533.07428"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[257]" " -type \"float3\" -406.65823 126.97128 -469.86227"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[258]" " -type \"float3\" -406.65823 108.46157 -506.18982"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[259]" " -type \"float3\" -406.65823 79.631874 -535.01953"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[260]" " -type \"float3\" -406.65823 43.304302 -553.52917"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[261]" " -type \"float3\" -406.65823 3.0349119 -559.90753"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[262]" " -type \"float3\" -406.65823 -37.234512 -553.52917"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[263]" " -type \"float3\" -406.65823 -73.562042 -535.01947"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[264]" " -type \"float3\" -406.65823 -102.39169 -506.18982"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[265]" " -type \"float3\" -406.65823 -120.90141 -469.86227"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[266]" " -type \"float3\" -406.65823 -127.27973 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[267]" " -type \"float3\" -406.65823 -120.90141 -389.32346"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[268]" " -type \"float3\" -406.65823 -102.39168 -352.99591"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[269]" " -type \"float3\" -406.65823 -73.562035 -324.16623"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[270]" " -type \"float3\" -406.65823 -37.234512 -305.65652"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[271]" " -type \"float3\" -406.65823 3.0349119 -299.27826"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[272]" " -type \"float3\" -406.65823 43.304302 -305.65656"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[273]" " -type \"float3\" -406.65823 79.631828 -324.16629"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[274]" " -type \"float3\" -406.65823 108.46146 -352.99591"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[275]" " -type \"float3\" -406.65823 126.97118 -389.32346"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[276]" " -type \"float3\" -406.65823 133.3495 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[277]" " -type \"float3\" -402.04132 122.13793 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[278]" " -type \"float3\" -402.04132 104.35009 -503.20267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[279]" " -type \"float3\" -402.04132 76.644722 -530.90808"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[280]" " -type \"float3\" -402.04132 41.73386 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[281]" " -type \"float3\" -402.04132 3.0349119 -554.82544"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[282]" " -type \"float3\" -402.04132 -35.66407 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[283]" " -type \"float3\" -402.04132 -70.574883 -530.90796"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[284]" " -type \"float3\" -402.04132 -98.280212 -503.20264"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[285]" " -type \"float3\" -402.04132 -116.06808 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[286]" " -type \"float3\" -402.04132 -122.19766 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[287]" " -type \"float3\" -402.04132 -116.06808 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[288]" " -type \"float3\" -402.04132 -98.280205 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[289]" " -type \"float3\" -402.04132 -70.574883 -328.27768"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[290]" " -type \"float3\" -402.04132 -35.66407 -310.48987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[291]" " -type \"float3\" -402.04132 3.0349119 -304.36029"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[292]" " -type \"float3\" -402.04132 41.73386 -310.4899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[293]" " -type \"float3\" -402.04132 76.644669 -328.27777"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[294]" " -type \"float3\" -402.04132 104.35 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[295]" " -type \"float3\" -402.04132 122.13786 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[296]" " -type \"float3\" -402.04132 128.26747 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[297]" " -type \"float3\" -387.95746 122.13793 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[298]" " -type \"float3\" -387.95746 104.35009 -503.20267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[299]" " -type \"float3\" -387.95746 76.644722 -530.90808"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[300]" " -type \"float3\" -387.95746 41.73386 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[301]" " -type \"float3\" -387.95746 3.0349119 -554.82544"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[302]" " -type \"float3\" -387.95746 -35.66407 -548.69586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[303]" " -type \"float3\" -387.95746 -70.574883 -530.90796"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[304]" " -type \"float3\" -387.95746 -98.280212 -503.20264"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[305]" " -type \"float3\" -387.95746 -116.06808 -468.29184"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[306]" " -type \"float3\" -387.95746 -122.19765 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[307]" " -type \"float3\" -387.95746 -116.06808 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[308]" " -type \"float3\" -387.95746 -98.280205 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[309]" " -type \"float3\" -387.95746 -70.574883 -328.27768"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[310]" " -type \"float3\" -387.95746 -35.66407 -310.48987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[311]" " -type \"float3\" -387.95746 3.0349119 -304.36029"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[312]" " -type \"float3\" -387.95746 41.73386 -310.4899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[313]" " -type \"float3\" -387.95746 76.644669 -328.27777"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[314]" " -type \"float3\" -387.95746 104.35 -355.98306"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[315]" " -type \"float3\" -387.95746 122.13786 -390.89392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[316]" " -type \"float3\" -387.95746 128.26747 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[317]" " -type \"float3\" -608.94031 216.6982 -499.01624"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[318]" " -type \"float3\" -608.94031 227.69365 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[319]" " -type \"float3\" -608.94031 216.69809 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[320]" " -type \"float3\" -608.94031 184.78766 -297.54175"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[321]" " -type \"float3\" -608.94031 135.08601 -247.8401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[322]" " -type \"float3\" -608.94031 72.45829 -215.92967"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[323]" " -type \"float3\" -608.94031 -129.01617 -247.84007"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[324]" " -type \"float3\" -608.94031 -178.71785 -297.54172"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[325]" " -type \"float3\" -608.94031 -210.62828 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[326]" " -type \"float3\" -608.94031 -221.62386 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[327]" " -type \"float3\" -608.94031 -210.62828 -499.0162"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[328]" " -type \"float3\" -608.94031 -178.71786 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[329]" " -type \"float3\" -608.94031 -129.0162 -611.34564"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[330]" " -type \"float3\" -608.94031 -66.388466 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[331]" " -type \"float3\" -608.94031 3.0349301999999998 -654.25171"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[332]" " -type \"float3\" -608.94031 72.458328 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[333]" " -type \"float3\" -608.94031 135.08609 -611.3457"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[334]" " -type \"float3\" -608.94031 184.78777 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[335]" " -type \"float3\" -466.78909 216.85811 -498.58615"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[336]" " -type \"float3\" -482.6329 197.39172 -537.00861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[337]" " -type \"float3\" -559.42737 197.39178 -537.13031"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[338]" " -type \"float3\" -575.39288 216.85818 -498.75827"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[339]" " -type \"float3\" -482.75461 222.79485 -460.21414"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[340]" " -type \"float3\" -559.54907 222.79491 -460.33585"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[341]" " -type \"float3\" -521.09094 184.78777 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[342]" " -type \"float3\" -521.09094 135.08609 -611.3457"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[343]" " -type \"float3\" -521.09094 72.458328 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[344]" " -type \"float3\" -521.09094 3.0349301999999998 -654.25171"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[345]" " -type \"float3\" -521.09094 -66.388466 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[346]" " -type \"float3\" -521.09094 -129.0162 -611.34564"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[347]" " -type \"float3\" -521.09094 -178.71786 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[348]" " -type \"float3\" -521.09094 -210.62828 -499.0162"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[349]" " -type \"float3\" -521.09094 -221.62387 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[350]" " -type \"float3\" -521.09094 -210.62828 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[351]" " -type \"float3\" -521.09094 -178.71785 -297.54172"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[352]" " -type \"float3\" -521.09094 -129.01617 -247.84007"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[353]" " -type \"float3\" -521.09094 72.45829 -215.92967"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[354]" " -type \"float3\" -521.09094 135.08601 -247.8401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[355]" " -type \"float3\" -521.09094 184.78766 -297.54175"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[356]" " -type \"float3\" -521.09094 216.69809 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[357]" " -type \"float3\" -521.09094 227.69365 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[358]" " -type \"float3\" -521.17706 225.41806 -444.37033"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[359]" " -type \"float3\" -521.00488 189.38429 -552.97412"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[360]" " -type \"float3\" -466.78909 218.89554 -498.58615"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[361]" " -type \"float3\" -482.6329 199.72452 -537.00861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[362]" " -type \"float3\" -521.00488 191.83859 -552.97412"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[363]" " -type \"float3\" -559.42737 199.72458 -537.13031"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[364]" " -type \"float3\" -575.39288 218.89563 -498.75827"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[365]" " -type \"float3\" -559.54907 224.74226 -460.33585"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[366]" " -type \"float3\" -521.17706 227.32562 -444.37033"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[367]" " -type \"float3\" -482.75461 224.7422 -460.21414"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[368]" " -type \"float3\" -463.34875 216.84172 -498.63025"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[369]" " -type \"float3\" -477.56778 196.09918 -539.53497"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[370]" " -type \"float3\" -521.01373 188.91292 -553.86322"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[371]" " -type \"float3\" -564.50494 196.09924 -539.64423"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[372]" " -type \"float3\" -578.83319 216.84178 -498.78473"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[373]" " -type \"float3\" -564.6142 223.29729 -457.18314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[374]" " -type \"float3\" -521.16821 225.65143 -442.85489"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[375]" " -type \"float3\" -477.677 223.29723 -457.07388"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[376]" " -type \"float3\" -625.85559 216.6982 -499.01624"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[377]" " -type \"float3\" -625.85559 227.69365 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[378]" " -type \"float3\" -625.85559 216.69809 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[379]" " -type \"float3\" -625.85559 184.78766 -297.54175"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[380]" " -type \"float3\" -625.85559 135.08601 -247.8401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[381]" " -type \"float3\" -625.85559 72.45829 -215.92967"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[382]" " -type \"float3\" -625.85559 -129.01617 -247.84007"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[383]" " -type \"float3\" -625.85559 -178.71785 -297.54172"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[384]" " -type \"float3\" -625.85559 -210.62828 -360.16946"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[385]" " -type \"float3\" -625.85559 -221.62386 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[386]" " -type \"float3\" -625.85559 -210.62828 -499.0162"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[387]" " -type \"float3\" -625.85559 -178.71786 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[388]" " -type \"float3\" -625.85559 -129.0162 -611.34564"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[389]" " -type \"float3\" -625.85559 -66.388466 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[390]" " -type \"float3\" -625.85559 3.0349301999999998 -654.25171"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[391]" " -type \"float3\" -625.85559 72.458328 -643.2561"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[392]" " -type \"float3\" -625.85559 135.08609 -611.3457"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[393]" " -type \"float3\" -625.85559 184.78777 -561.64398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[394]" " -type \"float3\" -466.78909 236.42789 -498.58615"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[395]" " -type \"float3\" -482.6329 236.42778 -537.00861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[396]" " -type \"float3\" -521.00488 236.42772 -552.97412"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[397]" " -type \"float3\" -559.42737 236.42778 -537.13031"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[398]" " -type \"float3\" -575.39288 236.42786 -498.75827"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[399]" " -type \"float3\" -559.54907 236.4279 -460.33585"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[400]" " -type \"float3\" -521.17706 236.42793 -444.37033"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[401]" " -type \"float3\" -482.75461 236.4279 -460.21414"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[402]" " -type \"float3\" -480.08676 252.04741 -539.54669"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[403]" " -type \"float3\" -463.19397 252.04752 -498.58044"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[404]" " -type \"float3\" -463.19397 236.42789 -498.58044"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[405]" " -type \"float3\" -480.08676 236.42778 -539.54669"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[406]" " -type \"float3\" -520.99921 236.42772 -556.56921"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[407]" " -type \"float3\" -520.99921 252.04733 -556.56921"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[408]" " -type \"float3\" -561.96545 236.42778 -539.67645"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[409]" " -type \"float3\" -578.98798 236.42786 -498.76398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[410]" " -type \"float3\" -578.98798 252.04752 -498.76398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[411]" " -type \"float3\" -561.96545 252.04741 -539.67645"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[412]" " -type \"float3\" -480.21652 236.4279 -457.66797"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[413]" " -type \"float3\" -480.21652 252.04759 -457.66797"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[414]" " -type \"float3\" -562.09521 236.4279 -457.79776"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[415]" " -type \"float3\" -562.09521 252.04759 -457.79776"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[416]" " -type \"float3\" -521.18274 236.42793 -440.77524"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[417]" " -type \"float3\" -521.18274 252.04759 -440.77524"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[418]" " -type \"float3\" -458.14484 252.04752 -498.57245"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[419]" " -type \"float3\" -476.65189 252.04759 -454.09204"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[420]" " -type \"float3\" -458.14484 351.13321 -498.57245"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[421]" " -type \"float3\" -476.65189 351.13348 -454.09204"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[422]" " -type \"float3\" -521.19073 252.04759 -435.7261"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[423]" " -type \"float3\" -521.19073 351.13364 -435.7261"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[424]" " -type \"float3\" -565.67114 252.04759 -454.23315"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[425]" " -type \"float3\" -565.67114 351.13354 -454.23315"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[426]" " -type \"float3\" -584.03711 252.04752 -498.77197"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[427]" " -type \"float3\" -584.03711 351.1333 -498.77197"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[428]" " -type \"float3\" -565.53003 252.04741 -543.25238"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[429]" " -type \"float3\" -565.53003 351.133 -543.25238"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[430]" " -type \"float3\" -520.99121 252.04733 -561.61835"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[431]" " -type \"float3\" -520.99121 351.13287 -561.61835"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[432]" " -type \"float3\" -476.5108 252.04741 -543.11127"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[433]" " -type \"float3\" -476.5108 351.13297 -543.11127"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[434]" " -type \"float3\" -466.39346 347.95529 -443.80103"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[435]" " -type \"float3\" -443.61417 347.95502 -498.54941"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[436]" " -type \"float3\" -466.21982 347.95477 -553.36975"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[437]" " -type \"float3\" -575.96216 347.95535 -443.9747"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[438]" " -type \"float3\" -521.21381 347.95541 -421.19543"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[439]" " -type \"float3\" -575.78851 347.9548 -553.5434"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[440]" " -type \"float3\" -598.56775 347.95511 -498.79501"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[441]" " -type \"float3\" -520.96814 347.95468 -576.14899"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[442]" " -type \"float3\" -506.96558 369.54648 -484.50192"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[443]" " -type \"float3\" -501.08289 369.54623 -498.6405"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[444]" " -type \"float3\" -506.92072 369.54596 -512.79761"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[445]" " -type \"float3\" -535.26123 369.54657 -484.54681"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[446]" " -type \"float3\" -521.12268 369.54663 -478.66412"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[447]" " -type \"float3\" -535.21637 369.54602 -512.84253"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[448]" " -type \"float3\" -541.09906 369.5463 -498.70392"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[449]" " -type \"float3\" -521.05927 369.5459 -518.6803"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[450]" " -type \"float3\" -484.53714 360.34 -462.00229"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[451]" " -type \"float3\" -469.31393 360.33969 -498.59015"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[452]" " -type \"float3\" -484.42108 360.33948 -535.22607"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[453]" " -type \"float3\" -521.00891 360.33942 -550.44928"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[454]" " -type \"float3\" -557.64484 360.33948 -535.34216"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[455]" " -type \"float3\" -572.86804 360.33978 -498.75427"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[456]" " -type \"float3\" -557.76086 360.34009 -462.11838"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[457]" " -type \"float3\" -521.17303 360.34015 -446.89517"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[458]" " -type \"float3\" -458.14484 349.13089 -498.57245"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[459]" " -type \"float3\" -476.5108 349.13065 -543.11127"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[460]" " -type \"float3\" -520.99121 349.13055 -561.61835"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[461]" " -type \"float3\" -565.53003 349.13068 -543.25238"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[462]" " -type \"float3\" -584.03711 349.13095 -498.77197"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[463]" " -type \"float3\" -565.67114 349.13123 -454.23315"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[464]" " -type \"float3\" -521.19073 349.13129 -435.7261"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[465]" " -type \"float3\" -476.65189 349.13116 -454.09204"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[466]" " -type \"float3\" -475.15225 351.13348 -452.58762"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[467]" " -type \"float3\" -456.02063 351.13324 -498.56909"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[468]" " -type \"float3\" -475.00641 351.13297 -544.61096"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[469]" " -type \"float3\" -520.98779 351.13287 -563.74255"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[470]" " -type \"float3\" -567.02972 351.133 -544.75684"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[471]" " -type \"float3\" -586.16132 351.1333 -498.77536"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[472]" " -type \"float3\" -567.17554 351.13354 -452.73349"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[473]" " -type \"float3\" -521.19409 351.13364 -433.6019"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[474]" " -type \"float3\" -458.14484 253.92712 -498.57245"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[475]" " -type \"float3\" -476.5108 253.92702 -543.11133"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[476]" " -type \"float3\" -520.99121 253.92694 -561.61835"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[477]" " -type \"float3\" -565.53003 253.92702 -543.25238"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[478]" " -type \"float3\" -584.03711 253.92712 -498.77197"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[479]" " -type \"float3\" -565.67114 253.9272 -454.23315"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[480]" " -type \"float3\" -521.19073 253.9272 -435.7261"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[481]" " -type \"float3\" -476.65189 253.9272 -454.09204"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[482]" " -type \"float3\" -463.19397 250.32376 -498.58044"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[483]" " -type \"float3\" -480.08676 250.32364 -539.54669"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[484]" " -type \"float3\" -520.99921 250.32356 -556.56921"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[485]" " -type \"float3\" -561.96545 250.32364 -539.67645"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[486]" " -type \"float3\" -578.98798 250.32376 -498.76398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[487]" " -type \"float3\" -562.09521 250.32382 -457.79776"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[488]" " -type \"float3\" -521.18274 250.32382 -440.77524"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[489]" " -type \"float3\" -480.21652 250.32382 -457.66797"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[490]" " -type \"float3\" -463.19397 238.15421 -498.58044"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[491]" " -type \"float3\" -480.08676 238.15411 -539.54669"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[492]" " -type \"float3\" -520.99921 238.15402 -556.56921"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[493]" " -type \"float3\" -561.96545 238.15411 -539.67645"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[494]" " -type \"float3\" -578.98798 238.15417 -498.76398"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[495]" " -type \"float3\" -562.09521 238.15422 -457.79776"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[496]" " -type \"float3\" -521.18274 238.15427 -440.77524"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[497]" " -type \"float3\" -480.21652 238.15422 -457.66797"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[498]" " -type \"float3\" -466.78909 234.80617 -498.58615"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[499]" " -type \"float3\" -482.6329 234.80609 -537.00861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[500]" " -type \"float3\" -521.00488 234.80606 -552.97412"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[501]" " -type \"float3\" -559.42737 234.80609 -537.13031"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[502]" " -type \"float3\" -575.39288 234.80617 -498.75827"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[503]" " -type \"float3\" -559.54907 234.8062 -460.33585"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[504]" " -type \"float3\" -521.17706 234.80621 -444.37033"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[505]" " -type \"float3\" -482.75461 234.8062 -460.21414"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[506]" " -type \"float3\" -608.94031 10.802138 -206.16428"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[507]" " -type \"float3\" -608.94031 3.03492570000000006 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[508]" " -type \"float3\" -608.94031 3.03492570000000006 -197.07004"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[509]" " -type \"float3\" -625.85559 3.03492089999999992 -196.26355"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[510]" " -type \"float3\" -617.69513 3.03492089999999992 -196.77367"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[511]" " -type \"float3\" -618.2749 3.03492089999999992 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[512]" " -type \"float3\" -626.17078 11.428676 -206.26352"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[513]" " -type \"float3\" -625.85559 2.5907376000000002 -205.00443"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[514]" " -type \"float3\" -625.85559 -5.75984810000000014 -197.42262"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[515]" " -type \"float3\" -608.94031 -72.637383 -219.11363"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[516]" " -type \"float3\" -608.94031 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[517]" " -type \"float3\" -608.94031 -66.388451 -208.91629"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[518]" " -type \"float3\" -625.85559 -66.388451 -207.30585"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[519]" " -type \"float3\" -625.85559 -57.593685 -205.63229"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[520]" " -type \"float3\" -625.85559 -65.745331 -215.82777"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[521]" " -type \"float3\" -626.15497 -73.581581 -219.59471"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[522]" " -type \"float3\" -619.38684 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[523]" " -type \"float3\" -618.12048 -66.388451 -208.19456"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[524]" " -type \"float3\" -521.09094 -66.388451 -207.72583"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[525]" " -type \"float3\" -529.25507 -66.388451 -207.76553"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[526]" " -type \"float3\" -526.24402 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[527]" " -type \"float3\" -513.58411 -71.740074 -218.65642"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[528]" " -type \"float3\" -521.09094 -57.766598 -214.56407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[529]" " -type \"float3\" -521.09094 -58.362869 -206.53288"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[530]" " -type \"float3\" -521.09094 3.0349301999999998 -196.51494"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[531]" " -type \"float3\" -521.09094 -4.99064920000000001 -198.07959"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[532]" " -type \"float3\" -521.09094 -4.32592110000000041 -206.09991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[533]" " -type \"float3\" -513.13257 9.32410909999999937 -205.93018"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[534]" " -type \"float3\" -529.75293 3.0349301999999998 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[535]" " -type \"float3\" -529.72028 3.0349301999999998 -196.30479"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[536]" " -type \"float3\" -529.53174 3.0349301999999998 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[537]" " -type \"float3\" -529.54779 -5.42187169999999963 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[538]" " -type \"float3\" -521.09094 -5.460423 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[539]" " -type \"float3\" -521.09094 -5.42186210000000024 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[540]" " -type \"float3\" -521.09094 3.0349301999999998 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[541]" " -type \"float3\" -529.54779 3.0349301999999998 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[542]" " -type \"float3\" -521.09094 -66.388451 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[543]" " -type \"float3\" -521.09094 -57.931656 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[544]" " -type \"float3\" -521.09094 -57.898949 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[545]" " -type \"float3\" -529.54779 -57.931656 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[546]" " -type \"float3\" -529.56946 -66.388451 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[547]" " -type \"float3\" -529.54779 -66.388451 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[548]" " -type \"float3\" -608.94031 -5.421876 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[549]" " -type \"float3\" -608.94031 3.03492570000000006 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[550]" " -type \"float3\" -608.94031 3.03492570000000006 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[551]" " -type \"float3\" -608.94031 -66.388451 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[552]" " -type \"float3\" -608.94031 -66.388451 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[553]" " -type \"float3\" -608.94031 -57.931664 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[554]" " -type \"float3\" -625.85559 -5.39122530000000033 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[555]" " -type \"float3\" -617.3988 -5.42187169999999963 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[556]" " -type \"float3\" -617.37152 3.03492570000000006 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[557]" " -type \"float3\" -617.39874 3.03492089999999992 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[558]" " -type \"float3\" -625.85559 3.03492089999999992 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[559]" " -type \"float3\" -625.85559 -5.42187169999999963 -150.78702"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[560]" " -type \"float3\" -617.34564 -66.388451 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[561]" " -type \"float3\" -617.3988 -57.931664 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[562]" " -type \"float3\" -625.85559 -57.957718 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[563]" " -type \"float3\" -625.85559 -57.931656 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[564]" " -type \"float3\" -625.85559 -66.388451 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[565]" " -type \"float3\" -617.3988 -66.388451 -150.78712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[566]" " -type \"float3\" -625.85559 3.03492089999999992 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[567]" " -type \"float3\" -625.85559 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[568]" " -type \"float3\" -521.09094 -66.388451 -215.92963"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[569]" " -type \"float3\" -521.09094 3.0349301999999998 -204.93407"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[570]" " -type \"float3\" -521.09094 3.0349301999999998 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[571]" " -type \"float3\" -521.09094 -66.388451 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[572]" " -type \"float3\" -625.85559 3.03492089999999992 -142.33023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[573]" " -type \"float3\" -625.85559 -66.388451 -142.33034"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[574]" " -type \"float3\" -368.54422 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[575]" " -type \"float3\" -355.8765 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[576]" " -type \"float3\" -355.8765 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[577]" " -type \"float3\" -368.54422 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[578]" " -type \"float3\" -368.54422 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[579]" " -type \"float3\" -644.35461 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[580]" " -type \"float3\" -644.35461 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[581]" " -type \"float3\" -657.02234 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[582]" " -type \"float3\" -657.02234 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[583]" " -type \"float3\" -644.35461 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[584]" " -type \"float3\" -368.54425 -62.938274 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[585]" " -type \"float3\" -368.54422 -62.93832 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[586]" " -type \"float3\" -368.54422 -62.93832 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[587]" " -type \"float3\" -644.35461 -62.938274 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[588]" " -type \"float3\" -644.35461 -62.938274 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[589]" " -type \"float3\" -644.35461 -62.93832 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[590]" " -type \"float3\" -368.54425 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[591]" " -type \"float3\" -355.8765 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[592]" " -type \"float3\" -355.8765 128.44394 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[593]" " -type \"float3\" -368.54422 128.44394 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[594]" " -type \"float3\" -368.54425 -62.938274 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[595]" " -type \"float3\" -368.54422 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[596]" " -type \"float3\" -644.35461 -65.749062 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[597]" " -type \"float3\" -644.35461 -62.938316 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[598]" " -type \"float3\" -644.35461 128.44394 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[599]" " -type \"float3\" -657.02234 128.44394 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[600]" " -type \"float3\" -657.02234 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[601]" " -type \"float3\" -644.35461 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[602]" " -type \"float3\" -371.32358 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[603]" " -type \"float3\" -371.3237 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[604]" " -type \"float3\" -371.3237 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[605]" " -type \"float3\" -371.3237 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[606]" " -type \"float3\" -371.3237 -62.938316 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[607]" " -type \"float3\" -371.32358 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[608]" " -type \"float3\" -371.3237 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[609]" " -type \"float3\" -371.32358 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[610]" " -type \"float3\" -371.3237 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[611]" " -type \"float3\" -371.32358 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[612]" " -type \"float3\" -371.32358 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[613]" " -type \"float3\" -371.32358 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[614]" " -type \"float3\" -371.3237 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[615]" " -type \"float3\" -371.32358 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[616]" " -type \"float3\" -371.3237 128.44394 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[617]" " -type \"float3\" -371.32358 -62.938274 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[618]" " -type \"float3\" -640.9621 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[619]" " -type \"float3\" -640.96222 -65.749062 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[620]" " -type \"float3\" -640.96222 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[621]" " -type \"float3\" -640.96222 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[622]" " -type \"float3\" -640.96222 -62.938274 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[623]" " -type \"float3\" -640.9621 128.44394 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[624]" " -type \"float3\" -640.96222 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[625]" " -type \"float3\" -640.9621 194.97731 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[626]" " -type \"float3\" -640.96222 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[627]" " -type \"float3\" -640.9621 194.97731 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[628]" " -type \"float3\" -640.9621 194.97731 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[629]" " -type \"float3\" -640.9621 194.97731 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[630]" " -type \"float3\" -640.96222 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[631]" " -type \"float3\" -640.9621 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[632]" " -type \"float3\" -640.96222 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[633]" " -type \"float3\" -640.9621 -62.938316 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[634]" " -type \"float3\" -644.35461 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[635]" " -type \"float3\" -644.35461 125.28824 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[636]" " -type \"float3\" -644.35461 125.28824 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[637]" " -type \"float3\" -644.35461 125.28824 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[638]" " -type \"float3\" -640.9621 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[639]" " -type \"float3\" -371.32358 125.28824 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[640]" " -type \"float3\" -368.54422 125.28831 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[641]" " -type \"float3\" -368.54422 125.28831 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[642]" " -type \"float3\" -368.54422 125.28831 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[643]" " -type \"float3\" -368.54422 125.28824 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[644]" " -type \"float3\" -371.3237 125.28831 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[645]" " -type \"float3\" -640.96222 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[646]" " -type \"float3\" -368.54422 131.12112 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[647]" " -type \"float3\" -355.8765 131.12112 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[648]" " -type \"float3\" -355.8765 131.12109 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[649]" " -type \"float3\" -355.8765 131.12109 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[650]" " -type \"float3\" -355.8765 131.12109 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[651]" " -type \"float3\" -355.8765 131.12112 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[652]" " -type \"float3\" -355.8765 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[653]" " -type \"float3\" -368.54422 131.12109 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[654]" " -type \"float3\" -371.3237 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[655]" " -type \"float3\" -640.96222 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[656]" " -type \"float3\" -644.35461 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[657]" " -type \"float3\" -657.02234 131.12109 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[658]" " -type \"float3\" -657.02234 131.12109 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[659]" " -type \"float3\" -657.02234 131.12112 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[660]" " -type \"float3\" -657.02234 131.12112 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[661]" " -type \"float3\" -657.02234 131.12112 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[662]" " -type \"float3\" -657.02234 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[663]" " -type \"float3\" -644.35461 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[664]" " -type \"float3\" -640.9621 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[665]" " -type \"float3\" -371.32358 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[666]" " -type \"float3\" -644.35461 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[667]" " -type \"float3\" -657.02234 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[668]" " -type \"float3\" -657.02234 192.56313 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[669]" " -type \"float3\" -657.02234 192.56313 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[670]" " -type \"float3\" -657.02234 192.56313 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[671]" " -type \"float3\" -657.02234 192.56311 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[672]" " -type \"float3\" -657.02234 192.56311 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[673]" " -type \"float3\" -644.35461 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[674]" " -type \"float3\" -640.9621 192.56311 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[675]" " -type \"float3\" -371.32358 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[676]" " -type \"float3\" -368.54422 192.56311 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[677]" " -type \"float3\" -355.8765 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[678]" " -type \"float3\" -355.8765 192.56313 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[679]" " -type \"float3\" -355.8765 192.56311 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[680]" " -type \"float3\" -355.8765 192.56311 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[681]" " -type \"float3\" -355.8765 192.56311 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[682]" " -type \"float3\" -355.8765 192.56313 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[683]" " -type \"float3\" -368.54422 192.56313 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[684]" " -type \"float3\" -371.3237 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[685]" " -type \"float3\" -640.96222 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[686]" " -type \"float3\" -644.35461 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[687]" " -type \"float3\" -657.02234 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[688]" " -type \"float3\" -657.02234 131.12109 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[689]" " -type \"float3\" -657.02234 192.56311 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[690]" " -type \"float3\" -657.02234 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[691]" " -type \"float3\" -644.35461 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[692]" " -type \"float3\" -640.9621 194.97731 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[693]" " -type \"float3\" -371.32358 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[694]" " -type \"float3\" -368.54422 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[695]" " -type \"float3\" -355.8765 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[696]" " -type \"float3\" -355.8765 192.56313 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[697]" " -type \"float3\" -355.8765 131.12112 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[698]" " -type \"float3\" -355.8765 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[699]" " -type \"float3\" -368.54422 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[700]" " -type \"float3\" -371.3237 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[701]" " -type \"float3\" -640.96222 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[702]" " -type \"float3\" -650.80212 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[703]" " -type \"float3\" -650.80212 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[704]" " -type \"float3\" -650.80212 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[705]" " -type \"float3\" -650.80212 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[706]" " -type \"float3\" -650.80212 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[707]" " -type \"float3\" -650.80212 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[708]" " -type \"float3\" -650.80212 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[709]" " -type \"float3\" -650.80212 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[710]" " -type \"float3\" -650.80212 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[711]" " -type \"float3\" -650.80212 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[712]" " -type \"float3\" -650.80212 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[713]" " -type \"float3\" -650.80212 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[714]" " -type \"float3\" -650.80212 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[715]" " -type \"float3\" -650.80212 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[716]" " -type \"float3\" -650.80212 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[717]" " -type \"float3\" -650.80212 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[718]" " -type \"float3\" -650.80212 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[719]" " -type \"float3\" -650.80212 128.44394 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[720]" " -type \"float3\" -368.54422 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[721]" " -type \"float3\" -355.8765 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[722]" " -type \"float3\" -355.8765 131.12112 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[723]" " -type \"float3\" -355.8765 192.56313 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[724]" " -type \"float3\" -355.8765 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[725]" " -type \"float3\" -368.54422 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[726]" " -type \"float3\" -371.32367 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[727]" " -type \"float3\" -640.96216 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[728]" " -type \"float3\" -644.35461 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[729]" " -type \"float3\" -650.80212 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[730]" " -type \"float3\" -657.02234 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[731]" " -type \"float3\" -657.02234 192.56311 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[732]" " -type \"float3\" -657.02234 131.12112 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[733]" " -type \"float3\" -657.02234 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[734]" " -type \"float3\" -650.80212 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[735]" " -type \"float3\" -644.35461 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[736]" " -type \"float3\" -640.9621 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[737]" " -type \"float3\" -371.32361 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[738]" " -type \"float3\" -360.06995 128.44394 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[739]" " -type \"float3\" -360.06995 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[740]" " -type \"float3\" -360.06995 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[741]" " -type \"float3\" -360.06995 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[742]" " -type \"float3\" -360.06995 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[743]" " -type \"float3\" -360.06995 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[744]" " -type \"float3\" -360.06995 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[745]" " -type \"float3\" -360.06995 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[746]" " -type \"float3\" -360.06998 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[747]" " -type \"float3\" -360.06998 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[748]" " -type \"float3\" -360.06995 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[749]" " -type \"float3\" -360.06995 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[750]" " -type \"float3\" -360.06995 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[751]" " -type \"float3\" -360.06995 192.56313 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[752]" " -type \"float3\" -360.06995 131.12112 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[753]" " -type \"float3\" -360.06995 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[754]" " -type \"float3\" -360.06995 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[755]" " -type \"float3\" -360.06995 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[756]" " -type \"float3\" -360.06995 128.44394 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[757]" " -type \"float3\" -360.06995 128.44394 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[758]" " -type \"float3\" -521.091 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[759]" " -type \"float3\" -521.09088 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[760]" " -type \"float3\" -521.09094 -62.938297 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[761]" " -type \"float3\" -521.09106 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[762]" " -type \"float3\" -521.09106 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[763]" " -type \"float3\" -521.09094 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[764]" " -type \"float3\" -521.09088 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[765]" " -type \"float3\" -521.09094 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[766]" " -type \"float3\" -521.091 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[767]" " -type \"float3\" -521.09106 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[768]" " -type \"float3\" -521.091 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[769]" " -type \"float3\" -521.09088 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[770]" " -type \"float3\" -521.09094 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[771]" " -type \"float3\" -521.09088 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[772]" " -type \"float3\" -521.09106 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[773]" " -type \"float3\" -521.09094 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[774]" " -type \"float3\" -521.09088 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[775]" " -type \"float3\" -521.09094 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[776]" " -type \"float3\" -521.091 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[777]" " -type \"float3\" -521.09106 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[778]" " -type \"float3\" -521.091 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[779]" " -type \"float3\" -521.09088 128.44394 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[780]" " -type \"float3\" -521.09088 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[781]" " -type \"float3\" -521.091 -62.938297 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[782]" " -type \"float3\" -521.09106 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[783]" " -type \"float3\" -521.09106 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[784]" " -type \"float3\" -368.54425 72.458328 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[785]" " -type \"float3\" -368.54425 72.458366 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[786]" " -type \"float3\" -368.54425 72.458351 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[787]" " -type \"float3\" -368.54425 72.458351 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[788]" " -type \"float3\" -371.32361 72.458313 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[789]" " -type \"float3\" -521.09094 72.458305 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[790]" " -type \"float3\" -640.9621 72.458328 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[791]" " -type \"float3\" -644.35461 72.458328 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[792]" " -type \"float3\" -644.35461 72.458328 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[793]" " -type \"float3\" -644.35461 72.458313 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[794]" " -type \"float3\" -644.35461 72.458351 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[795]" " -type \"float3\" -640.96216 72.458351 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[796]" " -type \"float3\" -521.091 72.458366 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[797]" " -type \"float3\" -371.32367 72.458366 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[798]" " -type \"float3\" -368.54425 3.03493950000000012 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[799]" " -type \"float3\" -368.54425 3.03495790000000021 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[800]" " -type \"float3\" -368.54422 3.0349301999999998 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[801]" " -type \"float3\" -368.54422 3.0349301999999998 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[802]" " -type \"float3\" -371.32364 3.03490260000000012 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[803]" " -type \"float3\" -521.091 3.0349119 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[804]" " -type \"float3\" -640.96216 3.03493950000000012 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[805]" " -type \"float3\" -644.35461 3.03493950000000012 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[806]" " -type \"float3\" -644.35461 3.03493950000000012 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[807]" " -type \"float3\" -644.35461 3.03490260000000012 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[808]" " -type \"float3\" -644.35461 3.0349301999999998 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[809]" " -type \"float3\" -640.96216 3.0349301999999998 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[810]" " -type \"float3\" -521.09094 3.0349488 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[811]" " -type \"float3\" -371.32364 3.03495790000000021 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[812]" " -type \"float3\" -608.94025 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[813]" " -type \"float3\" -608.94031 -65.749062 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[814]" " -type \"float3\" -608.94037 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[815]" " -type \"float3\" -608.94037 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[816]" " -type \"float3\" -608.94031 -62.938278 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[817]" " -type \"float3\" -608.94031 3.03493479999999982 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[818]" " -type \"float3\" -608.94025 72.458328 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[819]" " -type \"float3\" -608.94025 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[820]" " -type \"float3\" -608.94025 128.44395 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[821]" " -type \"float3\" -608.94031 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[822]" " -type \"float3\" -608.94037 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[823]" " -type \"float3\" -608.94031 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[824]" " -type \"float3\" -608.94025 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[825]" " -type \"float3\" -608.94025 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[826]" " -type \"float3\" -608.94025 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[827]" " -type \"float3\" -608.94037 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[828]" " -type \"float3\" -608.94025 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[829]" " -type \"float3\" -608.94025 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[830]" " -type \"float3\" -608.94025 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[831]" " -type \"float3\" -608.94031 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[832]" " -type \"float3\" -608.94037 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[833]" " -type \"float3\" -608.94031 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[834]" " -type \"float3\" -608.94025 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[835]" " -type \"float3\" -608.94025 128.44395 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[836]" " -type \"float3\" -608.94025 128.44395 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[837]" " -type \"float3\" -608.94037 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[838]" " -type \"float3\" -608.94037 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[839]" " -type \"float3\" -608.94031 72.458359 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[840]" " -type \"float3\" -608.94025 3.03493479999999982 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[841]" " -type \"float3\" -608.94025 -62.938313 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[842]" " -type \"float3\" -433.24173 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[843]" " -type \"float3\" -433.24161 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[844]" " -type \"float3\" -433.24161 -62.938286 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[845]" " -type \"float3\" -433.24167 3.03495340000000002 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[846]" " -type \"float3\" -433.2417 72.458366 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[847]" " -type \"float3\" -433.24173 125.28831 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[848]" " -type \"float3\" -433.24173 128.44394 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[849]" " -type \"float3\" -433.24164 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[850]" " -type \"float3\" -433.24161 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[851]" " -type \"float3\" -433.24161 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[852]" " -type \"float3\" -433.24173 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[853]" " -type \"float3\" -433.24173 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[854]" " -type \"float3\" -433.2417 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[855]" " -type \"float3\" -433.24161 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[856]" " -type \"float3\" -433.24161 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[857]" " -type \"float3\" -433.24161 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[858]" " -type \"float3\" -433.24173 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[859]" " -type \"float3\" -433.24161 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[860]" " -type \"float3\" -433.24161 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[861]" " -type \"float3\" -433.24161 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[862]" " -type \"float3\" -433.24173 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[863]" " -type \"float3\" -433.24173 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[864]" " -type \"float3\" -433.24173 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[865]" " -type \"float3\" -433.24161 128.44394 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[866]" " -type \"float3\" -433.24161 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[867]" " -type \"float3\" -433.24164 72.458313 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[868]" " -type \"float3\" -433.24167 3.03490709999999986 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[869]" " -type \"float3\" -433.24173 -62.938309 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[870]" " -type \"float3\" -433.24173 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[871]" " -type \"float3\" -433.24173 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[872]" " -type \"float3\" -608.94031 72.458359 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[873]" " -type \"float3\" -608.94025 3.03493479999999982 -663.57788"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[874]" " -type \"float3\" -433.24167 3.03495340000000002 -663.57788"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[875]" " -type \"float3\" -433.2417 72.458366 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[876]" " -type \"float3\" -433.24167 68.419693 -648.34106"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[877]" " -type \"float3\" -433.24167 7.07356639999999981 -658.56555"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[878]" " -type \"float3\" -433.24167 7.07358930000000008 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[879]" " -type \"float3\" -433.2417 68.419731 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[880]" " -type \"float3\" -433.24167 7.0736264999999996 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[881]" " -type \"float3\" -433.2417 68.419769 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[882]" " -type \"float3\" -608.94031 7.07356639999999981 -658.56555"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[883]" " -type \"float3\" -608.94031 68.419693 -648.34106"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[884]" " -type \"float3\" -608.94031 68.419724 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[885]" " -type \"float3\" -608.94025 7.07357119999999995 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[886]" " -type \"float3\" -608.94031 68.419746 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[887]" " -type \"float3\" -608.94025 7.07358930000000008 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[888]" " -type \"float3\" -438.54654 72.458328 -647.63483"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[889]" " -type \"float3\" -521.09094 72.458328 -647.63483"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[890]" " -type \"float3\" -603.63538 72.458328 -647.63483"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[891]" " -type \"float3\" -521.091 72.458366 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[892]" " -type \"float3\" -603.63544 72.458359 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[893]" " -type \"float3\" -438.54657 72.458366 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[894]" " -type \"float3\" -603.63544 72.458359 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[895]" " -type \"float3\" -438.5466 72.458366 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[896]" " -type \"float3\" -438.54654 3.0349301999999998 -657.96643"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[897]" " -type \"float3\" -521.09094 3.0349301999999998 -657.96643"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[898]" " -type \"float3\" -603.63538 3.0349301999999998 -657.96643"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[899]" " -type \"float3\" -603.63538 3.03493479999999982 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[900]" " -type \"float3\" -521.09094 3.0349488 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[901]" " -type \"float3\" -438.54654 3.03495340000000002 -663.57782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[902]" " -type \"float3\" -603.63538 3.03493479999999982 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[903]" " -type \"float3\" -438.54657 3.03495340000000002 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[904]" " -type \"float3\" -438.54651 -62.938286 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[905]" " -type \"float3\" -438.54651 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[906]" " -type \"float3\" -438.54663 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[907]" " -type \"float3\" -438.54663 -65.749062 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[908]" " -type \"float3\" -438.54663 -65.749062 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[909]" " -type \"float3\" -438.54663 -62.938305 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[910]" " -type \"float3\" -438.54657 3.03490709999999986 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[911]" " -type \"float3\" -438.54654 72.458305 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[912]" " -type \"float3\" -438.54651 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[913]" " -type \"float3\" -438.54651 128.44394 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[914]" " -type \"float3\" -438.54663 128.44394 -817.9433"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[915]" " -type \"float3\" -438.54663 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[916]" " -type \"float3\" -438.54663 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[917]" " -type \"float3\" -438.54651 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[918]" " -type \"float3\" -438.54651 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[919]" " -type \"float3\" -438.54651 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[920]" " -type \"float3\" -438.54663 194.97731 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[921]" " -type \"float3\" -438.54651 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[922]" " -type \"float3\" -438.54651 194.97734 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[923]" " -type \"float3\" -438.54651 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[924]" " -type \"float3\" -438.5466 194.97731 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[925]" " -type \"float3\" -438.54663 194.97731 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[926]" " -type \"float3\" -438.54663 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[927]" " -type \"float3\" -438.54651 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[928]" " -type \"float3\" -438.54651 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[929]" " -type \"float3\" -438.54654 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[930]" " -type \"float3\" -438.54663 128.44394 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[931]" " -type \"float3\" -438.54663 125.28831 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[932]" " -type \"float3\" -603.63544 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[933]" " -type \"float3\" -603.63544 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[934]" " -type \"float3\" -603.63538 128.44395 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[935]" " -type \"float3\" -603.63531 128.44395 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[936]" " -type \"float3\" -603.63531 131.12108 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[937]" " -type \"float3\" -603.63544 192.56313 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[938]" " -type \"float3\" -603.63544 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[939]" " -type \"float3\" -603.63544 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[940]" " -type \"float3\" -603.63531 194.97731 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[941]" " -type \"float3\" -603.63531 194.97731 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[942]" " -type \"float3\" -603.63531 194.97731 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[943]" " -type \"float3\" -603.63544 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[944]" " -type \"float3\" -603.63531 194.97731 -817.9433"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[945]" " -type \"float3\" -603.63531 194.97731 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[946]" " -type \"float3\" -603.63531 192.56311 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[947]" " -type \"float3\" -603.63544 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[948]" " -type \"float3\" -603.63544 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[949]" " -type \"float3\" -603.63544 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[950]" " -type \"float3\" -603.63531 128.44395 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[951]" " -type \"float3\" -603.63531 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[952]" " -type \"float3\" -603.63538 72.458328 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[953]" " -type \"float3\" -603.63538 3.0349301999999998 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[954]" " -type \"float3\" -603.63544 -62.938282 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[955]" " -type \"float3\" -603.63544 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[956]" " -type \"float3\" -603.63544 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[957]" " -type \"float3\" -603.63544 -65.749062 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[958]" " -type \"float3\" -603.63531 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[959]" " -type \"float3\" -603.63531 -62.938313 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[960]" " -type \"float3\" -640.96216 68.419746 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[961]" " -type \"float3\" -644.35461 68.419746 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[962]" " -type \"float3\" -644.35461 68.419716 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[963]" " -type \"float3\" -644.35461 68.419731 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[964]" " -type \"float3\" -644.35461 68.419731 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[965]" " -type \"float3\" -640.9621 68.419731 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[966]" " -type \"float3\" -608.94025 68.419731 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[967]" " -type \"float3\" -603.63538 68.419731 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[968]" " -type \"float3\" -521.09094 68.419693 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[969]" " -type \"float3\" -438.54654 68.419693 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[970]" " -type \"float3\" -433.24164 68.419693 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[971]" " -type \"float3\" -371.32361 68.419716 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[972]" " -type \"float3\" -368.54425 68.419746 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[973]" " -type \"float3\" -368.54425 68.419746 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[974]" " -type \"float3\" -368.54425 68.419769 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[975]" " -type \"float3\" -368.54425 68.419731 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[976]" " -type \"float3\" -371.32367 68.419769 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[977]" " -type \"float3\" -371.32364 7.07360789999999984 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[978]" " -type \"float3\" -368.54422 7.07360789999999984 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[979]" " -type \"float3\" -368.54425 7.07360789999999984 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[980]" " -type \"float3\" -368.54422 7.07358029999999971 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[981]" " -type \"float3\" -368.54422 7.07358029999999971 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[982]" " -type \"float3\" -371.32364 7.07358029999999971 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[983]" " -type \"float3\" -433.24167 7.07355260000000019 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[984]" " -type \"float3\" -438.54657 7.07358029999999971 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[985]" " -type \"float3\" -521.091 7.07356169999999995 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[986]" " -type \"float3\" -603.63538 7.07358029999999971 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[987]" " -type \"float3\" -608.94031 7.07360789999999984 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[988]" " -type \"float3\" -640.96216 7.07360789999999984 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[989]" " -type \"float3\" -644.35461 7.07360789999999984 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[990]" " -type \"float3\" -644.35461 7.07360789999999984 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[991]" " -type \"float3\" -644.35461 7.07358029999999971 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[992]" " -type \"float3\" -644.35461 7.07358029999999971 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[993]" " -type \"float3\" -640.96216 7.07358029999999971 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[994]" " -type \"float3\" -644.35461 77.741348 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[995]" " -type \"float3\" -644.35461 77.741302 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[996]" " -type \"float3\" -644.35461 77.741325 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[997]" " -type \"float3\" -644.35461 77.741325 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[998]" " -type \"float3\" -640.9621 77.741325 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[999]" " -type \"float3\" -608.94025 77.741325 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1000]" " -type \"float3\" -603.63538 77.741325 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1001]" " -type \"float3\" -521.09094 77.741295 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1002]" " -type \"float3\" -438.54654 77.741287 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1003]" " -type \"float3\" -433.24164 77.741302 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1004]" " -type \"float3\" -371.32361 77.741302 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1005]" " -type \"float3\" -368.54425 77.741348 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1006]" " -type \"float3\" -368.54425 77.741348 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1007]" " -type \"float3\" -368.54425 77.741371 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1008]" " -type \"float3\" -368.54425 77.741325 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1009]" " -type \"float3\" -371.32367 77.741371 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1010]" " -type \"float3\" -433.2417 77.741356 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1011]" " -type \"float3\" -438.5466 77.741371 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1012]" " -type \"float3\" -521.091 77.741356 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1013]" " -type \"float3\" -603.63544 77.741348 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1014]" " -type \"float3\" -608.94031 77.741356 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1015]" " -type \"float3\" -640.96216 77.741348 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1016]" " -type \"float3\" -612.1424 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1017]" " -type \"float3\" -612.14252 -65.749062 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1018]" " -type \"float3\" -612.14252 -65.749062 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1019]" " -type \"float3\" -612.14252 -65.749062 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1020]" " -type \"float3\" -612.14252 -62.938278 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1021]" " -type \"float3\" -612.14246 3.03493479999999982 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1022]" " -type \"float3\" -612.14246 7.07360319999999998 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1023]" " -type \"float3\" -612.14246 68.419731 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1024]" " -type \"float3\" -612.14246 72.458328 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1025]" " -type \"float3\" -612.14246 77.741325 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1026]" " -type \"float3\" -612.1424 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1027]" " -type \"float3\" -612.1424 128.44395 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1028]" " -type \"float3\" -612.14252 128.44394 -817.9433"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1029]" " -type \"float3\" -612.14252 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1030]" " -type \"float3\" -612.14252 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1031]" " -type \"float3\" -612.1424 192.56313 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1032]" " -type \"float3\" -612.1424 194.97734 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1033]" " -type \"float3\" -612.1424 194.97734 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1034]" " -type \"float3\" -612.14252 194.97731 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1035]" " -type \"float3\" -612.1424 194.97734 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1036]" " -type \"float3\" -612.1424 194.97734 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1037]" " -type \"float3\" -612.1424 194.97734 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1038]" " -type \"float3\" -612.14252 194.97731 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1039]" " -type \"float3\" -612.14252 194.97731 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1040]" " -type \"float3\" -612.14252 192.56311 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1041]" " -type \"float3\" -612.1424 131.12109 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1042]" " -type \"float3\" -612.1424 128.44395 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1043]" " -type \"float3\" -612.14246 128.44395 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1044]" " -type \"float3\" -612.14252 128.44394 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1045]" " -type \"float3\" -612.14252 125.28831 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1046]" " -type \"float3\" -612.14252 77.741348 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1047]" " -type \"float3\" -612.14246 72.458359 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1048]" " -type \"float3\" -612.14246 68.419739 -668.10272"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1049]" " -type \"float3\" -612.14246 7.07358930000000008 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1050]" " -type \"float3\" -612.14246 3.03493479999999982 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1051]" " -type \"float3\" -612.1424 -62.938313 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1052]" " -type \"float3\" -368.54425 -3.5623828999999998 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1053]" " -type \"float3\" -368.54425 -3.56236459999999999 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1054]" " -type \"float3\" -368.54422 -3.56239680000000014 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1055]" " -type \"float3\" -368.54422 -3.56239680000000014 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1056]" " -type \"float3\" -371.32364 -3.56241990000000008 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1057]" " -type \"float3\" -433.24167 -3.5624153999999999 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1058]" " -type \"float3\" -438.54657 -3.5624153999999999 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1059]" " -type \"float3\" -521.091 -3.5624106000000002 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1060]" " -type \"float3\" -603.63538 -3.56239220000000012 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1061]" " -type \"float3\" -608.94031 -3.56238769999999993 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1062]" " -type \"float3\" -612.14246 -3.56238769999999993 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1063]" " -type \"float3\" -640.96216 -3.5623828999999998 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1064]" " -type \"float3\" -644.35461 -3.5623828999999998 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1065]" " -type \"float3\" -644.35461 -3.5623828999999998 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1066]" " -type \"float3\" -644.35461 -3.56241990000000008 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1067]" " -type \"float3\" -644.35461 -3.56239680000000014 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1068]" " -type \"float3\" -640.96216 -3.56239680000000014 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1069]" " -type \"float3\" -612.14246 -3.56239220000000012 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1070]" " -type \"float3\" -608.94025 -3.56239220000000012 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1071]" " -type \"float3\" -603.63538 -3.56239220000000012 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1072]" " -type \"float3\" -521.09094 -3.56237840000000006 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1073]" " -type \"float3\" -438.54657 -3.56236910000000018 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1074]" " -type \"float3\" -433.24164 -3.56236910000000018 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1075]" " -type \"float3\" -371.32364 -3.56236459999999999 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1076]" " -type \"float3\" -427.04993 -65.749062 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1077]" " -type \"float3\" -427.0498 -65.749062 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1078]" " -type \"float3\" -427.0498 -62.938286 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1079]" " -type \"float3\" -427.04984 -3.56236910000000018 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1080]" " -type \"float3\" -427.04987 3.03495340000000002 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1081]" " -type \"float3\" -427.04987 7.07362170000000035 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1082]" " -type \"float3\" -427.0499 68.419769 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1083]" " -type \"float3\" -427.0499 72.458366 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1084]" " -type \"float3\" -427.0499 77.741356 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1085]" " -type \"float3\" -427.04993 125.28831 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1086]" " -type \"float3\" -427.04993 128.44394 -668.10284"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1087]" " -type \"float3\" -427.04984 128.44394 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1088]" " -type \"float3\" -427.0498 128.44394 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1089]" " -type \"float3\" -427.0498 131.12108 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1090]" " -type \"float3\" -427.04993 192.56313 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1091]" " -type \"float3\" -427.04993 194.97734 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1092]" " -type \"float3\" -427.0499 194.97734 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1093]" " -type \"float3\" -427.0498 194.97731 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1094]" " -type \"float3\" -427.0498 194.97731 -671.84991"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1095]" " -type \"float3\" -427.0498 194.97731 -777.84875"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1096]" " -type \"float3\" -427.04993 194.97734 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1097]" " -type \"float3\" -427.0498 194.97731 -817.9433"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1098]" " -type \"float3\" -427.0498 194.97731 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1099]" " -type \"float3\" -427.0498 192.56311 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1100]" " -type \"float3\" -427.04993 131.12112 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1101]" " -type \"float3\" -427.04993 128.44394 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1102]" " -type \"float3\" -427.04993 128.44394 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1103]" " -type \"float3\" -427.0498 128.44394 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1104]" " -type \"float3\" -427.0498 125.28824 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1105]" " -type \"float3\" -427.04984 77.741302 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1106]" " -type \"float3\" -427.04984 72.458313 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1107]" " -type \"float3\" -427.04984 68.419693 -781.53308"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1108]" " -type \"float3\" -427.04984 7.07355689999999981 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1109]" " -type \"float3\" -427.04987 3.03490709999999986 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1110]" " -type \"float3\" -427.04987 -3.5624153999999999 -781.53314"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1111]" " -type \"float3\" -427.04993 -62.938309 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1112]" " -type \"float3\" -427.04993 -65.749062 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1113]" " -type \"float3\" -427.04993 -65.749062 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1114]" " -type \"float3\" -368.54422 161.84212 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1115]" " -type \"float3\" -360.06995 161.84212 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1116]" " -type \"float3\" -355.8765 161.84212 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1117]" " -type \"float3\" -355.8765 161.84212 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1118]" " -type \"float3\" -355.8765 161.8421 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1119]" " -type \"float3\" -355.8765 161.8421 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1120]" " -type \"float3\" -355.8765 161.8421 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1121]" " -type \"float3\" -355.8765 161.84212 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1122]" " -type \"float3\" -355.8765 161.84212 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1123]" " -type \"float3\" -355.8765 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1124]" " -type \"float3\" -360.06995 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1125]" " -type \"float3\" -368.54422 161.8421 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1126]" " -type \"float3\" -371.32364 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1127]" " -type \"float3\" -427.04987 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1128]" " -type \"float3\" -433.24167 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1129]" " -type \"float3\" -438.54657 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1130]" " -type \"float3\" -521.09094 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1131]" " -type \"float3\" -603.63538 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1132]" " -type \"float3\" -608.94031 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1133]" " -type \"float3\" -612.14246 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1134]" " -type \"float3\" -640.96216 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1135]" " -type \"float3\" -644.35461 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1136]" " -type \"float3\" -650.80212 161.84212 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1137]" " -type \"float3\" -657.02234 161.8421 -820.65839"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1138]" " -type \"float3\" -657.02234 161.8421 -817.94336"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1139]" " -type \"float3\" -657.02234 161.8421 -781.5332"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1140]" " -type \"float3\" -657.02234 161.84212 -777.84882"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1141]" " -type \"float3\" -657.02234 161.84212 -671.84998"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1142]" " -type \"float3\" -657.02234 161.84212 -668.10278"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1143]" " -type \"float3\" -657.02234 161.84212 -652.72913"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1144]" " -type \"float3\" -657.02234 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1145]" " -type \"float3\" -650.80212 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1146]" " -type \"float3\" -644.35461 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1147]" " -type \"float3\" -640.96216 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1148]" " -type \"float3\" -612.14246 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1149]" " -type \"float3\" -608.94031 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1150]" " -type \"float3\" -603.63538 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1151]" " -type \"float3\" -521.091 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1152]" " -type \"float3\" -438.54657 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1153]" " -type \"float3\" -433.24167 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1154]" " -type \"float3\" -427.04987 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1155]" " -type \"float3\" -371.32364 161.8421 -648.65173"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1156]" " -type \"float3\" -407.62881 148.7213 -476.92929"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1157]" " -type \"float3\" -407.62881 156.21877 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1158]" " -type \"float3\" -407.62881 148.72122 -382.25647"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1159]" " -type \"float3\" -407.62881 126.96313 -339.55368"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1160]" " -type \"float3\" -407.62881 93.074066 -305.66464"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1161]" " -type \"float3\" -407.62881 50.371315 -283.90652"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1162]" " -type \"float3\" -407.62881 3.0349119 -276.40897"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1163]" " -type \"float3\" -407.62881 -44.301502 -283.90649"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1164]" " -type \"float3\" -407.62881 -87.00425 -305.66458"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1165]" " -type \"float3\" -407.62881 -120.89334 -339.55368"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1166]" " -type \"float3\" -407.62881 -142.65143 -382.25647"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1167]" " -type \"float3\" -407.62881 -150.149 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1168]" " -type \"float3\" -407.62881 -142.65143 -476.92926"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1169]" " -type \"float3\" -407.62881 -120.89335 -519.63202"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1170]" " -type \"float3\" -407.62881 -87.004265 -553.52112"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1171]" " -type \"float3\" -407.62881 -44.30151 -575.27924"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1172]" " -type \"float3\" -407.62881 3.0349119 -582.77679"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1173]" " -type \"float3\" -407.62881 50.371315 -575.27924"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1174]" " -type \"float3\" -407.62881 93.074104 -553.52118"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1175]" " -type \"float3\" -407.62881 126.96322 -519.63202"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1176]" " -type \"float3\" -412.38809 126.73999 -469.78714"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1177]" " -type \"float3\" -412.38809 108.26483 -506.04688"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1178]" " -type \"float3\" -413.3587 126.76648 -519.48914"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1179]" " -type \"float3\" -413.3587 148.49002 -476.85413"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1180]" " -type \"float3\" -412.38809 79.488937 -534.82281"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1181]" " -type \"float3\" -413.3587 92.93116 -553.32446"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1182]" " -type \"float3\" -412.38809 43.229156 -553.29791"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1183]" " -type \"float3\" -413.3587 50.296169 -575.04791"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1184]" " -type \"float3\" -412.38809 3.0349119 -559.66431"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1185]" " -type \"float3\" -413.3587 3.0349119 -582.53363"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1186]" " -type \"float3\" -412.38809 -37.159363 -553.29791"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1187]" " -type \"float3\" -413.3587 -44.22636 -575.04791"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1188]" " -type \"float3\" -412.38809 -73.419106 -534.82269"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1189]" " -type \"float3\" -413.3587 -86.861328 -553.3244"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1190]" " -type \"float3\" -412.38809 -102.19495 -506.04688"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1191]" " -type \"float3\" -413.3587 -120.69662 -519.48907"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1192]" " -type \"float3\" -412.38809 -120.67012 -469.78714"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1193]" " -type \"float3\" -413.3587 -142.42015 -476.85413"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1194]" " -type \"float3\" -412.38809 -127.03654 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1195]" " -type \"float3\" -413.3587 -149.90582 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1196]" " -type \"float3\" -412.38809 -120.67012 -389.39862"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1197]" " -type \"float3\" -413.3587 -142.42015 -382.3316"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1198]" " -type \"float3\" -412.38809 -102.19495 -353.13885"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1199]" " -type \"float3\" -413.3587 -120.6966 -339.69662"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1200]" " -type \"float3\" -412.38809 -73.419098 -324.36298"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1201]" " -type \"float3\" -413.3587 -86.861313 -305.86133"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1202]" " -type \"float3\" -412.38809 -37.159363 -305.88782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1203]" " -type \"float3\" -413.3587 -44.226353 -284.13779"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1204]" " -type \"float3\" -412.38809 3.0349119 -299.52142"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1205]" " -type \"float3\" -413.3587 3.0349119 -276.65216"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1206]" " -type \"float3\" -412.38809 43.229149 -305.88785"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1207]" " -type \"float3\" -413.3587 50.296162 -284.13782"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1208]" " -type \"float3\" -412.38809 79.488892 -324.36304"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1209]" " -type \"float3\" -413.3587 92.931129 -305.86139"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1210]" " -type \"float3\" -412.38809 108.26472 -353.13885"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1211]" " -type \"float3\" -413.3587 126.76639 -339.69662"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1212]" " -type \"float3\" -412.38809 126.7399 -389.39862"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1213]" " -type \"float3\" -413.3587 148.48994 -382.3316"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1214]" " -type \"float3\" -412.38809 133.10632 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1215]" " -type \"float3\" -413.3587 155.97559 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1216]" " -type \"float3\" -413.21622 125.36873 -518.47357"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1217]" " -type \"float3\" -413.21622 91.915649 -551.9267"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1218]" " -type \"float3\" -413.21622 49.76228 -573.40479"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1219]" " -type \"float3\" -413.21622 3.0349119 -580.80591"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1220]" " -type \"float3\" -413.21622 -43.692471 -573.40479"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1221]" " -type \"float3\" -413.21622 -85.84581 -551.92664"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1222]" " -type \"float3\" -413.21622 -119.29886 -518.47357"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1223]" " -type \"float3\" -413.21622 -140.77698 -476.32022"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1224]" " -type \"float3\" -413.21622 -148.17812 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1225]" " -type \"float3\" -413.21622 -140.77698 -382.86551"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1226]" " -type \"float3\" -413.21622 -119.29885 -340.71213"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1227]" " -type \"float3\" -413.21622 -85.845787 -307.25909"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1228]" " -type \"float3\" -413.21622 -43.692459 -285.78094"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1229]" " -type \"float3\" -413.21622 3.0349119 -278.37985"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1230]" " -type \"float3\" -413.21622 49.76228 -285.78098"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1231]" " -type \"float3\" -413.21622 91.915611 -307.25912"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1232]" " -type \"float3\" -413.21622 125.36864 -340.71213"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1233]" " -type \"float3\" -413.21622 146.84679 -382.86551"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1234]" " -type \"float3\" -413.21622 154.24788 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1235]" " -type \"float3\" -413.21622 146.84685 -476.32025"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1236]" " -type \"float3\" -412.47873 109.99225 -507.30191"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1237]" " -type \"float3\" -412.47873 80.743988 -536.55023"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1238]" " -type \"float3\" -412.47873 43.888977 -555.32861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1239]" " -type \"float3\" -412.47873 3.0349119 -561.79956"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1240]" " -type \"float3\" -412.47873 -37.81918 -555.32861"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1241]" " -type \"float3\" -412.47873 -74.674149 -536.55017"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1242]" " -type \"float3\" -412.47873 -103.92238 -507.30191"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1243]" " -type \"float3\" -412.47873 -122.70084 -470.44696"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1244]" " -type \"float3\" -412.47873 -129.17175 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1245]" " -type \"float3\" -412.47873 -122.70084 -388.7388"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1246]" " -type \"float3\" -412.47873 -103.92236 -351.88379"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1247]" " -type \"float3\" -412.47873 -74.674141 -322.63556"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1248]" " -type \"float3\" -412.47873 -37.819176 -303.85709"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1249]" " -type \"float3\" -412.47873 3.0349119 -297.3862"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1250]" " -type \"float3\" -412.47873 43.888969 -303.85712"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1251]" " -type \"float3\" -412.47873 80.743942 -322.63559"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1252]" " -type \"float3\" -412.47873 109.99216 -351.88379"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1253]" " -type \"float3\" -412.47873 128.77061 -388.7388"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1254]" " -type \"float3\" -412.47873 135.24153 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1255]" " -type \"float3\" -412.47873 128.77071 -470.44696"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1256]" " -type \"float3\" -411.57724 126.82763 -519.53357"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1257]" " -type \"float3\" -411.57724 148.56192 -476.8775"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1258]" " -type \"float3\" -411.57724 156.05121 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1259]" " -type \"float3\" -411.57724 148.56186 -382.30826"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1260]" " -type \"float3\" -411.57724 126.82756 -339.65219"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1261]" " -type \"float3\" -411.57724 92.975563 -305.8002"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1262]" " -type \"float3\" -411.57724 50.319527 -284.06592"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1263]" " -type \"float3\" -411.57724 3.0349119 -276.57654"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1264]" " -type \"float3\" -411.57724 -44.249718 -284.06586"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1265]" " -type \"float3\" -411.57724 -86.905754 -305.80017"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1266]" " -type \"float3\" -411.57724 -120.75777 -339.65219"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1267]" " -type \"float3\" -411.57724 -142.49205 -382.30826"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1268]" " -type \"float3\" -411.57724 -149.98143 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1269]" " -type \"float3\" -411.57724 -142.49205 -476.87747"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1270]" " -type \"float3\" -411.57724 -120.75778 -519.53351"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1271]" " -type \"float3\" -411.57724 -86.905769 -553.38556"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1272]" " -type \"float3\" -411.57724 -44.249725 -575.11987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1273]" " -type \"float3\" -411.57724 3.0349119 -582.60919"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1274]" " -type \"float3\" -411.57724 50.319534 -575.11987"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1275]" " -type \"float3\" -411.57724 92.975601 -553.38562"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1276]" " -type \"float3\" -407.75137 151.46727 -477.8215"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1277]" " -type \"float3\" -407.75137 159.10605 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1278]" " -type \"float3\" -407.75137 151.46719 -381.36426"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1279]" " -type \"float3\" -407.75137 129.29898 -337.8566"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1280]" " -type \"float3\" -407.75137 94.771179 -303.32877"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1281]" " -type \"float3\" -407.75137 51.263535 -281.16058"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1282]" " -type \"float3\" -407.75137 3.0349119 -273.5217"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1283]" " -type \"float3\" -407.75137 -45.193714 -281.16052"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1284]" " -type \"float3\" -407.75137 -88.701347 -303.32874"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1285]" " -type \"float3\" -407.75137 -123.22919 -337.8566"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1286]" " -type \"float3\" -407.75137 -145.39738 -381.36426"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1287]" " -type \"float3\" -407.75137 -153.03627 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1288]" " -type \"float3\" -407.75137 -145.39738 -477.82147"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1289]" " -type \"float3\" -407.75137 -123.22921 -521.3291"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1290]" " -type \"float3\" -407.75137 -88.701363 -555.85693"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1291]" " -type \"float3\" -407.75137 -45.193726 -578.02521"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1292]" " -type \"float3\" -407.75137 3.0349119 -585.66406"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1293]" " -type \"float3\" -407.75137 51.263535 -578.02521"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1294]" " -type \"float3\" -407.75137 94.771194 -555.85706"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1295]" " -type \"float3\" -407.75137 129.29907 -521.32916"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1296]" " -type \"float3\" -406.59592 125.57475 -469.40854"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1297]" " -type \"float3\" -406.59592 107.27362 -505.32672"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1298]" " -type \"float3\" -406.59592 78.768784 -533.8316"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1299]" " -type \"float3\" -406.59592 42.850544 -552.13269"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1300]" " -type \"float3\" -406.59592 3.0349119 -558.43915"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1301]" " -type \"float3\" -406.59592 -36.780758 -552.13269"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1302]" " -type \"float3\" -406.59592 -72.698952 -533.83148"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1303]" " -type \"float3\" -406.59592 -101.20374 -505.32672"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1304]" " -type \"float3\" -406.59592 -119.50488 -469.40854"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1305]" " -type \"float3\" -406.59592 -125.81135 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1306]" " -type \"float3\" -406.59592 -119.50488 -389.77722"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1307]" " -type \"float3\" -406.59592 -101.20373 -353.85898"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1308]" " -type \"float3\" -406.59592 -72.698944 -325.35419"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1309]" " -type \"float3\" -406.59592 -36.780758 -307.05304"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1310]" " -type \"float3\" -406.59592 3.0349119 -300.74661"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1311]" " -type \"float3\" -406.59592 42.850544 -307.0531"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1312]" " -type \"float3\" -406.59592 78.76873 -325.35425"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1313]" " -type \"float3\" -406.59592 107.27351 -353.85898"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1314]" " -type \"float3\" -406.59592 125.57467 -389.77722"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1315]" " -type \"float3\" -406.59592 131.88112 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1316]" " -type \"float3\" -408.42401 126.9 -469.83914"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1317]" " -type \"float3\" -408.42401 108.40093 -506.14575"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1318]" " -type \"float3\" -408.42401 79.587837 -534.95892"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1319]" " -type \"float3\" -408.42401 43.281143 -553.45795"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1320]" " -type \"float3\" -408.42401 3.0349119 -559.83258"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1321]" " -type \"float3\" -408.42401 -37.211353 -553.45795"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1322]" " -type \"float3\" -408.42401 -73.517998 -534.9588"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1323]" " -type \"float3\" -408.42401 -102.33106 -506.14575"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1324]" " -type \"float3\" -408.42401 -120.83013 -469.83911"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1325]" " -type \"float3\" -408.42401 -127.20479 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1326]" " -type \"float3\" -408.42401 -120.83013 -389.34662"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1327]" " -type \"float3\" -408.42401 -102.33105 -353.03995"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1328]" " -type \"float3\" -408.42401 -73.51799 -324.22687"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1329]" " -type \"float3\" -408.42401 -37.211353 -305.72781"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1330]" " -type \"float3\" -408.42401 3.0349119 -299.35318"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1331]" " -type \"float3\" -408.42401 43.281143 -305.72784"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1332]" " -type \"float3\" -408.42401 79.587784 -324.22693"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1333]" " -type \"float3\" -408.42401 108.40084 -353.03995"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1334]" " -type \"float3\" -408.42401 126.8999 -389.34662"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1335]" " -type \"float3\" -408.42401 133.27457 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1336]" " -type \"float3\" -406.50613 123.56348 -468.75504"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1337]" " -type \"float3\" -406.50613 105.56274 -504.08368"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1338]" " -type \"float3\" -406.50613 77.525757 -532.12073"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1339]" " -type \"float3\" -406.50613 42.197041 -550.1214"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1340]" " -type \"float3\" -406.50613 3.0349119 -556.32434"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1341]" " -type \"float3\" -406.50613 -36.127254 -550.1214"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1342]" " -type \"float3\" -406.50613 -71.455917 -532.12061"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1343]" " -type \"float3\" -406.50613 -99.492851 -504.08368"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1344]" " -type \"float3\" -406.50613 -117.49361 -468.75504"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1345]" " -type \"float3\" -406.50613 -123.69657 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1346]" " -type \"float3\" -406.50613 -117.49361 -390.43073"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1347]" " -type \"float3\" -406.50613 -99.492844 -355.10202"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1348]" " -type \"float3\" -406.50613 -71.45591 -327.06503"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1349]" " -type \"float3\" -406.50613 -36.127254 -309.06433"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1350]" " -type \"float3\" -406.50613 3.0349119 -302.86139"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1351]" " -type \"float3\" -406.50613 42.197041 -309.06436"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1352]" " -type \"float3\" -406.50613 77.525703 -327.06512"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1353]" " -type \"float3\" -406.50613 105.56264 -355.10202"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1354]" " -type \"float3\" -406.50613 123.56341 -390.43073"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1355]" " -type \"float3\" -406.50613 129.76634 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1356]" " -type \"float3\" -409.69254 126.89235 -519.58057"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1357]" " -type \"float3\" -409.69254 148.638 -476.90222"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1358]" " -type \"float3\" -409.69254 156.13118 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1359]" " -type \"float3\" -409.69254 148.63792 -382.28351"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1360]" " -type \"float3\" -409.69254 126.89228 -339.60516"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1361]" " -type \"float3\" -409.69254 93.022591 -305.73547"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1362]" " -type \"float3\" -409.69254 50.34425 -283.98984"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1363]" " -type \"float3\" -409.69254 3.0349119 -276.49658"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1364]" " -type \"float3\" -409.69254 -44.274433 -283.98981"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1365]" " -type \"float3\" -409.69254 -86.952766 -305.73544"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1366]" " -type \"float3\" -409.69254 -120.82248 -339.60516"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1367]" " -type \"float3\" -409.69254 -142.56813 -382.28351"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1368]" " -type \"float3\" -409.69254 -150.06142 -429.59283"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1369]" " -type \"float3\" -409.69254 -142.56813 -476.90219"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1370]" " -type \"float3\" -409.69254 -120.82249 -519.58057"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1371]" " -type \"float3\" -409.69254 -86.952789 -553.45026"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1372]" " -type \"float3\" -409.69254 -44.274445 -575.19592"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1373]" " -type \"float3\" -409.69254 3.0349119 -582.68921"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1374]" " -type \"float3\" -409.69254 50.344257 -575.19592"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1375]" " -type \"float3\" -409.69254 93.022629 -553.45032"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1376]" " -type \"float3\" -510.90265 374.59985 -488.45163"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1377]" " -type \"float3\" -521.09094 374.59961 -498.6723"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1378]" " -type \"float3\" -506.65961 374.59961 -498.64944"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1379]" " -type \"float3\" -510.8703 374.59933 -508.86063"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1380]" " -type \"float3\" -531.31165 374.59995 -488.48401"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1381]" " -type \"float3\" -521.11383 374.60001 -484.24097"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1382]" " -type \"float3\" -531.2793 374.5994 -508.89301"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1383]" " -type \"float3\" -535.52234 374.59967 -498.69519"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1384]" " -type \"float3\" -521.06812 374.59927 -513.10364"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1385]" " -type \"float3\" -504.72275 368.62582 -482.25195"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1386]" " -type \"float3\" -497.90598 368.62558 -498.63547"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1387]" " -type \"float3\" -504.67075 368.62531 -515.04047"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1388]" " -type \"float3\" -521.0542 368.62524 -521.85718"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1389]" " -type \"float3\" -537.45923 368.62537 -515.09247"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1390]" " -type \"float3\" -544.27594 368.62564 -498.70895"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1391]" " -type \"float3\" -537.51123 368.62592 -482.30399"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1392]" " -type \"float3\" -521.12775 368.62598 -475.48724"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1393]" " -type \"float3\" -507.75299 370.55716 -485.29187"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1394]" " -type \"float3\" -502.19824 370.55692 -498.6423"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1395]" " -type \"float3\" -507.71063 370.55667 -512.01019"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1396]" " -type \"float3\" -521.06104 370.55658 -517.565"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1397]" " -type \"float3\" -534.42896 370.55673 -512.05261"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1398]" " -type \"float3\" -539.9837 370.55698 -498.70218"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1399]" " -type \"float3\" -534.47131 370.55728 -485.33426"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1400]" " -type \"float3\" -521.12091 370.55731 -479.77951"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1401]" " -type \"float3\" -362.03394 61.809452 -448.68988"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1402]" " -type \"float3\" -362.03394 53.031559 -465.91757"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1403]" " -type \"float3\" -351.95663 3.03490709999999986 -429.59286"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1404]" " -type \"float3\" -362.03394 39.359634 -479.58954"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1405]" " -type \"float3\" -362.03394 22.131901 -488.36728"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1406]" " -type \"float3\" -362.03394 3.03490709999999986 -491.39209"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1407]" " -type \"float3\" -362.03394 -16.062101 -488.36728"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1408]" " -type \"float3\" -362.03394 -33.289803 -479.58951"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1409]" " -type \"float3\" -362.03394 -46.961727 -465.91757"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1410]" " -type \"float3\" -362.03394 -55.739651 -448.68988"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1411]" " -type \"float3\" -362.03394 -58.764309 -429.59286"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1412]" " -type \"float3\" -362.03394 -55.739651 -410.49588"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1413]" " -type \"float3\" -362.03394 -46.961727 -393.26816"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1414]" " -type \"float3\" -362.03394 -33.289799 -379.59622"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1415]" " -type \"float3\" -362.03394 -16.062101 -370.81833"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1416]" " -type \"float3\" -362.03394 3.03490709999999986 -367.79364"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1417]" " -type \"float3\" -362.03394 22.131901 -370.81848"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1418]" " -type \"float3\" -362.03394 39.359604 -379.59625"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1419]" " -type \"float3\" -362.03394 53.031521 -393.26816"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1420]" " -type \"float3\" -362.03394 61.809296 -410.49588"
-		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
-		"pnts[1421]" " -type \"float3\" -362.03394 64.834122 -429.59286";
+		"pt[0:165]" (" -type \"float3\" -384.43649 122.13793 -468.29184 -384.43649 104.35009 -503.20267 -384.43649 76.644722 -530.90808 -384.43649 41.73386 -548.69586 -384.43649 3.0349119 -554.82544 -384.43649 -35.66407 -548.69586 -384.43649 -70.574883 -530.90796 -384.43649 -98.280212 -503.20264 -384.43649 -116.06808 -468.29184 -384.43649 -122.19765 -429.59283 -384.43649 -116.06808 -390.89392 -384.43649 -98.280205 -355.98306 -384.43649 -70.574883 -328.27768 -384.43649 -35.66407 -310.48987 -384.43649 3.0349119 -304.36029 -384.43649 41.73386 -310.4899 -384.43649 76.644669 -328.27777 -384.43649 104.35 -355.98306 -384.43649 122.13786 -390.89392 -384.43649 128.26746 -429.59283 -628.46234 216.6982 -499.01624 -628.46234 184.78777 -561.64398 -628.46234 135.08609 -611.3457 -628.46234 72.458328 -643.2561 -628.46234 3.0349301999999998 -654.25171 -628.46234 -66.388466 -643.2561 -628.46234 -129.0162 -611.34564 -628.46234 -178.71786 -561.64398 -628.46234 -210.62828 -499.0162 -628.46234 -221.62386 -429.59283 -628.46234 -210.62828 -360.16946 -628.4"
+		+ "6234 -178.71785 -297.54172 -628.46234 -129.01617 -247.84007 -628.46234 -66.388451 -215.92963 -628.46234 3.03492570000000006 -204.93407 -628.46234 72.45829 -215.92967 -628.46234 135.08601 -247.8401 -628.46234 184.78766 -297.54175 -628.46234 216.69809 -360.16946 -628.46234 227.69365 -429.59283 -628.46234 3.0349301999999998 -429.59283 -644.35461 -65.749062 -668.10278 -368.54422 -65.749062 -668.10278 -644.35461 128.44394 -668.10278 -368.54422 128.44394 -668.10278 -644.35461 128.44394 -781.5332 -368.54422 128.44394 -781.5332 -644.35461 -65.749062 -781.5332 -368.54422 -65.749062 -781.5332 -644.35461 194.97734 -668.10278 -368.54422 194.97734 -668.10278 -368.54422 194.97734 -781.5332 -644.35461 194.97734 -781.5332 -644.35461 128.44394 -820.65839 -368.54422 128.44394 -820.65839 -644.35461 194.97734 -820.65839 -368.54422 194.97734 -820.65839 -355.8765 128.44394 -668.10278 -355.8765 128.44394 -781.5332 -355.8765 194.97734 -781.5332 -355.8765 194.97734 -668.10278 -355.8765 128.44394 -820.65839 -355.8765 194.97734 -820.65"
+		+ "839 -657.02234 128.44394 -668.10278 -657.02234 128.44394 -781.5332 -657.02234 194.97734 -668.10278 -657.02234 194.97734 -781.5332 -657.02234 194.97734 -820.65839 -657.02234 128.44394 -820.65839 -644.35461 128.44394 -648.65173 -368.54422 128.44394 -648.65173 -368.54422 194.97734 -648.65173 -644.35461 194.97734 -648.65173 -355.8765 128.44394 -648.65173 -355.8765 194.97734 -648.65173 -657.02234 194.97734 -648.65173 -657.02234 128.44394 -648.65173 -433.24167 216.6982 -499.01624 -433.24167 184.78778 -561.64398 -433.24167 135.08612 -611.3457 -433.24167 72.458328 -643.2561 -433.24167 3.0349301999999998 -654.25171 -433.24167 -66.388466 -643.2561 -433.24167 -129.0162 -611.34564 -433.24167 -178.71786 -561.64398 -433.24167 -210.62828 -499.0162 -433.24167 -221.62387 -429.59283 -433.24167 -210.62828 -360.16946 -433.24167 -178.71785 -297.54172 -433.24167 -129.01617 -247.84004 -433.24167 -66.388451 -215.92963 -433.24167 3.0349301999999998 -204.93407 -433.24167 72.45829 -215.92967 -433.24167 135.08601 -247.8401 -433.24167 18"
+		+ "4.78766 -297.54175 -433.24167 216.6981 -360.16946 -433.24167 227.69365 -429.59283 -408.83908 175.84171 -485.74121 -408.83908 150.03319 -536.39331 -408.83908 109.8354 -576.59113 -408.83908 59.183266 -602.3996 -408.83908 3.03492089999999992 -611.29279 -408.83908 -53.113445 -602.3996 -408.83908 -103.76556 -576.59106 -408.83908 -143.96333 -536.39331 -408.83908 -169.77184 -485.74118 -408.83908 -178.66501 -429.59283 -408.83908 -169.77184 -373.44449 -408.83908 -143.96332 -322.79239 -408.83908 -103.76553 -282.59464 -408.83908 -53.113426 -256.7861 -408.83908 3.03492089999999992 -247.89296 -408.83908 59.183266 -256.78613 -408.83908 109.83537 -282.59464 -408.83908 150.03311 -322.79239 -408.83908 175.84163 -373.44449 -408.83908 184.7348 -429.59283 -430.66956 175.84177 -485.74121 -430.66956 184.73474 -429.59283 -430.66956 175.84167 -373.44452 -430.66956 150.03313 -322.79236 -430.66956 109.8354 -282.59464 -430.66956 59.183258 -256.7861 -430.66956 3.03492089999999992 -247.89302 -430.66956 -53.113422 -256.78604 -430.66956 -1"
+		+ "03.76556 -282.5946 -430.66956 -143.96332 -322.79236 -430.66956 -169.77187 -373.44452 -430.66956 -178.66495 -429.59283 -430.66956 -169.77187 -485.74118 -430.66956 -143.96335 -536.39331 -430.66956 -103.76559 -576.59113 -430.66956 -53.113438 -602.39966 -430.66956 3.03492089999999992 -611.29272 -430.66956 59.183258 -602.39966 -430.66956 109.83544 -576.59113 -430.66956 150.03322 -536.39337 -406.44254 122.13793 -468.29184 -406.44254 104.35009 -503.20267 -406.44254 76.644722 -530.90808 -406.44254 41.73386 -548.69586 -406.44254 3.0349119 -554.82544 -406.44254 -35.66407 -548.69586 -406.44254 -70.574883 -530.90796 -406.44254 -98.280212 -503.20264 -406.44254 -116.06807 -468.29184 -406.44254 -122.19767 -429.59283 -406.44254 -116.06807 -390.89392 -406.44254 -98.280205 -355.98306 -406.44254 -70.574883 -328.27768 -406.44254 -35.66407 -310.48987 -406.44254 3.0349119 -304.36029 -406.44254 41.73386 -310.4899 -406.44254 76.644669 -328.27777 -406.44254 104.35 -355.98306 -406.44254 122.13786 -390.89392 -406.44254 128.26746 -429.5"
+		+ "9283 -432.98447 212.61256 -497.68872 -432.98447 223.39777 -429.59283 -432.98447 212.61247 -361.49698 -432.98447 181.31219 -300.0668 -432.98447 132.56096 -251.31555 -432.98447 71.130783 -220.01534 -432.98447 3.0349301999999998 -209.22998 -432.98447 -65.060944 -220.01527 -432.98447 -126.49111 -251.31551"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[166:331]" (" -432.98447 -175.24239 -300.06677 -432.98447 -206.54265 -361.49695 -432.98447 -217.32797 -429.59283 -432.98447 -206.54265 -497.68872 -432.98447 -175.24242 -559.1189 -432.98447 -126.49115 -607.87018 -432.98447 -65.060966 -639.17047 -432.98447 3.0349301999999998 -649.95575 -432.98447 71.130821 -639.17047 -432.98447 132.56105 -607.87024 -432.98447 181.31233 -559.11896 -430.90106 179.51883 -486.93597 -430.90106 153.16112 -538.66589 -430.90106 112.108 -579.71906 -430.90106 60.378014 -606.07672 -430.90106 3.03491640000000018 -615.159 -430.90106 -54.308193 -606.07672 -430.90106 -106.03815 -579.71899 -430.90106 -147.09126 -538.66589 -430.90106 -173.44894 -486.93591 -430.90106 -182.53125 -429.59283 -430.90106 -173.44894 -372.24976 -430.90106 -147.09122 -320.51981 -430.90106 -106.03811 -279.46671 -430.90106 -54.308174 -253.10898 -430.90106 3.03491640000000018 -244.0267 -430.90106 60.378002 -253.10901 -430.90106 112.10794 -279.46674 -430.90106 153.16103 -320.51981 -430.90106 179.51874 -372.24976 -430.90106 188.60103 -42"
+		+ "9.59283 -426.30347 175.84177 -485.74121 -426.30347 150.03322 -536.39337 -426.30347 109.83544 -576.59113 -426.30347 59.183266 -602.39966 -426.30347 3.03492089999999992 -611.29272 -426.30347 -53.113441 -602.39966 -426.30347 -103.76559 -576.59113 -426.30347 -143.96335 -536.39331 -426.30347 -169.77187 -485.74118 -426.30347 -178.66498 -429.59283 -426.30347 -169.77187 -373.44452 -426.30347 -143.96332 -322.79236 -426.30347 -103.76555 -282.5946 -426.30347 -53.113422 -256.78607 -426.30347 3.03492089999999992 -247.89301 -426.30347 59.183266 -256.7861 -426.30347 109.8354 -282.59464 -426.30347 150.03313 -322.79236 -426.30347 175.84167 -373.44452 -426.30347 184.73476 -429.59283 -414.0784 175.84172 -485.74121 -414.0784 150.03319 -536.39337 -414.0784 109.8354 -576.59113 -414.0784 59.183266 -602.39966 -414.0784 3.03492089999999992 -611.29279 -414.0784 -53.113441 -602.39966 -414.0784 -103.76557 -576.59106 -414.0784 -143.96333 -536.39331 -414.0784 -169.77184 -485.74118 -414.0784 -178.66499 -429.59283 -414.0784 -169.77184 -373."
+		+ "44449 -414.0784 -143.96332 -322.79236 -414.0784 -103.76554 -282.5946 -414.0784 -53.113426 -256.7861 -414.0784 3.03492089999999992 -247.89296 -414.0784 59.183266 -256.7861 -414.0784 109.83538 -282.59464 -414.0784 150.03311 -322.79239 -414.0784 175.84163 -373.44449 -414.0784 184.7348 -429.59283 -408.59943 170.47133 -483.99628 -408.59943 179.08806 -429.59283 -408.59943 170.47125 -375.18945 -408.59943 145.4648 -326.11145 -408.59943 106.5163 -287.16296 -408.59943 57.438328 -262.15649 -408.59943 3.03491640000000018 -253.5397 -408.59943 -51.368488 -262.15646 -408.59943 -100.44646 -287.16293 -408.59943 -139.395 -326.11145 -408.59943 -164.40144 -375.18945 -408.59943 -173.01826 -429.59283 -408.59943 -164.40144 -483.99625 -408.59943 -139.39502 -533.07422 -408.59943 -100.4465 -572.02277 -408.59943 -51.368507 -597.02924 -408.59943 3.03491640000000018 -605.64606 -408.59943 57.438328 -597.02924 -408.59943 106.51632 -572.02283 -408.59943 145.46487 -533.07428 -406.65823 126.97128 -469.86227 -406.65823 108.46157 -506.18982 -40"
+		+ "6.65823 79.631874 -535.01953 -406.65823 43.304302 -553.52917 -406.65823 3.0349119 -559.90753 -406.65823 -37.234512 -553.52917 -406.65823 -73.562042 -535.01947 -406.65823 -102.39169 -506.18982 -406.65823 -120.90141 -469.86227 -406.65823 -127.27973 -429.59283 -406.65823 -120.90141 -389.32346 -406.65823 -102.39168 -352.99591 -406.65823 -73.562035 -324.16623 -406.65823 -37.234512 -305.65652 -406.65823 3.0349119 -299.27826 -406.65823 43.304302 -305.65656 -406.65823 79.631828 -324.16629 -406.65823 108.46146 -352.99591 -406.65823 126.97118 -389.32346 -406.65823 133.3495 -429.59283 -402.04132 122.13793 -468.29184 -402.04132 104.35009 -503.20267 -402.04132 76.644722 -530.90808 -402.04132 41.73386 -548.69586 -402.04132 3.0349119 -554.82544 -402.04132 -35.66407 -548.69586 -402.04132 -70.574883 -530.90796 -402.04132 -98.280212 -503.20264 -402.04132 -116.06808 -468.29184 -402.04132 -122.19766 -429.59283 -402.04132 -116.06808 -390.89392 -402.04132 -98.280205 -355.98306 -402.04132 -70.574883 -328.27768 -402.04132 -35.66407 "
+		+ "-310.48987 -402.04132 3.0349119 -304.36029 -402.04132 41.73386 -310.4899 -402.04132 76.644669 -328.27777 -402.04132 104.35 -355.98306 -402.04132 122.13786 -390.89392 -402.04132 128.26747 -429.59283 -387.95746 122.13793 -468.29184 -387.95746 104.35009 -503.20267 -387.95746 76.644722 -530.90808 -387.95746 41.73386 -548.69586 -387.95746 3.0349119 -554.82544 -387.95746 -35.66407 -548.69586 -387.95746 -70.574883 -530.90796 -387.95746 -98.280212 -503.20264 -387.95746 -116.06808 -468.29184 -387.95746 -122.19765 -429.59283 -387.95746 -116.06808 -390.89392 -387.95746 -98.280205 -355.98306 -387.95746 -70.574883 -328.27768 -387.95746 -35.66407 -310.48987 -387.95746 3.0349119 -304.36029 -387.95746 41.73386 -310.4899 -387.95746 76.644669 -328.27777 -387.95746 104.35 -355.98306 -387.95746 122.13786 -390.89392 -387.95746 128.26747 -429.59283 -608.94031 216.6982 -499.01624 -608.94031 227.69365 -429.59283 -608.94031 216.69809 -360.16946 -608.94031 184.78766 -297.54175 -608.94031 135.08601 -247.8401 -608.94031 72.45829 -215.92"
+		+ "967 -608.94031 -129.01617 -247.84007 -608.94031 -178.71785 -297.54172 -608.94031 -210.62828 -360.16946 -608.94031 -221.62386 -429.59283 -608.94031 -210.62828 -499.0162 -608.94031 -178.71786 -561.64398 -608.94031 -129.0162 -611.34564 -608.94031 -66.388466 -643.2561 -608.94031 3.0349301999999998 -654.25171"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[332:497]" (" -608.94031 72.458328 -643.2561 -608.94031 135.08609 -611.3457 -608.94031 184.78777 -561.64398 -466.78909 216.85811 -498.58615 -482.6329 197.39172 -537.00861 -559.42737 197.39178 -537.13031 -575.39288 216.85818 -498.75827 -482.75461 222.79485 -460.21414 -559.54907 222.79491 -460.33585 -521.09094 184.78777 -561.64398 -521.09094 135.08609 -611.3457 -521.09094 72.458328 -643.2561 -521.09094 3.0349301999999998 -654.25171 -521.09094 -66.388466 -643.2561 -521.09094 -129.0162 -611.34564 -521.09094 -178.71786 -561.64398 -521.09094 -210.62828 -499.0162 -521.09094 -221.62387 -429.59283 -521.09094 -210.62828 -360.16946 -521.09094 -178.71785 -297.54172 -521.09094 -129.01617 -247.84007 -521.09094 72.45829 -215.92967 -521.09094 135.08601 -247.8401 -521.09094 184.78766 -297.54175 -521.09094 216.69809 -360.16946 -521.09094 227.69365 -429.59283 -521.17706 225.41806 -444.37033 -521.00488 189.38429 -552.97412 -466.78909 218.89554 -498.58615 -482.6329 199.72452 -537.00861 -521.00488 191.83859 -552.97412 -559.42737 199.72458 -537"
+		+ ".13031 -575.39288 218.89563 -498.75827 -559.54907 224.74226 -460.33585 -521.17706 227.32562 -444.37033 -482.75461 224.7422 -460.21414 -463.34875 216.84172 -498.63025 -477.56778 196.09918 -539.53497 -521.01373 188.91292 -553.86322 -564.50494 196.09924 -539.64423 -578.83319 216.84178 -498.78473 -564.6142 223.29729 -457.18314 -521.16821 225.65143 -442.85489 -477.677 223.29723 -457.07388 -625.85559 216.6982 -499.01624 -625.85559 227.69365 -429.59283 -625.85559 216.69809 -360.16946 -625.85559 184.78766 -297.54175 -625.85559 135.08601 -247.8401 -625.85559 72.45829 -215.92967 -625.85559 -129.01617 -247.84007 -625.85559 -178.71785 -297.54172 -625.85559 -210.62828 -360.16946 -625.85559 -221.62386 -429.59283 -625.85559 -210.62828 -499.0162 -625.85559 -178.71786 -561.64398 -625.85559 -129.0162 -611.34564 -625.85559 -66.388466 -643.2561 -625.85559 3.0349301999999998 -654.25171 -625.85559 72.458328 -643.2561 -625.85559 135.08609 -611.3457 -625.85559 184.78777 -561.64398 -466.78909 236.42789 -498.58615 -482.6329 236.42778 "
+		+ "-537.00861 -521.00488 236.42772 -552.97412 -559.42737 236.42778 -537.13031 -575.39288 236.42786 -498.75827 -559.54907 236.4279 -460.33585 -521.17706 236.42793 -444.37033 -482.75461 236.4279 -460.21414 -480.08676 252.04741 -539.54669 -463.19397 252.04752 -498.58044 -463.19397 236.42789 -498.58044 -480.08676 236.42778 -539.54669 -520.99921 236.42772 -556.56921 -520.99921 252.04733 -556.56921 -561.96545 236.42778 -539.67645 -578.98798 236.42786 -498.76398 -578.98798 252.04752 -498.76398 -561.96545 252.04741 -539.67645 -480.21652 236.4279 -457.66797 -480.21652 252.04759 -457.66797 -562.09521 236.4279 -457.79776 -562.09521 252.04759 -457.79776 -521.18274 236.42793 -440.77524 -521.18274 252.04759 -440.77524 -458.14484 252.04752 -498.57245 -476.65189 252.04759 -454.09204 -458.14484 351.13321 -498.57245 -476.65189 351.13348 -454.09204 -521.19073 252.04759 -435.7261 -521.19073 351.13364 -435.7261 -565.67114 252.04759 -454.23315 -565.67114 351.13354 -454.23315 -584.03711 252.04752 -498.77197 -584.03711 351.1333 -498.77"
+		+ "197 -565.53003 252.04741 -543.25238 -565.53003 351.133 -543.25238 -520.99121 252.04733 -561.61835 -520.99121 351.13287 -561.61835 -476.5108 252.04741 -543.11127 -476.5108 351.13297 -543.11127 -466.39346 347.95529 -443.80103 -443.61417 347.95502 -498.54941 -466.21982 347.95477 -553.36975 -575.96216 347.95535 -443.9747 -521.21381 347.95541 -421.19543 -575.78851 347.9548 -553.5434 -598.56775 347.95511 -498.79501 -520.96814 347.95468 -576.14899 -506.96558 369.54648 -484.50192 -501.08289 369.54623 -498.6405 -506.92072 369.54596 -512.79761 -535.26123 369.54657 -484.54681 -521.12268 369.54663 -478.66412 -535.21637 369.54602 -512.84253 -541.09906 369.5463 -498.70392 -521.05927 369.5459 -518.6803 -484.53714 360.34 -462.00229 -469.31393 360.33969 -498.59015 -484.42108 360.33948 -535.22607 -521.00891 360.33942 -550.44928 -557.64484 360.33948 -535.34216 -572.86804 360.33978 -498.75427 -557.76086 360.34009 -462.11838 -521.17303 360.34015 -446.89517 -458.14484 349.13089 -498.57245 -476.5108 349.13065 -543.11127 -520.99121 "
+		+ "349.13055 -561.61835 -565.53003 349.13068 -543.25238 -584.03711 349.13095 -498.77197 -565.67114 349.13123 -454.23315 -521.19073 349.13129 -435.7261 -476.65189 349.13116 -454.09204 -475.15225 351.13348 -452.58762 -456.02063 351.13324 -498.56909 -475.00641 351.13297 -544.61096 -520.98779 351.13287 -563.74255 -567.02972 351.133 -544.75684 -586.16132 351.1333 -498.77536 -567.17554 351.13354 -452.73349 -521.19409 351.13364 -433.6019 -458.14484 253.92712 -498.57245 -476.5108 253.92702 -543.11133 -520.99121 253.92694 -561.61835 -565.53003 253.92702 -543.25238 -584.03711 253.92712 -498.77197 -565.67114 253.9272 -454.23315 -521.19073 253.9272 -435.7261 -476.65189 253.9272 -454.09204 -463.19397 250.32376 -498.58044 -480.08676 250.32364 -539.54669 -520.99921 250.32356 -556.56921 -561.96545 250.32364 -539.67645 -578.98798 250.32376 -498.76398 -562.09521 250.32382 -457.79776 -521.18274 250.32382 -440.77524 -480.21652 250.32382 -457.66797 -463.19397 238.15421 -498.58044 -480.08676 238.15411 -539.54669 -520.99921 238.15402 "
+		+ "-556.56921 -561.96545 238.15411 -539.67645 -578.98798 238.15417 -498.76398 -562.09521 238.15422 -457.79776 -521.18274 238.15427 -440.77524 -480.21652 238.15422 -457.66797"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[498:663]" (" -466.78909 234.80617 -498.58615 -482.6329 234.80609 -537.00861 -521.00488 234.80606 -552.97412 -559.42737 234.80609 -537.13031 -575.39288 234.80617 -498.75827 -559.54907 234.8062 -460.33585 -521.17706 234.80621 -444.37033 -482.75461 234.8062 -460.21414 -608.94031 10.802138 -206.16428 -608.94031 3.03492570000000006 -204.93407 -608.94031 3.03492570000000006 -197.07004 -625.85559 3.03492089999999992 -196.26355 -617.69513 3.03492089999999992 -196.77367 -618.2749 3.03492089999999992 -204.93407 -626.17078 11.428676 -206.26352 -625.85559 2.5907376000000002 -205.00443 -625.85559 -5.75984810000000014 -197.42262 -608.94031 -72.637383 -219.11363 -608.94031 -66.388451 -215.92963 -608.94031 -66.388451 -208.91629 -625.85559 -66.388451 -207.30585 -625.85559 -57.593685 -205.63229 -625.85559 -65.745331 -215.82777 -626.15497 -73.581581 -219.59471 -619.38684 -66.388451 -215.92963 -618.12048 -66.388451 -208.19456 -521.09094 -66.388451 -207.72583 -529.25507 -66.388451 -207.76553 -526.24402 -66.388451 -215.92963 -513.58411 -71.74"
+		+ "0074 -218.65642 -521.09094 -57.766598 -214.56407 -521.09094 -58.362869 -206.53288 -521.09094 3.0349301999999998 -196.51494 -521.09094 -4.99064920000000001 -198.07959 -521.09094 -4.32592110000000041 -206.09991 -513.13257 9.32410909999999937 -205.93018 -529.75293 3.0349301999999998 -204.93407 -529.72028 3.0349301999999998 -196.30479 -529.53174 3.0349301999999998 -142.33023 -529.54779 -5.42187169999999963 -142.33023 -521.09094 -5.460423 -142.33023 -521.09094 -5.42186210000000024 -150.78702 -521.09094 3.0349301999999998 -150.78702 -529.54779 3.0349301999999998 -150.78702 -521.09094 -66.388451 -150.78712 -521.09094 -57.931656 -150.78712 -521.09094 -57.898949 -142.33034 -529.54779 -57.931656 -142.33034 -529.56946 -66.388451 -142.33034 -529.54779 -66.388451 -150.78712 -608.94031 -5.421876 -142.33023 -608.94031 3.03492570000000006 -142.33023 -608.94031 3.03492570000000006 -150.78702 -608.94031 -66.388451 -150.78712 -608.94031 -66.388451 -142.33034 -608.94031 -57.931664 -142.33034 -625.85559 -5.39122530000000033 -142."
+		+ "33023 -617.3988 -5.42187169999999963 -142.33023 -617.37152 3.03492570000000006 -142.33023 -617.39874 3.03492089999999992 -150.78702 -625.85559 3.03492089999999992 -150.78702 -625.85559 -5.42187169999999963 -150.78702 -617.34564 -66.388451 -142.33034 -617.3988 -57.931664 -142.33034 -625.85559 -57.957718 -142.33034 -625.85559 -57.931656 -150.78712 -625.85559 -66.388451 -150.78712 -617.3988 -66.388451 -150.78712 -625.85559 3.03492089999999992 -204.93407 -625.85559 -66.388451 -215.92963 -521.09094 -66.388451 -215.92963 -521.09094 3.0349301999999998 -204.93407 -521.09094 3.0349301999999998 -142.33023 -521.09094 -66.388451 -142.33034 -625.85559 3.03492089999999992 -142.33023 -625.85559 -66.388451 -142.33034 -368.54422 194.97734 -777.84882 -355.8765 194.97734 -777.84882 -355.8765 128.44394 -777.84882 -368.54422 128.44394 -777.84882 -368.54422 -65.749062 -777.84882 -644.35461 -65.749062 -777.84882 -644.35461 128.44394 -777.84882 -657.02234 128.44394 -777.84882 -657.02234 194.97734 -777.84882 -644.35461 194.97734 -777"
+		+ ".84882 -368.54425 -62.938274 -668.10278 -368.54422 -62.93832 -777.84882 -368.54422 -62.93832 -781.5332 -644.35461 -62.938274 -781.5332 -644.35461 -62.938274 -777.84882 -644.35461 -62.93832 -668.10278 -368.54425 194.97734 -671.84991 -355.8765 194.97734 -671.84998 -355.8765 128.44394 -671.84991 -368.54422 128.44394 -671.84998 -368.54425 -62.938274 -671.84991 -368.54422 -65.749062 -671.84998 -644.35461 -65.749062 -671.84991 -644.35461 -62.938316 -671.84998 -644.35461 128.44394 -671.84991 -657.02234 128.44394 -671.84998 -657.02234 194.97734 -671.84991 -644.35461 194.97734 -671.84998 -371.32358 -65.749062 -668.10278 -371.3237 -65.749062 -671.84998 -371.3237 -65.749062 -777.84882 -371.3237 -65.749062 -781.5332 -371.3237 -62.938316 -781.5332 -371.32358 128.44394 -781.5332 -371.3237 128.44394 -820.65839 -371.32358 194.97734 -820.65839 -371.3237 194.97734 -781.5332 -371.32358 194.97734 -777.84882 -371.32358 194.97734 -671.84991 -371.32358 194.97734 -668.10278 -371.3237 194.97734 -648.65173 -371.32358 128.44394 -648.65"
+		+ "173 -371.3237 128.44394 -668.10284 -371.32358 -62.938274 -668.10278 -640.9621 -65.749062 -668.10278 -640.96222 -65.749062 -671.84991 -640.96222 -65.749062 -777.84882 -640.96222 -65.749062 -781.5332 -640.96222 -62.938274 -781.5332 -640.9621 128.44394 -781.53308 -640.96222 128.44394 -820.65839 -640.9621 194.97731 -820.65839 -640.96222 194.97734 -781.5332 -640.9621 194.97731 -777.84882 -640.9621 194.97731 -671.84998 -640.9621 194.97731 -668.10278 -640.96222 194.97734 -648.65173 -640.9621 128.44394 -648.65173 -640.96222 128.44394 -668.10278 -640.9621 -62.938316 -668.10278 -644.35461 125.28831 -668.10278 -644.35461 125.28824 -671.84991 -644.35461 125.28824 -777.84882 -644.35461 125.28824 -781.5332 -640.9621 125.28824 -781.53308 -371.32358 125.28824 -781.5332 -368.54422 125.28831 -781.5332 -368.54422 125.28831 -777.84882 -368.54422 125.28831 -671.84998 -368.54422 125.28824 -668.10278 -371.3237 125.28831 -668.10284 -640.96222 125.28831 -668.10278 -368.54422 131.12112 -648.65173 -355.8765 131.12112 -648.65173 -355.87"
+		+ "65 131.12109 -668.10278 -355.8765 131.12109 -671.84991 -355.8765 131.12109 -777.84882 -355.8765 131.12112 -781.5332 -355.8765 131.12112 -820.65839 -368.54422 131.12109 -820.65839 -371.3237 131.12112 -820.65839 -640.96222 131.12112 -820.65839 -644.35461 131.12112 -820.65839 -657.02234 131.12109 -820.65839 -657.02234 131.12109 -781.5332 -657.02234 131.12112 -777.84882 -657.02234 131.12112 -671.84998 -657.02234 131.12112 -668.10284 -657.02234 131.12109 -648.65173 -644.35461 131.12109 -648.65173"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[664:829]" (" -640.9621 131.12109 -648.65173 -371.32358 131.12109 -648.65173 -644.35461 192.56311 -648.65173 -657.02234 192.56311 -648.65173 -657.02234 192.56313 -668.10278 -657.02234 192.56313 -671.84991 -657.02234 192.56313 -777.84882 -657.02234 192.56311 -781.5332 -657.02234 192.56311 -820.65839 -644.35461 192.56313 -820.65839 -640.9621 192.56311 -820.65839 -371.32358 192.56313 -820.65839 -368.54422 192.56311 -820.65839 -355.8765 192.56313 -820.65839 -355.8765 192.56313 -781.5332 -355.8765 192.56311 -777.84882 -355.8765 192.56311 -671.84998 -355.8765 192.56311 -668.10278 -355.8765 192.56313 -648.65173 -368.54422 192.56313 -648.65173 -371.3237 192.56311 -648.65173 -640.96222 192.56311 -648.65173 -644.35461 128.44394 -817.94336 -657.02234 128.44394 -817.94336 -657.02234 131.12109 -817.94336 -657.02234 192.56311 -817.94336 -657.02234 194.97734 -817.94336 -644.35461 194.97734 -817.94336 -640.9621 194.97731 -817.94336 -371.32358 194.97734 -817.94336 -368.54422 194.97734 -817.94336 -355.8765 194.97734 -817.94336 -355.8765 19"
+		+ "2.56313 -817.94336 -355.8765 131.12112 -817.94336 -355.8765 128.44394 -817.94336 -368.54422 128.44394 -817.94336 -371.3237 128.44394 -817.94336 -640.96222 128.44394 -817.94336 -650.80212 128.44394 -668.10278 -650.80212 128.44394 -648.65173 -650.80212 131.12109 -648.65173 -650.80212 192.56311 -648.65173 -650.80212 194.97734 -648.65173 -650.80212 194.97734 -668.10278 -650.80212 194.97734 -671.84991 -650.80212 194.97734 -777.84882 -650.80212 194.97734 -781.5332 -650.80212 194.97734 -817.94336 -650.80212 194.97734 -820.65839 -650.80212 192.56313 -820.65839 -650.80212 131.12112 -820.65839 -650.80212 128.44394 -820.65839 -650.80212 128.44394 -817.94336 -650.80212 128.44394 -781.5332 -650.80212 128.44394 -777.84882 -650.80212 128.44394 -671.84991 -368.54422 128.44394 -652.72913 -355.8765 128.44394 -652.72913 -355.8765 131.12112 -652.72913 -355.8765 192.56313 -652.72913 -355.8765 194.97734 -652.72913 -368.54422 194.97734 -652.72913 -371.32367 194.97734 -652.72913 -640.96216 194.97734 -652.72913 -644.35461 194.97734 -"
+		+ "652.72913 -650.80212 194.97734 -652.72913 -657.02234 194.97734 -652.72913 -657.02234 192.56311 -652.72913 -657.02234 131.12112 -652.72913 -657.02234 128.44394 -652.72913 -650.80212 128.44394 -652.72913 -644.35461 128.44394 -652.72913 -640.9621 128.44394 -652.72913 -371.32361 128.44394 -652.72913 -360.06995 128.44394 -781.5332 -360.06995 128.44394 -817.94336 -360.06995 128.44394 -820.65839 -360.06995 131.12112 -820.65839 -360.06995 192.56313 -820.65839 -360.06995 194.97734 -820.65839 -360.06995 194.97734 -817.94336 -360.06995 194.97734 -781.5332 -360.06998 194.97734 -777.84882 -360.06998 194.97734 -671.84998 -360.06995 194.97734 -668.10278 -360.06995 194.97734 -652.72913 -360.06995 194.97734 -648.65173 -360.06995 192.56313 -648.65173 -360.06995 131.12112 -648.65173 -360.06995 128.44394 -648.65173 -360.06995 128.44394 -652.72913 -360.06995 128.44394 -668.10278 -360.06995 128.44394 -671.84991 -360.06995 128.44394 -777.84882 -521.091 -65.749062 -671.84998 -521.09088 -65.749062 -668.10278 -521.09094 -62.938297 -66"
+		+ "8.10278 -521.09106 125.28831 -668.10278 -521.09106 128.44394 -668.10278 -521.09094 128.44394 -652.72913 -521.09088 128.44394 -648.65173 -521.09094 131.12109 -648.65173 -521.091 192.56311 -648.65173 -521.09106 194.97734 -648.65173 -521.091 194.97734 -652.72913 -521.09088 194.97734 -668.10278 -521.09094 194.97734 -671.84998 -521.09088 194.97734 -777.84882 -521.09106 194.97734 -781.5332 -521.09094 194.97734 -817.94336 -521.09088 194.97734 -820.65839 -521.09094 192.56313 -820.65839 -521.091 131.12112 -820.65839 -521.09106 128.44394 -820.65839 -521.091 128.44394 -817.94336 -521.09088 128.44394 -781.53308 -521.09088 125.28824 -781.53308 -521.091 -62.938297 -781.5332 -521.09106 -65.749062 -781.5332 -521.09106 -65.749062 -777.84882 -368.54425 72.458328 -668.10278 -368.54425 72.458366 -671.84998 -368.54425 72.458351 -777.84882 -368.54425 72.458351 -781.5332 -371.32361 72.458313 -781.5332 -521.09094 72.458305 -781.53308 -640.9621 72.458328 -781.53308 -644.35461 72.458328 -781.5332 -644.35461 72.458328 -777.84882 -644.3"
+		+ "5461 72.458313 -671.84991 -644.35461 72.458351 -668.10278 -640.96216 72.458351 -668.10278 -521.091 72.458366 -668.10278 -371.32367 72.458366 -668.10284 -368.54425 3.03493950000000012 -668.10278 -368.54425 3.03495790000000021 -671.84998 -368.54422 3.0349301999999998 -777.84882 -368.54422 3.0349301999999998 -781.5332 -371.32364 3.03490260000000012 -781.5332 -521.091 3.0349119 -781.53308 -640.96216 3.03493950000000012 -781.53308 -644.35461 3.03493950000000012 -781.5332 -644.35461 3.03493950000000012 -777.84882 -644.35461 3.03490260000000012 -671.84998 -644.35461 3.0349301999999998 -668.10278 -640.96216 3.0349301999999998 -668.10278 -521.09094 3.0349488 -668.10278 -371.32364 3.03495790000000021 -668.10278 -608.94025 -65.749062 -668.10278 -608.94031 -65.749062 -671.84991 -608.94037 -65.749062 -777.84882 -608.94037 -65.749062 -781.5332 -608.94031 -62.938278 -781.5332 -608.94031 3.03493479999999982 -781.53308 -608.94025 72.458328 -781.53308 -608.94025 125.28824 -781.53308 -608.94025 128.44395 -781.53308 -608.94031 1"
+		+ "28.44394 -817.94336 -608.94037 128.44394 -820.65839 -608.94031 131.12112 -820.65839 -608.94025 192.56313 -820.65839 -608.94025 194.97734 -820.65839 -608.94025 194.97734 -817.94336 -608.94037 194.97734 -781.5332 -608.94025 194.97734 -777.84882 -608.94025 194.97734 -671.84998"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[830:995]" (" -608.94025 194.97734 -668.10278 -608.94031 194.97734 -652.72913 -608.94037 194.97734 -648.65173 -608.94031 192.56311 -648.65173 -608.94025 131.12109 -648.65173 -608.94025 128.44395 -648.65173 -608.94025 128.44395 -652.72913 -608.94037 128.44394 -668.10278 -608.94037 125.28831 -668.10278 -608.94031 72.458359 -668.10278 -608.94025 3.03493479999999982 -668.10278 -608.94025 -62.938313 -668.10278 -433.24173 -65.749062 -671.84998 -433.24161 -65.749062 -668.10278 -433.24161 -62.938286 -668.10278 -433.24167 3.03495340000000002 -668.10278 -433.2417 72.458366 -668.10284 -433.24173 125.28831 -668.10284 -433.24173 128.44394 -668.10284 -433.24164 128.44394 -652.72913 -433.24161 128.44394 -648.65173 -433.24161 131.12109 -648.65173 -433.24173 192.56311 -648.65173 -433.24173 194.97734 -648.65173 -433.2417 194.97734 -652.72913 -433.24161 194.97734 -668.10278 -433.24161 194.97734 -671.84991 -433.24161 194.97734 -777.84882 -433.24173 194.97734 -781.5332 -433.24161 194.97734 -817.94336 -433.24161 194.97734 -820.65839 -433.24161"
+		+ " 192.56313 -820.65839 -433.24173 131.12112 -820.65839 -433.24173 128.44394 -820.65839 -433.24173 128.44394 -817.94336 -433.24161 128.44394 -781.53308 -433.24161 125.28824 -781.53308 -433.24164 72.458313 -781.53308 -433.24167 3.03490709999999986 -781.53308 -433.24173 -62.938309 -781.5332 -433.24173 -65.749062 -781.5332 -433.24173 -65.749062 -777.84882 -608.94031 72.458359 -663.57782 -608.94025 3.03493479999999982 -663.57788 -433.24167 3.03495340000000002 -663.57788 -433.2417 72.458366 -663.57782 -433.24167 68.419693 -648.34106 -433.24167 7.07356639999999981 -658.56555 -433.24167 7.07358930000000008 -663.57782 -433.2417 68.419731 -663.57782 -433.24167 7.0736264999999996 -668.10284 -433.2417 68.419769 -668.10284 -608.94031 7.07356639999999981 -658.56555 -608.94031 68.419693 -648.34106 -608.94031 68.419724 -663.57782 -608.94025 7.07357119999999995 -663.57782 -608.94031 68.419746 -668.10278 -608.94025 7.07358930000000008 -668.10278 -438.54654 72.458328 -647.63483 -521.09094 72.458328 -647.63483 -603.63538 72.45832"
+		+ "8 -647.63483 -521.091 72.458366 -663.57782 -603.63544 72.458359 -663.57782 -438.54657 72.458366 -663.57782 -603.63544 72.458359 -668.10278 -438.5466 72.458366 -668.10284 -438.54654 3.0349301999999998 -657.96643 -521.09094 3.0349301999999998 -657.96643 -603.63538 3.0349301999999998 -657.96643 -603.63538 3.03493479999999982 -663.57782 -521.09094 3.0349488 -663.57782 -438.54654 3.03495340000000002 -663.57782 -603.63538 3.03493479999999982 -668.10278 -438.54657 3.03495340000000002 -668.10278 -438.54651 -62.938286 -668.10278 -438.54651 -65.749062 -668.10278 -438.54663 -65.749062 -671.84998 -438.54663 -65.749062 -777.84875 -438.54663 -65.749062 -781.53314 -438.54663 -62.938305 -781.53314 -438.54657 3.03490709999999986 -781.53308 -438.54654 72.458305 -781.53308 -438.54651 125.28824 -781.53308 -438.54651 128.44394 -781.53308 -438.54663 128.44394 -817.9433 -438.54663 128.44394 -820.65839 -438.54663 131.12112 -820.65839 -438.54651 192.56313 -820.65839 -438.54651 194.97734 -820.65839 -438.54651 194.97734 -817.94336 -438"
+		+ ".54663 194.97731 -781.53314 -438.54651 194.97734 -777.84882 -438.54651 194.97734 -671.84991 -438.54651 194.97734 -668.10278 -438.5466 194.97731 -652.72913 -438.54663 194.97731 -648.65173 -438.54663 192.56311 -648.65173 -438.54651 131.12109 -648.65173 -438.54651 128.44394 -648.65173 -438.54654 128.44394 -652.72913 -438.54663 128.44394 -668.10284 -438.54663 125.28831 -668.10284 -603.63544 125.28831 -668.10278 -603.63544 128.44394 -668.10278 -603.63538 128.44395 -652.72913 -603.63531 128.44395 -648.65173 -603.63531 131.12108 -648.65173 -603.63544 192.56313 -648.65173 -603.63544 194.97734 -648.65173 -603.63544 194.97734 -652.72913 -603.63531 194.97731 -668.10278 -603.63531 194.97731 -671.84998 -603.63531 194.97731 -777.84875 -603.63544 194.97734 -781.5332 -603.63531 194.97731 -817.9433 -603.63531 194.97731 -820.65839 -603.63531 192.56311 -820.65839 -603.63544 131.12112 -820.65839 -603.63544 128.44394 -820.65839 -603.63544 128.44394 -817.94336 -603.63531 128.44395 -781.53308 -603.63531 125.28824 -781.53308 -603.63"
+		+ "538 72.458328 -781.53308 -603.63538 3.0349301999999998 -781.53308 -603.63544 -62.938282 -781.5332 -603.63544 -65.749062 -781.5332 -603.63544 -65.749062 -777.84882 -603.63544 -65.749062 -671.84991 -603.63531 -65.749062 -668.10278 -603.63531 -62.938313 -668.10278 -640.96216 68.419746 -668.10278 -644.35461 68.419746 -668.10278 -644.35461 68.419716 -671.84991 -644.35461 68.419731 -777.84882 -644.35461 68.419731 -781.5332 -640.9621 68.419731 -781.53308 -608.94025 68.419731 -781.53308 -603.63538 68.419731 -781.53308 -521.09094 68.419693 -781.53308 -438.54654 68.419693 -781.53308 -433.24164 68.419693 -781.53308 -371.32361 68.419716 -781.5332 -368.54425 68.419746 -781.53314 -368.54425 68.419746 -777.84875 -368.54425 68.419769 -671.84998 -368.54425 68.419731 -668.10278 -371.32367 68.419769 -668.10284 -371.32364 7.07360789999999984 -668.10284 -368.54422 7.07360789999999984 -668.10278 -368.54425 7.07360789999999984 -671.84998 -368.54422 7.07358029999999971 -777.84882 -368.54422 7.07358029999999971 -781.5332 -371.32364 7"
+		+ ".07358029999999971 -781.5332 -433.24167 7.07355260000000019 -781.53308 -438.54657 7.07358029999999971 -781.53308 -521.091 7.07356169999999995 -781.53308 -603.63538 7.07358029999999971 -781.53308 -608.94031 7.07360789999999984 -781.53308 -640.96216 7.07360789999999984 -781.53308 -644.35461 7.07360789999999984 -781.5332 -644.35461 7.07360789999999984 -777.84882 -644.35461 7.07358029999999971 -671.84998 -644.35461 7.07358029999999971 -668.10278 -640.96216 7.07358029999999971 -668.10278 -644.35461 77.741348 -668.10278 -644.35461 77.741302 -671.84991"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[996:1161]" (" -644.35461 77.741325 -777.84875 -644.35461 77.741325 -781.53314 -640.9621 77.741325 -781.53308 -608.94025 77.741325 -781.53308 -603.63538 77.741325 -781.53308 -521.09094 77.741295 -781.53308 -438.54654 77.741287 -781.53308 -433.24164 77.741302 -781.53308 -371.32361 77.741302 -781.53314 -368.54425 77.741348 -781.5332 -368.54425 77.741348 -777.84882 -368.54425 77.741371 -671.84998 -368.54425 77.741325 -668.10278 -371.32367 77.741371 -668.10284 -433.2417 77.741356 -668.10284 -438.5466 77.741371 -668.10284 -521.091 77.741356 -668.10278 -603.63544 77.741348 -668.10278 -608.94031 77.741356 -668.10278 -640.96216 77.741348 -668.10278 -612.1424 -65.749062 -668.10278 -612.14252 -65.749062 -671.84991 -612.14252 -65.749062 -777.84875 -612.14252 -65.749062 -781.53314 -612.14252 -62.938278 -781.53314 -612.14246 3.03493479999999982 -781.53308 -612.14246 7.07360319999999998 -781.53308 -612.14246 68.419731 -781.53308 -612.14246 72.458328 -781.53308 -612.14246 77.741325 -781.53308 -612.1424 125.28824 -781.53308 -612.1424 128."
+		+ "44395 -781.53308 -612.14252 128.44394 -817.9433 -612.14252 128.44394 -820.65839 -612.14252 131.12112 -820.65839 -612.1424 192.56313 -820.65839 -612.1424 194.97734 -820.65839 -612.1424 194.97734 -817.94336 -612.14252 194.97731 -781.53314 -612.1424 194.97734 -777.84882 -612.1424 194.97734 -671.84998 -612.1424 194.97734 -668.10278 -612.14252 194.97731 -652.72913 -612.14252 194.97731 -648.65173 -612.14252 192.56311 -648.65173 -612.1424 131.12109 -648.65173 -612.1424 128.44395 -648.65173 -612.14246 128.44395 -652.72913 -612.14252 128.44394 -668.10278 -612.14252 125.28831 -668.10278 -612.14252 77.741348 -668.10278 -612.14246 72.458359 -668.10278 -612.14246 68.419739 -668.10272 -612.14246 7.07358930000000008 -668.10278 -612.14246 3.03493479999999982 -668.10278 -612.1424 -62.938313 -668.10278 -368.54425 -3.5623828999999998 -668.10278 -368.54425 -3.56236459999999999 -671.84998 -368.54422 -3.56239680000000014 -777.84875 -368.54422 -3.56239680000000014 -781.53314 -371.32364 -3.56241990000000008 -781.5332 -433.24167 -3.5"
+		+ "624153999999999 -781.53308 -438.54657 -3.5624153999999999 -781.53314 -521.091 -3.5624106000000002 -781.53308 -603.63538 -3.56239220000000012 -781.53308 -608.94031 -3.56238769999999993 -781.53314 -612.14246 -3.56238769999999993 -781.53314 -640.96216 -3.5623828999999998 -781.53314 -644.35461 -3.5623828999999998 -781.5332 -644.35461 -3.5623828999999998 -777.84882 -644.35461 -3.56241990000000008 -671.84998 -644.35461 -3.56239680000000014 -668.10278 -640.96216 -3.56239680000000014 -668.10278 -612.14246 -3.56239220000000012 -668.10278 -608.94025 -3.56239220000000012 -668.10278 -603.63538 -3.56239220000000012 -668.10278 -521.09094 -3.56237840000000006 -668.10278 -438.54657 -3.56236910000000018 -668.10278 -433.24164 -3.56236910000000018 -668.10278 -371.32364 -3.56236459999999999 -668.10278 -427.04993 -65.749062 -671.84998 -427.0498 -65.749062 -668.10278 -427.0498 -62.938286 -668.10278 -427.04984 -3.56236910000000018 -668.10278 -427.04987 3.03495340000000002 -668.10278 -427.04987 7.07362170000000035 -668.10284 -427.04"
+		+ "99 68.419769 -668.10284 -427.0499 72.458366 -668.10284 -427.0499 77.741356 -668.10284 -427.04993 125.28831 -668.10284 -427.04993 128.44394 -668.10284 -427.04984 128.44394 -652.72913 -427.0498 128.44394 -648.65173 -427.0498 131.12108 -648.65173 -427.04993 192.56313 -648.65173 -427.04993 194.97734 -648.65173 -427.0499 194.97734 -652.72913 -427.0498 194.97731 -668.10278 -427.0498 194.97731 -671.84991 -427.0498 194.97731 -777.84875 -427.04993 194.97734 -781.5332 -427.0498 194.97731 -817.9433 -427.0498 194.97731 -820.65839 -427.0498 192.56311 -820.65839 -427.04993 131.12112 -820.65839 -427.04993 128.44394 -820.65839 -427.04993 128.44394 -817.94336 -427.0498 128.44394 -781.53308 -427.0498 125.28824 -781.53308 -427.04984 77.741302 -781.53308 -427.04984 72.458313 -781.53314 -427.04984 68.419693 -781.53308 -427.04984 7.07355689999999981 -781.53314 -427.04987 3.03490709999999986 -781.53314 -427.04987 -3.5624153999999999 -781.53314 -427.04993 -62.938309 -781.5332 -427.04993 -65.749062 -781.5332 -427.04993 -65.749062 -77"
+		+ "7.84882 -368.54422 161.84212 -648.65173 -360.06995 161.84212 -648.65173 -355.8765 161.84212 -648.65173 -355.8765 161.84212 -652.72913 -355.8765 161.8421 -668.10278 -355.8765 161.8421 -671.84998 -355.8765 161.8421 -777.84882 -355.8765 161.84212 -781.5332 -355.8765 161.84212 -817.94336 -355.8765 161.84212 -820.65839 -360.06995 161.84212 -820.65839 -368.54422 161.8421 -820.65839 -371.32364 161.84212 -820.65839 -427.04987 161.84212 -820.65839 -433.24167 161.84212 -820.65839 -438.54657 161.84212 -820.65839 -521.09094 161.84212 -820.65839 -603.63538 161.84212 -820.65839 -608.94031 161.84212 -820.65839 -612.14246 161.84212 -820.65839 -640.96216 161.84212 -820.65839 -644.35461 161.84212 -820.65839 -650.80212 161.84212 -820.65839 -657.02234 161.8421 -820.65839 -657.02234 161.8421 -817.94336 -657.02234 161.8421 -781.5332 -657.02234 161.84212 -777.84882 -657.02234 161.84212 -671.84998 -657.02234 161.84212 -668.10278 -657.02234 161.84212 -652.72913 -657.02234 161.8421 -648.65173 -650.80212 161.8421 -648.65173 -644.35461 "
+		+ "161.8421 -648.65173 -640.96216 161.8421 -648.65173 -612.14246 161.8421 -648.65173 -608.94031 161.8421 -648.65173 -603.63538 161.8421 -648.65173 -521.091 161.8421 -648.65173 -438.54657 161.8421 -648.65173 -433.24167 161.8421 -648.65173 -427.04987 161.8421 -648.65173 -371.32364 161.8421 -648.65173 -407.62881 148.7213 -476.92929 -407.62881 156.21877 -429.59283 -407.62881 148.72122 -382.25647 -407.62881 126.96313 -339.55368 -407.62881 93.074066 -305.66464 -407.62881 50.371315 -283.90652"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[1162:1327]" (" -407.62881 3.0349119 -276.40897 -407.62881 -44.301502 -283.90649 -407.62881 -87.00425 -305.66458 -407.62881 -120.89334 -339.55368 -407.62881 -142.65143 -382.25647 -407.62881 -150.149 -429.59283 -407.62881 -142.65143 -476.92926 -407.62881 -120.89335 -519.63202 -407.62881 -87.004265 -553.52112 -407.62881 -44.30151 -575.27924 -407.62881 3.0349119 -582.77679 -407.62881 50.371315 -575.27924 -407.62881 93.074104 -553.52118 -407.62881 126.96322 -519.63202 -412.38809 126.73999 -469.78714 -412.38809 108.26483 -506.04688 -413.3587 126.76648 -519.48914 -413.3587 148.49002 -476.85413 -412.38809 79.488937 -534.82281 -413.3587 92.93116 -553.32446 -412.38809 43.229156 -553.29791 -413.3587 50.296169 -575.04791 -412.38809 3.0349119 -559.66431 -413.3587 3.0349119 -582.53363 -412.38809 -37.159363 -553.29791 -413.3587 -44.22636 -575.04791 -412.38809 -73.419106 -534.82269 -413.3587 -86.861328 -553.3244 -412.38809 -102.19495 -506.04688 -413.3587 -120.69662 -519.48907 -412.38809 -120.67012 -469.78714 -413.3587 -142.42015 -476.8541"
+		+ "3 -412.38809 -127.03654 -429.59283 -413.3587 -149.90582 -429.59283 -412.38809 -120.67012 -389.39862 -413.3587 -142.42015 -382.3316 -412.38809 -102.19495 -353.13885 -413.3587 -120.6966 -339.69662 -412.38809 -73.419098 -324.36298 -413.3587 -86.861313 -305.86133 -412.38809 -37.159363 -305.88782 -413.3587 -44.226353 -284.13779 -412.38809 3.0349119 -299.52142 -413.3587 3.0349119 -276.65216 -412.38809 43.229149 -305.88785 -413.3587 50.296162 -284.13782 -412.38809 79.488892 -324.36304 -413.3587 92.931129 -305.86139 -412.38809 108.26472 -353.13885 -413.3587 126.76639 -339.69662 -412.38809 126.7399 -389.39862 -413.3587 148.48994 -382.3316 -412.38809 133.10632 -429.59283 -413.3587 155.97559 -429.59283 -413.21622 125.36873 -518.47357 -413.21622 91.915649 -551.9267 -413.21622 49.76228 -573.40479 -413.21622 3.0349119 -580.80591 -413.21622 -43.692471 -573.40479 -413.21622 -85.84581 -551.92664 -413.21622 -119.29886 -518.47357 -413.21622 -140.77698 -476.32022 -413.21622 -148.17812 -429.59283 -413.21622 -140.77698 -382.86551 "
+		+ "-413.21622 -119.29885 -340.71213 -413.21622 -85.845787 -307.25909 -413.21622 -43.692459 -285.78094 -413.21622 3.0349119 -278.37985 -413.21622 49.76228 -285.78098 -413.21622 91.915611 -307.25912 -413.21622 125.36864 -340.71213 -413.21622 146.84679 -382.86551 -413.21622 154.24788 -429.59283 -413.21622 146.84685 -476.32025 -412.47873 109.99225 -507.30191 -412.47873 80.743988 -536.55023 -412.47873 43.888977 -555.32861 -412.47873 3.0349119 -561.79956 -412.47873 -37.81918 -555.32861 -412.47873 -74.674149 -536.55017 -412.47873 -103.92238 -507.30191 -412.47873 -122.70084 -470.44696 -412.47873 -129.17175 -429.59283 -412.47873 -122.70084 -388.7388 -412.47873 -103.92236 -351.88379 -412.47873 -74.674141 -322.63556 -412.47873 -37.819176 -303.85709 -412.47873 3.0349119 -297.3862 -412.47873 43.888969 -303.85712 -412.47873 80.743942 -322.63559 -412.47873 109.99216 -351.88379 -412.47873 128.77061 -388.7388 -412.47873 135.24153 -429.59283 -412.47873 128.77071 -470.44696 -411.57724 126.82763 -519.53357 -411.57724 148.56192 -476"
+		+ ".8775 -411.57724 156.05121 -429.59283 -411.57724 148.56186 -382.30826 -411.57724 126.82756 -339.65219 -411.57724 92.975563 -305.8002 -411.57724 50.319527 -284.06592 -411.57724 3.0349119 -276.57654 -411.57724 -44.249718 -284.06586 -411.57724 -86.905754 -305.80017 -411.57724 -120.75777 -339.65219 -411.57724 -142.49205 -382.30826 -411.57724 -149.98143 -429.59283 -411.57724 -142.49205 -476.87747 -411.57724 -120.75778 -519.53351 -411.57724 -86.905769 -553.38556 -411.57724 -44.249725 -575.11987 -411.57724 3.0349119 -582.60919 -411.57724 50.319534 -575.11987 -411.57724 92.975601 -553.38562 -407.75137 151.46727 -477.8215 -407.75137 159.10605 -429.59283 -407.75137 151.46719 -381.36426 -407.75137 129.29898 -337.8566 -407.75137 94.771179 -303.32877 -407.75137 51.263535 -281.16058 -407.75137 3.0349119 -273.5217 -407.75137 -45.193714 -281.16052 -407.75137 -88.701347 -303.32874 -407.75137 -123.22919 -337.8566 -407.75137 -145.39738 -381.36426 -407.75137 -153.03627 -429.59283 -407.75137 -145.39738 -477.82147 -407.75137 -123."
+		+ "22921 -521.3291 -407.75137 -88.701363 -555.85693 -407.75137 -45.193726 -578.02521 -407.75137 3.0349119 -585.66406 -407.75137 51.263535 -578.02521 -407.75137 94.771194 -555.85706 -407.75137 129.29907 -521.32916 -406.59592 125.57475 -469.40854 -406.59592 107.27362 -505.32672 -406.59592 78.768784 -533.8316 -406.59592 42.850544 -552.13269 -406.59592 3.0349119 -558.43915 -406.59592 -36.780758 -552.13269 -406.59592 -72.698952 -533.83148 -406.59592 -101.20374 -505.32672 -406.59592 -119.50488 -469.40854 -406.59592 -125.81135 -429.59283 -406.59592 -119.50488 -389.77722 -406.59592 -101.20373 -353.85898 -406.59592 -72.698944 -325.35419 -406.59592 -36.780758 -307.05304 -406.59592 3.0349119 -300.74661 -406.59592 42.850544 -307.0531 -406.59592 78.76873 -325.35425 -406.59592 107.27351 -353.85898 -406.59592 125.57467 -389.77722 -406.59592 131.88112 -429.59283 -408.42401 126.9 -469.83914 -408.42401 108.40093 -506.14575 -408.42401 79.587837 -534.95892 -408.42401 43.281143 -553.45795 -408.42401 3.0349119 -559.83258 -408.42401 -"
+		+ "37.211353 -553.45795 -408.42401 -73.517998 -534.9588 -408.42401 -102.33106 -506.14575 -408.42401 -120.83013 -469.83911 -408.42401 -127.20479 -429.59283 -408.42401 -120.83013 -389.34662 -408.42401 -102.33105 -353.03995"
+		)
+		2 "|airship_grp|props_grp|steam_boiler:boiler_geo|steam_boiler:boiler_geoShape" 
+		"pt[1328:1421]" (" -408.42401 -73.51799 -324.22687 -408.42401 -37.211353 -305.72781 -408.42401 3.0349119 -299.35318 -408.42401 43.281143 -305.72784 -408.42401 79.587784 -324.22693 -408.42401 108.40084 -353.03995 -408.42401 126.8999 -389.34662 -408.42401 133.27457 -429.59283 -406.50613 123.56348 -468.75504 -406.50613 105.56274 -504.08368 -406.50613 77.525757 -532.12073 -406.50613 42.197041 -550.1214 -406.50613 3.0349119 -556.32434 -406.50613 -36.127254 -550.1214 -406.50613 -71.455917 -532.12061 -406.50613 -99.492851 -504.08368 -406.50613 -117.49361 -468.75504 -406.50613 -123.69657 -429.59283 -406.50613 -117.49361 -390.43073 -406.50613 -99.492844 -355.10202 -406.50613 -71.45591 -327.06503 -406.50613 -36.127254 -309.06433 -406.50613 3.0349119 -302.86139 -406.50613 42.197041 -309.06436 -406.50613 77.525703 -327.06512 -406.50613 105.56264 -355.10202 -406.50613 123.56341 -390.43073 -406.50613 129.76634 -429.59283 -409.69254 126.89235 -519.58057 -409.69254 148.638 -476.90222 -409.69254 156.13118 -429.59283 -409.69254 148.63792 -382.2"
+		+ "8351 -409.69254 126.89228 -339.60516 -409.69254 93.022591 -305.73547 -409.69254 50.34425 -283.98984 -409.69254 3.0349119 -276.49658 -409.69254 -44.274433 -283.98981 -409.69254 -86.952766 -305.73544 -409.69254 -120.82248 -339.60516 -409.69254 -142.56813 -382.28351 -409.69254 -150.06142 -429.59283 -409.69254 -142.56813 -476.90219 -409.69254 -120.82249 -519.58057 -409.69254 -86.952789 -553.45026 -409.69254 -44.274445 -575.19592 -409.69254 3.0349119 -582.68921 -409.69254 50.344257 -575.19592 -409.69254 93.022629 -553.45032 -510.90265 374.59985 -488.45163 -521.09094 374.59961 -498.6723 -506.65961 374.59961 -498.64944 -510.8703 374.59933 -508.86063 -531.31165 374.59995 -488.48401 -521.11383 374.60001 -484.24097 -531.2793 374.5994 -508.89301 -535.52234 374.59967 -498.69519 -521.06812 374.59927 -513.10364 -504.72275 368.62582 -482.25195 -497.90598 368.62558 -498.63547 -504.67075 368.62531 -515.04047 -521.0542 368.62524 -521.85718 -537.45923 368.62537 -515.09247 -544.27594 368.62564 -498.70895 -537.51123 368.62592 -48"
+		+ "2.30399 -521.12775 368.62598 -475.48724 -507.75299 370.55716 -485.29187 -502.19824 370.55692 -498.6423 -507.71063 370.55667 -512.01019 -521.06104 370.55658 -517.565 -534.42896 370.55673 -512.05261 -539.9837 370.55698 -498.70218 -534.47131 370.55728 -485.33426 -521.12091 370.55731 -479.77951 -362.03394 61.809452 -448.68988 -362.03394 53.031559 -465.91757 -351.95663 3.03490709999999986 -429.59286 -362.03394 39.359634 -479.58954 -362.03394 22.131901 -488.36728 -362.03394 3.03490709999999986 -491.39209 -362.03394 -16.062101 -488.36728 -362.03394 -33.289803 -479.58951 -362.03394 -46.961727 -465.91757 -362.03394 -55.739651 -448.68988 -362.03394 -58.764309 -429.59286 -362.03394 -55.739651 -410.49588 -362.03394 -46.961727 -393.26816 -362.03394 -33.289799 -379.59622 -362.03394 -16.062101 -370.81833 -362.03394 3.03490709999999986 -367.79364 -362.03394 22.131901 -370.81848 -362.03394 39.359604 -379.59625 -362.03394 53.031521 -393.26816 -362.03394 61.809296 -410.49588 -362.03394 64.834122 -429.59286"
+		);
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "wallLightRN";
@@ -29553,6 +33759,325 @@ createNode reference -n "cylindricalStructureRN";
 		"rotateZ" " 2.27307656779372769";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "bucketRN1";
+	rename -uid "00E2256E-4FB7-E119-FFD8-628F391F1057";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"bucketRN1"
+		"bucketRN1" 0
+		"bucketRN1" 7
+		0 "|bucket:MOVE" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|bucket:MOVE" "translate" " -type \"double3\" -282.93774052958076481 -64.94143925684014107 -818.63360400514318371"
+		
+		2 "|airship_grp|props_grp|bucket:MOVE" "rotate" " -type \"double3\" 0 -38.10794739074322734 0"
+		
+		2 "|airship_grp|props_grp|bucket:MOVE" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947"
+		
+		2 "|airship_grp|props_grp|bucket:MOVE" "rotatePivot" " -type \"double3\" 0 0 0"
+		
+		2 "|airship_grp|props_grp|bucket:MOVE" "scalePivot" " -type \"double3\" 0 0 0"
+		
+		2 "|airship_grp|props_grp|bucket:MOVE" "scalePivotTranslate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "coupledBoilersRN";
+	rename -uid "8A635370-472F-D966-CB8F-C08F0C66AA5F";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"coupledBoilersRN"
+		"coupledBoilersRN" 0
+		"coupledBoilersRN" 4
+		0 "|coupledBoilers:coupledBoilersGeo" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "translate" " -type \"double3\" -350.80706429702638616 -66.09052450934338196 -1250.40473116941643639"
+		
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "rotate" " -type \"double3\" 0 -0.049815416592959842 0"
+		
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "scale" " -type \"double3\" 78.46852482667283368 78.46852482667262052 78.46852482667243578";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "furnaceRN";
+	rename -uid "62F8DF0F-433D-CECC-EFAC-B59557CA2579";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"furnaceRN"
+		"furnaceRN" 0
+		"furnaceRN" 7
+		0 "|furnace:furnace_geo" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|furnace:furnace_geo" "translate" " -type \"double3\" 95.83308820587934918 -147.39033391672137441 447.88222917568293724"
+		
+		2 "|airship_grp|props_grp|furnace:furnace_geo" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947"
+		
+		2 "|airship_grp|props_grp|furnace:furnace_geo|furnace:furnace_geoShape" "dispResolution" 
+		" 3"
+		2 "|airship_grp|props_grp|furnace:furnace_geo|furnace:furnace_geoShape" "displaySmoothMesh" 
+		" 2"
+		2 "|airship_grp|props_grp|furnace:furnace_geo|furnace:furnaceDoor_geo|furnace:furnaceDoor_geoShape" 
+		"dispResolution" " 3"
+		2 "|airship_grp|props_grp|furnace:furnace_geo|furnace:furnaceDoor_geo|furnace:furnaceDoor_geoShape" 
+		"displaySmoothMesh" " 2";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "railNoEndpostRN";
+	rename -uid "E1B2CD42-4433-BBEA-6C7E-32B0F2FF49E6";
+	setAttr -s 32 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"railNoEndpostRN"
+		"railNoEndpostRN" 0
+		"railNoEndpostRN" 41
+		0 "|railNoEndpost:handrail_grp" "|airship_grp|props_grp|railings_grp" "-s -r "
+		
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp" "translate" 
+		" -type \"double3\" -1.27869250221275599 0.74300034078352972 -0.84289188110456381"
+		
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp" "rotate" 
+		" -type \"double3\" 0 -125.56036154325039433 0"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung0_geo" 
+		"translate" " -type \"double3\" -0.65640084301576418 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung0_geo" 
+		"scale" " -type \"double3\" 0.36217514085222374 1 1"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung1_geo" 
+		"translate" " -type \"double3\" -0.65640084301576418 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung1_geo" 
+		"scale" " -type \"double3\" 0.36217514085222374 1 1"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung2_geo" 
+		"translate" " -type \"double3\" -0.65640084301576418 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost:handrail_grp|railNoEndpost:rung2_geo" 
+		"scale" " -type \"double3\" 0.36217514085222374 1 1"
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[1]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[2]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[3]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[4]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[5]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[6]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[7]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[8]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[9]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[10]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[11]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[12]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[13]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[14]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[15]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[16]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[17]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[18]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[19]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[20]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[21]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[22]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[23]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[24]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[25]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[26]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[27]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[28]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[29]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[30]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[31]" ""
+		5 4 "railNoEndpostRN" "railNoEndpost:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN.placeHolderList[32]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "railWithEndpostRN";
+	rename -uid "1342761F-47E8-2A4A-2F10-56AA48DA5710";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"railWithEndpostRN"
+		"railWithEndpostRN" 0
+		"railWithEndpostRN" 11
+		0 "|railWithEndpost:handrail_grp" "|airship_grp|props_grp|railings_grp" "-s -r "
+		
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp" "translate" 
+		" -type \"double3\" 1.84284872084395213 0.73920470476150524 -0.053934096932327202"
+		
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp" "rotate" 
+		" -type \"double3\" 0 131.12141546202664699 0"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:post1_geo" 
+		"translate" " -type \"double3\" -1.52706726552554684 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung0_geo" 
+		"translate" " -type \"double3\" -0.58346763016500602 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung0_geo" 
+		"scale" " -type \"double3\" 0.47216097946088614 1 1"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung1_geo" 
+		"translate" " -type \"double3\" -0.58346763016500602 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung1_geo" 
+		"scale" " -type \"double3\" 0.47216097946088614 1 1"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung2_geo" 
+		"translate" " -type \"double3\" -0.58346763016500602 0 0"
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost:handrail_grp|railWithEndpost:rung2_geo" 
+		"scale" " -type \"double3\" 0.47216097946088614 1 1";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "railWithEndpostRN1";
+	rename -uid "648DDC33-43A4-9E88-A9D2-E7901AA1BA4A";
+	setAttr -s 5 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"railWithEndpostRN1"
+		"railWithEndpostRN1" 0
+		"railWithEndpostRN1" 7
+		0 "|railWithEndpost1:handrail_grp" "|airship_grp|props_grp|railings_grp" 
+		"-s -r "
+		2 "|airship_grp|props_grp|railings_grp|railWithEndpost1:handrail_grp" "translate" 
+		" -type \"double3\" -9.35661858732382967 0.016184568885135309 1.8012332544874341"
+		
+		5 4 "railWithEndpostRN1" "railWithEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railWithEndpostRN1.placeHolderList[1]" ""
+		5 4 "railWithEndpostRN1" "railWithEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railWithEndpostRN1.placeHolderList[2]" ""
+		5 4 "railWithEndpostRN1" "railWithEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railWithEndpostRN1.placeHolderList[3]" ""
+		5 4 "railWithEndpostRN1" "railWithEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railWithEndpostRN1.placeHolderList[4]" ""
+		5 4 "railWithEndpostRN1" "railWithEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railWithEndpostRN1.placeHolderList[5]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "railNoEndpostRN1";
+	rename -uid "70E2E47C-404B-1BB3-7330-9F9DD4117ECE";
+	setAttr -s 3 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"railNoEndpostRN1"
+		"railNoEndpostRN1" 0
+		"railNoEndpostRN1" 6
+		0 "|railNoEndpost1:handrail_grp" "|airship_grp|props_grp|railings_grp" "-s -r "
+		
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost1:handrail_grp" "translate" 
+		" -type \"double3\" 7.18439734570389987 0.01270389908884817 1.80862780217566943"
+		2 "|airship_grp|props_grp|railings_grp|railNoEndpost1:handrail_grp" "rotate" 
+		" -type \"double3\" 0 180 0"
+		5 4 "railNoEndpostRN1" "railNoEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN1.placeHolderList[1]" ""
+		5 4 "railNoEndpostRN1" "railNoEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN1.placeHolderList[2]" ""
+		5 4 "railNoEndpostRN1" "railNoEndpost1:aiStandardSurface1SG.dagSetMembers" 
+		"railNoEndpostRN1.placeHolderList[3]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "UpperControlsRN";
+	rename -uid "3AE9F2C5-431E-C012-39DC-DFAAEACBFF29";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"UpperControlsRN"
+		"UpperControlsRN" 0
+		"UpperControlsRN" 5
+		0 "|UpperControls:upperControls_grp" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|UpperControls:upperControls_grp" "translate" " -type \"double3\" 309.65253251853192751 -66.09052450934338196 38.94249663205423673"
+		
+		2 "|airship_grp|props_grp|UpperControls:upperControls_grp" "rotate" " -type \"double3\" 0 269.3673726368585335 0"
+		
+		2 "|airship_grp|props_grp|UpperControls:upperControls_grp" "scale" " -type \"double3\" 49.22214377013526132 49.22214377013514053 49.22214377013501263"
+		
+		2 "|airship_grp|props_grp|UpperControls:upperControls_grp|UpperControls:centralControls_geo" 
+		"scale" " -type \"double3\" 1 1 1";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "teslaCoilRN";
+	rename -uid "04484095-4DE6-9555-A31A-39B2CDF20B69";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"teslaCoilRN"
+		"teslaCoilRN" 0
+		"teslaCoilRN" 7
+		0 "|teslaCoil:teslaCoil_grp" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp" "translate" " -type \"double3\" 553.68786271914427743 1.31231530968759191 11.45726732198954956"
+		
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp" "scale" " -type \"double3\" 1 1 1"
+		
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp" "rotatePivot" " -type \"double3\" 0 -66.09052450932081513 0"
+		
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp" "scalePivot" " -type \"double3\" 0 -66.09052450934336775 0"
+		
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|airship_grp|props_grp|teslaCoil:teslaCoil_grp|teslaCoil:POS|teslaCoil:MOV|teslaCoil:ADJ|teslaCoil:DONOTTOUCH|teslaCoil:teslaCoil_geo|teslaCoil:glassTube_geo" 
+		"translate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "teslaCoilRN1";
+	rename -uid "0665D2AC-4C03-0250-7B68-B8A297B15CB7";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"teslaCoilRN1"
+		"teslaCoilRN1" 0
+		"teslaCoilRN1" 6
+		0 "|teslaCoil1:teslaCoil_grp" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|teslaCoil1:teslaCoil_grp" "translate" " -type \"double3\" 616.0712771869690414 0.41596829992279538 -120.45680195529831735"
+		
+		2 "|airship_grp|props_grp|teslaCoil1:teslaCoil_grp" "scale" " -type \"double3\" 1 1 1"
+		
+		2 "|airship_grp|props_grp|teslaCoil1:teslaCoil_grp" "rotatePivot" " -type \"double3\" 0 -66.09052450932081513 0"
+		
+		2 "|airship_grp|props_grp|teslaCoil1:teslaCoil_grp" "scalePivot" " -type \"double3\" 0 -66.09052450934336775 0"
+		
+		2 "|airship_grp|props_grp|teslaCoil1:teslaCoil_grp" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -29563,26 +34088,28 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 36 ".st";
+	setAttr -s 54 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 38 ".s";
+	setAttr -s 68 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 88 ".u";
+	setAttr -s 176 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 6 ".r";
+	setAttr -s 16 ".r";
 select -ne :lightList1;
-	setAttr -s 6 ".l";
+	setAttr -s 7 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 89 ".tx";
+	setAttr -s 167 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 5 ".dsm";
+	setAttr -s 4 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 13 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
+select -ne :initialMaterialInfo;
+	setAttr -s 5 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
@@ -29595,7 +34122,7 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
-	setAttr -s 6 ".dsm";
+	setAttr -s 7 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -29642,6 +34169,85 @@ connectAttr "wallLightRN.phl[23]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[
 		;
 connectAttr "steeringWheelRN1.phl[7]" "steeringWheelRN1.phl[8]";
 connectAttr "steeringWheelRN1.phl[9]" "steeringWheelRN1.phl[10]";
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[1]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[2]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[3]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[4]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp1|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[5]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp1|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[6]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp1|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[7]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp1|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[8]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp2|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[9]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp2|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[10]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp2|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[11]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp2|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[12]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp3|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[13]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp3|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[14]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp3|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[15]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp3|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[16]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp4|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[17]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp4|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[18]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp4|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[19]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp4|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[20]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp5|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[21]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp5|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[22]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp5|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[23]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp5|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[24]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp6|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[25]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp6|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[26]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp6|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[27]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp6|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[28]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|post0_geo|post0_geoShape.iog" "railNoEndpostRN.phl[29]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN.phl[30]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN.phl[31]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[32]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|post0_geo|post0_geoShape.iog" "railWithEndpostRN1.phl[1]"
+		;
+connectAttr "post1_geoShape.iog" "railWithEndpostRN1.phl[2]";
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|rung0_geo|rung0_geoShape.iog" "railWithEndpostRN1.phl[3]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|rung1_geo|rung1_geoShape.iog" "railWithEndpostRN1.phl[4]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|rung2_geo|rung2_geoShape.iog" "railWithEndpostRN1.phl[5]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp8|rung0_geo|rung0_geoShape.iog" "railNoEndpostRN1.phl[1]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp8|rung1_geo|rung1_geoShape.iog" "railNoEndpostRN1.phl[2]"
+		;
+connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp8|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN1.phl[3]"
+		;
 connectAttr "polyCube7.out" "electricalBox_geoShape.i";
 connectAttr "groupId53.id" "commandDeckRails_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "commandDeckRails_geoShape.iog.og[0].gco"
@@ -30028,6 +34634,7 @@ connectAttr "interior:aiSkyDomeLightShape1__LEItem.nxt" "aiAreaLightShape1__LEIt
 connectAttr "lightEditor.lit" "aiAreaLightShape1__LEItem.pls";
 connectAttr "lightEditor.en" "aiAreaLightShape1__LEItem.pen";
 connectAttr "lightEditor.nic" "aiAreaLightShape1__LEItem.pic";
+connectAttr "sharedReferenceNode1.sr" "interiorRN1.sr";
 connectAttr ":defaultColorMgtGlobals.cme" "skydome_col.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "skydome_col.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "skydome_col.cmcp";
@@ -30050,8 +34657,12 @@ connectAttr "place2dTexture42.vt3" "skydome_col.vt3";
 connectAttr "place2dTexture42.vc1" "skydome_col.vc1";
 connectAttr "place2dTexture42.o" "skydome_col.uv";
 connectAttr "place2dTexture42.ofs" "skydome_col.fs";
+connectAttr "sharedReferenceNode1.sr" "steam_boilerRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "steeringWheelRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "cylindricalStructureRN.sr";
+connectAttr "sharedReferenceNode1.sr" "bucketRN1.sr";
+connectAttr "sharedReferenceNode1.sr" "coupledBoilersRN.sr";
+connectAttr "sharedReferenceNode1.sr" "UpperControlsRN.sr";
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS1SG1.pa" ":renderPartition.st"
 		 -na;
 connectAttr "Sheik_RIG:Sheik_MainScene_StingrayPBS2SG1.pa" ":renderPartition.st"
@@ -30143,7 +34754,6 @@ connectAttr "Sheik_RIG:Steven_01_Hi_groupId4958.msg" ":initialShadingGroup.gn" -
 		;
 connectAttr "groupId53.msg" ":initialShadingGroup.gn" -na;
 connectAttr "electricalBox_geoShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "centralControls_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "upperDeckRailingLeft_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "upperDeckRailingRight_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "commandDeckRails_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na
