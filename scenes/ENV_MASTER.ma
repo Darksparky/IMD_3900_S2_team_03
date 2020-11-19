@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: ENV_MASTER.ma
-//Last modified: Thu, Nov 19, 2020 03:04:17 PM
+//Last modified: Thu, Nov 19, 2020 03:10:34 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -85,17 +85,17 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202002251615-329d215872";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
 fileInfo "license" "student";
-fileInfo "UUID" "CF7D6E75-4D46-1BB7-0312-DEBCF0E599ED";
+fileInfo "UUID" "79DF54DF-4114-CF7A-E114-1592CD863746";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.9020657576057438 4.0273236624704625 -3.0908008934400346 ;
-	setAttr ".r" -type "double3" 692.06164677019922 -32988.199999986602 0 ;
+	setAttr ".t" -type "double3" 7.1854784316537597 3.104005762827641 -2.7312647879638918 ;
+	setAttr ".r" -type "double3" 702.86164670968549 -32992.599999974816 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 38.902042723753034;
-	setAttr ".coi" 6.1078243573570186;
+	setAttr ".coi" 5.0750515101662801;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -19973,7 +19973,7 @@ createNode reference -n "UpperControlsRN";
 		
 		2 "|airship_grp|props_grp|UpperControls:upperControls_grp|UpperControls:centralControls_geo" 
 		"scale" " -type \"double3\" 1 1 1"
-		"UpperControlsRN" 44
+		"UpperControlsRN" 46
 		0 "|UpperControls:extra" "|Controls_grp" "-s -r "
 		0 "|UpperControls:monitor_grp" "|Controls_grp" "-s -r "
 		0 "|UpperControls:boiler_grp" "|Controls_grp" "-s -r "
@@ -19985,8 +19985,12 @@ createNode reference -n "UpperControlsRN";
 		0 "|UpperControls:desk_geo" "|Controls_grp" "-s -r "
 		0 "|UpperControls:pipeTerminal_geo" "|Controls_grp" "-s -r "
 		2 "|Controls_grp|UpperControls:extra" "visibility" " 0"
+		2 "|Controls_grp|UpperControls:monitor_grp|UpperControls:leftDial_geo" "translate" 
+		" -type \"double3\" 0 0 0"
+		2 "|Controls_grp|UpperControls:monitor_grp|UpperControls:rightDial_geo" "translate" 
+		" -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:monitor_grp|UpperControls:monitor_geo" "translate" 
-		" -type \"double3\" 0 0.16926448051542051 0"
+		" -type \"double3\" 0 0.066503885923439907 0"
 		2 "|Controls_grp|UpperControls:monitor_grp|UpperControls:monitor_geo" "rotate" 
 		" -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:boiler_grp|UpperControls:boiler1_grp|UpperControls:boiler_geo" 
@@ -20031,15 +20035,15 @@ createNode reference -n "UpperControlsRN";
 		2 "|Controls_grp|UpperControls:drawer_grp|UpperControls:bottomDrawer_grp|UpperControls:botDrwHandle_geo" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:bigLever_grp|UpperControls:bigLever_geo" "translate" 
-		" -type \"double3\" 0 0.092497338202208831 0"
+		" -type \"double3\" 0 0.04050419587603115 0"
 		2 "|Controls_grp|UpperControls:bigLever_grp|UpperControls:bigLever_geo" "rotate" 
 		" -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:smallLever_grp|UpperControls:lever_geo" "translate" 
-		" -type \"double3\" 0 0.092497338202208831 0"
+		" -type \"double3\" 0 0.010470628135663898 0"
 		2 "|Controls_grp|UpperControls:smallLever_grp|UpperControls:lever_geo" "rotate" 
 		" -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:keyboard_geo|UpperControls:keyboard_geo" "translate" 
-		" -type \"double3\" 0 0.092497338202208831 0"
+		" -type \"double3\" 0 0.00087605647564037697 0"
 		2 "|Controls_grp|UpperControls:keyboard_geo|UpperControls:keyboard_geo" "rotate" 
 		" -type \"double3\" 0 0 0"
 		2 "|Controls_grp|UpperControls:curvedPipe_geo" "translate" " -type \"double3\" 0 0 -0.039830687340861592"
