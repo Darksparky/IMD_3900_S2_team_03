@@ -1,6 +1,3 @@
 #ignore WIP-files
 /scenes/WIP_PROP/*
 /sourceimages/WIP_Textures/*
-/sourceimages/**/*.tx
-*.fbx
-/images/temp/*
