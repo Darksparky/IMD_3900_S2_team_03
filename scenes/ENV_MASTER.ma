@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: ENV_MASTER.ma
-//Last modified: Thu, Nov 19, 2020 02:59:17 PM
+//Last modified: Thu, Nov 19, 2020 03:04:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -85,17 +85,17 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202002251615-329d215872";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
 fileInfo "license" "student";
-fileInfo "UUID" "F17BCC72-4418-09F4-4532-BC9E7F7862C5";
+fileInfo "UUID" "CF7D6E75-4D46-1BB7-0312-DEBCF0E599ED";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.9079571755738485 1.7336761206028322 -8.3309967752993046 ;
-	setAttr ".r" -type "double3" 713.66164677255927 -32945.399999995097 0 ;
+	setAttr ".t" -type "double3" 6.9020657576057438 4.0273236624704625 -3.0908008934400346 ;
+	setAttr ".r" -type "double3" 692.06164677019922 -32988.199999986602 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 38.902042723753034;
-	setAttr ".coi" 7.6340534656275185;
+	setAttr ".coi" 6.1078243573570186;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -18111,7 +18111,7 @@ createNode transform -n "Controls_grp";
 	rename -uid "2FD6DB5A-42C4-B0A9-9117-C19980BDE380";
 	setAttr ".t" -type "double3" 3.8847857841124429 0.047524966897607664 0.33674537547684635 ;
 	setAttr ".r" -type "double3" 0 -90.53479849614267 0 ;
-	setAttr ".s" -type "double3" 0.53435691165145083 0.53435691165145083 0.53435691165145083 ;
+	setAttr ".s" -type "double3" 0.611 0.611 0.611 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "94958BFE-45ED-3F30-6558-D797B5D456DE";
 	setAttr -s 72 ".lnk";
