@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Animation_s02-05.ma
-//Last modified: Fri, Nov 20, 2020 01:17:15 PM
+//Last modified: Fri, Nov 20, 2020 06:35:44 PM
 //Codeset: 1252
 file -rdi 1 -ns "ENV_MASTER" -rfn "ENV_MASTERRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/tiana/OneDrive/Desktop/School Stuff/Year 3/Fall/Design Studio 2/Group Project/Repo/IMD_3900_S2_team_03//scenes/ENV_MASTER.ma";
@@ -51,7 +51,7 @@ file -rdi 2 -ns "steeringWheel" -rfn "ENV_MASTER:steeringWheelRN" -op "v=0;"
 		 -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/steeringWheel/steeringWheel.ma";
 file -r -ns "ENV_MASTER" -dr 1 -rfn "ENV_MASTERRN" -op "v=0;" -typ "mayaAscii" "C:/Users/tiana/OneDrive/Desktop/School Stuff/Year 3/Fall/Design Studio 2/Group Project/Repo/IMD_3900_S2_team_03//scenes/ENV_MASTER.ma";
 requires maya "2020";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "4.0.2";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "4.0.0";
 requires "stereoCamera" "10.0";
 requires "Mayatomr" "10.0.1.8m - 3.7.1.27 ";
 requires "stereoCamera" "10.0";
@@ -59,9 +59,9 @@ currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
-fileInfo "cutIdentifier" "202002251615-329d215872";
-fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "8E7477BD-4BFD-FB70-2C6B-89B83C7B7F34";
+fileInfo "cutIdentifier" "201911140446-42a737a01c";
+fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
+fileInfo "UUID" "21429EC4-4FC2-C049-1A69-ADB96CB270D6";
 createNode transform -s -n "persp";
 	rename -uid "B1D2848B-4635-D7F4-37D6-5193C248B219";
 	setAttr ".v" no;
@@ -130,40 +130,38 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "renderCam";
 	rename -uid "DFF48453-4DA2-078D-CBAF-91B177411DD7";
-	setAttr ".t" -type "double3" 3.7721774774543131 2.3227909641548061 -0.98508056302964142 ;
-	setAttr ".r" -type "double3" -380.73835256694383 -4166.5999999975102 0 ;
 createNode camera -n "renderCamShape" -p "renderCam";
 	rename -uid "5C871E10-4FA7-C61F-7768-BE8329E63D0F";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 1.3282921935752481;
+	setAttr ".coi" 4.1165304748359368;
 	setAttr ".imn" -type "string" "persp1";
 	setAttr ".den" -type "string" "persp1_depth";
 	setAttr ".man" -type "string" "persp1_mask";
-	setAttr ".tp" -type "double3" 3.2159584042645633 1.8524414621289222 0.12566325985521859 ;
+	setAttr ".tp" -type "double3" 2.5070696370213463 2.1200205442819158 -4.6086816942173341 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0F2A28FA-4FC6-76E7-7166-8594DF462F37";
+	rename -uid "F986EDB4-402D-D0FD-96EF-5BA9EFAB42BC";
 	setAttr -s 71 ".lnk";
 	setAttr -s 70 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8AE0F2EE-4B17-06C7-0F19-FD87F75A01C2";
+	rename -uid "2E0E9557-458B-B7A1-DA9B-D6B3841F2796";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 4 0 1 2 3 ;
 	setAttr -s 4 ".bspr";
 	setAttr -s 4 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "83EDA594-499E-C26C-A56A-65BE559F109B";
+	rename -uid "B0BF2DC0-4D19-6D6F-DF5E-6EB37CE19F1A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "932BE19F-4E31-93FB-12DC-FCA5B86C8D12";
+	rename -uid "229A1329-4C5F-6F71-4DB8-E99719370ECB";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "790A4443-4B75-3977-99C6-8FA404CB0C92";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "8083B7F9-4DCD-3A60-B5DB-63B0E27EDFBD";
+	rename -uid "AA07CB6E-4FBB-E056-8BDA-789D80A7FBE1";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4CA59F98-4632-8782-AD8E-2B9442C4D8B3";
 	setAttr ".g" yes;
@@ -171,31 +169,31 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "AB94AA88-44EA-C238-CF8A-D38182C13624";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"renderCam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"renderCam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1020\n            -height 560\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2839\n            -height 1023\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
+		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
 		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
+		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
 		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
-		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
+		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 842\n            -height 649\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2418\n            -height 1055\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n"
-		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n"
-		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n"
-		+ "                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n"
-		+ "                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n"
-		+ "                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n"
-		+ "            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
+		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
+		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n"
+		+ "                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
+		+ "                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n"
+		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n"
+		+ "                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n"
+		+ "            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
 		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n"
@@ -206,21 +204,21 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n"
-		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
+		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
 		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"renderCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1020\\n    -height 560\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"renderCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1020\\n    -height 560\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"renderCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2839\\n    -height 1023\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"renderCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2839\\n    -height 1023\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6F0C4171-4CEE-89BC-6978-0EA13DB6BCE4";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 100 -ast 1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 139 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode reference -n "ENV_MASTERRN";
 	rename -uid "74B96B1E-4333-2B79-C6AD-459A81C57ABB";
-	setAttr ".fn[0]" -type "string" "C:/Users/tiana/OneDrive/Desktop/School Stuff/Year 3/Fall/Design Studio 2/Group Project/Repo/IMD_3900_S2_team_03//scenes/ENV_MASTER.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/Fred/Documents/GitHub/IMD_3900_S2_team_03//scenes/ENV_MASTER.ma";
 	setAttr -s 1327 ".phl";
 	setAttr ".phl[8]" 0;
 	setAttr ".phl[9]" 0;
@@ -1552,8 +1550,8 @@ createNode reference -n "ENV_MASTERRN";
 		"ENV_MASTER:railWithEndpostRN" 0
 		"ENV_MASTER:astrolabeRN" 0
 		"ENV_MASTER:furnaceRN" 0
-		"ENV_MASTER:wallLightRN" 0
 		"ENV_MASTER:steeringWheelRN" 0
+		"ENV_MASTER:wallLightRN" 0
 		"ENV_MASTER:coupledBoilersRN" 0
 		"ENV_MASTER:Simple_Bot_for_Maya_1_0RN1" 10
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BlinkGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BlinkCircleCtrl" 
@@ -1589,6 +1587,8 @@ createNode reference -n "ENV_MASTERRN";
 		"ENV_MASTER:railWithEndpostRN1" 0
 		"ENV_MASTER:vent_cornerRN" 0
 		"ENV_MASTERRN" 0
+		"ENV_MASTER:Sheik_RIGRN1" 0
+		"ENV_MASTER:vent_corner1RN" 0
 		"ENV_MASTER:interiorRN1" 3
 		2 "|ENV_MASTER:airship_grp|ENV_MASTER:structure_grp|ENV_MASTER:interior1:ship_grp|ENV_MASTER:interior1:walls_grp|ENV_MASTER:interior1:move_rearWall|ENV_MASTER:interior1:rear_wall_grp|ENV_MASTER:interior1:rotate_rearDoor|ENV_MASTER:interior1:door_grp|ENV_MASTER:interior1:rotate_rearDoor_wheel" 
 		"rotateZ" " -av 0"
@@ -1596,11 +1596,9 @@ createNode reference -n "ENV_MASTERRN";
 		"ENV_MASTERRN.placeHolderList[6]" ""
 		5 4 "ENV_MASTERRN" "|ENV_MASTER:airship_grp|ENV_MASTER:structure_grp|ENV_MASTER:interior1:ship_grp|ENV_MASTER:interior1:walls_grp|ENV_MASTER:interior1:move_rearWall|ENV_MASTER:interior1:rear_wall_grp|ENV_MASTER:interior1:rotate_rearDoor|ENV_MASTER:interior1:door_grp|ENV_MASTER:interior1:rotate_rearDoor_wheel.visibility" 
 		"ENV_MASTERRN.placeHolderList[7]" ""
-		"ENV_MASTER:vent_corner1RN" 0
-		"ENV_MASTER:Sheik_RIGRN1" 0
 		"ENV_MASTER:steeringWheelRN1" 0
-		"ENV_MASTER:cylindricalStructureRN" 0
 		"ENV_MASTER:teslaCoilRN1" 0
+		"ENV_MASTER:cylindricalStructureRN" 0
 		"ENV_MASTER:railNoEndpostRN1" 0
 		"ENV_MASTER:steam_boilerRN1" 0
 		"ENV_MASTER:railWithEndpostRN1" 1
@@ -1636,8 +1634,7 @@ createNode reference -n "ENV_MASTERRN";
 		"visibility" " 0"
 		"ENV_MASTER:Sheik_RIGRN1" 2842
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
-		"translate" " -type \"double3\" -1.39995044510846678 -0.54911653758229895 19.64940015698730846"
-		
+		"translate" " -type \"double3\" -3.55671959815557859 0 26.66395702126422407"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
@@ -1653,9 +1650,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
-		"showPivotCtrl" " -av -k 1 0"
+		"showPivotCtrl" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl" 
-		"snapToHip" " -av -k 1 0"
+		"snapToHip" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
@@ -1665,7 +1662,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -1.97240788261464473 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
 		"rotateY" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
@@ -1673,17 +1670,17 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootRollOffset0|ENV_MASTER:Sheik_RIG1:R_FootRollCtrl" 
-		"rollWeight" " -av -k 1 0"
+		"rollWeight" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootCbank|ENV_MASTER:Sheik_RIG1:R_FootEbank|ENV_MASTER:Sheik_RIG1:R_FootIkHeel|ENV_MASTER:Sheik_RIG1:R_FootIkPivot|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:R_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform19|ENV_MASTER:Sheik_RIG1:R_LegIkHandleCtrl" 
-		"softDistance" " -av -k 1 0"
+		"softDistance" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootCbank|ENV_MASTER:Sheik_RIG1:R_FootEbank|ENV_MASTER:Sheik_RIG1:R_FootIkHeel|ENV_MASTER:Sheik_RIG1:R_FootIkPivot|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:R_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform19|ENV_MASTER:Sheik_RIG1:R_LegIkHandleCtrl" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootCbank|ENV_MASTER:Sheik_RIG1:R_FootEbank|ENV_MASTER:Sheik_RIG1:R_FootIkHeel|ENV_MASTER:Sheik_RIG1:R_FootIkPivot|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:R_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform19|ENV_MASTER:Sheik_RIG1:R_LegIkHandleCtrl" 
-		"pvLock" " -av -k 1 0"
+		"pvLock" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootCbank|ENV_MASTER:Sheik_RIG1:R_FootEbank|ENV_MASTER:Sheik_RIG1:R_FootIkHeel|ENV_MASTER:Sheik_RIG1:R_FootIkPivot|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:R_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform19|ENV_MASTER:Sheik_RIG1:R_LegIkHandleCtrl" 
-		"slide" " -av -k 1 0"
+		"slide" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:R_FootCbank|ENV_MASTER:Sheik_RIG1:R_FootEbank|ENV_MASTER:Sheik_RIG1:R_FootIkHeel|ENV_MASTER:Sheik_RIG1:R_FootIkPivot|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:R_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:R_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform19|ENV_MASTER:Sheik_RIG1:R_LegIkHandleCtrl" 
-		"twist" " -av -k 1 0"
+		"twist" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_SHOETONGUE_Comp|ENV_MASTER:Sheik_RIG1:R_ShoeTongueRoot|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset0|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset1|ENV_MASTER:Sheik_RIG1:R_ShoeTongueCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_SHOETONGUE_Comp|ENV_MASTER:Sheik_RIG1:R_ShoeTongueRoot|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset0|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset1|ENV_MASTER:Sheik_RIG1:R_ShoeTongueCtrl" 
@@ -1693,9 +1690,10 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_SHOETONGUE_Comp|ENV_MASTER:Sheik_RIG1:R_ShoeTongueRoot|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset0|ENV_MASTER:Sheik_RIG1:R_ShoeTongueOffset1|ENV_MASTER:Sheik_RIG1:R_ShoeTongueCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot" 
-		"IkToFk" " -av -k 1 0"
+		"IkToFk" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
-		"translate" " -type \"double3\" 0 0 5.56808644623286142"
+		"translate" " -type \"double3\" -13.19529504428274436 0.53178131827200192 14.91005731110884014"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
@@ -1703,9 +1701,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
-		"snapToHip" " -av -k 1 0.5"
+		"snapToHip" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_LegRoot|ENV_MASTER:Sheik_RIG1:R_LegIkRoot|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_LegPoleVector1Ctrl" 
-		"snapToHeel" " -av -k 1 0.5"
+		"snapToHeel" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIACTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiAOffset0|ENV_MASTER:Sheik_RIG1:KunaiAOffset1|ENV_MASTER:Sheik_RIG1:KunaiAOffset2|ENV_MASTER:Sheik_RIG1:KunaiACtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIACTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiAOffset0|ENV_MASTER:Sheik_RIG1:KunaiAOffset1|ENV_MASTER:Sheik_RIG1:KunaiAOffset2|ENV_MASTER:Sheik_RIG1:KunaiACtrl" 
@@ -1731,11 +1729,11 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIACTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiAOffset0|ENV_MASTER:Sheik_RIG1:KunaiAOffset1|ENV_MASTER:Sheik_RIG1:KunaiAOffset2|ENV_MASTER:Sheik_RIG1:KunaiACtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIACTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiAOffset0|ENV_MASTER:Sheik_RIG1:KunaiAOffset1|ENV_MASTER:Sheik_RIG1:KunaiAOffset2|ENV_MASTER:Sheik_RIG1:KunaiACtrl" 
-		"pivot" " -av -k 1 1"
+		"pivot" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIACTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiAOffset0|ENV_MASTER:Sheik_RIG1:KunaiAOffset1|ENV_MASTER:Sheik_RIG1:KunaiAOffset2|ENV_MASTER:Sheik_RIG1:KunaiACtrl" 
-		"dynPar" " -av -k 1 1"
+		"dynPar" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckDontTouch|ENV_MASTER:Sheik_RIG1:C_neckSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckRoot|ENV_MASTER:Sheik_RIG1:C_neck1Offset0|ENV_MASTER:Sheik_RIG1:C_neck1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckRoot|ENV_MASTER:Sheik_RIG1:C_neck1Offset0|ENV_MASTER:Sheik_RIG1:C_neck1Ctrl" 
@@ -1769,15 +1767,16 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckRoot|ENV_MASTER:Sheik_RIG1:C_neck1Offset0|ENV_MASTER:Sheik_RIG1:C_neck1Ctrl|ENV_MASTER:Sheik_RIG1:C_HeadOffset0|ENV_MASTER:Sheik_RIG1:C_HeadCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckRoot|ENV_MASTER:Sheik_RIG1:C_neck1Offset0|ENV_MASTER:Sheik_RIG1:C_neck1Ctrl|ENV_MASTER:Sheik_RIG1:C_HeadOffset0|ENV_MASTER:Sheik_RIG1:C_HeadCtrl" 
-		"localGlobal" " -av -k 1 0"
+		"localGlobal" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_NECK_Comp|ENV_MASTER:Sheik_RIG1:C_neckRoot|ENV_MASTER:Sheik_RIG1:C_neck1Offset0|ENV_MASTER:Sheik_RIG1:C_neck1Ctrl|ENV_MASTER:Sheik_RIG1:C_HeadOffset0|ENV_MASTER:Sheik_RIG1:C_HeadCtrl|ENV_MASTER:Sheik_RIG1:C_neck2Ctrl" 
 		"translate" " -type \"double3\" 0 0 -1.17109123985305685"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot" 
-		"toFkSpine" " -av -k 1 0"
+		"toFkSpine" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot" 
-		"toRevFkSpine" " -av -k 1 0"
+		"toRevFkSpine" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -18.82073655317853422 -6.08151627859976252 3.2789597229381271"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl" 
@@ -1793,7 +1792,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.1134601885198869 4.12016891549198583 1.88577098141717459"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
@@ -1801,7 +1801,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 5.65858452905823128 -2.0370710924336124 -8.20979252633865109"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl" 
@@ -1825,7 +1826,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpinehipCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineHipExtraCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineHipExtraCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.020265397521209611 3.36959774143284729 0.13752148586351862"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
@@ -1833,7 +1835,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -2.34128688625033599 1.95050721725530396 1.21156552252188243"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl" 
@@ -1857,9 +1860,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_SpineRoot|ENV_MASTER:Sheik_RIG1:C_SpineMainOffset0|ENV_MASTER:Sheik_RIG1:C_SpineMainCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineRoot|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoCtrl|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoExtraCtrlOffset0|ENV_MASTER:Sheik_RIG1:C_IkSpineTorsoExtraCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_IkSpineDontTouch|ENV_MASTER:Sheik_RIG1:C_IkSpineSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodDontTouch|ENV_MASTER:Sheik_RIG1:C_HoodSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood1Offset0|ENV_MASTER:Sheik_RIG1:L_HoodCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood1Offset0|ENV_MASTER:Sheik_RIG1:L_HoodCtrl" 
@@ -1877,9 +1880,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood1Offset0|ENV_MASTER:Sheik_RIG1:L_HoodCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood1Offset0|ENV_MASTER:Sheik_RIG1:L_HoodCtrl" 
-		"HoodMain" " -av -k 1 0.5"
+		"HoodMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood1Offset0|ENV_MASTER:Sheik_RIG1:L_HoodCtrl" 
-		"Shoulder" " -av -k 1 0.5"
+		"Shoulder" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood2Offset0|ENV_MASTER:Sheik_RIG1:C_HoodCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood2Offset0|ENV_MASTER:Sheik_RIG1:C_HoodCtrl" 
@@ -1897,7 +1900,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood2Offset0|ENV_MASTER:Sheik_RIG1:C_HoodCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood2Offset0|ENV_MASTER:Sheik_RIG1:C_HoodCtrl" 
-		"snapToHead" " -av -k 1 0.5"
+		"snapToHead" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood3Offset0|ENV_MASTER:Sheik_RIG1:R_HoodCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood3Offset0|ENV_MASTER:Sheik_RIG1:R_HoodCtrl" 
@@ -1915,11 +1918,12 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood3Offset0|ENV_MASTER:Sheik_RIG1:R_HoodCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood3Offset0|ENV_MASTER:Sheik_RIG1:R_HoodCtrl" 
-		"HoodMain" " -av -k 1 0.5"
+		"HoodMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:C_SPINE_Comp|ENV_MASTER:Sheik_RIG1:C_HOOD_Comp|ENV_MASTER:Sheik_RIG1:C_HoodRoot|ENV_MASTER:Sheik_RIG1:Hood3Offset0|ENV_MASTER:Sheik_RIG1:R_HoodCtrl" 
-		"Shoulder" " -av -k 1 0.5"
+		"Shoulder" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
-		"translate" " -type \"double3\" -19.10786873839973765 0 0.39978796076544443"
+		"translate" " -type \"double3\" -1.15774870210547287 0.11605765265286688 -3.29177167044596386"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
@@ -1944,9 +1948,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
-		"IkTrsManip" " -av -cb 1 0"
+		"IkTrsManip" " -cb 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl" 
-		"footManip" " -av -cb 1 0"
+		"footManip" " -cb 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl|ENV_MASTER:Sheik_RIG1:SheikMainSecOffset0|ENV_MASTER:Sheik_RIG1:SheikMainSecCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:SheikMainOffset0|ENV_MASTER:Sheik_RIG1:SheikMainCtrl|ENV_MASTER:Sheik_RIG1:SheikMainSecOffset0|ENV_MASTER:Sheik_RIG1:SheikMainSecCtrl" 
@@ -2014,9 +2018,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:B_STRING_Comp|ENV_MASTER:Sheik_RIG1:B_StringRoot|ENV_MASTER:Sheik_RIG1:B_StringRoot1|ENV_MASTER:Sheik_RIG1:B_String2Offset0|ENV_MASTER:Sheik_RIG1:B_String2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:B_STRING_Comp|ENV_MASTER:Sheik_RIG1:B_StringDontTouch|ENV_MASTER:Sheik_RIG1:B_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:L_STRAP_Comp|ENV_MASTER:Sheik_RIG1:L_StrapDontTouch|ENV_MASTER:Sheik_RIG1:L_StrapSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:L_STRAP_Comp|ENV_MASTER:Sheik_RIG1:L_StrapRoot|ENV_MASTER:Sheik_RIG1:L_Strap0Offset0|ENV_MASTER:Sheik_RIG1:L_Strap0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:L_STRAP_Comp|ENV_MASTER:Sheik_RIG1:L_StrapRoot|ENV_MASTER:Sheik_RIG1:L_Strap0Offset0|ENV_MASTER:Sheik_RIG1:L_Strap0Ctrl" 
@@ -2098,7 +2102,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:A_STRING_Comp|ENV_MASTER:Sheik_RIG1:A_StringRoot|ENV_MASTER:Sheik_RIG1:A_StringRoot1|ENV_MASTER:Sheik_RIG1:A_String2Offset0|ENV_MASTER:Sheik_RIG1:A_String2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:A_STRING_Comp|ENV_MASTER:Sheik_RIG1:A_StringDontTouch|ENV_MASTER:Sheik_RIG1:A_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:F_STRING_Comp|ENV_MASTER:Sheik_RIG1:F_StringRoot|ENV_MASTER:Sheik_RIG1:F_StringRoot1|ENV_MASTER:Sheik_RIG1:F_String0Offset0|ENV_MASTER:Sheik_RIG1:F_String0Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:F_STRING_Comp|ENV_MASTER:Sheik_RIG1:F_StringRoot|ENV_MASTER:Sheik_RIG1:F_StringRoot1|ENV_MASTER:Sheik_RIG1:F_String0Offset0|ENV_MASTER:Sheik_RIG1:F_String0Ctrl" 
@@ -2132,9 +2136,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:F_STRING_Comp|ENV_MASTER:Sheik_RIG1:F_StringRoot|ENV_MASTER:Sheik_RIG1:F_StringRoot1|ENV_MASTER:Sheik_RIG1:F_String2Offset0|ENV_MASTER:Sheik_RIG1:F_String2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:F_STRING_Comp|ENV_MASTER:Sheik_RIG1:F_StringDontTouch|ENV_MASTER:Sheik_RIG1:F_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:R_STRAP_Comp|ENV_MASTER:Sheik_RIG1:R_StrapDontTouch|ENV_MASTER:Sheik_RIG1:R_StrapSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:R_STRAP_Comp|ENV_MASTER:Sheik_RIG1:R_StrapRoot|ENV_MASTER:Sheik_RIG1:R_Strap0Offset0|ENV_MASTER:Sheik_RIG1:R_Strap0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:R_STRAP_Comp|ENV_MASTER:Sheik_RIG1:R_StrapRoot|ENV_MASTER:Sheik_RIG1:R_Strap0Offset0|ENV_MASTER:Sheik_RIG1:R_Strap0Ctrl" 
@@ -2208,7 +2212,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl" 
-		"dynPar" " -av -k 1 1"
+		"dynPar" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl" 
@@ -2226,7 +2230,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl" 
-		"matchBase" " -av -k 1 0"
+		"matchBase" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl|ENV_MASTER:Sheik_RIG1:splitAOffset0|ENV_MASTER:Sheik_RIG1:splitACtrl" 
 		"rotateY" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl|ENV_MASTER:Sheik_RIG1:splitBOffset0|ENV_MASTER:Sheik_RIG1:splitBOffset1|ENV_MASTER:Sheik_RIG1:splitBCtrl" 
@@ -2234,9 +2238,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl|ENV_MASTER:Sheik_RIG1:splitBOffset0|ENV_MASTER:Sheik_RIG1:splitBOffset1|ENV_MASTER:Sheik_RIG1:splitBCtrl|ENV_MASTER:Sheik_RIG1:harpEndOffset0|ENV_MASTER:Sheik_RIG1:harpEndCtrl" 
 		"rotateY" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:HarpBaseOffset0|ENV_MASTER:Sheik_RIG1:HarpBaseOffset1|ENV_MASTER:Sheik_RIG1:HarpBaseOffset2|ENV_MASTER:Sheik_RIG1:HarpBaseCtrl|ENV_MASTER:Sheik_RIG1:poserOffset0|ENV_MASTER:Sheik_RIG1:poserOffset1|ENV_MASTER:Sheik_RIG1:poserCtrl|ENV_MASTER:Sheik_RIG1:splitBOffset0|ENV_MASTER:Sheik_RIG1:splitBOffset1|ENV_MASTER:Sheik_RIG1:splitBCtrl|ENV_MASTER:Sheik_RIG1:harpEndOffset0|ENV_MASTER:Sheik_RIG1:harpEndCtrl" 
-		"autoRotate" " -av -k 1 1"
+		"autoRotate" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:D_STRING_Comp|ENV_MASTER:Sheik_RIG1:D_StringDontTouch|ENV_MASTER:Sheik_RIG1:D_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:D_STRING_Comp|ENV_MASTER:Sheik_RIG1:D_StringRoot|ENV_MASTER:Sheik_RIG1:D_StringRoot1|ENV_MASTER:Sheik_RIG1:D_String0Offset0|ENV_MASTER:Sheik_RIG1:D_String0Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:D_STRING_Comp|ENV_MASTER:Sheik_RIG1:D_StringRoot|ENV_MASTER:Sheik_RIG1:D_StringRoot1|ENV_MASTER:Sheik_RIG1:D_String0Offset0|ENV_MASTER:Sheik_RIG1:D_String0Ctrl" 
@@ -2302,7 +2306,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:C_STRING_Comp|ENV_MASTER:Sheik_RIG1:C_StringRoot|ENV_MASTER:Sheik_RIG1:C_StringRoot1|ENV_MASTER:Sheik_RIG1:C_String2Offset0|ENV_MASTER:Sheik_RIG1:C_String2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:C_STRING_Comp|ENV_MASTER:Sheik_RIG1:C_StringDontTouch|ENV_MASTER:Sheik_RIG1:C_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:E_STRING_Comp|ENV_MASTER:Sheik_RIG1:E_StringRoot|ENV_MASTER:Sheik_RIG1:E_StringRoot1|ENV_MASTER:Sheik_RIG1:E_String0Offset0|ENV_MASTER:Sheik_RIG1:E_String0Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:E_STRING_Comp|ENV_MASTER:Sheik_RIG1:E_StringRoot|ENV_MASTER:Sheik_RIG1:E_StringRoot1|ENV_MASTER:Sheik_RIG1:E_String0Offset0|ENV_MASTER:Sheik_RIG1:E_String0Ctrl" 
@@ -2336,7 +2340,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:E_STRING_Comp|ENV_MASTER:Sheik_RIG1:E_StringRoot|ENV_MASTER:Sheik_RIG1:E_StringRoot1|ENV_MASTER:Sheik_RIG1:E_String2Offset0|ENV_MASTER:Sheik_RIG1:E_String2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HARP_Comp|ENV_MASTER:Sheik_RIG1:E_STRING_Comp|ENV_MASTER:Sheik_RIG1:E_StringDontTouch|ENV_MASTER:Sheik_RIG1:E_StringSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIBCTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiBOffset0|ENV_MASTER:Sheik_RIG1:KunaiBOffset1|ENV_MASTER:Sheik_RIG1:KunaiBOffset2|ENV_MASTER:Sheik_RIG1:KunaiBCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIBCTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiBOffset0|ENV_MASTER:Sheik_RIG1:KunaiBOffset1|ENV_MASTER:Sheik_RIG1:KunaiBOffset2|ENV_MASTER:Sheik_RIG1:KunaiBCtrl" 
@@ -2362,45 +2366,47 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIBCTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiBOffset0|ENV_MASTER:Sheik_RIG1:KunaiBOffset1|ENV_MASTER:Sheik_RIG1:KunaiBOffset2|ENV_MASTER:Sheik_RIG1:KunaiBCtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIBCTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiBOffset0|ENV_MASTER:Sheik_RIG1:KunaiBOffset1|ENV_MASTER:Sheik_RIG1:KunaiBOffset2|ENV_MASTER:Sheik_RIG1:KunaiBCtrl" 
-		"pivot" " -av -k 1 1"
+		"pivot" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:KUNAIBCTRL_Comp|ENV_MASTER:Sheik_RIG1:KunaiBOffset0|ENV_MASTER:Sheik_RIG1:KunaiBOffset1|ENV_MASTER:Sheik_RIG1:KunaiBOffset2|ENV_MASTER:Sheik_RIG1:KunaiBCtrl" 
-		"dynPar" " -av -k 1 1"
+		"dynPar" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot" 
-		"IkToFk" " -av -k 1 0"
+		"IkToFk" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"translate" " -type \"double3\" -33.08899593974896192 9.93543502886240404 20.83411067414226636"
+		
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"translateX" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"translateY" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"translateZ" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"snapToHip" " -k 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
+		"snapToHeel" " -k 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"translate" " -type \"double3\" 1.36222194057865797 0.10958966430495953 14.50003695436287998"
+		
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"translateX" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"translateY" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"translateZ" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"rotate" " -type \"double3\" 0 0 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"rotateX" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"rotateY" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"rotateZ" " -av"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"showPivotCtrl" " -k 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
+		"snapToHip" " -k 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
-		"translateX" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
-		"translateY" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
-		"translateZ" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
-		"snapToHip" " -av -k 1 0.5"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_LegRoot|ENV_MASTER:Sheik_RIG1:L_LegIkRoot|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_LegPoleVector1Ctrl" 
-		"snapToHeel" " -av -k 1 0.5"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"translate" " -type \"double3\" 0 0 15.04613148246829724"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"translateX" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"translateY" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"translateZ" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"rotateX" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"rotateY" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"rotateZ" " -av"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"showPivotCtrl" " -av -k 1 0"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl" 
-		"snapToHip" " -av -k 1 0"
-		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
-		"translate" " -type \"double3\" 0 0 -20"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
@@ -2416,17 +2422,17 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootRollOffset0|ENV_MASTER:Sheik_RIG1:L_FootRollCtrl" 
-		"rollWeight" " -av -k 1 0"
+		"rollWeight" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootCbank|ENV_MASTER:Sheik_RIG1:L_FootEbank|ENV_MASTER:Sheik_RIG1:L_FootIkHeel|ENV_MASTER:Sheik_RIG1:L_FootIkPivot|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:L_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:L_LegIkHandleCtrl" 
-		"softDistance" " -av -k 1 0"
+		"softDistance" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootCbank|ENV_MASTER:Sheik_RIG1:L_FootEbank|ENV_MASTER:Sheik_RIG1:L_FootIkHeel|ENV_MASTER:Sheik_RIG1:L_FootIkPivot|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:L_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:L_LegIkHandleCtrl" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootCbank|ENV_MASTER:Sheik_RIG1:L_FootEbank|ENV_MASTER:Sheik_RIG1:L_FootIkHeel|ENV_MASTER:Sheik_RIG1:L_FootIkPivot|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:L_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:L_LegIkHandleCtrl" 
-		"pvLock" " -av -k 1 0"
+		"pvLock" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootCbank|ENV_MASTER:Sheik_RIG1:L_FootEbank|ENV_MASTER:Sheik_RIG1:L_FootIkHeel|ENV_MASTER:Sheik_RIG1:L_FootIkPivot|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:L_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:L_LegIkHandleCtrl" 
-		"slide" " -av -k 1 0"
+		"slide" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_Footroot|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:L_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:L_FootIkBaseCtrl|ENV_MASTER:Sheik_RIG1:L_FootCbank|ENV_MASTER:Sheik_RIG1:L_FootEbank|ENV_MASTER:Sheik_RIG1:L_FootIkHeel|ENV_MASTER:Sheik_RIG1:L_FootIkPivot|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls0Ctrl|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Offset0|ENV_MASTER:Sheik_RIG1:L_FootIkCtrls1Ctrl|ENV_MASTER:Sheik_RIG1:L_LegIkHandleOffset0|ENV_MASTER:Sheik_RIG1:L_LegIkHandleCtrl" 
-		"twist" " -av -k 1 0"
+		"twist" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_SHOETONGUE_Comp|ENV_MASTER:Sheik_RIG1:L_ShoeTongueRoot|ENV_MASTER:Sheik_RIG1:L_ShoeTongueOffset0|ENV_MASTER:Sheik_RIG1:L_ShoeTongueOffset1|ENV_MASTER:Sheik_RIG1:L_ShoeTongueCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_LEG_Comp|ENV_MASTER:Sheik_RIG1:L_SHOETONGUE_Comp|ENV_MASTER:Sheik_RIG1:L_ShoeTongueRoot|ENV_MASTER:Sheik_RIG1:L_ShoeTongueOffset0|ENV_MASTER:Sheik_RIG1:L_ShoeTongueOffset1|ENV_MASTER:Sheik_RIG1:L_ShoeTongueCtrl" 
@@ -2440,7 +2446,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_HandAllFingerOffset0|ENV_MASTER:Sheik_RIG1:R_HandAllFingerCtrl" 
 		"translateZ" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ThumbRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ThumbRoot|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ThumbRoot|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusCtrl" 
@@ -2482,7 +2488,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ThumbRoot|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ThumbMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:R_ThumbAllOffset0|ENV_MASTER:Sheik_RIG1:R_ThumbAllOffset1|ENV_MASTER:Sheik_RIG1:R_ThumbAllCtrl|ENV_MASTER:Sheik_RIG1:R_Thumb0Offset0|ENV_MASTER:Sheik_RIG1:R_Thumb0Ctrl|ENV_MASTER:Sheik_RIG1:R_Thumb1Offset0|ENV_MASTER:Sheik_RIG1:R_Thumb1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_IndexRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_IndexRoot|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_IndexRoot|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusCtrl" 
@@ -2532,7 +2538,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_IndexRoot|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_IndexMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:R_IndexAllOffset0|ENV_MASTER:Sheik_RIG1:R_IndexAllOffset1|ENV_MASTER:Sheik_RIG1:R_IndexAllCtrl|ENV_MASTER:Sheik_RIG1:R_Index0Offset0|ENV_MASTER:Sheik_RIG1:R_Index0Ctrl|ENV_MASTER:Sheik_RIG1:R_Index1Offset0|ENV_MASTER:Sheik_RIG1:R_Index1Ctrl|ENV_MASTER:Sheik_RIG1:R_Index2Offset0|ENV_MASTER:Sheik_RIG1:R_Index2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_MiddleRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_MiddleRoot|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_MiddleRoot|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusCtrl" 
@@ -2582,7 +2588,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_MiddleRoot|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_MiddleMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:R_MiddleAllOffset0|ENV_MASTER:Sheik_RIG1:R_MiddleAllOffset1|ENV_MASTER:Sheik_RIG1:R_MiddleAllCtrl|ENV_MASTER:Sheik_RIG1:R_Middle0Offset0|ENV_MASTER:Sheik_RIG1:R_Middle0Ctrl|ENV_MASTER:Sheik_RIG1:R_Middle1Offset0|ENV_MASTER:Sheik_RIG1:R_Middle1Ctrl|ENV_MASTER:Sheik_RIG1:R_Middle2Offset0|ENV_MASTER:Sheik_RIG1:R_Middle2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ringRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ringRoot|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ringRoot|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusCtrl" 
@@ -2632,7 +2638,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_ringRoot|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_ringMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:R_ringAllOffset0|ENV_MASTER:Sheik_RIG1:R_ringAllOffset1|ENV_MASTER:Sheik_RIG1:R_ringAllCtrl|ENV_MASTER:Sheik_RIG1:R_ring0Offset0|ENV_MASTER:Sheik_RIG1:R_ring0Ctrl|ENV_MASTER:Sheik_RIG1:R_ring1Offset0|ENV_MASTER:Sheik_RIG1:R_ring1Ctrl|ENV_MASTER:Sheik_RIG1:R_ring2Offset0|ENV_MASTER:Sheik_RIG1:R_ring2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_pinkyRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_pinkyRoot|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_pinkyRoot|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusCtrl" 
@@ -2682,9 +2688,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_HAND_Comp|ENV_MASTER:Sheik_RIG1:R_HandRoot|ENV_MASTER:Sheik_RIG1:R_pinkyRoot|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:R_pinkyMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:R_pinkyAllOffset0|ENV_MASTER:Sheik_RIG1:R_pinkyAllOffset1|ENV_MASTER:Sheik_RIG1:R_pinkyAllCtrl|ENV_MASTER:Sheik_RIG1:R_pinky0Offset0|ENV_MASTER:Sheik_RIG1:R_pinky0Ctrl|ENV_MASTER:Sheik_RIG1:R_pinky1Offset0|ENV_MASTER:Sheik_RIG1:R_pinky1Ctrl|ENV_MASTER:Sheik_RIG1:R_pinky2Offset0|ENV_MASTER:Sheik_RIG1:R_pinky2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot" 
-		"IkToFk" " -av -k 1 1"
+		"IkToFk" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"translate" " -type \"double3\" -12.71084041768789774 25.46830956542732238 -9.7249638232164024"
+		"translate" " -type \"double3\" -9.06226779958271145 15.39112830327025527 -10.46490306930317971"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
 		"translateX" " -av"
@@ -2693,7 +2699,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 53.36147037703664608 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
@@ -2701,23 +2707,23 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"softDistance" " -av -k 1 0"
+		"softDistance" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"pvLock" " -av -k 1 0"
+		"pvLock" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"slide" " -av -k 1 0"
+		"slide" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"twist" " -av -k 1 0"
+		"twist" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"localRot" " -av -k 1 0"
+		"localRot" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"snapToMain" " -av -k 1 1"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"snapToHip" " -av -k 1 0"
+		"snapToHip" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform26|ENV_MASTER:Sheik_RIG1:R_ArmIkHandleCtrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
@@ -2727,15 +2733,15 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
-		"snapToMain" " -av -k 1 1"
+		"snapToMain" " -k 1 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
-		"snapToHip" " -av -k 1 0"
+		"snapToHip" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmIkRoot|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:R_ArmPoleVector1Ctrl" 
-		"snapToIkHandle" " -av -k 1 0"
+		"snapToIkHandle" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder" 
-		"rotate" " -type \"double3\" 2.76545387540172172 6.7557625721831851 17.73141160549455009"
+		"rotate" " -type \"double3\" 0.37336620912552487 3.04693499338947182 22.77298798903090926"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder" 
 		"rotateX" " -av"
@@ -2744,7 +2750,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow" 
-		"rotate" " -type \"double3\" 0 0 18.87663511367001945"
+		"rotate" " -type \"double3\" -0.57661177114101181 -7.97593273657439283 4.903506642186092"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow" 
@@ -2752,7 +2759,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.0060455217301832367 0.039365734232887882 0.16418450578487498"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
@@ -2760,7 +2768,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
-		"rotate" " -type \"double3\" -10.60912445129707393 -8.65607658994755624 -30.03746464837855612"
+		"rotate" " -type \"double3\" -12.86284798737376533 -4.64024341179114241 -10.76383598091154425"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:R_ARM_Comp|ENV_MASTER:Sheik_RIG1:R_ArmRoot|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:R_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkElbow|ENV_MASTER:Sheik_RIG1:R_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:R_ArmFkWrist" 
 		"rotateX" " -av"
@@ -2805,7 +2813,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_HandAllFingerOffset0|ENV_MASTER:Sheik_RIG1:L_HandAllFingerCtrl" 
 		"translateZ" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ThumbRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ThumbRoot|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ThumbRoot|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusCtrl" 
@@ -2847,7 +2855,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ThumbRoot|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ThumbMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:L_ThumbAllOffset0|ENV_MASTER:Sheik_RIG1:L_ThumbAllOffset1|ENV_MASTER:Sheik_RIG1:L_ThumbAllCtrl|ENV_MASTER:Sheik_RIG1:L_Thumb0Offset0|ENV_MASTER:Sheik_RIG1:L_Thumb0Ctrl|ENV_MASTER:Sheik_RIG1:L_Thumb1Offset0|ENV_MASTER:Sheik_RIG1:L_Thumb1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_IndexRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_IndexRoot|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_IndexRoot|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusCtrl" 
@@ -2897,7 +2905,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_IndexRoot|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_IndexMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:L_IndexAllOffset0|ENV_MASTER:Sheik_RIG1:L_IndexAllOffset1|ENV_MASTER:Sheik_RIG1:L_IndexAllCtrl|ENV_MASTER:Sheik_RIG1:L_Index0Offset0|ENV_MASTER:Sheik_RIG1:L_Index0Ctrl|ENV_MASTER:Sheik_RIG1:L_Index1Offset0|ENV_MASTER:Sheik_RIG1:L_Index1Ctrl|ENV_MASTER:Sheik_RIG1:L_Index2Offset0|ENV_MASTER:Sheik_RIG1:L_Index2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_MiddleRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_MiddleRoot|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_MiddleRoot|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusCtrl" 
@@ -2947,7 +2955,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_MiddleRoot|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_MiddleMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:L_MiddleAllOffset0|ENV_MASTER:Sheik_RIG1:L_MiddleAllOffset1|ENV_MASTER:Sheik_RIG1:L_MiddleAllCtrl|ENV_MASTER:Sheik_RIG1:L_Middle0Offset0|ENV_MASTER:Sheik_RIG1:L_Middle0Ctrl|ENV_MASTER:Sheik_RIG1:L_Middle1Offset0|ENV_MASTER:Sheik_RIG1:L_Middle1Ctrl|ENV_MASTER:Sheik_RIG1:L_Middle2Offset0|ENV_MASTER:Sheik_RIG1:L_Middle2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ringRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ringRoot|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ringRoot|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusCtrl" 
@@ -2997,7 +3005,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_ringRoot|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_ringMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:L_ringAllOffset0|ENV_MASTER:Sheik_RIG1:L_ringAllOffset1|ENV_MASTER:Sheik_RIG1:L_ringAllCtrl|ENV_MASTER:Sheik_RIG1:L_ring0Offset0|ENV_MASTER:Sheik_RIG1:L_ring0Ctrl|ENV_MASTER:Sheik_RIG1:L_ring1Offset0|ENV_MASTER:Sheik_RIG1:L_ring1Ctrl|ENV_MASTER:Sheik_RIG1:L_ring2Offset0|ENV_MASTER:Sheik_RIG1:L_ring2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_pinkyRoot" 
-		"IkToFk_Finger" " -av -k 1 1"
+		"IkToFk_Finger" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_pinkyRoot|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusCtrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_pinkyRoot|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusCtrl" 
@@ -3047,9 +3055,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_HAND_Comp|ENV_MASTER:Sheik_RIG1:L_HandRoot|ENV_MASTER:Sheik_RIG1:L_pinkyRoot|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusOffset0|ENV_MASTER:Sheik_RIG1:L_pinkyMetacarpusCtrl|ENV_MASTER:Sheik_RIG1:L_pinkyAllOffset0|ENV_MASTER:Sheik_RIG1:L_pinkyAllOffset1|ENV_MASTER:Sheik_RIG1:L_pinkyAllCtrl|ENV_MASTER:Sheik_RIG1:L_pinky0Offset0|ENV_MASTER:Sheik_RIG1:L_pinky0Ctrl|ENV_MASTER:Sheik_RIG1:L_pinky1Offset0|ENV_MASTER:Sheik_RIG1:L_pinky1Ctrl|ENV_MASTER:Sheik_RIG1:L_pinky2Offset0|ENV_MASTER:Sheik_RIG1:L_pinky2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot" 
-		"IkToFk" " -av -k 1 1"
+		"IkToFk" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"translate" " -type \"double3\" -12.82530565270887912 22.1297258378018995 -37.02765733164003592"
+		"translate" " -type \"double3\" -17.40990106638264834 26.18869008892940542 32.56709139635843542"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
 		"translateX" " -av"
@@ -3058,7 +3066,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"rotate" " -type \"double3\" -96.66177629073024491 47.51425512922729411 -165.76776144782257916"
+		"rotate" " -type \"double3\" -183.05028521143100306 177.90758323896957904 -177.92316185370071935"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
 		"rotateX" " -av"
@@ -3067,23 +3075,23 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"softDistance" " -av -k 1 0"
+		"softDistance" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"pvLock" " -av -k 1 0"
+		"pvLock" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"slide" " -av -k 1 0"
+		"slide" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"twist" " -av -k 1 0"
+		"twist" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"localRot" " -av -k 1 0"
+		"localRot" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"snapToMain" " -av -k 1 1"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"snapToHip" " -av -k 1 0"
+		"snapToHip" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleOffset0|ENV_MASTER:Sheik_RIG1:transform23|ENV_MASTER:Sheik_RIG1:L_ArmIkHandleCtrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
 		"translate" " -type \"double3\" -10.15028454296755811 -7.40858955697039967 -0.9346581037753382"
 		
@@ -3094,15 +3102,15 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
-		"snapToMain" " -av -k 1 1"
+		"snapToMain" " -k 1 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
-		"snapToHip" " -av -k 1 0"
+		"snapToHip" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmIkRoot|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset0|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Offset1|ENV_MASTER:Sheik_RIG1:L_ArmPoleVector1Ctrl" 
-		"snapToIkHandle" " -av -k 1 0"
+		"snapToIkHandle" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder" 
-		"rotate" " -type \"double3\" 13.03709656887705215 24.46602868683413945 27.11290860718714413"
+		"rotate" " -type \"double3\" 20.34015490611602672 18.53032354731687192 23.44983430171480521"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder" 
 		"rotateX" " -av"
@@ -3111,7 +3119,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow" 
-		"rotate" " -type \"double3\" 0 8.19881663545420025 13.5951681799474251"
+		"rotate" " -type \"double3\" -20.20687090659938079 -12.6202009672568618 11.12570766051987547"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow" 
@@ -3119,7 +3128,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow|ENV_MASTER:Sheik_RIG1:L_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkWrist" 
-		"rotate" " -type \"double3\" -32.83010311545530868 47.22222232772339368 -122.69847656752980924"
+		"rotate" " -type \"double3\" 0.60922228980541293 -4.2943187397843916 -16.40001111033539516"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:L_SHOULDER_Comp|ENV_MASTER:Sheik_RIG1:L_ARM_Comp|ENV_MASTER:Sheik_RIG1:L_ArmRoot|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulderOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkShoulder|ENV_MASTER:Sheik_RIG1:L_ArmFkElbowOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkElbow|ENV_MASTER:Sheik_RIG1:L_ArmFkWristOffset0|ENV_MASTER:Sheik_RIG1:L_ArmFkWrist" 
 		"rotateX" " -av"
@@ -3192,7 +3201,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:HeadRef|ENV_MASTER:Sheik_RIG1:C_EyeAimOffset0|ENV_MASTER:Sheik_RIG1:C_EyeAimCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:HeadRef|ENV_MASTER:Sheik_RIG1:C_EyeAimOffset0|ENV_MASTER:Sheik_RIG1:C_EyeAimCtrl" 
-		"localGlobal" " -av -k 1 0"
+		"localGlobal" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
@@ -3202,7 +3211,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 3.84266125714272277 -3.45244640941702485 2.50400112753961324"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
@@ -3210,9 +3220,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
@@ -3222,7 +3232,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -23.71842720207500577"
+		"rotate" " -type \"double3\" -0.5328194352309138 -8.49869528042979105 -20.17553078595456384"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl" 
@@ -3238,7 +3249,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 9.47969508014690199 12.44667887089419089 1.00075768179507896"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl" 
@@ -3254,7 +3266,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 9.02220733326852553 3.10897780921044564 0.74458805097047331"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl" 
@@ -3270,7 +3283,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony3Offset0|ENV_MASTER:Sheik_RIG1:C_Pony3Ctrl" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony3Offset0|ENV_MASTER:Sheik_RIG1:C_Pony3Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 8.41719999056576818 -9.59140264163229617 -0.76332255664678406"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony3Offset0|ENV_MASTER:Sheik_RIG1:C_Pony3Ctrl" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony3Offset0|ENV_MASTER:Sheik_RIG1:C_Pony3Ctrl" 
@@ -3310,7 +3324,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyTailBase|ENV_MASTER:Sheik_RIG1:C_PonyTailOffset0|ENV_MASTER:Sheik_RIG1:C_PonyTailCtrl|ENV_MASTER:Sheik_RIG1:C_PonyRoot|ENV_MASTER:Sheik_RIG1:C_Pony0Offset0|ENV_MASTER:Sheik_RIG1:C_Pony0Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony1Offset0|ENV_MASTER:Sheik_RIG1:C_Pony1Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony2Offset0|ENV_MASTER:Sheik_RIG1:C_Pony2Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony3Offset0|ENV_MASTER:Sheik_RIG1:C_Pony3Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony4Offset0|ENV_MASTER:Sheik_RIG1:C_Pony4Ctrl|ENV_MASTER:Sheik_RIG1:C_Pony5Offset0|ENV_MASTER:Sheik_RIG1:C_Pony5Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_PonyDontTouch|ENV_MASTER:Sheik_RIG1:C_PonySpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl" 
@@ -3344,9 +3358,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair2Offset0|ENV_MASTER:Sheik_RIG1:C_Hair2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair2Offset0|ENV_MASTER:Sheik_RIG1:C_Hair2Ctrl" 
@@ -3380,7 +3394,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairRoot|ENV_MASTER:Sheik_RIG1:C_Hair0Offset0|ENV_MASTER:Sheik_RIG1:C_Hair0Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair1Offset0|ENV_MASTER:Sheik_RIG1:C_Hair1Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair2Offset0|ENV_MASTER:Sheik_RIG1:C_Hair2Ctrl|ENV_MASTER:Sheik_RIG1:C_Hair3Offset0|ENV_MASTER:Sheik_RIG1:C_Hair3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:C_HAIR_Comp|ENV_MASTER:Sheik_RIG1:C_HairDontTouch|ENV_MASTER:Sheik_RIG1:C_HairSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairAChainBone0|ENV_MASTER:Sheik_RIG1:L_HairAChainBone1|ENV_MASTER:Sheik_RIG1:L_HairAChainBone2|ENV_MASTER:Sheik_RIG1:L_HairAChainBone3|ENV_MASTER:Sheik_RIG1:L_HairAsec02Offset0|ENV_MASTER:Sheik_RIG1:L_HairAsec02Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairAChainBone0|ENV_MASTER:Sheik_RIG1:L_HairAChainBone1|ENV_MASTER:Sheik_RIG1:L_HairAChainBone2|ENV_MASTER:Sheik_RIG1:L_HairAChainBone3|ENV_MASTER:Sheik_RIG1:L_HairAsec02Offset0|ENV_MASTER:Sheik_RIG1:L_HairAsec02Ctrl" 
@@ -3510,9 +3524,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA2Offset0|ENV_MASTER:Sheik_RIG1:L_HairA2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA2Offset0|ENV_MASTER:Sheik_RIG1:L_HairA2Ctrl" 
@@ -3546,11 +3560,11 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairARoot|ENV_MASTER:Sheik_RIG1:L_HairA0Offset0|ENV_MASTER:Sheik_RIG1:L_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA1Offset0|ENV_MASTER:Sheik_RIG1:L_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA2Offset0|ENV_MASTER:Sheik_RIG1:L_HairA2Ctrl|ENV_MASTER:Sheik_RIG1:L_HairA3Offset0|ENV_MASTER:Sheik_RIG1:L_HairA3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairADontTouch|ENV_MASTER:Sheik_RIG1:L_HairASpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairAsec0DontTouch|ENV_MASTER:Sheik_RIG1:L_HairAsec0Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:L_HairAsec1DontTouch|ENV_MASTER:Sheik_RIG1:L_HairAsec1Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairBChainBone0|ENV_MASTER:Sheik_RIG1:L_HairBChainBone1|ENV_MASTER:Sheik_RIG1:L_HairBChainBone2|ENV_MASTER:Sheik_RIG1:L_HairBsec0Root|ENV_MASTER:Sheik_RIG1:L_HairBsec00Offset0|ENV_MASTER:Sheik_RIG1:L_HairBsec00Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairBChainBone0|ENV_MASTER:Sheik_RIG1:L_HairBChainBone1|ENV_MASTER:Sheik_RIG1:L_HairBChainBone2|ENV_MASTER:Sheik_RIG1:L_HairBsec0Root|ENV_MASTER:Sheik_RIG1:L_HairBsec00Offset0|ENV_MASTER:Sheik_RIG1:L_HairBsec00Ctrl" 
@@ -3632,9 +3646,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB2Offset0|ENV_MASTER:Sheik_RIG1:L_HairB2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB2Offset0|ENV_MASTER:Sheik_RIG1:L_HairB2Ctrl" 
@@ -3668,13 +3682,13 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBRoot|ENV_MASTER:Sheik_RIG1:L_HairB0Offset0|ENV_MASTER:Sheik_RIG1:L_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB1Offset0|ENV_MASTER:Sheik_RIG1:L_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB2Offset0|ENV_MASTER:Sheik_RIG1:L_HairB2Ctrl|ENV_MASTER:Sheik_RIG1:L_HairB3Offset0|ENV_MASTER:Sheik_RIG1:L_HairB3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBsec0DontTouch|ENV_MASTER:Sheik_RIG1:L_HairBsec0Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:L_HairBDontTouch|ENV_MASTER:Sheik_RIG1:L_HairBSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCDontTouch|ENV_MASTER:Sheik_RIG1:L_HairCSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCsec0DontTouch|ENV_MASTER:Sheik_RIG1:L_HairCsec0Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairCChainBone0|ENV_MASTER:Sheik_RIG1:L_HairCChainBone1|ENV_MASTER:Sheik_RIG1:L_HairCsec0Root|ENV_MASTER:Sheik_RIG1:L_HairCsec00Offset0|ENV_MASTER:Sheik_RIG1:L_HairCsec00Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairCChainBone0|ENV_MASTER:Sheik_RIG1:L_HairCChainBone1|ENV_MASTER:Sheik_RIG1:L_HairCsec0Root|ENV_MASTER:Sheik_RIG1:L_HairCsec00Offset0|ENV_MASTER:Sheik_RIG1:L_HairCsec00Ctrl" 
@@ -3756,9 +3770,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairC0Offset0|ENV_MASTER:Sheik_RIG1:L_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC1Offset0|ENV_MASTER:Sheik_RIG1:L_HairC1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairC0Offset0|ENV_MASTER:Sheik_RIG1:L_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC1Offset0|ENV_MASTER:Sheik_RIG1:L_HairC1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairC0Offset0|ENV_MASTER:Sheik_RIG1:L_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC1Offset0|ENV_MASTER:Sheik_RIG1:L_HairC1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairC0Offset0|ENV_MASTER:Sheik_RIG1:L_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC1Offset0|ENV_MASTER:Sheik_RIG1:L_HairC1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC2Offset0|ENV_MASTER:Sheik_RIG1:L_HairC2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:L_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:L_HairCRoot|ENV_MASTER:Sheik_RIG1:L_HairC0Offset0|ENV_MASTER:Sheik_RIG1:L_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC1Offset0|ENV_MASTER:Sheik_RIG1:L_HairC1Ctrl|ENV_MASTER:Sheik_RIG1:L_HairC2Offset0|ENV_MASTER:Sheik_RIG1:L_HairC2Ctrl" 
@@ -3824,9 +3838,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB2Offset0|ENV_MASTER:Sheik_RIG1:R_HairB2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB2Offset0|ENV_MASTER:Sheik_RIG1:R_HairB2Ctrl" 
@@ -3860,7 +3874,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBRoot|ENV_MASTER:Sheik_RIG1:R_HairB0Offset0|ENV_MASTER:Sheik_RIG1:R_HairB0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB1Offset0|ENV_MASTER:Sheik_RIG1:R_HairB1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB2Offset0|ENV_MASTER:Sheik_RIG1:R_HairB2Ctrl|ENV_MASTER:Sheik_RIG1:R_HairB3Offset0|ENV_MASTER:Sheik_RIG1:R_HairB3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRB_Comp|ENV_MASTER:Sheik_RIG1:R_HairBDontTouch|ENV_MASTER:Sheik_RIG1:R_HairBSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairAChainBone0|ENV_MASTER:Sheik_RIG1:R_HairAChainBone1|ENV_MASTER:Sheik_RIG1:R_HairAChainBone2|ENV_MASTER:Sheik_RIG1:R_HairAsec0Root|ENV_MASTER:Sheik_RIG1:R_HairAsec00Offset0|ENV_MASTER:Sheik_RIG1:R_HairAsec00Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairAChainBone0|ENV_MASTER:Sheik_RIG1:R_HairAChainBone1|ENV_MASTER:Sheik_RIG1:R_HairAChainBone2|ENV_MASTER:Sheik_RIG1:R_HairAsec0Root|ENV_MASTER:Sheik_RIG1:R_HairAsec00Offset0|ENV_MASTER:Sheik_RIG1:R_HairAsec00Ctrl" 
@@ -3942,9 +3956,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA2Offset0|ENV_MASTER:Sheik_RIG1:R_HairA2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA2Offset0|ENV_MASTER:Sheik_RIG1:R_HairA2Ctrl" 
@@ -3978,11 +3992,11 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairARoot|ENV_MASTER:Sheik_RIG1:R_HairA0Offset0|ENV_MASTER:Sheik_RIG1:R_HairA0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA1Offset0|ENV_MASTER:Sheik_RIG1:R_HairA1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA2Offset0|ENV_MASTER:Sheik_RIG1:R_HairA2Ctrl|ENV_MASTER:Sheik_RIG1:R_HairA3Offset0|ENV_MASTER:Sheik_RIG1:R_HairA3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairADontTouch|ENV_MASTER:Sheik_RIG1:R_HairASpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRA_Comp|ENV_MASTER:Sheik_RIG1:R_HairAsec0DontTouch|ENV_MASTER:Sheik_RIG1:R_HairAsec0Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCDontTouch|ENV_MASTER:Sheik_RIG1:R_HairCSpline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairCChainBone0|ENV_MASTER:Sheik_RIG1:R_HairCChainBone1|ENV_MASTER:Sheik_RIG1:R_HairCChainBone2|ENV_MASTER:Sheik_RIG1:R_HairCChainBone3|ENV_MASTER:Sheik_RIG1:R_HairCsec0Root|ENV_MASTER:Sheik_RIG1:R_HairCsec00Offset0|ENV_MASTER:Sheik_RIG1:R_HairCsec00Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairCChainBone0|ENV_MASTER:Sheik_RIG1:R_HairCChainBone1|ENV_MASTER:Sheik_RIG1:R_HairCChainBone2|ENV_MASTER:Sheik_RIG1:R_HairCChainBone3|ENV_MASTER:Sheik_RIG1:R_HairCsec0Root|ENV_MASTER:Sheik_RIG1:R_HairCsec00Offset0|ENV_MASTER:Sheik_RIG1:R_HairCsec00Ctrl" 
@@ -4064,9 +4078,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl" 
-		"snapToMain" " -av -k 1 0"
+		"snapToMain" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl" 
-		"snapToTorso" " -av -k 1 0"
+		"snapToTorso" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC2Offset0|ENV_MASTER:Sheik_RIG1:R_HairC2Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC2Offset0|ENV_MASTER:Sheik_RIG1:R_HairC2Ctrl" 
@@ -4100,7 +4114,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCRoot|ENV_MASTER:Sheik_RIG1:R_HairC0Offset0|ENV_MASTER:Sheik_RIG1:R_HairC0Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC1Offset0|ENV_MASTER:Sheik_RIG1:R_HairC1Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC2Offset0|ENV_MASTER:Sheik_RIG1:R_HairC2Ctrl|ENV_MASTER:Sheik_RIG1:R_HairC3Offset0|ENV_MASTER:Sheik_RIG1:R_HairC3Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:C_PONYTAILCTRL_Comp|ENV_MASTER:Sheik_RIG1:R_HAIRC_Comp|ENV_MASTER:Sheik_RIG1:R_HairCsec0DontTouch|ENV_MASTER:Sheik_RIG1:R_HairCsec0Spline" 
-		"stretch" " -av -k 1 0"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EAR_Comp|ENV_MASTER:Sheik_RIG1:L_Ear0Offset0|ENV_MASTER:Sheik_RIG1:L_Ear0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EAR_Comp|ENV_MASTER:Sheik_RIG1:L_Ear0Offset0|ENV_MASTER:Sheik_RIG1:L_Ear0Ctrl" 
@@ -4170,11 +4184,11 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:L_EyeBallMainCtrl" 
 		"rotateZ" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:L_EyeBallMainCtrl" 
-		"irisScale" " -av -k 1 1"
+		"irisScale" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:L_EyeBallMainCtrl" 
-		"pupilScale" " -av -k 1 1"
+		"pupilScale" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:L_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:L_EyeBallMainCtrl" 
-		"blink" " -av -k 1 0"
+		"blink" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeUnRoot|ENV_MASTER:Sheik_RIG1:L_EyeUnRoot1|ENV_MASTER:Sheik_RIG1:L_EyeUnLid1Offset0|ENV_MASTER:Sheik_RIG1:L_EyeUnLid1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_EYE_Comp|ENV_MASTER:Sheik_RIG1:L_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:L_EyeUnRoot|ENV_MASTER:Sheik_RIG1:L_EyeUnRoot1|ENV_MASTER:Sheik_RIG1:L_EyeUnLid1Offset0|ENV_MASTER:Sheik_RIG1:L_EyeUnLid1Ctrl" 
@@ -4488,9 +4502,9 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUpRoot|ENV_MASTER:Sheik_RIG1:C_mouthUpMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUpMainCtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUpRoot|ENV_MASTER:Sheik_RIG1:C_mouthUpMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUpMainCtrl" 
-		"upperLipFlatten" " -av -k 1 1"
+		"upperLipFlatten" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUpRoot|ENV_MASTER:Sheik_RIG1:C_mouthUpMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUpMainCtrl" 
-		"closeLips" " -av -k 1 0"
+		"closeLips" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUpRoot|ENV_MASTER:Sheik_RIG1:C_mouthUpMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUpMainCtrl|ENV_MASTER:Sheik_RIG1:L_mouthUp1CtrlOffset0|ENV_MASTER:Sheik_RIG1:L_mouthUp1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUpRoot|ENV_MASTER:Sheik_RIG1:C_mouthUpMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUpMainCtrl|ENV_MASTER:Sheik_RIG1:L_mouthUp1CtrlOffset0|ENV_MASTER:Sheik_RIG1:L_mouthUp1Ctrl" 
@@ -4564,7 +4578,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUnRoot|ENV_MASTER:Sheik_RIG1:C_mouthUnMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUnMainCtrl" 
 		"scaleZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUnRoot|ENV_MASTER:Sheik_RIG1:C_mouthUnMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUnMainCtrl" 
-		"lowerLipFlatten" " -av -k 1 1"
+		"lowerLipFlatten" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUnRoot|ENV_MASTER:Sheik_RIG1:C_mouthUnMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUnMainCtrl|ENV_MASTER:Sheik_RIG1:L_mouthUn1CtrlOffset0|ENV_MASTER:Sheik_RIG1:L_mouthUn1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:MOUTH_Comp|ENV_MASTER:Sheik_RIG1:mouth_Root|ENV_MASTER:Sheik_RIG1:mouthUnRoot|ENV_MASTER:Sheik_RIG1:C_mouthUnMainOffset0|ENV_MASTER:Sheik_RIG1:C_mouthUnMainCtrl|ENV_MASTER:Sheik_RIG1:L_mouthUn1CtrlOffset0|ENV_MASTER:Sheik_RIG1:L_mouthUn1Ctrl" 
@@ -4626,11 +4640,11 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:R_EyeBallMainCtrl" 
 		"rotateZ" " -av 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:R_EyeBallMainCtrl" 
-		"irisScale" " -av -k 1 1"
+		"irisScale" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:R_EyeBallMainCtrl" 
-		"pupilScale" " -av -k 1 1"
+		"pupilScale" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset0|ENV_MASTER:Sheik_RIG1:R_EyeBallMainOffset1|ENV_MASTER:Sheik_RIG1:R_EyeBallMainCtrl" 
-		"blink" " -av -k 1 0"
+		"blink" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeUnRoot|ENV_MASTER:Sheik_RIG1:R_EyeUnRoot1|ENV_MASTER:Sheik_RIG1:R_EyeUnLid1Offset0|ENV_MASTER:Sheik_RIG1:R_EyeUnLid1Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeUnRoot|ENV_MASTER:Sheik_RIG1:R_EyeUnRoot1|ENV_MASTER:Sheik_RIG1:R_EyeUnLid1Offset0|ENV_MASTER:Sheik_RIG1:R_EyeUnLid1Ctrl" 
@@ -4760,7 +4774,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_EYE_Comp|ENV_MASTER:Sheik_RIG1:R_EyeBallMainRoot|ENV_MASTER:Sheik_RIG1:R_EyeRotComponent|ENV_MASTER:Sheik_RIG1:R_EyeRotUpHelper|ENV_MASTER:Sheik_RIG1:R_EyeUnLid2Offset0|ENV_MASTER:Sheik_RIG1:R_EyeUnLid2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_BROWCHAIN_Comp|ENV_MASTER:Sheik_RIG1:L_BrowChainDontTouch|ENV_MASTER:Sheik_RIG1:L_BrowChainSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_BROWCHAIN_Comp|ENV_MASTER:Sheik_RIG1:L_BrowChainRoot|ENV_MASTER:Sheik_RIG1:L_Brow0Offset0|ENV_MASTER:Sheik_RIG1:L_Brow0Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:L_BROWCHAIN_Comp|ENV_MASTER:Sheik_RIG1:L_BrowChainRoot|ENV_MASTER:Sheik_RIG1:L_Brow0Offset0|ENV_MASTER:Sheik_RIG1:L_Brow0Ctrl" 
@@ -4858,7 +4872,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_BROWCHAIN_Comp|ENV_MASTER:Sheik_RIG1:R_BrowChainRoot|ENV_MASTER:Sheik_RIG1:R_Brow2Offset0|ENV_MASTER:Sheik_RIG1:R_Brow2Ctrl" 
 		"rotateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:HEADREF_Comp|ENV_MASTER:Sheik_RIG1:R_BROWCHAIN_Comp|ENV_MASTER:Sheik_RIG1:R_BrowChainDontTouch|ENV_MASTER:Sheik_RIG1:R_BrowChainSpline" 
-		"stretch" " -av -k 1 1"
+		"stretch" " -k 1"
 		2 "ENV_MASTER:Sheik_RIG1:harp_layer" "visibility" " 0"
 		2 "ENV_MASTER:Sheik_RIG1:controls_layer" "visibility" " 1"
 		5 4 "ENV_MASTERRN" "|ENV_MASTER:rigs_grp|ENV_MASTER:Sheik_RIG1:Sheik|ENV_MASTER:Sheik_RIG1:SHEIK_Comp|ENV_MASTER:Sheik_RIG1:R_LEG_Comp|ENV_MASTER:Sheik_RIG1:R_Footroot|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset0|ENV_MASTER:Sheik_RIG1:R_FootIkBaseOffset1|ENV_MASTER:Sheik_RIG1:R_FootIkBaseCtrl.showPivotCtrl" 
@@ -7360,7 +7374,7 @@ createNode reference -n "ENV_MASTERRN";
 		"ENV_MASTERRN.placeHolderList[15]" ""
 		5 4 "ENV_MASTERRN" "|ENV_MASTER:airship_grp|ENV_MASTER:structure_grp|ENV_MASTER:interior1:ship_grp|ENV_MASTER:interior1:celing_floor_grp|ENV_MASTER:interior1:floor_geo.drawOverride" 
 		"ENV_MASTERRN.placeHolderList[16]" ""
-		"ENV_MASTER:Simple_Bot_for_Maya_1_0RN1" 237
+		"ENV_MASTER:Simple_Bot_for_Maya_1_0RN1" 238
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:Ballmesh|ENV_MASTER:Simple_Bot_for_Maya_1_1:resto_SecLeg_Bot_Foot|ENV_MASTER:Simple_Bot_for_Maya_1_1:resto_SecLeg_Bot_FootShape" 
 		"dispResolution" " 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:Ballmesh|ENV_MASTER:Simple_Bot_for_Maya_1_1:resto_SecLeg_Bot_Foot|ENV_MASTER:Simple_Bot_for_Maya_1_1:resto_SecLeg_Bot_FootShape" 
@@ -7428,7 +7442,7 @@ createNode reference -n "ENV_MASTERRN";
 		"scale" " -type \"double3\" 0.16768378846411913 0.16768378846411913 0.16768378846411913"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
-		"translate" " -type \"double3\" 3.05913435429229086 0.88491600390686431 -0.7894307900906592"
+		"translate" " -type \"double3\" 3.65890643380946923 1.70342375004025803 0.092538843398604062"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
 		"translateX" " -av"
@@ -7437,7 +7451,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 -119.19987942448447882 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER" 
@@ -7452,7 +7466,7 @@ createNode reference -n "ENV_MASTERRN";
 		"scalePivot" " -type \"double3\" 1.50934217242459345 2.89366625903899211 3.04354274004534098"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:CTRL_GRP|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_rt_knee_pv_ctrl" 
-		"translate" " -type \"double3\" -0.24467452140273047 -0.30379374405758602 0.11968990556960249"
+		"translate" " -type \"double3\" 0.1310581268673176 -0.23337945993458484 -0.65736762761325418"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:CTRL_GRP|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_rt_knee_pv_ctrl" 
 		"translateX" " -av"
@@ -7479,7 +7493,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:CTRL_GRP|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_rt_foot_ctrl" 
 		"ankleStretch" " -k 1 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1" 
-		"translate" " -type \"double3\" 0 0.52761193454458 0"
+		"translate" " -type \"double3\" -2.42318557633984399 0.15958698805895855 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1" 
 		"translateY" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1" 
@@ -7487,7 +7501,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1|ENV_MASTER:Simple_Bot_for_Maya_1_1:curve3" 
-		"translate" " -type \"double3\" 0 -0.15859115833108145 -0.287496691978054"
+		"translate" " -type \"double3\" 0.76227112223158244 0.038405214444268303 -3.17391090713458102"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1|ENV_MASTER:Simple_Bot_for_Maya_1_1:curve3" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1|ENV_MASTER:Simple_Bot_for_Maya_1_1:curve3" 
@@ -7501,7 +7516,7 @@ createNode reference -n "ENV_MASTERRN";
 		"scalePivot" " -type \"double3\" -0.96472464234469069 8.65899549530683998 7.63022754158987482"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1|ENV_MASTER:Simple_Bot_for_Maya_1_1:curve2" 
-		"translate" " -type \"double3\" 0.39851792177087708 -0.059659468155275883 -0.29576824615127162"
+		"translate" " -type \"double3\" 1.03520309322828497 -0.033045038394194023 -2.27328918247084832"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:nurbsCircle1|ENV_MASTER:Simple_Bot_for_Maya_1_1:curve2" 
 		"translateX" " -av"
@@ -7516,7 +7531,8 @@ createNode reference -n "ENV_MASTERRN";
 		"scalePivot" " -type \"double3\" 0.97203791761081071 8.65901221313016123 7.6302234375459399"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.0060282102567847618 -0.088412307778363564 0.0088655444590844158"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
@@ -7524,7 +7540,8 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
-		"rotate" " -type \"double3\" 4.52386575882652409 0 0"
+		"rotate" " -type \"double3\" -4.09672788390690279 -12.51836509708429723 2.22146053613557637"
+		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG" 
@@ -7545,7 +7562,7 @@ createNode reference -n "ENV_MASTERRN";
 		"translate" " -type \"double3\" -0.48970442406309633 -0.0091846177120226968 1.50934220653916862"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt" 
-		"rotate" " -type \"double3\" -8.15690864105565971 -1.60416283379817948 -4.31710233276409561"
+		"rotate" " -type \"double3\" -21.32479566783012714 -1.61733504093115932 9.17601716559855696"
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt" 
 		"rotateX" " -av"
@@ -7564,7 +7581,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_knee_jnt" 
 		"translateZ" " 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_knee_jnt" 
-		"rotate" " -type \"double3\" 0 0 -1.49319183494611241"
+		"rotate" " -type \"double3\" 0 0 0.65162371094513327"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_knee_jnt" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:COG|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_hip_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_upLeg_jnt|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_knee_jnt" 
@@ -7663,7 +7680,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_FOOT" 
 		"translateZ" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_FOOT" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 55.35101638289420123 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_FOOT" 
 		"rotateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_FOOT" 
@@ -7697,7 +7714,7 @@ createNode reference -n "ENV_MASTERRN";
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_FOOT|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_lf_heel_ik_ctrl" 
 		"maxStretch" " -k 1 3"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_FOOT" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.45400522068759025 0 -0.078495416256688835"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_FOOT" 
 		"translateX" " -av"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_FOOT" 
@@ -7720,30 +7737,32 @@ createNode reference -n "ENV_MASTERRN";
 		
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:MASTER|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_FOOT|ENV_MASTER:Simple_Bot_for_Maya_1_1:simplebot_rt_heel_ik_ctrl" 
 		"pvControl" " -k 1 1"
+		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:BallMesh" 
+		"visibility" " 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:BallMesh|ENV_MASTER:Simple_Bot_for_Maya_1_1:BallMeshShape" 
 		"dispResolution" " 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:BallMesh|ENV_MASTER:Simple_Bot_for_Maya_1_1:BallMeshShape" 
 		"displaySmoothMesh" " 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BlinkGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BlinkCircleCtrl" 
-		"translateY" " -av -1"
+		"translateY" " -av 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_BlinkGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_BlinkCircleCtrl" 
-		"translateY" " -av -1"
+		"translateY" " -av 1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:LookGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:LookCircleCtrl" 
-		"translateX" " -av 0"
+		"translateX" " -av -0.98351865214857348"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:LookGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:LookCircleCtrl" 
-		"translateY" " -av 0.10600753969326604"
+		"translateY" " -av 0.033601420369848256"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BrowGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_BrowCircleCtrl" 
-		"translateY" " -av 0.35155076181543876"
+		"translateY" " -av 0.50471693488748315"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_BrowGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_BrowCircleCtrl" 
-		"translateY" " -av 0.30671837229289878"
+		"translateY" " -av 0.45988454537640422"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_Eye_StetchGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_Eye_StetchCircleCtrl" 
 		"translateY" " 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:EyesGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:EyesCircleCtrl" 
 		"translateY" " -0.55139822306394137"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_Brow_ExpGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:L_Brow_ExpCircleCtrl" 
-		"translateX" " -av 0.27067688393034572"
+		"translateX" " -av 0.96936676538501843"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_Brow_ExpGrp|ENV_MASTER:Simple_Bot_for_Maya_1_1:R_Brow_ExpCircleCtrl" 
-		"translateX" " -av -0.45954196636208522"
+		"translateX" " -av -1"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:FACE_CAM" 
 		"rotatePivot" " -type \"double3\" 0 0 0"
 		2 "|ENV_MASTER:rigs_grp|ENV_MASTER:botRig_grp|ENV_MASTER:Simple_Bot_for_Maya_1_1:FACE_CAM|ENV_MASTER:Simple_Bot_for_Maya_1_1:FACE_CAMShape" 
@@ -15374,9 +15393,86 @@ createNode animCurveTU -n "bigLever_ctrl_visibility";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
 	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "renderCam_visibility";
+	rename -uid "9873E74E-4499-B5F9-E6F2-CE9F5924B9C9";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 1 18 1 19 1 29 1 50 1 56 1 60 1 61 1 62 1
+		 65 1 67 1 72 1 73 1 88 1 98 1;
+	setAttr -s 15 ".kot[0:14]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5;
+createNode animCurveTL -n "renderCam_translateX";
+	rename -uid "C2EEA6B9-4608-B3F9-9519-178C389A0227";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 4.7122291118571562 18 4.4183264023166924
+		 19 2.9430044098878403 29 2.8591294165565051 50 2.8983364141857613 56 2.9998368870691281
+		 60 3.0862000292534582 61 3.0803421694445454 62 0.14045557724853022 65 0.44534520538322481
+		 67 0.72864708632417008 72 1.2629414707304887 73 3.1374296049955341 88 2.94025690292932
+		 98 3.1799703964685722;
+createNode animCurveTL -n "renderCam_translateY";
+	rename -uid "C27266F2-449B-7B76-059F-B3BD87AA94D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 2.9766729398480858 18 3.0970331783161167
+		 19 2.5761688710324377 29 2.5241805346557888 50 2.5460487359074251 56 2.951307329514568
+		 60 3.0048378981393151 61 2.9434979693115291 62 2.6727688109799592 65 2.5757642297953889
+		 67 2.5140000826238742 72 2.5133979310518781 73 2.642555034409122 88 2.6145137654671284
+		 98 2.5538530275539912;
+createNode animCurveTL -n "renderCam_translateZ";
+	rename -uid "0E46BB83-44D0-AD13-79A2-D8ACDD66D38C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 -2.9653397180838037 18 -3.0916479181469594
+		 19 2.8547756521185601 29 1.9674709055237041 50 1.6463706582341202 56 2.2786133273188867
+		 60 3.19223993934478 61 3.1994984437476512 62 -18.638325135181084 65 -17.20942993132153
+		 67 -16.125542857125815 72 -13.402634299757873 73 1.2972036256533592 88 1.1904846187860865
+		 98 1.0468754467183332;
+createNode animCurveTA -n "renderCam_rotateX";
+	rename -uid "2994ABE6-422A-F27C-5A59-A2A81FEA2568";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 -371.13835256693454 18 -372.93835256693393
+		 19 -363.33835256692697 29 -363.33835256692697 50 -363.33835256692697 56 -363.33835256692697
+		 60 -363.33835256692697 61 -363.33835256692697 62 -366.33835256763183 65 -366.33835256763183
+		 67 -366.33835256763183 72 -366.338 73 -366.93835256799707 88 -367.53835256799562
+		 98 -365.1383525679949;
+createNode animCurveTA -n "renderCam_rotateY";
+	rename -uid "3F76F2E0-4698-73B6-0BEC-019A6CA4FC97";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 -4169.3999999974576 18 -4165.3999999974531
+		 19 -4314.5999999973992 29 -4314.5999999973992 50 -4314.5999999973992 56 -4314.5999999973992
+		 60 -4314.5999999973992 61 -4314.5999999973992 62 -4129.4000000026708 65 -4129.4000000026708
+		 67 -4129.4000000026708 72 -4129.3999999999996 73 -4669.7999999975791 88 -4672.9999999975971
+		 98 -4676.999999997608;
+createNode animCurveTA -n "renderCam_rotateZ";
+	rename -uid "16284C65-40E3-02CF-1687-FE811B92F7D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 0 18 0 19 0 29 0 50 0 56 0 60 0 61 0 62 0
+		 65 0 67 0 72 0 73 0 88 1.0013875287500421e-16 98 2.4882183616865321e-17;
+createNode animCurveTU -n "renderCam_scaleX";
+	rename -uid "9B07C1DC-4C1B-E6E7-F43F-0E852C1EF201";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 1 18 1 19 1 29 1 50 1 56 1 60 1 61 1 62 1
+		 65 1 67 1 72 1 73 1 88 1 98 1;
+createNode animCurveTU -n "renderCam_scaleY";
+	rename -uid "5BD96D1B-44F2-CD45-E703-83A32F961456";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 1 18 1 19 1 29 1 50 1 56 1 60 1 61 1 62 1
+		 65 1 67 1 72 1 73 1 88 1 98 1;
+createNode animCurveTU -n "renderCam_scaleZ";
+	rename -uid "9503FC12-442F-1B2A-DC13-95AA6C79D915";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 15 ".ktv[0:14]"  1 1 18 1 19 1 29 1 50 1 56 1 60 1 61 1 62 1
+		 65 1 67 1 72 1 73 1 88 1 98 1;
 select -ne :time1;
-	setAttr ".o" 1;
-	setAttr ".unw" 1;
+	setAttr ".o" 106;
+	setAttr ".unw" 106;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -16747,6 +16843,16 @@ connectAttr "keyboard_geo_scaleZ.o" "ENV_MASTERRN.phl[26]";
 connectAttr "bigLever_ctrl_translateX.o" "ENV_MASTERRN.phl[27]";
 connectAttr "bigLever_ctrl_visibility.o" "ENV_MASTERRN.phl[28]";
 connectAttr "renderCam_layet.di" "renderCam.do";
+connectAttr "renderCam_visibility.o" "renderCam.v";
+connectAttr "renderCam_translateX.o" "renderCam.tx";
+connectAttr "renderCam_translateY.o" "renderCam.ty";
+connectAttr "renderCam_translateZ.o" "renderCam.tz";
+connectAttr "renderCam_rotateX.o" "renderCam.rx";
+connectAttr "renderCam_rotateY.o" "renderCam.ry";
+connectAttr "renderCam_rotateZ.o" "renderCam.rz";
+connectAttr "renderCam_scaleX.o" "renderCam.sx";
+connectAttr "renderCam_scaleY.o" "renderCam.sy";
+connectAttr "renderCam_scaleZ.o" "renderCam.sz";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
