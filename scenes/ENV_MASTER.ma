@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ENV_MASTER.ma
-//Last modified: Sat, Nov 21, 2020 12:57:32 PM
+//Last modified: Sat, Nov 21, 2020 01:18:40 PM
 //Codeset: 1252
 file -rdi 1 -ns "interior1" -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -rdi 1 -ns "steam_boiler" -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
@@ -9,8 +9,6 @@ file -rdi 1 -ns "wallLight" -rfn "wallLightRN" -op "v=0;" -typ "mayaAscii" "/Use
 file -rdi 1 -ns "cylindricalStructure" -rfn "cylindricalStructureRN" -op "v=0;"
 		 -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/cylindricalStructure/cylindricalStructure.ma";
 file -rdi 1 -ns "bucket" -rfn "bucketRN1" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/bucket/bucket.ma";
-file -rdi 1 -ns "coupledBoilers" -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
-		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
 file -rdi 1 -ns "furnace" -rfn "furnaceRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/furnace/furnace.ma";
 file -rdi 1 -ns "railNoEndpost" -rfn "railNoEndpostRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
@@ -37,6 +35,8 @@ file -rdi 1 -ns "Sheik_RIG1" -rfn "Sheik_RIGRN1" -op "v=0;" -typ "mayaAscii"
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -rdi 1 -ns "steeringWheel" -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/steeringWheel/steeringWheel.ma";
+file -rdi 1 -ns "coupledBoilers" -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
 file -r -ns "interior1" -dr 1 -rfn "interiorRN1" -op "v=0;" -typ "mayaAscii" "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/interior/interior.ma";
 file -r -ns "steam_boiler" -dr 1 -rfn "steam_boilerRN1" -op "v=0;" -typ "mayaAscii"
 		 "/Users/tomasbabkine-dicaprio/Desktop/Design Studio 2/IMD_3900_S2_team_03//scenes/Prop_Database/boiler/steam_boiler.ma";
@@ -44,8 +44,6 @@ file -r -ns "wallLight" -dr 1 -rfn "wallLightRN" -op "v=0;" -typ "mayaAscii" "/U
 file -r -ns "cylindricalStructure" -dr 1 -rfn "cylindricalStructureRN" -op "v=0;"
 		 -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/cylindricalStructure/cylindricalStructure.ma";
 file -r -ns "bucket" -dr 1 -rfn "bucketRN1" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/bucket/bucket.ma";
-file -r -ns "coupledBoilers" -dr 1 -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
-		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
 file -r -ns "furnace" -dr 1 -rfn "furnaceRN" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/furnace/furnace.ma";
 file -r -ns "railNoEndpost" -dr 1 -rfn "railNoEndpostRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/handrails/railNoEndpost.ma";
@@ -71,6 +69,8 @@ file -r -ns "Simple_Bot_for_Maya_1_1" -dr 1 -rfn "Simple_Bot_for_Maya_1_0RN1" -o
 file -r -ns "Sheik_RIG1" -dr 1 -rfn "Sheik_RIGRN1" -op "v=0;" -typ "mayaAscii" "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/RIGS/Sheik Rig/Sheik_RIG.ma";
 file -r -ns "steeringWheel" -dr 1 -rfn "steeringWheelRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/steeringWheel/steeringWheel.ma";
+file -r -ns "coupledBoilers" -dr 1 -rfn "coupledBoilersRN" -op "v=0;" -typ "mayaAscii"
+		 "F:/Users/Mark/Documents/Github - F/IMD_3900_S2_team_03//scenes/Prop_Database/coupledBoilers/coupledBoilers.ma";
 requires maya "2019";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
 requires "stereoCamera" "10.0";
@@ -89,17 +89,17 @@ fileInfo "UUID" "79DF54DF-4114-CF7A-E114-1592CD863746";
 createNode transform -s -n "persp";
 	rename -uid "F07856B0-4534-4BC3-3F17-89A517A53963";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.0688826868597812 4.0180678393971165 -9.711668417224935 ;
-	setAttr ".r" -type "double3" 702.86164680387981 -30936.999999999651 -8.6380714603047505e-16 ;
+	setAttr ".t" -type "double3" 6.0991189885620809 2.3026315231777632 -8.601239765898276 ;
+	setAttr ".r" -type "double3" 719.06164681928783 -30869.0000000047 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2DEA98CD-405F-2C87-6D23-80BB58C30F1A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 23.761439515311256;
-	setAttr ".coi" 5.7962141800718836;
+	setAttr ".coi" 9.9462647656135523;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 5.6172875785748655 2.63494873046875 -14.585668022923702 ;
+	setAttr ".tp" -type "double3" -3.6536915104158698 2.2315020781500445 -11.15981662662942 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -28897,25 +28897,25 @@ createNode transform -n "Controls_grp";
 	setAttr ".r" -type "double3" 0 -90.53479849614267 0 ;
 	setAttr ".s" -type "double3" 0.611 0.611 0.611 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9AE88D3C-4C25-8B82-84E5-C793106CF2AD";
-	setAttr -s 83 ".lnk";
-	setAttr -s 82 ".slnk";
+	rename -uid "1ABA2AAA-4B79-4235-7A4F-6A915B0F8F1D";
+	setAttr -s 85 ".lnk";
+	setAttr -s 84 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "AB549827-4AC0-5CC4-3E0F-0EB3F06D138D";
+	rename -uid "5F335A3C-4DB2-D173-B77D-41B03EDB84AB";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 12 11 1 2 3 4
 		 5 6 7 8 9 10 0 ;
 	setAttr -s 4 ".bspr";
 	setAttr -s 4 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C0DC70F2-4CEB-713C-3633-C08A9564A6FB";
+	rename -uid "7E52C243-4A73-5940-7AFE-33919F420BCA";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "1FBE8115-4360-5EE5-0714-22A6D30C8782";
+	rename -uid "22B3DFCE-46ED-5FAC-C4E2-49B17023696A";
 	setAttr ".cdl" 3;
 	setAttr -s 8 ".dli[1:7]"  1 3 2 5 4 6 7;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "088E2D7E-4EA4-E5D3-539F-25A867468057";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2E0A5EF5-4935-7A19-6FAD-A8B6A8E97D3C";
+	rename -uid "BAEB8152-41E4-687F-4A01-168842EA08B5";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E25A5300-4113-4140-6A15-4E99A596F975";
 	setAttr ".g" yes;
@@ -30096,8 +30096,8 @@ createNode reference -n "interiorRN1";
 	rename -uid "89849380-B44B-FE5C-3683-C48CE981049D";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"interiorRN1"
-		"interior1:wallLight1RN" 0
 		"interior1:bucketRN" 0
+		"interior1:wallLight1RN" 0
 		"interior1:wallLight2RN" 0
 		"interior1:wallLightRN" 0
 		"interior1:furnaceRN" 0
@@ -30502,20 +30502,6 @@ createNode reference -n "bucketRN1";
 		2 "|airship_grp|props_grp|bucket:bucket_geo" "translate" " -type \"double3\" 0 -66.09052450934338196 0"
 		
 		2 "|airship_grp|props_grp|bucket:bucket_geo" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "coupledBoilersRN";
-	rename -uid "8A635370-472F-D966-CB8F-C08F0C66AA5F";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"coupledBoilersRN"
-		"coupledBoilersRN" 0
-		"coupledBoilersRN" 4
-		0 "|coupledBoilers:coupledBoilersGeo" "|airship_grp|props_grp" "-s -r "
-		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "translate" " -type \"double3\" -350.80706429702638616 -66.09052450934338196 -1250.40473116941643639"
-		
-		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "rotate" " -type \"double3\" 0 -0.049815416592959842 0"
-		
-		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilersGeo" "scale" " -type \"double3\" 78.46852482667283368 78.46852482667262052 78.46852482667243578";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "furnaceRN";
@@ -31131,51 +31117,6 @@ createNode reference -n "Sheik_RIGRN1";
 		"translate" " -type \"double3\" 0 0.739 0.97409009942343849";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "B60C3F37-4C72-58E0-934F-1DB25F426BC3";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -1983.8140526560412 435.25781640783765 ;
-	setAttr ".tgi[0].vh" -type "double2" 15.601284414601652 1451.5749073660631 ;
-	setAttr -s 13 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -900;
-	setAttr ".tgi[0].ni[0].y" 1141.4285888671875;
-	setAttr ".tgi[0].ni[0].nvs" 2387;
-	setAttr ".tgi[0].ni[1].x" -1610;
-	setAttr ".tgi[0].ni[1].y" 1367.142822265625;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -1302.857177734375;
-	setAttr ".tgi[0].ni[2].y" 1205.7142333984375;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -551.4285888671875;
-	setAttr ".tgi[0].ni[3].y" 1267.142822265625;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" -1302.857177734375;
-	setAttr ".tgi[0].ni[4].y" 1021.4285888671875;
-	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" -1610;
-	setAttr ".tgi[0].ni[5].y" 998.5714111328125;
-	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" -1302.857177734375;
-	setAttr ".tgi[0].ni[6].y" 661.4285888671875;
-	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" -1302.857177734375;
-	setAttr ".tgi[0].ni[7].y" 1390;
-	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" -1610;
-	setAttr ".tgi[0].ni[8].y" 1182.857177734375;
-	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" -1610;
-	setAttr ".tgi[0].ni[9].y" 814.28570556640625;
-	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" -900;
-	setAttr ".tgi[0].ni[10].y" 1347.142822265625;
-	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" -1610;
-	setAttr ".tgi[0].ni[11].y" 638.5714111328125;
-	setAttr ".tgi[0].ni[11].nvs" 1923;
-	setAttr ".tgi[0].ni[12].x" -1302.857177734375;
-	setAttr ".tgi[0].ni[12].y" 837.14288330078125;
-	setAttr ".tgi[0].ni[12].nvs" 1923;
 createNode reference -n "steeringWheelRN";
 	rename -uid "BA2E4A46-4775-B45A-97B7-A39FA711C1B5";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -31208,6 +31149,66 @@ createNode groupId -n "groupId5";
 createNode groupId -n "groupId6";
 	rename -uid "4A32B421-43D0-31C5-3A79-26B882B93CB3";
 	setAttr ".ihi" 0;
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "39C64DF5-4E35-DBD0-3741-6A9D6A99E054";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -1978.5713499500669 670.23806860522723 ;
+	setAttr ".tgi[0].vh" -type "double2" -212.69840424653759 1567.063429793986 ;
+	setAttr -s 13 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -900;
+	setAttr ".tgi[0].ni[0].y" 1347.142822265625;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" -1610;
+	setAttr ".tgi[0].ni[1].y" 1367.142822265625;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -1610;
+	setAttr ".tgi[0].ni[2].y" 814.28570556640625;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" -1302.857177734375;
+	setAttr ".tgi[0].ni[3].y" 661.4285888671875;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" -1302.857177734375;
+	setAttr ".tgi[0].ni[4].y" 1205.7142333984375;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" -1302.857177734375;
+	setAttr ".tgi[0].ni[5].y" 1021.4285888671875;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" -1610;
+	setAttr ".tgi[0].ni[6].y" 638.5714111328125;
+	setAttr ".tgi[0].ni[6].nvs" 1923;
+	setAttr ".tgi[0].ni[7].x" -1610;
+	setAttr ".tgi[0].ni[7].y" 998.5714111328125;
+	setAttr ".tgi[0].ni[7].nvs" 1923;
+	setAttr ".tgi[0].ni[8].x" -551.4285888671875;
+	setAttr ".tgi[0].ni[8].y" 1267.142822265625;
+	setAttr ".tgi[0].ni[8].nvs" 1923;
+	setAttr ".tgi[0].ni[9].x" -900;
+	setAttr ".tgi[0].ni[9].y" 1141.4285888671875;
+	setAttr ".tgi[0].ni[9].nvs" 2387;
+	setAttr ".tgi[0].ni[10].x" -1302.857177734375;
+	setAttr ".tgi[0].ni[10].y" 837.14288330078125;
+	setAttr ".tgi[0].ni[10].nvs" 1923;
+	setAttr ".tgi[0].ni[11].x" -1302.857177734375;
+	setAttr ".tgi[0].ni[11].y" 1390;
+	setAttr ".tgi[0].ni[11].nvs" 1923;
+	setAttr ".tgi[0].ni[12].x" -1610;
+	setAttr ".tgi[0].ni[12].y" 1182.857177734375;
+	setAttr ".tgi[0].ni[12].nvs" 1923;
+createNode reference -n "coupledBoilersRN";
+	rename -uid "A59A1935-4140-4265-07DC-9B96641FAD03";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"coupledBoilersRN"
+		"coupledBoilersRN" 0
+		"coupledBoilersRN" 4
+		0 "|coupledBoilers:coupledBoilers_grp" "|airship_grp|props_grp" "-s -r "
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilers_grp" "translate" 
+		" -type \"double3\" 0 -66.09052450934338196 0"
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilers_grp" "scale" " -type \"double3\" 78.46852482667242157 78.46852482667262052 78.46852482667281947"
+		
+		2 "|airship_grp|props_grp|coupledBoilers:coupledBoilers_grp|coupledBoilers:coupledBoilers_geo" 
+		"translate" " -type \"double3\" -5.3230156783562208 0.0063206601446674782 -15.67589261434507186";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -31218,20 +31219,20 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 82 ".st";
+	setAttr -s 83 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
 	setAttr -s 85 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 231 ".u";
+	setAttr -s 232 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 20 ".r";
 select -ne :lightList1;
 	setAttr -s 7 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 226 ".tx";
+	setAttr -s 227 ".tx";
 select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 	setAttr -s 24 ".gn";
@@ -31353,9 +31354,9 @@ connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|rung1_geo|rung1_g
 		;
 connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp7|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN.phl[64]"
 		;
-connectAttr "railNoEndpostRN1.phl[4]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "railNoEndpostRN1.phl[4]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[5]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "railNoEndpostRN1.phl[5]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
 		;
 connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp8|post0_geo|post0_geoShape.iog" "railNoEndpostRN1.phl[6]"
 		;
@@ -31373,25 +31374,25 @@ connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|rung1_geo|rung1_g
 		;
 connectAttr "|airship_grp|props_grp|railings_grp|handrail_grp9|rung2_geo|rung2_geoShape.iog" "railNoEndpostRN1.phl[13]"
 		;
-connectAttr "railNoEndpostRN1.phl[14]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "railNoEndpostRN1.phl[14]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[15]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr "railNoEndpostRN1.phl[15]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[16]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "railNoEndpostRN1.phl[16]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[17]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "railNoEndpostRN1.phl[17]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[18]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "railNoEndpostRN1.phl[18]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[19]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+connectAttr "railNoEndpostRN1.phl[19]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[20]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+connectAttr "railNoEndpostRN1.phl[20]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[21]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "railNoEndpostRN1.phl[21]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[22]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "railNoEndpostRN1.phl[22]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "railNoEndpostRN1.phl[23]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "railNoEndpostRN1.phl[23]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
 		;
 connectAttr "railNoEndpostRN1.phl[24]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
@@ -31485,7 +31486,6 @@ connectAttr "sharedReferenceNode1.sr" "steam_boilerRN1.sr";
 connectAttr "sharedReferenceNode1.sr" "wallLightRN.sr";
 connectAttr "sharedReferenceNode1.sr" "cylindricalStructureRN.sr";
 connectAttr "sharedReferenceNode1.sr" "bucketRN1.sr";
-connectAttr "sharedReferenceNode1.sr" "coupledBoilersRN.sr";
 connectAttr "sharedReferenceNode1.sr" "furnaceRN.sr";
 connectAttr "sharedReferenceNode1.sr" "railNoEndpostRN.sr";
 connectAttr "sharedReferenceNode1.sr" "railWithEndpostRN.sr";
